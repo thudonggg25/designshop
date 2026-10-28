@@ -1,0 +1,1030 @@
+{
+  "name": "Hyan Design Library",
+  "about": "A catalog of everything to lock in for a key visual before briefing an AI or a designer.",
+  "folders": {
+    "dinh-huong": {
+      "label": "Direction",
+      "desc": "Mood, design style and imagery"
+    },
+    "mau-sac": {
+      "label": "Color",
+      "desc": "Palettes, Hyan colors, tint scales, text opacity"
+    },
+    "chu": {
+      "label": "Type",
+      "desc": "Fonts, font pairs, type sizes and text styles"
+    },
+    "hinh-khoi": {
+      "label": "Shapes",
+      "desc": "Corner radius, buttons, frames and icons"
+    },
+    "hieu-ung": {
+      "label": "Effects & backgrounds",
+      "desc": "Shadows, glass, text effects, backgrounds and patterns"
+    },
+    "bo-cuc": {
+      "label": "Layout & format",
+      "desc": "Layouts and sizes per channel"
+    },
+    "quy-tac": {
+      "label": "Rules",
+      "desc": "Principles for locking a key visual"
+    }
+  },
+  "categories": {
+    "moods": {
+      "label": "Mood"
+    },
+    "styles": {
+      "label": "Design style"
+    },
+    "imagery": {
+      "label": "Imagery"
+    },
+    "palettes": {
+      "label": "Palettes"
+    },
+    "colors": {
+      "label": "Hyan colors"
+    },
+    "scales": {
+      "label": "Tint & shade scales",
+      "note": "From 50 (lightest) to 900 (darkest); 500 is the base color."
+    },
+    "text": {
+      "label": "Text opacity",
+      "note": "Opacity applied to white #FFFFFF text on a dark background."
+    },
+    "fonts": {
+      "label": "Fonts",
+      "note": "Free Google Fonts. Fonts without Vietnamese accents are marked."
+    },
+    "pairings": {
+      "label": "Font pairs"
+    },
+    "typescales": {
+      "label": "Type sizes"
+    },
+    "typography": {
+      "label": "Hyan text styles"
+    },
+    "radius": {
+      "label": "Corner radius"
+    },
+    "buttons": {
+      "label": "Buttons"
+    },
+    "frames": {
+      "label": "Frames & borders"
+    },
+    "icons": {
+      "label": "Icons",
+      "style": "1.5px stroke, round caps, 24×24 box, no fill, inherits text color."
+    },
+    "effects": {
+      "label": "Effects"
+    },
+    "backgrounds": {
+      "label": "Backgrounds & patterns"
+    },
+    "layouts": {
+      "label": "Layouts"
+    },
+    "formats": {
+      "label": "Formats"
+    },
+    "rules": {
+      "label": "Rules"
+    }
+  },
+  "groups": {
+    "Tông cảm xúc": "Mood",
+    "Phong cách thiết kế": "Design style",
+    "Kiểu hình ảnh": "Imagery",
+    "Bảng màu 5 màu": "5-color palettes",
+    "Nền · Đêm": "Background · Night",
+    "Nền · Ngày": "Background · Day",
+    "Màu nhấn": "Accents",
+    "Mực": "Ink",
+    "Thang đậm nhạt": "Tint & shade",
+    "Độ nhạt chữ": "Text opacity",
+    "Font chữ": "Fonts",
+    "Cặp font tiêu đề + nội dung": "Heading + body pairs",
+    "Thang tỉ lệ": "Modular scales",
+    "Cỡ chữ theo khổ KV": "Sizes per KV format",
+    "Kiểu chữ": "Text styles",
+    "Bo góc": "Corner radius",
+    "Kiểu nút": "Button styles",
+    "Khung Hyan": "Hyan frames",
+    "Viền & khung KV": "KV borders & frames",
+    "Icon nét mảnh": "Line icons",
+    "Bóng, kính, viền": "Shadow, glass, border",
+    "Hiệu ứng chữ": "Text effects",
+    "Nền & hoạ tiết": "Backgrounds & patterns",
+    "Bố cục giao diện (Hyan)": "UI layouts (Hyan)",
+    "Bố cục key visual": "Key visual layouts",
+    "Khổ ảnh & tỉ lệ": "Formats & ratios",
+    "Quy tắc Hyan": "Hyan rules",
+    "Quy tắc key visual": "Key visual rules"
+  },
+  "items": {
+    "MO01": {
+      "name": "Luxurious",
+      "value": "premium, refined, restrained"
+    },
+    "MO02": {
+      "name": "Young & energetic",
+      "value": "fresh, high energy, bold"
+    },
+    "MO03": {
+      "name": "Refined minimal",
+      "value": "less but better, lots of white space"
+    },
+    "MO04": {
+      "name": "Future tech",
+      "value": "modern, glowing, precise"
+    },
+    "MO05": {
+      "name": "Warm & friendly",
+      "value": "approachable, soft, pleasant"
+    },
+    "MO06": {
+      "name": "Natural & sustainable",
+      "value": "green, raw, calm"
+    },
+    "MO07": {
+      "name": "Retro nostalgia",
+      "value": "old film, 70s–90s"
+    },
+    "MO08": {
+      "name": "Rebellious",
+      "value": "harsh, high contrast, street"
+    },
+    "MO09": {
+      "name": "Lunar New Year",
+      "value": "red and gold, abundant, festive"
+    },
+    "MO10": {
+      "name": "Cute",
+      "value": "pastel, rounded, playful"
+    },
+    "S01": {
+      "name": "Glassmorphism",
+      "value": "frosted glass, blurred color backdrop, thin light borders",
+      "desc": "Apps, tech, premium modern KVs"
+    },
+    "S02": {
+      "name": "Neumorphism",
+      "value": "raised and pressed shapes via light and dark shadows, same-color background",
+      "desc": "Device UIs, gentle tech products"
+    },
+    "S03": {
+      "name": "Neo-brutalism",
+      "value": "thick black outlines, hard offset shadows, loud colors",
+      "desc": "Young brands, startups, events, social"
+    },
+    "S04": {
+      "name": "Swiss / International",
+      "value": "strict grid, bold flush-left sans, flat color blocks",
+      "desc": "Event posters, exhibitions, serious brands"
+    },
+    "S05": {
+      "name": "Minimalism",
+      "value": "very few details, lots of white space",
+      "desc": "Cosmetics, architecture, high fashion"
+    },
+    "S06": {
+      "name": "Y2K",
+      "value": "silver chrome, pastel violet and blue, sparkles",
+      "desc": "Gen Z fashion, music, cosmetics"
+    },
+    "S07": {
+      "name": "Bauhaus",
+      "value": "basic geometry, primary red yellow blue",
+      "desc": "Culture, education, art"
+    },
+    "S08": {
+      "name": "Memphis",
+      "value": "playful patterns, dots, zigzags, candy colors",
+      "desc": "Fun events, snacks, kids"
+    },
+    "S09": {
+      "name": "70s retro",
+      "value": "striped orange-brown arcs, soft rounded type",
+      "desc": "Coffee, drinks, music, F&B"
+    },
+    "S10": {
+      "name": "Synthwave / Vaporwave",
+      "value": "striped sun, neon grid, pink and purple",
+      "desc": "Electronic music, games, night parties"
+    },
+    "S11": {
+      "name": "Cyberpunk",
+      "value": "black, neon yellow, cut corners, glitch type",
+      "desc": "Games, tech, streetwear"
+    },
+    "S12": {
+      "name": "Flat design",
+      "value": "flat colors, no shadows, simple shapes",
+      "desc": "Apps, infographics, services"
+    },
+    "S13": {
+      "name": "Claymorphism / soft 3D",
+      "value": "puffy clay-like 3D shapes, pastel",
+      "desc": "Kids apps, friendly fintech, mascots"
+    },
+    "S14": {
+      "name": "Editorial / Magazine",
+      "value": "large serif type, text columns, thin rules",
+      "desc": "Fashion, PR articles, print"
+    },
+    "S15": {
+      "name": "Art Deco",
+      "value": "black and gold, fan motifs, symmetry",
+      "desc": "Hotels, galas, luxury Tet campaigns"
+    },
+    "S16": {
+      "name": "Dark luxury",
+      "value": "deep black, thin serif type, gold light",
+      "desc": "Perfume, jewelry, cars, premium real estate"
+    },
+    "S17": {
+      "name": "Aurora / Gradient mesh",
+      "value": "blurred color fields weaving together",
+      "desc": "Tech, AI, apps, launch events"
+    },
+    "S18": {
+      "name": "Bento grid",
+      "value": "rounded tiles of different sizes",
+      "desc": "Feature overviews, product roundups"
+    },
+    "S19": {
+      "name": "Organic / Hand-drawn",
+      "value": "natural curves, hand strokes, earthy colors",
+      "desc": "Clean food, handmade, spa"
+    },
+    "S20": {
+      "name": "Pixel art / 8-bit",
+      "value": "square pixels, limited palette, mono type",
+      "desc": "Games, retro tech"
+    },
+    "S21": {
+      "name": "Risograph / Grain",
+      "value": "overprinted spot colors, grit, misregistration",
+      "desc": "Art posters, zines, indie"
+    },
+    "S22": {
+      "name": "Japanese minimal (Zen)",
+      "value": "ivory, red dot, vertical text, stillness",
+      "desc": "Japanese food, tea, spa, meditation"
+    },
+    "H01": {
+      "name": "Studio product photo",
+      "value": "seamless backdrop, spotlight, soft shadow"
+    },
+    "H02": {
+      "name": "Lifestyle photo",
+      "value": "natural light, people, real settings"
+    },
+    "H03": {
+      "name": "Glossy 3D render",
+      "value": "3D shapes, glossy materials, studio light"
+    },
+    "H04": {
+      "name": "Flat illustration",
+      "value": "flat vector, solid colors, simple shapes"
+    },
+    "H05": {
+      "name": "Line art",
+      "value": "single-color strokes, no fill, minimal"
+    },
+    "H06": {
+      "name": "Collage",
+      "value": "paper scraps, cut-out photos, offset layers"
+    },
+    "H07": {
+      "name": "Isometric",
+      "value": "30° view, blocks, no perspective"
+    },
+    "H08": {
+      "name": "Watercolor / hand-painted",
+      "value": "bleeding pigment, soft, textured paper"
+    },
+    "H09": {
+      "name": "Surreal",
+      "value": "impossible objects, dream scenes, strange light"
+    },
+    "H10": {
+      "name": "High-contrast black & white",
+      "value": "monochrome, hard shadows, dramatic"
+    },
+    "P01": {
+      "name": "Hyan Night",
+      "mood": "dark, single blue accent"
+    },
+    "P02": {
+      "name": "Nordic",
+      "mood": "neutral, cool, calm"
+    },
+    "P03": {
+      "name": "Candy pastel",
+      "mood": "sweet, light, cute"
+    },
+    "P04": {
+      "name": "Neon night",
+      "mood": "loud, glowing"
+    },
+    "P05": {
+      "name": "Terracotta",
+      "mood": "warm, raw"
+    },
+    "P06": {
+      "name": "Pine forest",
+      "mood": "green, natural"
+    },
+    "P07": {
+      "name": "Ocean",
+      "mood": "sea blue, cool"
+    },
+    "P08": {
+      "name": "Sunset",
+      "mood": "orange, pink, purple"
+    },
+    "P09": {
+      "name": "Black & gold",
+      "mood": "luxurious"
+    },
+    "P10": {
+      "name": "Retro 70s",
+      "mood": "orange, brown, mustard"
+    },
+    "P11": {
+      "name": "Brutalism",
+      "mood": "black and white + loud colors"
+    },
+    "P12": {
+      "name": "Clean medical",
+      "mood": "white, teal"
+    },
+    "P13": {
+      "name": "Tech violet",
+      "mood": "blue-violet, modern"
+    },
+    "P14": {
+      "name": "Fruit",
+      "mood": "fresh, multicolor"
+    },
+    "P15": {
+      "name": "Mono gray",
+      "mood": "fully neutral"
+    },
+    "P16": {
+      "name": "Tet red & gold",
+      "mood": "festive, abundant"
+    },
+    "P17": {
+      "name": "Milk coffee",
+      "mood": "cream brown, warm"
+    },
+    "P18": {
+      "name": "Dusty rose",
+      "mood": "nude pink, feminine"
+    },
+    "N0-dem": {
+      "name": "App background",
+      "theme": "Night"
+    },
+    "N1-dem": {
+      "name": "Surface, tab bar",
+      "theme": "Night"
+    },
+    "N2-dem": {
+      "name": "Card, input",
+      "theme": "Night"
+    },
+    "N3-dem": {
+      "name": "Icon tile, switch off",
+      "theme": "Night"
+    },
+    "N0-ngay": {
+      "name": "App background",
+      "theme": "Day"
+    },
+    "N1-ngay": {
+      "name": "Surface, tab bar",
+      "theme": "Day"
+    },
+    "N2-ngay": {
+      "name": "Card, input",
+      "theme": "Day"
+    },
+    "N3-ngay": {
+      "name": "Icon tile, switch off",
+      "theme": "Day"
+    },
+    "B01": {
+      "name": "Blue"
+    },
+    "B02": {
+      "name": "Mist blue (gradient)"
+    },
+    "B03": {
+      "name": "Peach (main bright block)"
+    },
+    "B04": {
+      "name": "Coral"
+    },
+    "M0": {
+      "name": "Ink: text on B03 blocks"
+    },
+    "V01": {
+      "name": "Blue"
+    },
+    "V02": {
+      "name": "Peach"
+    },
+    "V03": {
+      "name": "Neutral gray"
+    },
+    "V04": {
+      "name": "Green"
+    },
+    "V05": {
+      "name": "Red"
+    },
+    "V06": {
+      "name": "Violet"
+    },
+    "V07": {
+      "name": "Yellow"
+    },
+    "V08": {
+      "name": "Pink"
+    },
+    "D1": {
+      "name": "Titles, figures, main content"
+    },
+    "D2": {
+      "name": "Text inside cards"
+    },
+    "D4": {
+      "name": "Subtitles, descriptions"
+    },
+    "D5": {
+      "name": "Footnotes, secondary buttons"
+    },
+    "F01": {
+      "value": "Modern sans · weight 100 200 300 400 500 600 700 800 900",
+      "use": "UI, Vietnamese KVs, all-purpose"
+    },
+    "F02": {
+      "value": "Neutral sans · weight 300 400 500 600 700 800",
+      "use": "UI, tech, long text"
+    },
+    "F03": {
+      "value": "Geometric sans · weight 300 400 500 600 700 800 900",
+      "use": "Brands, strong headlines"
+    },
+    "F04": {
+      "value": "Quirky sans · weight 300 400 500 600 700",
+      "use": "Tech, startups, brutalism"
+    },
+    "F05": {
+      "value": "Readable sans · weight 300 400 500 600 700 800",
+      "use": "Education, easy reading"
+    },
+    "F06": {
+      "value": "Display serif · weight 400 500 600 700 800 900",
+      "use": "Luxury, magazines, fashion"
+    },
+    "F07": {
+      "value": "Text serif · weight 400 500 600 700",
+      "use": "Elegant body text, food"
+    },
+    "F08": {
+      "value": "Soft characterful serif · weight 400 600 700 900",
+      "use": "Warm, F&B, crafts"
+    },
+    "F09": {
+      "value": "Slab serif · weight 300 400 500 700 900",
+      "use": "News, sports, industrial"
+    },
+    "F10": {
+      "value": "Condensed sans · weight 300 400 500 600 700",
+      "use": "Posters, sports, sale prices"
+    },
+    "F11": {
+      "value": "Bold condensed display · weight 400",
+      "use": "Huge headlines, posters"
+    },
+    "F12": {
+      "value": "Condensed display · weight 400 · NO Vietnamese accents",
+      "use": "Unaccented / English text only"
+    },
+    "F13": {
+      "value": "Rounded script · weight 400",
+      "use": "Retro, drinks, fun"
+    },
+    "F14": {
+      "value": "Handwritten script · weight 400 500 600 700",
+      "use": "Cards, handmade, feminine"
+    },
+    "F15": {
+      "value": "Slim sans · weight 300 400 600 700",
+      "use": "Minimal, fashion"
+    },
+    "F16": {
+      "value": "Rounded sans · weight 300 400 600 700 800 900",
+      "use": "Cute, kids, friendly"
+    },
+    "F17": {
+      "value": "Monospace · weight 400 500 700",
+      "use": "Code, tech, data labels"
+    },
+    "FP01": {
+      "value": "modern luxury"
+    },
+    "FP02": {
+      "value": "friendly, trustworthy"
+    },
+    "FP03": {
+      "value": "strong poster, promotions"
+    },
+    "FP04": {
+      "value": "tech, startup"
+    },
+    "FP05": {
+      "value": "warm, soft"
+    },
+    "FP06": {
+      "value": "news, sports"
+    },
+    "FP07": {
+      "value": "minimal, elegant"
+    },
+    "FP08": {
+      "value": "fun, drinks"
+    },
+    "FP09": {
+      "value": "digital product, dev"
+    },
+    "Z01": {
+      "value": "base 16px × 1.2: 13 / 16 / 19 / 23 / 28 / 33 / 40 px"
+    },
+    "Z02": {
+      "value": "base 16px × 1.25: 13 / 16 / 20 / 25 / 31 / 39 / 49 px"
+    },
+    "Z03": {
+      "value": "base 16px × 1.333: 12 / 16 / 21 / 28 / 38 / 51 / 67 px"
+    },
+    "Z04": {
+      "value": "base 16px × 1.5: 11 / 16 / 24 / 36 / 54 / 81 / 122 px"
+    },
+    "Z05": {
+      "name": "Golden ratio (1.618)",
+      "value": "base 16px × 1.618: 10 / 16 / 26 / 42 / 68 / 110 / 177 px"
+    },
+    "Z06": {
+      "name": "KV poster (A4/A3)",
+      "value": "Headline 120 · Sub 48 · Body 24 · CTA 28 · Caption 16 px (at 1080 wide)"
+    },
+    "Z07": {
+      "name": "Social post 1080",
+      "value": "Headline 88 · Sub 44 · Body 30 · Caption 22 px"
+    },
+    "Z08": {
+      "name": "Web banner 1440",
+      "value": "H1 64 · Sub 24 · Button 18 · Caption 14 px"
+    },
+    "T01": {
+      "name": "Large clock"
+    },
+    "T02": {
+      "name": "Page title"
+    },
+    "T03": {
+      "name": "Card title"
+    },
+    "T04": {
+      "name": "Body"
+    },
+    "T05": {
+      "name": "Section label (caps)"
+    },
+    "T06": {
+      "name": "Token code",
+      "value": "12px / 500 / color B01"
+    },
+    "T07": {
+      "name": "Hex value"
+    },
+    "G01": {
+      "name": "Sharp square"
+    },
+    "G02": {
+      "name": "Hairline round"
+    },
+    "G03": {
+      "name": "Slight round"
+    },
+    "G04": {
+      "name": "Medium round"
+    },
+    "G05": {
+      "name": "Soft round"
+    },
+    "G06": {
+      "name": "Large round"
+    },
+    "G07": {
+      "name": "Extra-large round"
+    },
+    "G08": {
+      "name": "Pill"
+    },
+    "G09": {
+      "name": "Organic blob"
+    },
+    "BT01": {
+      "name": "Solid white pill",
+      "value": "white fill, black text, fully rounded"
+    },
+    "BT02": {
+      "name": "Frosted glass, thin border",
+      "value": "12% fill, 30% white border"
+    },
+    "BT03": {
+      "name": "Ghost outline",
+      "value": "no fill, 1.5px border"
+    },
+    "BT04": {
+      "name": "Brutal hard shadow",
+      "value": "2px black border, 4px offset shadow"
+    },
+    "BT05": {
+      "name": "Gradient",
+      "value": "violet to pink"
+    },
+    "BT06": {
+      "name": "Neumorphic",
+      "value": "same color as background, light and dark shadows"
+    },
+    "BT07": {
+      "name": "Black square, caps",
+      "value": "square, wide letter spacing"
+    },
+    "BT08": {
+      "name": "Solid medium round",
+      "value": "B01 fill, 12px radius"
+    },
+    "BT09": {
+      "name": "Underline link",
+      "value": "text + 1.5px underline"
+    },
+    "BT10": {
+      "name": "3D press",
+      "value": "5px solid shadow below"
+    },
+    "BT11": {
+      "name": "Neon outline",
+      "value": "glowing cyan border and text"
+    },
+    "BT12": {
+      "name": "With arrow icon",
+      "value": "dark pill + arrow"
+    },
+    "K01": {
+      "name": "Large card (panel)",
+      "value": "24px radius, 24px padding, N2→N1 + E01"
+    },
+    "K02": {
+      "name": "Color swatch",
+      "value": "44×44, 10px radius"
+    },
+    "K03": {
+      "name": "Rule box",
+      "value": "20px radius, 20px 28px padding, N1"
+    },
+    "K04": {
+      "name": "Input",
+      "value": "44px tall, 12px radius, N2"
+    },
+    "K05": {
+      "name": "Switch on",
+      "value": "44×26, fully rounded, B03"
+    },
+    "K06": {
+      "name": "B03 bright block",
+      "value": "24px radius, B03 fill, M0 text"
+    },
+    "K07": {
+      "name": "Dashed border"
+    },
+    "K08": {
+      "name": "Double border",
+      "value": "3px double gold"
+    },
+    "K09": {
+      "name": "Thick brutal border",
+      "value": "3px black + white fill"
+    },
+    "K10": {
+      "name": "Polaroid frame",
+      "value": "white, thick bottom"
+    },
+    "K11": {
+      "name": "Cut-corner frame",
+      "value": "12px cut corners"
+    },
+    "K12": {
+      "name": "Label / badge",
+      "value": "small pill"
+    },
+    "I01": {
+      "name": "Home",
+      "value": "24px, 1.5 stroke"
+    },
+    "I02": {
+      "name": "Search",
+      "value": "24px, 1.5 stroke"
+    },
+    "I03": {
+      "name": "Bell",
+      "value": "24px, 1.5 stroke"
+    },
+    "I04": {
+      "name": "Clock",
+      "value": "24px, 1.5 stroke"
+    },
+    "I05": {
+      "name": "Settings",
+      "value": "24px, 1.5 stroke"
+    },
+    "I06": {
+      "name": "Add",
+      "value": "24px, 1.5 stroke"
+    },
+    "E01": {
+      "name": "Thin border",
+      "value": "1px white 7%"
+    },
+    "E02": {
+      "name": "Gradient card surface"
+    },
+    "E03": {
+      "name": "Accent glow"
+    },
+    "E04": {
+      "name": "Floating card shadow",
+      "value": "soft drop shadow"
+    },
+    "E05": {
+      "name": "Frosted glass"
+    },
+    "E06": {
+      "name": "Top highlight"
+    },
+    "E07": {
+      "name": "Hard offset shadow (brutal)",
+      "value": "6px offset, no blur"
+    },
+    "E08": {
+      "name": "Neumorphic",
+      "value": "light + dark shadows"
+    },
+    "E09": {
+      "name": "Gradient text",
+      "value": "gradient inside letters"
+    },
+    "E10": {
+      "name": "Outline text",
+      "value": "1.5px stroke, hollow"
+    },
+    "E11": {
+      "name": "Neon glow text",
+      "value": "layered text-shadow"
+    },
+    "E12": {
+      "name": "Long shadow",
+      "value": "diagonal extruded shadow"
+    },
+    "E13": {
+      "name": "Chromatic aberration",
+      "value": "red / cyan channel split"
+    },
+    "E14": {
+      "name": "Grain",
+      "value": "45% noise overlay"
+    },
+    "E15": {
+      "name": "Halftone",
+      "value": "8px dot pattern"
+    },
+    "E16": {
+      "name": "Glowing gradient border",
+      "value": "gradient border + glow"
+    },
+    "E17": {
+      "name": "Deep soft shadow",
+      "value": "large drop shadow"
+    },
+    "E18": {
+      "name": "Glossy reflection",
+      "value": "diagonal light gradient"
+    },
+    "BG01": {
+      "name": "Solid dark"
+    },
+    "BG02": {
+      "name": "Linear gradient",
+      "value": "135°, blue to violet"
+    },
+    "BG03": {
+      "name": "Center glow",
+      "value": "round glow on dark"
+    },
+    "BG04": {
+      "name": "Mesh gradient",
+      "value": "3 blurred color fields"
+    },
+    "BG05": {
+      "name": "Dot grid",
+      "value": "1px dots, 14px apart"
+    },
+    "BG06": {
+      "name": "Line grid",
+      "value": "20px cells, 1px lines"
+    },
+    "BG07": {
+      "name": "Dark grain",
+      "value": "noise on charcoal"
+    },
+    "BG08": {
+      "name": "Diagonal stripes",
+      "value": "45° stripes, 10px"
+    },
+    "BG09": {
+      "name": "Checkerboard",
+      "value": "16px squares"
+    },
+    "BG10": {
+      "name": "Concentric rings",
+      "value": "round waves"
+    },
+    "BG11": {
+      "name": "Cream paper",
+      "value": "cream + light grain"
+    },
+    "BG12": {
+      "name": "Vertical sunset",
+      "value": "orange, pink, violet bottom to top"
+    },
+    "L01": {
+      "name": "3 cards in a row",
+      "value": "3 columns, 24px gap"
+    },
+    "L02": {
+      "name": "Token row: swatch · code · name · value"
+    },
+    "L03": {
+      "name": "Two columns: list + highlight",
+      "value": "1fr | 1fr, 48px gap"
+    },
+    "L04": {
+      "name": "Labeled section (T05 label above, content below)",
+      "value": "20px gap, 72px between sections"
+    },
+    "L05": {
+      "name": "Big centered type",
+      "value": "centered, large headline, CTA below"
+    },
+    "L06": {
+      "name": "50/50 split",
+      "value": "image on one half, text on the other"
+    },
+    "L07": {
+      "name": "Rule of thirds",
+      "value": "subject on a third line, text in the rest"
+    },
+    "L08": {
+      "name": "Full-bleed image + overlay text",
+      "value": "full-frame image, dark gradient at bottom, text on top"
+    },
+    "L09": {
+      "name": "Diagonal split",
+      "value": "dynamic diagonal, two zones"
+    },
+    "L10": {
+      "name": "Bento grid",
+      "value": "multiple info tiles"
+    },
+    "L11": {
+      "name": "Oversized cropped type",
+      "value": "headline bleeds off the edge as a graphic"
+    },
+    "L12": {
+      "name": "Framed poster",
+      "value": "inner border, centered content"
+    },
+    "L13": {
+      "name": "Asymmetric",
+      "value": "offset blocks, lots of empty space"
+    },
+    "L14": {
+      "name": "Hero product + badges",
+      "value": "product in the center, badges around it"
+    },
+    "A01": {
+      "name": "Instagram square",
+      "use": "IG/FB feed, marketplace product photos"
+    },
+    "A02": {
+      "name": "Instagram portrait",
+      "use": "IG feed, takes the most screen"
+    },
+    "A03": {
+      "use": "Keep 250px clear at top and bottom for the app UI"
+    },
+    "A04": {
+      "name": "Landscape 16:9",
+      "use": "Video, slides, LED screens"
+    },
+    "A05": {
+      "name": "YouTube thumbnail",
+      "use": "Big text, faces, high contrast"
+    },
+    "A06": {
+      "name": "Facebook cover",
+      "use": "Keep content centered; mobile crops the sides"
+    },
+    "A07": {
+      "name": "Web banner",
+      "use": "Website hero, text on the left"
+    },
+    "A08": {
+      "name": "A4 poster (print)",
+      "use": "3mm bleed, CMYK for print"
+    },
+    "A09": {
+      "name": "Outdoor billboard",
+      "use": "Max 7 words, readable in 3 seconds"
+    },
+    "A10": {
+      "use": "Link share image, LinkedIn posts"
+    },
+    "R01": {
+      "name": "Brightness rule",
+      "value": "use B03 sparingly",
+      "text": "At most one large B03 block per screen (the main card). Otherwise B03 only appears on switches that are on, progress bars, status dots and active icon tiles. Text on a B03 block uses ink M0 #0D1D2A."
+    },
+    "R02": {
+      "name": "One accent",
+      "value": "don't mix accents",
+      "text": "Each screen uses one main accent color. Other B colors are only for secondary states."
+    },
+    "R03": {
+      "name": "Background hierarchy",
+      "text": "The higher a layer sits, the lighter its background: N0 app background, N1 surface, N2 card, N3 icon tile inside a card."
+    },
+    "R04": {
+      "name": "3-level hierarchy",
+      "value": "headline > subhead > CTA",
+      "text": "Every KV has exactly 3 reading levels: the largest headline (read in 1 second), a subhead at least 2 type steps smaller, and a CTA that stands out in the accent color."
+    },
+    "R05": {
+      "name": "Safe area",
+      "value": "keep 5–8% margins",
+      "text": "Keep text and logo at least 5–8% of the short side away from the edges. Stories/Reels keep 250px clear top and bottom. Facebook covers keep key content in the central 820px."
+    },
+    "R06": {
+      "name": "Text contrast",
+      "value": "at least 4.5:1",
+      "text": "Body text needs at least 4.5:1 contrast with its background; large text over 24px at least 3:1. Text over photos needs a dark overlay or a solid block."
+    },
+    "R07": {
+      "name": "Max 2 fonts",
+      "value": "1 heading + 1 body",
+      "text": "Use at most 2 font families: one for headings, one for body. Create contrast with size and weight instead of adding fonts."
+    },
+    "R08": {
+      "name": "60-30-10 color ratio",
+      "value": "dominant · secondary · accent",
+      "text": "60% dominant color (background), 30% secondary (blocks, imagery), 10% accent (CTA, highlights). Use the accent only for the most important thing."
+    },
+    "R09": {
+      "name": "Logo & identity",
+      "value": "fixed corner, enough breathing room",
+      "text": "Place the logo in one fixed corner (usually top-left or bottom-right), about 8–12% of the width, with clear space around it equal to the cap height."
+    },
+    "R10": {
+      "name": "One main idea",
+      "value": "one message, one focal point",
+      "text": "Each KV carries one main message and has one first focal point. Secondary information goes in the caption or landing page."
+    },
+    "R11": {
+      "name": "Vietnamese text",
+      "value": "pick fonts with accents",
+      "text": "Only use fonts with full Vietnamese accent support for accented text. Check ư, ơ, ặ, ỗ, ữ before locking the font."
+    }
+  }
+}

@@ -2,120 +2,142 @@
 <title>Thư viện Hyan</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: faceted graphite backdrop (canvas) under frosted-glass panels; split glass hero, sticky glass shop bar, token cards in a grid, cart as a glass drawer. Single dark look. */
+/* Layout: glassy dashboard after the reference video. Floating icon rail on the left, one large smoked-glass board with the catalog (scrolls) and a "Selected" column on the right. Warm ambient glow behind. Single dark look. */
 :root {
   color-scheme: dark;
-  --bg: #08080A;
-  --glass: rgba(255,255,255,0.065);
-  --glass-2: rgba(255,255,255,0.10);
-  --glass-hi: rgba(255,255,255,0.16);
-  --edge: rgba(255,255,255,0.14);
-  --edge-2: rgba(255,255,255,0.26);
+  --bg: #0A0605;
+  --panel: rgba(28, 20, 17, 0.58);
+  --panel-2: rgba(255, 255, 255, 0.045);
+  --card: rgba(255, 255, 255, 0.05);
+  --card-hi: rgba(255, 255, 255, 0.085);
+  --edge: rgba(255, 255, 255, 0.09);
+  --edge-2: rgba(255, 255, 255, 0.18);
   --fg: #FFFFFF;
-  --fg-2: rgba(255,255,255,0.78);
-  --muted: rgba(255,255,255,0.58);
-  --faint: rgba(255,255,255,0.40);
+  --fg-2: rgba(255, 255, 255, 0.82);
+  --muted: rgba(255, 255, 255, 0.58);
+  --faint: rgba(255, 255, 255, 0.38);
+  --acc: #FF6A1A;
+  --acc-2: #FF8F4A;
+  --acc-soft: rgba(255, 106, 26, 0.16);
+  --pos: #3DDC97;
+  --pos-soft: rgba(61, 220, 151, 0.14);
   --tile: #050608;
-  --sheet: #0C0C0E; --sheet-card: #16171A;
-  --display: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  --sheet: #0C0907; --sheet-card: #18120F;
   --sans: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
-  --blur: blur(22px) saturate(140%);
+  --blur: blur(28px) saturate(150%);
+  --rail-w: 64px;
+  --aside-w: 360px;
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html, body { background: var(--bg); }
-body { color: var(--fg); font-family: var(--sans); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; min-height: 100vh; }
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+html, body { height: 100%; background: var(--bg); }
+body { color: var(--fg); font-family: var(--sans); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow: hidden; }
 button, input { font: inherit; color: inherit; }
 button { cursor: pointer; }
-:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; }
 
-#shards { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -2; display: block; }
-.vignette { position: fixed; inset: 0; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 50% 30%, transparent 0%, rgba(4,4,6,.55) 60%, rgba(4,4,6,.92) 100%); }
+/* Warm ambient room behind the glass */
+.ambient { position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 78%, rgba(255, 106, 26, .55), transparent 70%),
+    radial-gradient(ellipse 30% 40% at 12% 30%, rgba(120, 70, 40, .35), transparent 70%),
+    radial-gradient(ellipse 25% 35% at 90% 25%, rgba(160, 90, 50, .28), transparent 70%),
+    radial-gradient(ellipse 18% 60% at 4% 80%, rgba(40, 60, 30, .35), transparent 70%),
+    linear-gradient(180deg, #120B08 0%, #0A0605 55%, #1A0D06 100%); }
+.ambient::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, transparent 40%, rgba(0,0,0,.55) 100%); }
 
-.glass { background: linear-gradient(135deg, var(--glass-2), var(--glass) 55%, rgba(255,255,255,0.03)); border: 1px solid var(--edge); backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur); box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 24px 60px rgba(0,0,0,.45); }
+.glass { background: var(--panel); border: 1px solid var(--edge); backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur); box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 30px 80px rgba(0,0,0,.5); }
 
-.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+/* App shell */
+.app { height: 100%; display: grid; grid-template-columns: var(--rail-w) minmax(0, 1fr); gap: 18px; align-items: center;
+  padding-block: 20px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 
-/* Hero: split glass panel like the reference login card */
-.hero { margin-top: 36px; border-radius: 22px; display: grid; grid-template-columns: 1.1fr 1fr; overflow: hidden; position: relative; }
-.hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 47%, rgba(255,255,255,.07) 52%, rgba(255,255,255,.02) 60%, transparent 66%); }
-.hero > div { padding: 40px 44px; min-width: 0; }
-.hero .right { border-left: 1px solid var(--edge); background: rgba(255,255,255,.025); display: flex; flex-direction: column; justify-content: center; gap: 16px; }
-.kicker { font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--faint); }
-h1 { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 5vw, 48px); line-height: 1.02; letter-spacing: -.01em; text-transform: uppercase; margin: 12px 0 14px; text-wrap: balance; }
-.lede { color: var(--muted); margin: 0; max-width: 46ch; }
-.meta { margin-top: 18px; font-family: var(--mono); font-size: 12px; color: var(--faint); }
-.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
-.steps li { display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; }
-.steps b { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--edge-2); display: grid; place-items: center; font-size: 13px; font-weight: 600; background: rgba(255,255,255,.05); }
-.steps strong { display: block; font-weight: 600; font-size: 14.5px; }
-.steps span { color: var(--muted); font-size: 13px; }
+/* Icon rail */
+.rail { position: relative; z-index: 20; justify-self: center; width: var(--rail-w); border-radius: 999px; padding: 12px 0; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.rail .sep { width: 24px; height: 1px; background: var(--edge-2); margin: 4px 0; }
+.ri { position: relative; width: 42px; height: 42px; border-radius: 50%; border: 0; background: transparent; color: var(--muted); display: grid; place-items: center; transition: background .2s, color .2s, box-shadow .2s, transform .2s; }
+.ri svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.ri:hover { color: var(--fg); background: var(--card-hi); }
+.ri[aria-current="true"] { background: var(--acc); color: #fff; box-shadow: 0 0 0 4px rgba(255,106,26,.18), 0 6px 22px rgba(255,106,26,.55); }
+.ri .tip { position: absolute; left: calc(100% + 14px); top: 50%; transform: translateY(-50%) translateX(-4px); white-space: nowrap; background: rgba(20,14,12,.92); border: 1px solid var(--edge-2); padding: 6px 10px; border-radius: 10px; font-size: 12.5px; color: var(--fg); opacity: 0; pointer-events: none; transition: opacity .15s, transform .15s; z-index: 30; }
+.ri:hover .tip, .ri:focus-visible .tip { opacity: 1; transform: translateY(-50%) translateX(0); }
+.ri .dot { position: absolute; top: 4px; right: 4px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 999px; background: var(--acc); color: #fff; font-size: 10px; font-weight: 700; display: grid; place-items: center; }
+.ri[aria-current="true"] .dot { background: #fff; color: var(--acc); }
+.ri.sel-btn { display: none; }
 
-/* Shop bar */
-.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; margin-top: 22px; }
-.bar-in { border-radius: 18px; display: flex; gap: 12px; align-items: center; padding: 10px 12px; flex-wrap: wrap; }
-.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; flex: 1 1 420px; min-width: 0; }
-.chips::-webkit-scrollbar { display: none; }
-.chip { flex: none; border: 1px solid var(--edge); background: rgba(255,255,255,.04); color: var(--muted); border-radius: 999px; padding: 7px 14px; font-size: 13px; white-space: nowrap; transition: background .15s, color .15s; }
-.chip:hover { color: var(--fg); background: var(--glass-2); }
-.chip[aria-pressed="true"] { background: #fff; color: #0A0A0B; border-color: #fff; font-weight: 600; }
-.chip small { font-family: var(--mono); font-size: 10.5px; opacity: .6; margin-left: 5px; }
-.search { flex: 0 1 230px; min-width: 150px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--edge-2); padding: 6px 2px; }
+/* Board */
+.board { height: 100%; min-height: 0; border-radius: 28px; display: grid; grid-template-columns: minmax(0, 1fr) var(--aside-w); overflow: hidden; }
+.main { min-width: 0; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.15) transparent; }
+.top { position: sticky; top: 0; z-index: 10; padding: 22px 26px 14px; background: linear-gradient(180deg, rgba(22,15,12,.92) 70%, rgba(22,15,12,0)); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.top-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.title { display: flex; align-items: center; gap: 10px; min-width: 0; margin-right: auto; }
+.title h1 { font-size: clamp(20px, 2.4vw, 26px); font-weight: 700; margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+.title .orb { width: 18px; height: 18px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fff, #b9b9c0 40%, #55555c); box-shadow: 0 0 10px rgba(255,255,255,.25); flex: none; }
+.stats { display: flex; align-items: center; gap: 18px; padding: 8px 16px; border-radius: 14px; background: var(--panel-2); border: 1px solid var(--edge); }
+.stats div { display: flex; flex-direction: column; line-height: 1.2; }
+.stats small { font-size: 10.5px; color: var(--faint); }
+.stats b { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stats b.pos { color: var(--pos); }
+.lang { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--edge); }
+.lang button { border: 0; background: transparent; padding: 5px 11px; border-radius: 999px; font-size: 12px; font-weight: 700; color: var(--muted); letter-spacing: .04em; }
+.lang button[aria-pressed="true"] { background: var(--acc); color: #fff; }
+.tools { display: flex; gap: 10px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
+.search { flex: 0 1 260px; min-width: 160px; display: flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border-radius: 12px; background: var(--panel-2); border: 1px solid var(--edge); }
 .search svg { width: 16px; height: 16px; stroke: var(--muted); fill: none; stroke-width: 1.6; flex: none; }
-.search input { background: transparent; border: 0; outline: 0; width: 100%; min-width: 0; font-size: 13.5px; }
+.search input { background: transparent; border: 0; outline: 0; width: 100%; min-width: 0; font-size: 13px; }
 .search input::placeholder { color: var(--faint); }
-.search:focus-within { border-color: #fff; }
-.pill { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 40px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--edge-2); background: rgba(255,255,255,.08); font-weight: 600; font-size: 13.5px; transition: background .15s, transform .15s; }
-.pill:hover { background: var(--glass-hi); }
-.pill:active { transform: translateY(1px); }
-.pill svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-.pill.solid { background: #fff; color: #0A0A0B; border-color: #fff; }
-.pill.solid:hover { background: #E9E9EC; }
-.pill:disabled { opacity: .4; cursor: default; }
-.count { min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: rgba(255,255,255,.12); font-size: 12px; display: inline-grid; place-items: center; font-variant-numeric: tabular-nums; }
-.has .count { background: #fff; color: #0A0A0B; }
+.search:focus-within { border-color: rgba(255,106,26,.6); }
+.tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; flex: 1 1 300px; min-width: 0; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex: none; border: 1px solid var(--edge); background: transparent; color: var(--muted); border-radius: 999px; padding: 6px 13px; font-size: 12.5px; white-space: nowrap; }
+.tab:hover { color: var(--fg); background: var(--card); }
+.tab small { font-family: var(--mono); font-size: 10.5px; opacity: .65; margin-left: 5px; }
 
-/* Sections */
-main { padding-block: 10px 120px; }
-.section { margin-top: 44px; }
-.section-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
-.section-head h2 { font-family: var(--display); font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: .01em; margin: 0; }
-.section-head .codes { font-family: var(--mono); font-size: 12px; color: var(--muted); border: 1px solid var(--edge); border-radius: 999px; padding: 1px 9px; }
-.section-head .note { color: var(--faint); font-size: 12.5px; flex-basis: 100%; }
-.group-label { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--faint); margin: 24px 0 10px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.content { padding: 4px 26px 40px; }
+.folder { margin-top: 26px; }
+.folder-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+.folder-head h2 { font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--acc-2); margin: 0; }
+.folder-head p { margin: 0; color: var(--faint); font-size: 12.5px; }
+.section { margin-top: 20px; scroll-margin-top: 140px; }
+.section-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.section-head h3 { font-size: 17px; font-weight: 600; margin: 0; }
+.section-head .codes { font-family: var(--mono); font-size: 11px; color: var(--muted); border: 1px solid var(--edge); border-radius: 999px; padding: 1px 8px; }
+.section-head .note { color: var(--faint); font-size: 12px; flex-basis: 100%; }
+.group-label { font-size: 10.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin: 16px 0 8px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
 
 /* Token card */
-.item { position: relative; display: flex; flex-direction: column; border-radius: 18px; padding: 8px; transition: border-color .15s, transform .2s, box-shadow .2s; min-width: 0; }
-.item:hover { transform: translateY(-3px); border-color: var(--edge-2); }
-.item.picked { border-color: rgba(255,255,255,.75); box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 0 0 1px rgba(255,255,255,.35), 0 18px 50px rgba(0,0,0,.5); }
-.pv { height: 128px; display: grid; place-items: center; padding: 14px; background: var(--tile); border-radius: 12px; border: 1px solid rgba(255,255,255,.06); overflow: hidden; position: relative; cursor: pointer; }
-.info { padding: 12px 8px 6px; display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
-.row1 { display: flex; align-items: baseline; gap: 8px; min-width: 0; flex-wrap: wrap; }
-.code { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--fg); background: rgba(255,255,255,.08); border-radius: 6px; padding: 1px 6px; flex: none; }
+.item { position: relative; display: flex; flex-direction: column; border-radius: 18px; padding: 7px; background: var(--card); border: 1px solid var(--edge); transition: transform .25s cubic-bezier(.2,.8,.2,1), border-color .2s, background .2s, box-shadow .25s; min-width: 0; animation: rise .45s cubic-bezier(.2,.8,.2,1) both; animation-delay: calc(var(--i, 0) * 25ms); }
+.item:hover { transform: translateY(-5px); background: var(--card-hi); border-color: var(--edge-2); box-shadow: 0 16px 34px rgba(0,0,0,.35); }
+.item.picked { border-color: rgba(255,106,26,.75); box-shadow: 0 0 0 1px rgba(255,106,26,.35), 0 14px 34px rgba(255,106,26,.16); }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.pv { height: 124px; display: grid; place-items: center; padding: 14px; background: var(--tile); border-radius: 12px; border: 1px solid rgba(255,255,255,.05); overflow: hidden; position: relative; cursor: pointer; }
+.info { padding: 10px 7px 4px; display: flex; flex-direction: column; gap: 3px; flex: 1; min-width: 0; }
+.row1 { display: flex; align-items: baseline; gap: 7px; min-width: 0; flex-wrap: wrap; }
+.code { font-family: var(--mono); font-size: 11.5px; font-weight: 500; color: var(--fg); background: rgba(255,255,255,.08); border-radius: 6px; padding: 1px 6px; flex: none; }
 .theme-tag { font-size: 10.5px; color: var(--muted); border: 1px solid var(--edge); border-radius: 6px; padding: 0 5px; flex: none; }
-.name { font-size: 13.5px; color: var(--fg-2); min-width: 0; overflow-wrap: anywhere; }
-.val { font-family: var(--mono); font-size: 11.5px; color: var(--muted); overflow-wrap: anywhere; }
-.add { margin-top: 10px; align-self: flex-start; height: 32px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--edge-2); background: rgba(255,255,255,.05); font-size: 12.5px; color: var(--fg-2); }
-.add:hover { background: var(--glass-hi); color: var(--fg); }
-.picked .add { background: #fff; border-color: #fff; color: #0A0A0B; font-weight: 600; }
-.check { position: absolute; top: 14px; right: 14px; width: 24px; height: 24px; border-radius: 50%; background: #fff; color: #0A0A0B; display: none; place-items: center; font-size: 13px; font-weight: 700; z-index: 2; }
-.picked .check { display: grid; }
+.name { font-size: 13px; color: var(--fg-2); min-width: 0; overflow-wrap: anywhere; }
+.val { font-family: var(--mono); font-size: 11px; color: var(--muted); overflow-wrap: anywhere; }
+.add { margin-top: 8px; align-self: flex-start; height: 28px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--edge-2); background: transparent; font-size: 12px; color: var(--fg-2); transition: background .2s, color .2s; }
+.add:hover { background: var(--card-hi); color: var(--fg); }
+.picked .add { background: var(--acc-soft); border-color: rgba(255,106,26,.6); color: var(--acc-2); font-weight: 600; }
+.check { position: absolute; top: 13px; right: 13px; height: 22px; padding: 0 8px; border-radius: 999px; background: var(--acc); color: #fff; display: none; align-items: center; font-size: 11px; font-weight: 700; z-index: 2; box-shadow: 0 4px 14px rgba(255,106,26,.5); }
+.picked .check { display: inline-flex; }
 
-/* Preview kinds (solid, so exports render exactly) */
-.sw { width: 100%; height: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,.07); display: flex; align-items: flex-end; justify-content: space-between; padding: 10px 12px; font-family: var(--mono); font-size: 11px; }
+/* Preview kinds (solid colors, so exports render exactly) */
+.pv.tall { height: 150px; padding: 0; }
+.sw { width: 100%; height: 100%; border-radius: 10px; border: 1px solid rgba(255,255,255,.07); display: flex; align-items: flex-end; justify-content: space-between; padding: 10px 12px; font-family: var(--mono); font-size: 11px; }
 .pv-text { background: #14171C; }
 .pv-text p { margin: 0; font-size: 16px; text-align: center; font-family: "Segoe UI", "Be Vietnam Pro", system-ui, sans-serif; }
 .pv-type > div { font-family: "Segoe UI", "Be Vietnam Pro", system-ui, sans-serif; max-width: 100%; text-align: center; overflow-wrap: anywhere; color: #fff; }
 .pv-effect { background: radial-gradient(circle at 28% 35%, rgba(74,163,234,.35), transparent 42%), radial-gradient(circle at 75% 70%, rgba(240,178,122,.35), transparent 44%), #050608; }
-.fx { width: 132px; height: 76px; border-radius: 16px; background: #14171C; display: grid; place-items: center; color: rgba(255,255,255,.6); font-size: 11px; font-family: var(--mono); }
+.fx { width: 128px; height: 74px; border-radius: 16px; background: #14171C; display: grid; place-items: center; color: rgba(255,255,255,.6); font-size: 11px; font-family: var(--mono); }
 .fx.glow { background: #4AA3EA; color: #fff; }
 .pv-frame .fr { font-size: 12px; color: rgba(255,255,255,.6); display: flex; align-items: center; max-width: 100%; }
-.pv-frame .fr.box { width: 170px; }
+.pv-frame .fr.box { width: 160px; }
 .pv-icon svg { width: 44px; height: 44px; stroke: #fff; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .lay { width: 100%; }
 .lay > i { display: block; min-height: 26px; border-radius: 6px; background: #1E2229; border: 1px solid rgba(255,255,255,.07); }
@@ -127,13 +149,6 @@ main { padding-block: 10px 120px; }
 .pv-rule { background: #0B0D10; place-items: start; }
 .pv-rule p { margin: 0; font-size: 12px; color: rgba(255,255,255,.62); line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
 .pv-rule b { color: #fff; font-weight: 600; }
-
-.folder { margin-top: 56px; }
-.folder-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 22px 26px; border-radius: 20px; }
-.folder-head h2 { font-family: var(--display); font-weight: 800; font-size: clamp(24px, 3.4vw, 34px); text-transform: uppercase; margin: 4px 0 0; line-height: 1; }
-.folder-head p { margin: 0; color: var(--muted); max-width: 52ch; }
-.section h3 { font-family: var(--display); font-weight: 700; font-size: 19px; margin: 0; }
-.pv.tall { height: 156px; padding: 0; }
 .pv-pal { padding: 0; display: flex; align-items: stretch; }
 .pv-pal > i { flex: 1; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-style: normal; font-family: var(--mono); font-size: 9px; }
 .pv-font { flex-direction: column; gap: 4px; text-align: center; background: #0B0D10; }
@@ -144,127 +159,160 @@ main { padding-block: 10px 120px; }
 .pv-pair .bd { font-size: 11.5px; line-height: 1.45; color: #52525B; margin-top: 6px; }
 .pv-ts { place-items: end start; padding: 12px 14px; background: #0B0D10; }
 .pv-ts .row { display: flex; align-items: baseline; gap: 8px; color: #fff; font-family: "Be Vietnam Pro", sans-serif; font-weight: 600; line-height: 1; }
-.pv-ts .row span { display: inline-block; }
 .pv-rad > div { width: 96px; height: 70px; background: #E9E9EC; }
-.pv-btn span.b { display: inline-block; font-family: "Be Vietnam Pro", sans-serif; font-size: 13px; border: 0; cursor: default; white-space: nowrap; }
+.pv-btn span.b { display: inline-block; font-family: "Be Vietnam Pro", sans-serif; font-size: 13px; border: 0; white-space: nowrap; }
 .pv-fmt { background: #0B0D10; }
 .pv-fmt .f { border: 1.5px solid rgba(255,255,255,.7); background: rgba(255,255,255,.06); display: grid; place-items: center; font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,.8); border-radius: 3px; }
 .pv-fx-text > div { font-family: "Be Vietnam Pro", sans-serif; font-weight: 800; font-size: 46px; line-height: 1; letter-spacing: -.01em; }
+
 .state { padding: 60px 0; text-align: center; color: var(--muted); }
 
-/* Cart drawer */
-.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.45); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 40; }
-.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(500px, 100%); z-index: 50; border-radius: 22px 0 0 22px; border-right: 0; display: flex; flex-direction: column; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); padding-right: env(safe-area-inset-right, 0px); background: linear-gradient(160deg, rgba(40,40,44,.72), rgba(14,14,16,.82)); }
-.dh { display: flex; align-items: center; justify-content: space-between; padding: 22px 22px 16px; }
-.dh h3 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 22px; text-transform: uppercase; }
-.dh p { margin: 2px 0 0; color: var(--muted); font-size: 12.5px; }
-.x { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--edge); background: rgba(255,255,255,.05); }
-.db { flex: 1; overflow-y: auto; padding: 4px 22px 14px; display: flex; flex-direction: column; gap: 14px; }
+/* Selected column (right) */
+.aside { min-height: 0; display: flex; flex-direction: column; border-left: 1px solid var(--edge); background: rgba(255,255,255,.025); }
+.ah { display: flex; align-items: center; justify-content: space-between; padding: 22px 22px 6px; }
+.ah h2 { margin: 0; font-size: 17px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+.badge { min-width: 24px; height: 24px; padding: 0 7px; border-radius: 999px; background: var(--acc); color: #fff; font-size: 12px; font-weight: 700; display: inline-grid; place-items: center; font-variant-numeric: tabular-nums; }
+.badge.zero { background: rgba(255,255,255,.1); color: var(--muted); }
+.ah .x { display: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--edge); background: var(--card); }
+.asub { padding: 0 22px; color: var(--faint); font-size: 12px; margin: 0; }
+.sumrow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 16px 22px 6px; }
+.sum { cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 5px; font-size: 10.5px; color: var(--muted); text-align: center; min-width: 0; }
+.sum .c { width: 44px; height: 44px; border-radius: 14px; border: 1px solid var(--edge); background: var(--card); display: grid; place-items: center; position: relative; }
+.sum .c svg { width: 18px; height: 18px; stroke: var(--fg-2); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.sum .c b { position: absolute; top: -6px; right: -6px; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 999px; background: var(--acc); color: #fff; font-size: 10px; display: grid; place-items: center; }
+.sum > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.ab { flex: 1; min-height: 0; overflow-y: auto; padding: 14px 22px 12px; display: flex; flex-direction: column; gap: 12px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.15) transparent; }
+.lines-label { font-size: 12.5px; font-weight: 600; color: var(--fg-2); display: flex; justify-content: space-between; }
 .lines { display: flex; flex-direction: column; gap: 6px; }
-.line { display: grid; grid-template-columns: 32px auto 1fr auto; gap: 10px; align-items: center; padding: 7px 8px 7px 7px; border-radius: 14px; background: rgba(255,255,255,.05); border: 1px solid var(--edge); }
-.mini { width: 32px; height: 32px; border-radius: 9px; border: 1px solid rgba(255,255,255,.08); display: grid; place-items: center; overflow: hidden; background: var(--tile); font-size: 10px; color: var(--muted); font-family: var(--mono); }
-.mini svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-.line .nm { font-size: 13px; color: var(--fg-2); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.line .rm { width: 28px; height: 28px; border-radius: 50%; border: none; background: transparent; color: var(--faint); font-size: 14px; }
+.line { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 7px 8px 7px 7px; border-radius: 14px; background: var(--card); border: 1px solid var(--edge); animation: rise .3s ease both; }
+.line .t { min-width: 0; display: flex; flex-direction: column; line-height: 1.25; }
+.line .nm { font-size: 12.5px; color: var(--fg-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.line .ct { font-size: 10.5px; color: var(--faint); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.line .r { display: flex; align-items: center; gap: 4px; }
+.line .tag { font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; border-radius: 6px; background: var(--pos-soft); color: var(--pos); }
+.line .rm { width: 26px; height: 26px; border-radius: 50%; border: none; background: transparent; color: var(--faint); font-size: 13px; }
 .line .rm:hover { background: rgba(255,255,255,.1); color: var(--fg); }
-.empty { color: var(--muted); text-align: center; padding: 30px 10px; border: 1px dashed var(--edge-2); border-radius: 16px; }
+.mini { width: 34px; height: 34px; border-radius: 10px; border: 1px solid rgba(255,255,255,.08); display: grid; place-items: center; overflow: hidden; background: var(--tile); font-size: 10px; color: var(--muted); font-family: var(--mono); }
+.mini svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.empty { color: var(--muted); text-align: center; padding: 26px 12px; border: 1px dashed var(--edge-2); border-radius: 16px; font-size: 13px; }
 .opts { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; justify-content: space-between; }
-.seg { display: inline-flex; background: rgba(255,255,255,.05); border: 1px solid var(--edge); border-radius: 999px; padding: 3px; }
-.seg button { border: 0; background: transparent; padding: 5px 13px; border-radius: 999px; font-size: 12.5px; color: var(--muted); }
-.seg button[aria-pressed="true"] { background: #fff; color: #0A0A0B; font-weight: 600; }
-.opts label { font-size: 12.5px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
-.spec { margin: 0; font-family: var(--mono); font-size: 11.5px; line-height: 1.6; color: var(--fg-2); background: rgba(0,0,0,.4); border: 1px solid var(--edge); border-radius: 14px; padding: 14px; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 36vh; overflow-y: auto; }
-.df { padding: 14px 22px 20px; border-top: 1px solid var(--edge); display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.df .wide { grid-column: 1 / -1; height: 46px; }
-.df .clear { grid-column: 1 / -1; background: transparent; border: 0; color: var(--faint); font-size: 12.5px; height: auto; padding: 4px; font-weight: 500; }
-.df .clear:hover { color: var(--fg); background: transparent; }
-.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: #fff; color: #0A0A0B; padding: 10px 18px; border-radius: 999px; font-size: 13px; font-weight: 500; z-index: 60; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+.seg { display: inline-flex; background: var(--panel-2); border: 1px solid var(--edge); border-radius: 999px; padding: 3px; }
+.seg button { border: 0; background: transparent; padding: 4px 11px; border-radius: 999px; font-size: 12px; color: var(--muted); }
+.seg button[aria-pressed="true"] { background: rgba(255,255,255,.12); color: var(--fg); font-weight: 600; }
+.opts label { font-size: 12px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+details.specbox summary { cursor: pointer; font-size: 12.5px; color: var(--muted); list-style: none; }
+details.specbox summary::-webkit-details-marker { display: none; }
+details.specbox summary::before { content: "▸ "; }
+details.specbox[open] summary::before { content: "▾ "; }
+.spec { margin: 8px 0 0; font-family: var(--mono); font-size: 11px; line-height: 1.6; color: var(--fg-2); background: rgba(0,0,0,.35); border: 1px solid var(--edge); border-radius: 12px; padding: 12px; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 30vh; overflow-y: auto; }
+.af { padding: 14px 22px 20px; border-top: 1px solid var(--edge); display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.cta { grid-column: 1 / -1; height: 46px; border-radius: 14px; border: 0; background: linear-gradient(180deg, var(--acc-2), var(--acc)); color: #fff; font-weight: 700; font-size: 14px; box-shadow: 0 10px 26px rgba(255,106,26,.4), inset 0 1px 0 rgba(255,255,255,.3); transition: transform .15s, box-shadow .2s; }
+.cta:hover { transform: translateY(-1px); box-shadow: 0 14px 32px rgba(255,106,26,.5), inset 0 1px 0 rgba(255,255,255,.3); }
+.sec { height: 40px; border-radius: 12px; border: 1px solid var(--edge-2); background: var(--card); font-weight: 600; font-size: 13px; display: inline-flex; align-items: center; justify-content: center; gap: 7px; }
+.sec:hover { background: var(--card-hi); }
+.sec svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.clear { grid-column: 1 / -1; background: transparent; border: 0; color: var(--faint); font-size: 12px; padding: 2px; }
+.clear:hover { color: var(--fg); }
+.cta:disabled, .sec:disabled, .clear:disabled { opacity: .4; cursor: default; transform: none; box-shadow: none; }
 
-/* Export sheet: rendered off-screen to PNG/PDF; solid colors only */
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 40; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: #fff; color: #120B08; padding: 10px 18px; border-radius: 999px; font-size: 13px; font-weight: 500; z-index: 60; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+
+/* Export sheet: off-screen, solid colors only */
 #sheet { position: fixed; left: -10000px; top: 0; width: 1200px; background: var(--sheet); color: #fff; font-family: var(--sans); padding: 56px; }
 #sheet .sh-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,.12); margin-bottom: 28px; }
-#sheet h2 { font-family: var(--display); font-weight: 800; font-size: 40px; text-transform: uppercase; margin: 6px 0 0; line-height: 1.05; }
+#sheet .kicker { font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #FF8F4A; }
+#sheet h2 { font-weight: 800; font-size: 40px; text-transform: uppercase; margin: 6px 0 0; line-height: 1.05; }
 #sheet .sh-meta { text-align: right; font-family: var(--mono); font-size: 13px; color: rgba(255,255,255,.6); line-height: 1.7; }
 #sheet .sh-style { color: rgba(255,255,255,.7); font-size: 14px; margin: 10px 0 0; max-width: 70ch; }
-#sheet .sh-cat { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.5); margin: 26px 0 12px; }
 #sheet .sh-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 #sheet .sh-tag { font-size: 10.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.45); padding: 4px 8px 8px; }
-#sheet .pv.tall { height: 156px; }
 #sheet .sh-card { background: var(--sheet-card); border: 1px solid rgba(255,255,255,.1); border-radius: 16px; padding: 8px; }
-#sheet .sh-card .pv { cursor: default; }
+#sheet .item, #sheet .line { animation: none; }
+#sheet .pv { cursor: default; }
 #sheet .sh-info { padding: 12px 8px 8px; display: flex; flex-direction: column; gap: 5px; }
 #sheet .sh-css { font-family: var(--mono); font-size: 11px; color: rgba(255,255,255,.55); overflow-wrap: anywhere; line-height: 1.5; }
 #sheet .sh-foot { margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.12); font-family: var(--mono); font-size: 12px; color: rgba(255,255,255,.5); display: flex; justify-content: space-between; gap: 20px; }
 
-@media (max-width: 760px) {
-  .hero { grid-template-columns: 1fr; }
-  .hero > div { padding: 28px 24px; }
-  .hero .right { border-left: 0; border-top: 1px solid var(--edge); }
+/* Narrower screens: rail moves to the bottom, Selected becomes a sheet */
+@media (max-width: 1100px) { :root { --aside-w: 310px; } }
+@media (max-width: 920px) {
+  body { overflow: hidden; }
+  .app { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) auto; gap: 10px; padding-block: 10px calc(10px + env(safe-area-inset-bottom, 0px)); align-items: stretch; }
+  .rail { order: 2; width: 100%; flex-direction: row; justify-content: space-between; padding: 6px 8px; overflow-x: auto; scrollbar-width: none; }
+  .rail .sep { display: none; }
+  .ri { flex: none; }
+  .ri .tip { display: none; }
+  .ri.sel-btn { display: grid; }
+  .board { grid-template-columns: minmax(0, 1fr); border-radius: 22px; backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(24,16,13,.9); }
+  .aside { position: fixed; left: 0; right: 0; bottom: 0; height: 82%; z-index: 50; border-left: 0; border-radius: 24px 24px 0 0; background: rgba(24,16,13,.96); border-top: 1px solid var(--edge-2); transform: translateY(105%); transition: transform .3s cubic-bezier(.2,.8,.2,1); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+  .aside.open { transform: none; }
+  .ah .x { display: grid; place-items: center; }
+  .top { padding: 16px 16px 10px; }
+  .content { padding: 4px 16px 30px; }
+  .stats { display: none; }
+  .sumrow { display: none; }
 }
 @media (max-width: 560px) {
-  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .pv { height: 108px; }
-  .search { flex: 1 1 100%; order: 3; }
-  .drawer { border-radius: 0; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .pv { height: 104px; }
+  .pv.tall { height: 128px; }
+  .search { flex: 1 1 100%; }
 }
-@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 </style>
 
-<canvas id="shards" aria-hidden="true"></canvas>
-<div class="vignette" aria-hidden="true"></div>
+<div class="ambient" aria-hidden="true"></div>
 
-<div class="wrap">
-  <header class="hero glass">
-    <div>
-      <div class="kicker">Design shop · danh mục key visual</div>
-      <h1>Thư viện<br>Hyan</h1>
-      <p class="lede">Mọi thứ cần chốt cho một key visual: cảm xúc, phong cách, màu, chữ, nút, hiệu ứng, nền, bố cục và khổ ảnh. Mỗi món có mã và giá trị chính xác. Chọn như đi mua sắm, rồi gửi combo cho AI hoặc team.</p>
-      <div class="meta" id="meta">Đang tải…</div>
-    </div>
-    <div class="right">
-      <ol class="steps">
-        <li><b>1</b><div><strong>Chọn token</strong><span>Đi lần lượt từng thư mục, bấm “+ Chọn” món hợp ý.</span></div></li>
-        <li><b>2</b><div><strong>Mở giỏ</strong><span>Xem lại combo, bỏ bớt món không cần.</span></div></li>
-        <li><b>3</b><div><strong>Gửi đi</strong><span>Copy spec cho AI, hoặc tải PDF và ảnh PNG cho team.</span></div></li>
-      </ol>
-    </div>
-  </header>
+<div class="app">
+  <nav class="rail glass" id="rail" aria-label="Menu"></nav>
 
-  <div class="bar">
-    <div class="bar-in glass">
-      <div class="chips" id="chips" role="toolbar" aria-label="Lọc theo nhóm"></div>
-      <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="q" type="search" placeholder="Tìm: glass, P09, Playfair, story" aria-label="Tìm token"></label>
-      <button class="pill" id="cartBtn" aria-label="Mở giỏ">
-        <svg viewBox="0 0 24 24"><path d="M4 5h2l2.2 10.2a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.8L20 8H7"/><circle cx="10" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
-        Giỏ <span class="count" id="count">0</span>
-      </button>
+  <div class="board glass">
+    <div class="main" id="mainScroll">
+      <header class="top">
+        <div class="top-row">
+          <div class="title"><span class="orb" aria-hidden="true"></span><h1 id="title">Thư viện Hyan</h1></div>
+          <div class="stats" id="stats"></div>
+          <div class="lang" role="group" aria-label="Language">
+            <button id="langVi" aria-pressed="true">VIE</button>
+            <button id="langEn" aria-pressed="false">EN</button>
+          </div>
+        </div>
+        <div class="tools">
+          <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="q" type="search" aria-label="Search"></label>
+          <div class="tabs" id="tabs"></div>
+        </div>
+      </header>
+      <div class="content" id="main"><div class="state">Đang tải thư viện…</div></div>
     </div>
+
+    <aside class="aside" id="aside" aria-label="Selected">
+      <div class="ah"><h2><span id="selTitle">Đang chọn</span> <span class="badge zero" id="count">0</span></h2><button class="x" id="closeSel" aria-label="Close">✕</button></div>
+      <p class="asub" id="selSub"></p>
+      <div class="sumrow" id="sumrow"></div>
+      <div class="ab">
+        <div class="lines-label"><span id="linesLabel">Danh sách</span></div>
+        <div class="lines" id="lines"></div>
+        <div class="opts">
+          <div class="seg" role="group" aria-label="Format">
+            <button id="fmtText" aria-pressed="true">Text</button>
+            <button id="fmtJson" aria-pressed="false">JSON</button>
+          </div>
+          <label><input type="checkbox" id="withLink" checked> <span id="withLinkLabel">Kèm link</span></label>
+        </div>
+        <details class="specbox"><summary id="specSummary">Xem spec</summary><pre class="spec" id="spec"></pre></details>
+      </div>
+      <div class="af">
+        <button class="cta" id="copy">Copy</button>
+        <button class="sec" id="dlPdf"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span>PDF</span></button>
+        <button class="sec" id="dlPng"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="m4 18 5.5-5 4 3.5 2.5-2 4 3.5"/></svg><span>PNG</span></button>
+        <button class="clear" id="clear">Clear</button>
+      </div>
+    </aside>
   </div>
-
-  <main id="main"><div class="state">Đang tải thư viện…</div></main>
 </div>
 
 <div class="scrim" id="scrim" hidden></div>
-<aside class="drawer glass" id="drawer" hidden aria-label="Giỏ thiết kế">
-  <div class="dh"><div><h3>Giỏ combo</h3><p id="dsub">0 token</p></div><button class="x" id="closeCart" aria-label="Đóng">✕</button></div>
-  <div class="db">
-    <div class="lines" id="lines"></div>
-    <div class="opts">
-      <div class="seg" role="group" aria-label="Định dạng">
-        <button id="fmtText" aria-pressed="true">Văn bản cho AI</button>
-        <button id="fmtJson" aria-pressed="false">JSON</button>
-      </div>
-      <label><input type="checkbox" id="withLink" checked> Kèm link</label>
-    </div>
-    <pre class="spec" id="spec"></pre>
-  </div>
-  <div class="df">
-    <button class="pill solid wide" id="copy">Copy spec cho AI</button>
-    <button class="pill" id="dlPdf"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Tải PDF</button>
-    <button class="pill" id="dlPng"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="m4 18 5.5-5 4 3.5 2.5-2 4 3.5"/></svg>Tải ảnh PNG</button>
-    <button class="pill clear" id="clear">Xóa hết giỏ</button>
-  </div>
-</aside>
 <div id="sheet" aria-hidden="true"></div>
 <div class="toast" id="toast" hidden></div>
 
@@ -275,60 +323,95 @@ main { padding-block: 10px 120px; }
 const SITE_URL = "https://thudonggg25.github.io/designshop/";
 const DATA_URL = "https://github.com/thudonggg25/designshop/tree/main/data";
 
-const state = { lib: null, cats: [], items: new Map(), filter: "all", q: "", cart: [], fmt: "text" };
+const UI = {
+  vi: {
+    all: "Tất cả", library: "Thư viện Hyan", loading: "Đang tải thư viện…", loadFail: "Không tải được dữ liệu thư viện (thư mục data/). Tải lại trang để thử lần nữa.",
+    search: "Tìm: glass, P09, Playfair, story", items: "Món", selected: "Đang chọn", folders: "Thư mục", noMatch: q => `Không có món nào khớp “${q}”.`,
+    pick: "+ Chọn", picked: "✓ Đã chọn", chosen: "Đã chọn", list: "Danh sách", sub: n => n ? `${n} món sẽ vào brief key visual` : "Bấm “+ Chọn” trên các thẻ để thêm",
+    empty: "Chưa chọn món nào. Đi qua từng thư mục ở menu bên trái và chọn món hợp ý.", withLink: "Kèm link", viewSpec: "Xem spec sẽ copy",
+    copy: "Copy brief cho AI", clear: "Xoá hết", copied: n => `Đã copy ${n} món`, selectHint: "Đã bôi đen spec, nhấn Ctrl+C để copy",
+    making: "Đang tạo…", saved: f => `Đã lưu ${f}`, downloaded: f => `Đã tải ${f}`, declined: "Đã huỷ tải xuống", cantSave: "Không tải được file ở chế độ xem này",
+    pngFail: "Chưa tạo được ảnh. Kiểm tra mạng rồi thử lại.", pdfFail: "Chưa tạo được PDF. Kiểm tra mạng rồi thử lại.", remove: c => `Bỏ ${c}`,
+    specHead: "BRIEF KEY VISUAL", specCount: n => `Gồm ${n} lựa chọn, xếp theo thư mục: định hướng, màu, chữ, hình khối, hiệu ứng, bố cục, quy tắc.`,
+    specSite: "Xem hình minh hoạ toàn bộ thư viện", specData: "Dữ liệu gốc (JSON)", specRule: "Quy ước: dùng đúng mã và giá trị bên dưới, không tự đổi màu hay kích thước.",
+    useFor: "Dùng cho", suggest: "Gợi ý kèm", aiKw: "Từ khoá AI", sheetTitle: "Brief key visual", tokens: "món", sample: "Thiết kế tiếng Việt", noAccent: "Design without accents",
+    pairH: "Ưu đãi mùa hè", pairB: "Giảm 30% cho đơn đầu tiên. Áp dụng toàn bộ cửa hàng đến hết tháng.", btn: "Mua ngay", input: "Nhập nội dung…", cardText: "Nội dung thẻ", open: "Đang chọn"
+  },
+  en: {
+    all: "All", library: "Hyan Library", loading: "Loading library…", loadFail: "Couldn't load the library data (data/ folder). Reload the page to try again.",
+    search: "Search: glass, P09, Playfair, story", items: "Items", selected: "Selected", folders: "Folders", noMatch: q => `Nothing matches “${q}”.`,
+    pick: "+ Pick", picked: "✓ Picked", chosen: "Picked", list: "List", sub: n => n ? `${n} items go into the key visual brief` : "Press “+ Pick” on any card to add it",
+    empty: "Nothing picked yet. Go through each folder in the left menu and pick what fits.", withLink: "Include links", viewSpec: "Preview the brief",
+    copy: "Copy brief for AI", clear: "Clear all", copied: n => `Copied ${n} items`, selectHint: "Brief selected, press Ctrl+C to copy",
+    making: "Creating…", saved: f => `Saved ${f}`, downloaded: f => `Downloaded ${f}`, declined: "Download cancelled", cantSave: "Can't save files in this view",
+    pngFail: "Couldn't create the image. Check your connection and try again.", pdfFail: "Couldn't create the PDF. Check your connection and try again.", remove: c => `Remove ${c}`,
+    specHead: "KEY VISUAL BRIEF", specCount: n => `${n} choices, ordered by folder: direction, color, type, shapes, effects, layout, rules.`,
+    specSite: "Visual previews of the whole library", specData: "Source data (JSON)", specRule: "Rule: use the exact codes and values below; don't change colors or sizes.",
+    useFor: "Use for", suggest: "Pairs with", aiKw: "AI keywords", sheetTitle: "Key visual brief", tokens: "items", sample: "Thiết kế tiếng Việt", noAccent: "Design without accents",
+    pairH: "Summer deals", pairB: "30% off your first order. Valid storewide until the end of the month.", btn: "Shop now", input: "Type here…", cardText: "Card content", open: "Selected"
+  }
+};
+
+const ICONS = {
+  all: '<rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/>',
+  "dinh-huong": '<circle cx="12" cy="12" r="8.5"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',
+  "mau-sac": '<path d="M12 3.5c3 3.6 6 7 6 10.2a6 6 0 0 1-12 0c0-3.2 3-6.6 6-10.2z"/>',
+  "chu": '<path d="M5 6.5V5h14v1.5M12 5v14M9 19h6"/>',
+  "hinh-khoi": '<rect x="3.5" y="11" width="9" height="9" rx="1.5"/><circle cx="16" cy="8" r="4.5"/>',
+  "hieu-ung": '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>',
+  "bo-cuc": '<rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M3.5 9.5h17M10 9.5V20"/>',
+  "quy-tac": '<path d="M6 4h9l3 3v13H6z"/><path d="M9 12l2 2 4-4"/>',
+  sel: '<path d="M4 5h2l2.2 10.2a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.8L20 8H7"/><circle cx="10" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/>'
+};
+
+let lang = "vi";
+try { lang = localStorage.getItem("hyan-lang") === "en" ? "en" : "vi"; } catch (e) {}
+const libName = () => (lang === "en" && state.en?.name) || state.lib.name;
+const t = (k, ...a) => { const v = UI[lang][k]; return typeof v === "function" ? v(...a) : v; };
+
+const state = { lib: null, en: null, cats: [], items: new Map(), filter: "all", q: "", cart: [], fmt: "text" };
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const label = (it) => it.theme ? `${it.code} (${it.theme})` : it.code;
 
 try { state.cart = JSON.parse(localStorage.getItem("hyan-cart") || "[]"); } catch (e) { state.cart = []; }
 const saveCart = () => { try { localStorage.setItem("hyan-cart", JSON.stringify(state.cart)); } catch (e) {} };
 
-/* Faceted graphite backdrop, after the reference video */
-function drawShards() {
-  const c = $("#shards"), dpr = Math.min(window.devicePixelRatio || 1, 2);
-  const W = innerWidth, H = innerHeight;
-  c.width = W * dpr; c.height = H * dpr;
-  const g = c.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, 0, 0);
-  g.fillStyle = "#060607"; g.fillRect(0, 0, W, H);
-  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
-  const size = Math.max(110, Math.min(W, H) / 5), cols = Math.ceil(W / size) + 2, rows = Math.ceil(H / size) + 2;
-  const P = [];
-  for (let y = 0; y < rows; y++) { P.push([]); for (let x = 0; x < cols; x++) P[y].push([(x - .5) * size + (rnd() - .5) * size * .8, (y - .5) * size + (rnd() - .5) * size * .8]); }
-  const tri = (a, b, d) => {
-    const cx = (a[0] + b[0] + d[0]) / 3, cy = (a[1] + b[1] + d[1]) / 3;
-    const light = 10 + rnd() * 26 + (1 - cy / H) * 10;
-    const gr = g.createLinearGradient(a[0], a[1], d[0], d[1]);
-    gr.addColorStop(0, `hsl(230 4% ${light}%)`); gr.addColorStop(1, `hsl(230 4% ${Math.max(3, light - 14)}%)`);
-    g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); g.lineTo(d[0], d[1]); g.closePath();
-    g.fillStyle = gr; g.fill();
-    g.strokeStyle = "rgba(0,0,0,.85)"; g.lineWidth = 3; g.stroke();
-    if (rnd() > .45) { g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); g.strokeStyle = `rgba(255,255,255,${.08 + rnd() * .35})`; g.lineWidth = 1.2; g.stroke(); }
-  };
-  for (let y = 0; y < rows - 1; y++) for (let x = 0; x < cols - 1; x++) {
-    const p = P[y][x], q = P[y][x + 1], r = P[y + 1][x], s = P[y + 1][x + 1];
-    if (rnd() > .5) { tri(p, q, s); tri(p, s, r); } else { tri(p, q, r); tri(q, s, r); }
-  }
+/* Localisation of data */
+const EN = () => (lang === "en" && state.en) || null;
+function loc(it) {
+  const en = EN(); if (!en) return it;
+  const o = en.items[it.id]; if (!o) return it;
+  const r = { ...it, ...o };
+  if (it.kind === "mood" && it.html && o.name) r.html = it.html.replace(`>${it.name}<`, `>${esc(o.name)}<`);
+  return r;
 }
-let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(drawShards, 150); });
-drawShards();
+const folderLabel = (f) => (EN() && EN().folders[f.id]?.label) || f.label;
+const folderDesc = (f) => (EN() && EN().folders[f.id]?.desc) || f.desc;
+const catLabel = (c) => (EN() && EN().categories[c.id]?.label) || c.label;
+const catNote = (c) => (EN() && (EN().categories[c.id]?.note || EN().categories[c.id]?.style)) || c.note || c.style || "";
+const groupLabel = (g) => (EN() && EN().groups[g]) || g;
+const codeLabel = (it) => it.theme ? `${it.code} (${it.theme})` : it.code;
+const catOf = (it) => state.cats.find(c => c.id === it.catId);
 
 async function load() {
   try {
     const lib = await (await fetch("data/library.json")).json();
     state.lib = lib;
     const cats = lib.folders.flatMap(f => f.categories.map(c => ({ ...c, folder: f.id })));
-    const files = await Promise.all(cats.map(c => fetch("data/" + c.file).then(r => r.json())));
+    const [files, en] = await Promise.all([
+      Promise.all(cats.map(c => fetch("data/" + c.file).then(r => r.json()))),
+      fetch("data/i18n.en.json").then(r => r.ok ? r.json() : null).catch(() => null)
+    ]);
+    state.en = en;
     state.cats = cats.map((c, i) => ({ ...c, ...files[i] }));
-    loadFonts();
     state.cats.forEach(c => c.groups.forEach(g => g.items.forEach(it => {
-      it.kind = c.kind; it.cat = c.label; it.catId = c.id; it.group = g.label;
+      it.kind = c.kind; it.catId = c.id; it.folder = c.folder; it.group = g.label;
       state.items.set(it.id, it);
     })));
     state.cart = state.cart.filter(id => state.items.has(id));
-    $("#meta").textContent = `v${lib.version} · ${state.items.size} món · ${lib.folders.length} thư mục · ${state.cats.length} nhóm`;
-    renderChips(); render(); updateCart();
+    loadFonts(); applyLang();
   } catch (e) {
-    $("#main").innerHTML = `<div class="state">Không tải được dữ liệu thư viện (thư mục data/). Tải lại trang để thử lần nữa.</div>`;
+    $("#main").innerHTML = `<div class="state">${t("loadFail")}</div>`;
   }
 }
 
@@ -338,44 +421,55 @@ function loadFonts() {
   fams.push("family=Noto+Serif+JP:wght@500");
   const l = document.createElement("link"); l.rel = "stylesheet";
   l.href = `https://fonts.googleapis.com/css2?${fams.join("&")}&display=swap`;
-  document.head ? document.head.appendChild(l) : document.body.appendChild(l);
+  (document.head || document.body).appendChild(l);
 }
 
-function renderChips() {
-  const all = [{ id: "all", label: "Tất cả" }, ...state.lib.folders];
-  $("#chips").innerHTML = all.map(f => `<button class="chip" data-f="${f.id}" aria-pressed="${state.filter === f.id}">${esc(f.label)}${f.categories ? `<small>${f.categories.reduce((n, c) => n + (state.cats.find(x => x.id === c.id)?.groups || []).reduce((m, g) => m + g.items.length, 0), 0)}</small>` : ""}</button>`).join("");
+const countIn = (folderId, onlyCart) => [...state.items.values()].filter(it => (folderId === "all" || it.folder === folderId) && (!onlyCart || state.cart.includes(it.id))).length;
+
+function renderRail() {
+  const fs = [{ id: "all", label: t("all") }, ...state.lib.folders];
+  const btn = (f) => `<button class="ri" data-f="${f.id}" aria-current="${state.filter === f.id}" aria-label="${esc(f.id === "all" ? t("all") : folderLabel(f))}"><svg viewBox="0 0 24 24">${ICONS[f.id] || ICONS.all}</svg>${f.id !== "all" && countIn(f.id, true) ? `<span class="dot">${countIn(f.id, true)}</span>` : ""}<span class="tip">${esc(f.id === "all" ? t("all") : folderLabel(f))}</span></button>`;
+  $("#rail").innerHTML = btn(fs[0]) + `<span class="sep"></span>` + fs.slice(1).map(btn).join("") +
+    `<button class="ri sel-btn" id="openSel" aria-label="${esc(t("open"))}"><svg viewBox="0 0 24 24">${ICONS.sel}</svg>${state.cart.length ? `<span class="dot">${state.cart.length}</span>` : ""}</button>`;
+}
+
+function renderTop() {
+  const f = state.lib.folders.find(x => x.id === state.filter);
+  $("#title").textContent = f ? folderLabel(f) : t("library");
+  $("#stats").innerHTML = `<div><small>${t("items")}</small><b>${countIn(state.filter)}</b></div><div><small>${t("selected")}</small><b class="pos">${state.cart.length}</b></div><div><small>${t("folders")}</small><b>${state.lib.folders.length}</b></div>`;
+  const cats = state.cats.filter(c => state.filter === "all" || c.folder === state.filter);
+  $("#tabs").innerHTML = cats.map(c => `<button class="tab" data-jump="${c.id}">${esc(catLabel(c))}<small>${esc(c.prefix)}</small></button>`).join("");
 }
 
 const bgOf = (it) => it.css ? esc(it.css) : "background:" + esc(it.value);
+const lumOf = (c) => { const n = parseInt(c.slice(1), 16); return (n >> 16) * .3 + ((n >> 8) & 255) * .59 + (n & 255) * .11; };
 
-function preview(it) {
-  const css = esc(it.css || "");
+function preview(raw) {
+  const it = loc(raw), css = esc(it.css || "");
   if (it.html) return `<div class="pv tall">${it.html}</div>`;
   switch (it.kind) {
-    case "palette": return `<div class="pv pv-pal">${it.colors.map(c => { const n = parseInt(c.slice(1), 16), lum = (n >> 16) * .3 + ((n >> 8) & 255) * .59 + (n & 255) * .11; return `<i style="background:${c}"></i>`; }).join("")}</div>`;
-    case "scale": return `<div class="pv pv-pal">${Object.entries(it.steps).map(([k, c]) => { const n = parseInt(c.slice(1), 16), lum = (n >> 16) * .3 + ((n >> 8) & 255) * .59 + (n & 255) * .11; return `<i style="background:${c};color:${lum > 140 ? "rgba(0,0,0,.6)" : "rgba(255,255,255,.75)"}">${k}</i>`; }).join("")}</div>`;
-    case "font": return `<div class="pv pv-font" style="${css}"><div class="big" style="${css}">Aa</div><div class="small" style="${css}">${it.vi ? "Thiết kế tiếng Việt" : "Design without accents"}</div></div>`;
-    case "pairing": return `<div class="pv pv-pair"><div><div class="hd" style="font-family:'${esc(it.head)}';font-weight:${esc(it.headWeight)}">Ưu đãi mùa hè</div><div class="bd" style="font-family:'${esc(it.body)}'">Giảm 30% cho đơn đầu tiên. Áp dụng toàn bộ cửa hàng đến hết tháng.</div></div></div>`;
-    case "typescale": { const s = it.sizes, mx = Math.max(...s), k = 46 / mx; return `<div class="pv pv-ts"><div class="row">${s.map(x => `<span style="font-size:${Math.max(5, x * k).toFixed(1)}px">Aa</span>`).join("")}</div></div>`; }
+    case "palette": return `<div class="pv pv-pal">${it.colors.map(c => `<i style="background:${c}"></i>`).join("")}</div>`;
+    case "scale": return `<div class="pv pv-pal">${Object.entries(it.steps).map(([k, c]) => `<i style="background:${c};color:${lumOf(c) > 140 ? "rgba(0,0,0,.6)" : "rgba(255,255,255,.75)"}">${k}</i>`).join("")}</div>`;
+    case "font": return `<div class="pv pv-font" style="${css}"><div class="big" style="${css}">Aa</div><div class="small" style="${css}">${it.vi ? t("sample") : t("noAccent")}</div></div>`;
+    case "pairing": return `<div class="pv pv-pair"><div><div class="hd" style="font-family:'${esc(it.head)}';font-weight:${esc(it.headWeight)}">${t("pairH")}</div><div class="bd" style="font-family:'${esc(it.body)}'">${t("pairB")}</div></div></div>`;
+    case "typescale": { const s = it.sizes, k = 46 / Math.max(...s); return `<div class="pv pv-ts"><div class="row">${s.map(x => `<span style="font-size:${Math.max(5, x * k).toFixed(1)}px">Aa</span>`).join("")}</div></div>`; }
     case "radius": return `<div class="pv pv-rad"><div style="${css}"></div></div>`;
-    case "button": return `<div class="pv pv-btn" style="background:${esc(it.bg)}"><span class="b" style="${css}">${esc(it.label || "Mua ngay")}</span></div>`;
+    case "button": return `<div class="pv pv-btn" style="background:${esc(it.bg)}"><span class="b" style="${css}">${t("btn")}${it.code === "BT12" ? " →" : ""}</span></div>`;
     case "background": return `<div class="pv" style="${css}"></div>`;
-    case "format": { const mw = 150, mh = 104, r = Math.min(mw / it.w, mh / it.h); return `<div class="pv pv-fmt"><div class="f" style="width:${(it.w * r).toFixed(0)}px;height:${(it.h * r).toFixed(0)}px">${it.w}×${it.h}</div></div>`; }
+    case "format": { const r = Math.min(150 / it.w, 100 / it.h); return `<div class="pv pv-fmt"><div class="f" style="width:${(it.w * r).toFixed(0)}px;height:${(it.h * r).toFixed(0)}px">${it.w}×${it.h}</div></div>`; }
     case "color": {
       const hex = (it.value.match(/#[0-9A-Fa-f]{6}/) || ["#000000"])[0];
-      const n = parseInt(hex.slice(1), 16), lum = ((n >> 16) * .3 + ((n >> 8) & 255) * .59 + (n & 255) * .11);
-      const fg = lum > 140 ? "#0D1D2A" : "rgba(255,255,255,.6)";
-      return `<div class="pv"><div class="sw" style="${bgOf(it)};color:${fg}"><span>${it.code === "B03" ? "Aa M0" : ""}</span><span>${esc(hex)}</span></div></div>`;
+      return `<div class="pv"><div class="sw" style="${bgOf(it)};color:${lumOf(hex) > 140 ? "#0D1D2A" : "rgba(255,255,255,.6)"}"><span>${it.code === "B03" ? "Aa M0" : ""}</span><span>${esc(hex)}</span></div></div>`;
     }
     case "text": return `<div class="pv pv-text"><p style="${css}">${esc(it.name)}</p></div>`;
     case "type": return `<div class="pv pv-type"><div style="${css}">${esc(it.sample)}</div></div>`;
     case "effect":
-      if (it.id === "E09") return `<div class="pv pv-fx-text" style="background:#0B0D10"><svg viewBox="0 0 120 60" width="120" height="60"><defs><linearGradient id="g-${it.id}" x1="0" x2="1"><stop offset="0" stop-color="#4AA3EA"/><stop offset="1" stop-color="#FF6B9A"/></linearGradient></defs><text x="60" y="47" text-anchor="middle" font-family="Be Vietnam Pro, sans-serif" font-weight="800" font-size="46" fill="url(#g-${it.id})">KV</text></svg></div>`;
+      if (it.id === "E09") return `<div class="pv pv-fx-text" style="background:#0B0D10"><svg viewBox="0 0 120 60" width="120" height="60"><defs><linearGradient id="g-E09" x1="0" x2="1"><stop offset="0" stop-color="#4AA3EA"/><stop offset="1" stop-color="#FF6B9A"/></linearGradient></defs><text x="60" y="47" text-anchor="middle" font-family="Be Vietnam Pro, sans-serif" font-weight="800" font-size="46" fill="url(#g-E09)">KV</text></svg></div>`;
       if (it.el === "text") return `<div class="pv pv-fx-text" style="background:${esc(it.bg || "#0B0D10")}"><div style="${css}">KV</div></div>`;
       return `<div class="pv pv-effect"${it.bg ? ` style="background:${esc(it.bg)}"` : ""}><div class="fx${it.id === "E03" ? " glow" : ""}" style="${css}">${esc(it.code)}</div></div>`;
     case "frame": {
-      const box = /K01|K03|K06/.test(it.id);
-      const inner = it.id === "K04" ? "Nhập nội dung…" : box ? "Nội dung thẻ" : "";
+      const box = /K01|K03|K06/.test(it.id) || /K0[7-9]|K1[01]/.test(it.id);
+      const inner = it.id === "K04" ? t("input") : (box || it.id === "K12") ? t("cardText") : "";
       const k05 = it.id === "K05" ? `<span style="width:20px;height:20px;border-radius:50%;background:#0D1D2A;margin-left:auto;margin-right:3px"></span>` : "";
       const bg = it.id === "K02" ? "background:#14171C;" : "";
       return `<div class="pv pv-frame"><div class="fr${box || it.id === "K04" ? " box" : ""}" style="${bg}${css}">${inner}${k05}</div></div>`;
@@ -395,142 +489,168 @@ function mini(it) {
   if (it.kind === "icon") return `<span class="mini"><svg viewBox="0 0 24 24">${it.svg}</svg></span>`;
   if (it.colors || it.steps) { const cs = it.colors || Object.values(it.steps); return `<span class="mini" style="background:linear-gradient(90deg,${cs.map((c, i) => `${c} ${i / cs.length * 100}% ${(i + 1) / cs.length * 100}%`).join(",")})"></span>`; }
   if (it.kind === "background") return `<span class="mini" style="${esc(it.css)}"></span>`;
-  return `<span class="mini">${esc(it.code[0])}</span>`;
+  return `<span class="mini">${esc(it.code)}</span>`;
 }
 
-function card(it) {
-  const on = state.cart.includes(it.id);
-  return `<article class="item glass${on ? " picked" : ""}" data-id="${it.id}">
-    <span class="check" aria-hidden="true">✓</span>
-    ${preview(it)}
+function card(raw, i) {
+  const it = loc(raw), on = state.cart.includes(it.id);
+  return `<article class="item${on ? " picked" : ""}" data-id="${it.id}" style="--i:${Math.min(i, 16)}">
+    <span class="check" aria-hidden="true">${t("chosen")}</span>
+    ${preview(raw)}
     <div class="info">
       <div class="row1"><span class="code">${esc(it.code)}</span>${it.theme ? `<span class="theme-tag">${esc(it.theme)}</span>` : ""}<span class="name">${esc(it.name)}</span></div>
       <div class="val">${esc(it.value)}</div>
-      <button class="add" data-id="${it.id}" aria-pressed="${on}">${on ? "✓ Đã chọn" : "+ Chọn"}</button>
+      <button class="add" data-id="${it.id}" aria-pressed="${on}">${on ? t("picked") : t("pick")}</button>
     </div>
   </article>`;
 }
 
 function render() {
   const q = state.q.trim().toLowerCase();
-  const match = (it) => !q || [it.code, it.name, it.value, it.theme, it.css, it.group, it.ai, it.desc, it.family, it.mood, it.use].join(" ").toLowerCase().includes(q);
+  const match = (raw) => {
+    if (!q) return true;
+    const it = loc(raw), en = state.en?.items[raw.id] || {};
+    return [raw.code, raw.name, raw.value, raw.theme, raw.css, raw.ai, raw.desc, raw.family, raw.mood, raw.use, en.name, en.value, en.desc, en.mood, en.use, it.name].join(" ").toLowerCase().includes(q);
+  };
+  let n = 0;
   const catHtml = (c) => {
     const groups = c.groups.map(g => {
       const items = g.items.filter(match);
       if (!items.length) return "";
-      return `${c.groups.length > 1 ? `<div class="group-label">${esc(g.label)}</div>` : ""}<div class="grid">${items.map(card).join("")}</div>`;
+      return `${c.groups.length > 1 ? `<div class="group-label">${esc(groupLabel(g.label))}</div>` : ""}<div class="grid">${items.map(x => card(x, n++)).join("")}</div>`;
     }).join("");
     if (!groups) return "";
-    return `<section class="section"><div class="section-head"><h3>${esc(c.label)}</h3><span class="codes">${esc(c.prefix)}</span>${c.note || c.style ? `<span class="note">${esc(c.note || c.style)}</span>` : ""}</div>${groups}</section>`;
+    const note = catNote(c);
+    return `<section class="section" id="sec-${c.id}"><div class="section-head"><h3>${esc(catLabel(c))}</h3><span class="codes">${esc(c.prefix)}</span>${note ? `<span class="note">${esc(note)}</span>` : ""}</div>${groups}</section>`;
   };
   const html = state.lib.folders.filter(f => state.filter === "all" || state.filter === f.id).map(f => {
     const body = state.cats.filter(c => c.folder === f.id).map(catHtml).join("");
     if (!body) return "";
-    return `<div class="folder"><div class="folder-head glass"><div><div class="kicker">Thư mục</div><h2>${esc(f.label)}</h2></div><p>${esc(f.desc)}</p></div>${body}</div>`;
+    return `<div class="folder">${state.filter === "all" ? `<div class="folder-head"><h2>${esc(folderLabel(f))}</h2><p>${esc(folderDesc(f))}</p></div>` : `<div class="folder-head"><p>${esc(folderDesc(f))}</p></div>`}${body}</div>`;
   }).join("");
-  $("#main").innerHTML = html || `<div class="state">Không có token nào khớp “${esc(state.q)}”.</div>`;
+  $("#main").innerHTML = html || `<div class="state">${t("noMatch", esc(state.q))}</div>`;
 }
 
 function toggle(id) {
   const i = state.cart.indexOf(id);
   i >= 0 ? state.cart.splice(i, 1) : state.cart.push(id);
   saveCart();
-  document.querySelectorAll(`.item[data-id="${id}"]`).forEach(el => {
+  document.querySelectorAll(`#main .item[data-id="${id}"]`).forEach(el => {
     const on = state.cart.includes(id);
     el.classList.toggle("picked", on);
-    const b = el.querySelector(".add"); b.textContent = on ? "✓ Đã chọn" : "+ Chọn"; b.setAttribute("aria-pressed", on);
+    const b = el.querySelector(".add"); b.textContent = on ? t("picked") : t("pick"); b.setAttribute("aria-pressed", on);
   });
-  updateCart();
+  updateSelected(); renderRail(); renderTop();
 }
 
 const cartItems = () => [...state.items.values()].filter(it => state.cart.includes(it.id));
 
-function valueFor(it) {
+function valueFor(raw) {
+  const it = loc(raw);
   if (it.kind === "icon") return `SVG 24×24, stroke 1.5, round, fill none: <svg viewBox="0 0 24 24">${it.svg}</svg>`;
   if (it.kind === "rule") return it.text;
   const p = [it.value];
   if (it.steps) p.push(Object.entries(it.steps).map(([k, c]) => `${k} ${c}`).join(", "));
-  if (it.desc) p.push(`Dùng cho: ${it.desc}`);
-  if (it.use && it.kind !== "font") p.push(it.use);
-  if (it.kind === "font") p.push(`Dùng cho: ${it.use}`);
-  if (it.suggest) p.push(`Gợi ý kèm: ${it.suggest}`);
+  if (it.mood) p.push(it.mood);
+  if (it.desc) p.push(`${t("useFor")}: ${it.desc}`);
+  if (it.use) p.push(`${t("useFor")}: ${it.use}`);
+  if (it.suggest) p.push(`${t("suggest")}: ${it.suggest}`);
   if (it.css) p.push(`CSS: ${it.css}`);
-  if (it.ai) p.push(`Từ khoá AI: ${it.ai}`);
+  if (it.ai) p.push(`${t("aiKw")}: ${it.ai}`);
   return p.join(" | ");
 }
 
 function specText() {
   const its = cartItems(), lib = state.lib;
   if (!its.length) return "";
-  const out = [`BRIEF KEY VISUAL · ${lib.name} v${lib.version}`, `Gồm ${its.length} lựa chọn, xếp theo thư mục: định hướng, màu, chữ, hình khối, hiệu ứng, bố cục, quy tắc.`];
-  if ($("#withLink").checked) { out.push(`Xem hình minh họa toàn bộ thư viện: ${SITE_URL}`); out.push(`Dữ liệu gốc (JSON): ${DATA_URL}`); }
-  out.push("Quy ước: dùng đúng mã và giá trị bên dưới, không tự đổi màu hay kích thước.", "");
+  const out = [`${t("specHead")} · ${libName()} v${lib.version}`, t("specCount", its.length)];
+  if ($("#withLink").checked) { out.push(`${t("specSite")}: ${SITE_URL}`); out.push(`${t("specData")}: ${DATA_URL}`); }
+  out.push(t("specRule"), "");
   let cat = "";
-  its.forEach(it => {
-    if (it.cat !== cat) { cat = it.cat; out.push(`[${cat}]`); }
-    out.push(`${label(it)} · ${it.name}: ${valueFor(it)}`);
+  its.forEach(raw => {
+    const c = catLabel(catOf(raw));
+    if (c !== cat) { cat = c; out.push(`[${cat}]`); }
+    const it = loc(raw);
+    out.push(`${codeLabel(it)} · ${it.name}: ${valueFor(raw)}`);
   });
   return out.join("\n");
 }
 
 function specJson() {
   const lib = state.lib;
-  const its = cartItems().map(it => {
-    const o = { code: it.code, category: it.cat, name: it.name, value: it.value };
+  const its = cartItems().map(raw => {
+    const it = loc(raw);
+    const o = { code: it.code, category: catLabel(catOf(raw)), name: it.name, value: it.value };
     if (it.theme) o.theme = it.theme;
     if (it.css) o.css = it.css;
     if (it.svg) o.svg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${it.svg}</svg>`;
     if (it.text) o.rule = it.text;
-    ["colors", "steps", "ai", "desc", "family", "suggest", "w", "h", "sizes"].forEach(k => { if (it[k] !== undefined) o[k] = it[k]; });
+    ["colors", "steps", "ai", "desc", "use", "mood", "family", "suggest", "w", "h", "sizes"].forEach(k => { if (it[k] !== undefined) o[k] = it[k]; });
     return o;
   });
   if (!its.length) return "";
-  const head = { library: lib.name, version: lib.version, type: "key visual brief" };
+  const head = { library: lib.name, version: lib.version, type: "key visual brief", language: lang };
   if ($("#withLink").checked) { head.site = SITE_URL; head.data = DATA_URL; }
   return JSON.stringify({ ...head, tokens: its }, null, 2);
 }
 
-function updateCart() {
-  const n = state.cart.length;
-  $("#count").textContent = n; $("#cartBtn").classList.toggle("has", n > 0);
-  $("#dsub").textContent = `${n} token đã chọn`;
-  const its = cartItems();
-  $("#lines").innerHTML = its.length ? its.map(it => `<div class="line">${mini(it)}<span class="code">${esc(it.code)}</span><span class="nm">${esc(it.theme ? it.theme + " · " : "")}${esc(it.name)}</span><button class="rm" data-rm="${it.id}" aria-label="Bỏ ${esc(it.code)}">✕</button></div>`).join("")
-    : `<div class="empty">Giỏ đang trống. Bấm “+ Chọn” trên các thẻ để thêm.</div>`;
+function updateSelected() {
+  const n = state.cart.length, its = cartItems();
+  $("#count").textContent = n; $("#count").classList.toggle("zero", !n);
+  $("#selSub").textContent = t("sub", n);
+  $("#sumrow").innerHTML = state.lib.folders.map(f => {
+    const k = countIn(f.id, true);
+    return `<div class="sum" role="button" tabindex="0" data-f="${f.id}"><span class="c"><svg viewBox="0 0 24 24">${ICONS[f.id]}</svg>${k ? `<b>${k}</b>` : ""}</span><span>${esc(folderLabel(f))}</span></div>`;
+  }).join("");
+  $("#lines").innerHTML = its.length ? its.map(raw => { const it = loc(raw); return `<div class="line">${mini(it)}<span class="t"><span class="nm">${esc(it.name)}</span><span class="ct">${esc(catLabel(catOf(raw)))}</span></span><span class="r"><span class="tag">${esc(it.code)}</span><button class="rm" data-rm="${it.id}" aria-label="${esc(t("remove", it.code))}">✕</button></span></div>`; }).join("")
+    : `<div class="empty">${t("empty")}</div>`;
   const s = state.fmt === "json" ? specJson() : specText();
-  $("#spec").textContent = s || "Spec sẽ hiện ở đây khi bạn chọn token.";
+  $("#spec").textContent = s || "—";
   ["#copy", "#dlPdf", "#dlPng", "#clear"].forEach(k => $(k).disabled = !n);
 }
 
-function openCart(open) { $("#drawer").hidden = !open; $("#scrim").hidden = !open; }
-function toast(msg, ms = 2200) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast._t); toast._t = setTimeout(() => t.hidden = true, ms); }
+function applyLang() {
+  document.documentElement.lang = lang === "en" ? "en" : "vi";
+  $("#langVi").setAttribute("aria-pressed", lang === "vi"); $("#langEn").setAttribute("aria-pressed", lang === "en");
+  $("#q").placeholder = t("search");
+  $("#selTitle").textContent = t("selected"); $("#linesLabel").textContent = t("list");
+  $("#withLinkLabel").textContent = t("withLink"); $("#specSummary").textContent = t("viewSpec");
+  $("#copy").textContent = t("copy"); $("#clear").textContent = t("clear");
+  document.title = t("library");
+  renderRail(); renderTop(); render(); updateSelected();
+}
+function setLang(l) { lang = l; try { localStorage.setItem("hyan-lang", l); } catch (e) {} applyLang(); }
 
-/* Export: build a solid "combo sheet", render to canvas, save as PNG or PDF */
+function openSel(open) { $("#aside").classList.toggle("open", open); $("#scrim").hidden = !open; }
+function toast(msg, ms = 2200) { const el = $("#toast"); el.textContent = msg; el.hidden = false; clearTimeout(toast._t); toast._t = setTimeout(() => el.hidden = true, ms); }
+
+/* Export: build a solid brief sheet, render to canvas, save as PNG or PDF */
 function buildSheet() {
   const lib = state.lib, its = cartItems();
-  const today = new Date().toLocaleDateString("vi-VN");
+  const today = new Date().toLocaleDateString(lang === "en" ? "en-GB" : "vi-VN");
+  const about = (EN() && EN().about) || lib.about;
   $("#sheet").innerHTML = `
     <div class="sh-head">
-      <div><div class="kicker">${esc(lib.name)} · combo thiết kế</div><h2>Brief key visual</h2><p class="sh-style">${esc(lib.about)}</p></div>
-      <div class="sh-meta">${today}<br>${its.length} token<br>v${esc(lib.version)}</div>
+      <div><div class="kicker">${esc(libName())}</div><h2>${t("sheetTitle")}</h2><p class="sh-style">${esc(about)}</p></div>
+      <div class="sh-meta">${today}<br>${its.length} ${t("tokens")}<br>v${esc(lib.version)}</div>
     </div>
-    <div class="sh-grid">${its.map(it => `
-      <div class="sh-card"><div class="sh-tag">${esc(it.cat)}</div>${preview(it)}
+    <div class="sh-grid">${its.map(raw => { const it = loc(raw); return `
+      <div class="sh-card"><div class="sh-tag">${esc(catLabel(catOf(raw)))}</div>${preview(raw)}
         <div class="sh-info">
           <div class="row1"><span class="code">${esc(it.code)}</span>${it.theme ? `<span class="theme-tag">${esc(it.theme)}</span>` : ""}<span class="name">${esc(it.name)}</span></div>
           <div class="val">${esc(it.value)}</div>
           ${it.kind === "rule" ? `<div class="sh-css">${esc(it.text)}</div>` : it.css ? `<div class="sh-css">${esc(it.css)}</div>` : ""}
           ${it.ai ? `<div class="sh-css">AI: ${esc(it.ai)}</div>` : ""}
         </div>
-      </div>`).join("")}</div>
-    <div class="sh-foot"><span>${esc(lib.name)} v${esc(lib.version)}</span><span>${esc(SITE_URL)}</span></div>`;
+      </div>`; }).join("")}</div>
+    <div class="sh-foot"><span>${esc(libName())} v${esc(lib.version)}</span><span>${esc(SITE_URL)}</span></div>`;
 }
 
 async function renderSheet() {
   if (!window.html2canvas) throw new Error("lib");
   buildSheet();
   try { await document.fonts.ready; } catch (e) {}
-  return html2canvas($("#sheet"), { backgroundColor: "#0C0C0E", scale: 2, useCORS: true, logging: false });
+  return html2canvas($("#sheet"), { backgroundColor: "#0C0907", scale: 2, useCORS: true, logging: false });
 }
 
 async function saveFile(filename, blob) {
@@ -539,14 +659,14 @@ async function saveFile(filename, blob) {
     try { dl = await Promise.race([window.claude.use("downloads"), new Promise(r => setTimeout(() => r(null), 4000))]); } catch (e) { dl = null; }
   }
   if (dl) {
-    try { await dl.save({ filename, data: blob }); toast(`Đã lưu ${filename}`); }
-    catch (e) { toast(e && e.code === "declined" ? "Đã hủy tải xuống" : "Không tải được file ở chế độ xem này"); }
+    try { await dl.save({ filename, data: blob }); toast(t("saved", filename)); }
+    catch (e) { toast(e && e.code === "declined" ? t("declined") : t("cantSave")); }
     return;
   }
   const url = URL.createObjectURL(blob), a = document.createElement("a");
   a.href = url; a.download = filename; document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 4000);
-  toast(`Đã tải ${filename}`);
+  toast(t("downloaded", filename));
 }
 
 const stamp = () => new Date().toISOString().slice(0, 10);
@@ -557,7 +677,7 @@ async function exportPng(btn) {
     const cv = await renderSheet();
     const blob = await new Promise(r => cv.toBlob(r, "image/png"));
     await saveFile(`brief-kv-${stamp()}.png`, blob);
-  } catch (e) { toast("Chưa tạo được ảnh. Kiểm tra mạng rồi thử lại."); }
+  } catch (e) { toast(t("pngFail")); }
   busy(btn, false);
 }
 
@@ -569,25 +689,30 @@ async function exportPdf(btn) {
     const pw = 595.28, ph = 841.89; // A4, pt
     const pageH = Math.floor(cv.width * ph / pw);
     const pdf = new jsPDF({ unit: "pt", format: "a4", compress: true });
-    pdf.setProperties({ title: "Brief key visual Hyan", subject: specText(), creator: state.lib.name });
+    pdf.setProperties({ title: t("sheetTitle"), subject: specText(), creator: state.lib.name });
     for (let y = 0, i = 0; y < cv.height; y += pageH, i++) {
       const h = Math.min(pageH, cv.height - y);
       const part = document.createElement("canvas"); part.width = cv.width; part.height = pageH;
-      const g = part.getContext("2d"); g.fillStyle = "#0C0C0E"; g.fillRect(0, 0, part.width, part.height);
+      const g = part.getContext("2d"); g.fillStyle = "#0C0907"; g.fillRect(0, 0, part.width, part.height);
       g.drawImage(cv, 0, y, cv.width, h, 0, 0, cv.width, h);
       if (i) pdf.addPage();
       pdf.addImage(part.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, pw, ph);
     }
     await saveFile(`brief-kv-${stamp()}.pdf`, pdf.output("blob"));
-  } catch (e) { toast("Chưa tạo được PDF. Kiểm tra mạng rồi thử lại."); }
+  } catch (e) { toast(t("pdfFail")); }
   busy(btn, false);
 }
 
-function busy(btn, on) { btn.disabled = on; btn.dataset.label = btn.dataset.label || btn.innerHTML; btn.innerHTML = on ? "Đang tạo…" : btn.dataset.label; }
+function busy(btn, on) { btn.disabled = on; if (on) { btn.dataset.label = btn.innerHTML; btn.innerHTML = t("making"); } else if (btn.dataset.label) { btn.innerHTML = btn.dataset.label; } }
+
+function goFolder(id) { state.filter = id; renderRail(); renderTop(); render(); $("#mainScroll").scrollTo({ top: 0 }); }
 
 document.addEventListener("click", (e) => {
-  const chip = e.target.closest(".chip");
-  if (chip) { state.filter = chip.dataset.f; renderChips(); render(); return; }
+  const ri = e.target.closest(".ri[data-f], .sum[data-f]");
+  if (ri) { goFolder(ri.dataset.f); if (ri.classList.contains("sum")) openSel(false); return; }
+  if (e.target.closest("#openSel")) { openSel(true); return; }
+  const jump = e.target.closest("[data-jump]");
+  if (jump) { document.getElementById("sec-" + jump.dataset.jump)?.scrollIntoView({ behavior: "smooth", block: "start" }); return; }
   const add = e.target.closest(".add");
   if (add) { toggle(add.dataset.id); return; }
   const pv = e.target.closest("#main .pv");
@@ -596,21 +721,26 @@ document.addEventListener("click", (e) => {
   if (rm) { toggle(rm.dataset.rm); return; }
 });
 $("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
-$("#cartBtn").onclick = () => openCart(true);
-$("#closeCart").onclick = () => openCart(false);
-$("#scrim").onclick = () => openCart(false);
-document.addEventListener("keydown", (e) => { if (e.key === "Escape") openCart(false); });
-$("#fmtText").onclick = () => { state.fmt = "text"; $("#fmtText").setAttribute("aria-pressed", true); $("#fmtJson").setAttribute("aria-pressed", false); updateCart(); };
-$("#fmtJson").onclick = () => { state.fmt = "json"; $("#fmtJson").setAttribute("aria-pressed", true); $("#fmtText").setAttribute("aria-pressed", false); updateCart(); };
-$("#withLink").onchange = updateCart;
-$("#clear").onclick = () => { state.cart = []; saveCart(); render(); updateCart(); };
+$("#langVi").onclick = () => setLang("vi");
+$("#langEn").onclick = () => setLang("en");
+$("#closeSel").onclick = () => openSel(false);
+$("#scrim").onclick = () => openSel(false);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") openSel(false);
+  if ((e.key === "Enter" || e.key === " ") && e.target.matches(".sum[data-f]")) { e.preventDefault(); goFolder(e.target.dataset.f); }
+});
+$("#fmtText").onclick = () => { state.fmt = "text"; $("#fmtText").setAttribute("aria-pressed", true); $("#fmtJson").setAttribute("aria-pressed", false); updateSelected(); };
+$("#fmtJson").onclick = () => { state.fmt = "json"; $("#fmtJson").setAttribute("aria-pressed", true); $("#fmtText").setAttribute("aria-pressed", false); updateSelected(); };
+$("#withLink").onchange = updateSelected;
+$("#clear").onclick = () => { state.cart = []; saveCart(); render(); updateSelected(); renderRail(); renderTop(); };
 $("#dlPng").onclick = (e) => exportPng(e.currentTarget);
 $("#dlPdf").onclick = (e) => exportPdf(e.currentTarget);
 $("#copy").onclick = () => {
   const s = state.fmt === "json" ? specJson() : specText();
-  const fallback = () => { const r = document.createRange(); r.selectNodeContents($("#spec")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); toast("Đã bôi đen spec, nhấn Ctrl+C để copy"); };
-  try { navigator.clipboard.writeText(s).then(() => toast(`Đã copy ${state.cart.length} token`), fallback); } catch (e) { fallback(); }
+  const fallback = () => { $(".specbox").open = true; const r = document.createRange(); r.selectNodeContents($("#spec")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); toast(t("selectHint")); };
+  try { navigator.clipboard.writeText(s).then(() => toast(t("copied", state.cart.length)), fallback); } catch (e) { fallback(); }
 };
 
+$("#main").innerHTML = `<div class="state">${t("loading")}</div>`;
 load();
 </script>

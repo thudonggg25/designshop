@@ -30,7 +30,7 @@ Thư viện token thiết kế cá nhân: mỗi màu, độ nhạt chữ, kiểu
 | | Khổ ảnh | A01… | data/formats.json |
 | Quy tắc | Quy tắc | R01… | data/rules.json |
 
-Thư mục và thứ tự nằm trong `data/library.json`. Mục có trường `ai` là từ khoá tiếng Anh để dán vào công cụ tạo ảnh AI. Mục có trường `html` là hình minh hoạ dựng sẵn bằng HTML/CSS.
+Thư mục và thứ tự nằm trong `data/library.json`. Bản dịch tiếng Anh nằm trong `data/i18n.en.json` (theo mã món); nút VIE/EN trên trang đổi cả giao diện lẫn nội dung brief. Mục có trường `ai` là từ khoá tiếng Anh để dán vào công cụ tạo ảnh AI. Mục có trường `html` là hình minh hoạ dựng sẵn bằng HTML/CSS.
 
 ## Thêm token mới
 
