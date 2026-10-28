@@ -1,0 +1,16 @@
+{
+  "name": "Thư viện thiết kế Hyan",
+  "version": "0.1.0",
+  "style": "Tối, tối giản, nền gần đen, một màu nhấn duy nhất, viền mảnh, góc bo lớn, chữ mảnh.",
+  "font": "\"Segoe UI\", \"Be Vietnam Pro\", system-ui, sans-serif",
+  "categories": [
+    { "id": "colors",     "file": "colors.json",     "label": "Màu",          "prefix": "N · B · M" },
+    { "id": "text",       "file": "text.json",       "label": "Độ nhạt chữ",  "prefix": "D" },
+    { "id": "typography", "file": "typography.json", "label": "Kiểu chữ",     "prefix": "T" },
+    { "id": "effects",    "file": "effects.json",    "label": "Hiệu ứng",     "prefix": "E" },
+    { "id": "frames",     "file": "frames.json",     "label": "Khung",        "prefix": "K" },
+    { "id": "icons",      "file": "icons.json",      "label": "Icon",         "prefix": "I" },
+    { "id": "layouts",    "file": "layouts.json",    "label": "Bố cục",       "prefix": "L" },
+    { "id": "rules",      "file": "rules.json",      "label": "Quy tắc",      "prefix": "R" }
+  ]
+}

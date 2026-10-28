@@ -1,0 +1,382 @@
+<meta charset="utf-8">
+<title>Thư viện Hyan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky shop bar with filters, then token sections in a card grid; cart opens as a right-side drawer. Single dark look, taken from the library's own night palette. */
+:root {
+  color-scheme: dark;
+  --n0: #050608; --n1: #0B0D10; --n2: #14171C; --n3: #1E2229;
+  --line: rgba(255,255,255,0.07); --line-2: rgba(255,255,255,0.13);
+  --d1: #FFFFFF; --d2: rgba(255,255,255,0.82); --d4: rgba(255,255,255,0.60); --d5: rgba(255,255,255,0.42);
+  --accent: #3D9CF0; --accent-soft: rgba(61,156,240,0.14);
+  --ink: #0D1D2A; --peach: #F2B07A;
+  --sans: "Segoe UI", "Be Vietnam Pro", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r-lg: 24px; --r-md: 16px; --r-sm: 10px;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { background: var(--n0); }
+body { color: var(--d1); font-family: var(--sans); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--n0); }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* Header */
+.head { padding-block: 40px 8px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+.eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--d5); }
+h1 { font-size: clamp(26px, 4vw, 34px); font-weight: 300; letter-spacing: -.01em; margin: 8px 0 6px; text-wrap: balance; }
+.lede { color: var(--d4); max-width: 60ch; margin: 0; }
+.meta { color: var(--d5); font-size: 12px; font-family: var(--mono); }
+
+/* Shop bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: rgba(5,6,8,0.86); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; gap: 12px; align-items: center; padding-block: 12px; flex-wrap: wrap; }
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; flex: 1 1 420px; min-width: 0; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; border: 1px solid var(--line); background: var(--n1); color: var(--d4); border-radius: 999px; padding: 6px 13px; font-size: 13px; white-space: nowrap; }
+.chip:hover { color: var(--d1); border-color: var(--line-2); }
+.chip[aria-pressed="true"] { background: var(--d1); color: var(--n0); border-color: var(--d1); }
+.chip small { font-family: var(--mono); font-size: 10.5px; opacity: .6; margin-left: 4px; }
+.search { flex: 0 1 220px; min-width: 140px; height: 36px; border-radius: 12px; background: var(--n2); border: 1px solid var(--line); color: var(--d1); padding: 0 12px; font: inherit; }
+.search::placeholder { color: var(--d5); }
+.cart-btn { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--n2); font-weight: 500; }
+.cart-btn:hover { background: var(--n3); }
+.cart-btn .count { min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: var(--n3); color: var(--d4); font-size: 12px; display: inline-grid; place-items: center; font-variant-numeric: tabular-nums; }
+.cart-btn.has .count { background: var(--accent); color: #fff; box-shadow: 0 0 14px rgba(61,156,240,.45); }
+.cart-btn svg { width: 18px; height: 18px; }
+
+/* Sections */
+main { padding-block: 16px 120px; }
+.section { margin-top: 40px; }
+.section-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.section-head h2 { font-size: 20px; font-weight: 300; margin: 0; }
+.section-head .codes { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+.section-head .note { color: var(--d5); font-size: 12px; flex-basis: 100%; }
+.group-label { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--d5); margin: 22px 0 10px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+
+/* Item card */
+.item { position: relative; display: flex; flex-direction: column; border-radius: 20px; background: linear-gradient(160deg, var(--n2), var(--n1)); border: 1px solid var(--line); overflow: hidden; transition: border-color .15s, transform .15s; min-width: 0; }
+.item:hover { border-color: var(--line-2); }
+.item.picked { border-color: rgba(61,156,240,.65); box-shadow: 0 0 0 1px rgba(61,156,240,.35), 0 10px 30px rgba(61,156,240,.10); }
+.pv { height: 132px; display: grid; place-items: center; padding: 14px; background: var(--n0); border-bottom: 1px solid var(--line); overflow: hidden; position: relative; cursor: pointer; }
+.info { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.row1 { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.code { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--accent); flex: none; }
+.theme-tag { font-size: 10.5px; color: var(--d5); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; flex: none; }
+.name { font-size: 13.5px; color: var(--d2); min-width: 0; overflow-wrap: anywhere; }
+.val { font-family: var(--mono); font-size: 11.5px; color: var(--d4); overflow-wrap: anywhere; }
+.est { color: #F2B07A; font-size: 11px; }
+.add { margin-top: 10px; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px; border-radius: 9px; border: 1px solid var(--line-2); background: transparent; font-size: 12.5px; color: var(--d2); }
+.add:hover { background: var(--n3); color: var(--d1); }
+.picked .add { background: var(--accent); border-color: var(--accent); color: #fff; }
+.check { position: absolute; top: 10px; right: 10px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; display: none; place-items: center; font-size: 13px; z-index: 2; box-shadow: 0 0 14px rgba(61,156,240,.5); }
+.picked .check { display: grid; }
+
+/* Preview kinds */
+.sw { width: 100%; height: 100%; border-radius: 14px; border: 1px solid var(--line); display: flex; align-items: flex-end; justify-content: space-between; padding: 10px 12px; font-family: var(--mono); font-size: 11px; }
+.pv-text { background: var(--n2); }
+.pv-text p { margin: 0; font-size: 17px; text-align: center; font-family: var(--sans); }
+.pv-type > div { font-family: var(--sans); max-width: 100%; text-align: center; overflow-wrap: anywhere; }
+.pv-effect { background: radial-gradient(circle at 28% 35%, rgba(61,156,240,.35), transparent 40%), radial-gradient(circle at 75% 70%, rgba(242,176,122,.35), transparent 42%), var(--n0); }
+.fx { width: 132px; height: 78px; border-radius: 16px; background: #14171C; display: grid; place-items: center; color: var(--d4); font-size: 11px; }
+.fx.glow { background: #3D9CF0; color: #fff; }
+.pv-frame .fr { font-size: 12px; color: var(--d4); display: flex; align-items: center; max-width: 100%; }
+.pv-frame .fr.box { width: 170px; }
+.pv-icon svg { width: 44px; height: 44px; stroke: var(--d1); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.lay { width: 100%; transform-origin: center; }
+.lay > i { display: block; min-height: 26px; border-radius: 6px; background: var(--n3); border: 1px solid var(--line); }
+.lay.l02 > i { min-height: 18px; }
+.lay.l02 > i:nth-child(1) { background: #050608; height: 22px; }
+.lay.l02 > i:nth-child(2) { background: var(--accent-soft); }
+.lay.l04 > i:first-child { min-height: 8px; width: 40%; background: rgba(255,255,255,.18); }
+.lay.l04 > i:last-child { min-height: 52px; }
+.pv-rule { background: var(--n1); place-items: start; }
+.pv-rule p { margin: 0; font-size: 12px; color: var(--d4); line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.pv-rule b { color: var(--d1); font-weight: 600; }
+
+.state { padding: 60px 0; text-align: center; color: var(--d4); }
+
+/* Cart drawer */
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 40; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(480px, 100%); z-index: 50; background: var(--n1); border-left: 1px solid var(--line-2); display: flex; flex-direction: column; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); padding-right: env(safe-area-inset-right, 0px); box-shadow: -30px 0 60px rgba(0,0,0,.5); }
+.dh { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; border-bottom: 1px solid var(--line); }
+.dh h3 { margin: 0; font-size: 17px; font-weight: 400; }
+.x { width: 34px; height: 34px; border-radius: 10px; border: 1px solid var(--line); background: var(--n2); }
+.db { flex: 1; overflow-y: auto; padding: 14px 20px; display: flex; flex-direction: column; gap: 14px; }
+.lines { display: flex; flex-direction: column; gap: 6px; }
+.line { display: grid; grid-template-columns: 30px 44px 1fr auto; gap: 10px; align-items: center; padding: 8px 10px; border-radius: 12px; background: var(--n2); border: 1px solid var(--line); }
+.mini { width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--line); display: grid; place-items: center; overflow: hidden; background: var(--n0); font-size: 10px; color: var(--d4); }
+.mini svg { width: 18px; height: 18px; stroke: var(--d1); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.line .nm { font-size: 13px; color: var(--d2); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.line .rm { width: 28px; height: 28px; border-radius: 8px; border: none; background: transparent; color: var(--d5); font-size: 16px; }
+.line .rm:hover { background: var(--n3); color: var(--d1); }
+.empty { color: var(--d4); text-align: center; padding: 30px 10px; border: 1px dashed var(--line-2); border-radius: 16px; }
+.opts { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.seg { display: inline-flex; background: var(--n2); border: 1px solid var(--line); border-radius: 10px; padding: 3px; }
+.seg button { border: 0; background: transparent; padding: 5px 12px; border-radius: 7px; font-size: 12.5px; color: var(--d4); }
+.seg button[aria-pressed="true"] { background: var(--n3); color: var(--d1); }
+.opts label { font-size: 12.5px; color: var(--d4); display: inline-flex; gap: 6px; align-items: center; }
+.spec { margin: 0; font-family: var(--mono); font-size: 11.5px; line-height: 1.6; color: var(--d2); background: var(--n0); border: 1px solid var(--line); border-radius: 14px; padding: 14px; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 42vh; overflow-y: auto; }
+.df { padding: 14px 20px 18px; border-top: 1px solid var(--line); display: flex; gap: 10px; }
+.primary { flex: 1; height: 44px; border-radius: 12px; border: 0; background: var(--accent); color: #fff; font-weight: 500; box-shadow: 0 0 22px rgba(61,156,240,.35); }
+.primary:disabled { background: var(--n3); color: var(--d5); box-shadow: none; cursor: default; }
+.ghost { height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line-2); background: transparent; color: var(--d4); }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--d1); color: var(--n0); padding: 10px 16px; border-radius: 12px; font-size: 13px; z-index: 60; }
+
+@media (max-width: 560px) {
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .pv { height: 112px; }
+  .search { flex: 1 1 100%; order: 3; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="wrap head">
+  <div>
+    <div class="eyebrow">Kho token cá nhân</div>
+    <h1>Thư viện Hyan</h1>
+    <p class="lede">Bấm chọn màu, chữ, hiệu ứng, khung, icon, bố cục rồi mở giỏ để copy spec có mã và giá trị chính xác, dán thẳng cho AI.</p>
+  </div>
+  <div class="meta" id="meta"></div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="chips" id="chips" role="toolbar" aria-label="Lọc theo nhóm"></div>
+    <input class="search" id="q" type="search" placeholder="Tìm mã hoặc tên, vd: N2, glow" aria-label="Tìm token">
+    <button class="cart-btn" id="cartBtn" aria-label="Mở giỏ">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h2l2.2 10.2a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.8L20 8H7"/><circle cx="10" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
+      Giỏ <span class="count" id="count">0</span>
+    </button>
+  </div>
+</div>
+
+<main class="wrap" id="main"><div class="state">Đang tải thư viện…</div></main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Giỏ thiết kế">
+  <div class="dh"><h3>Giỏ thiết kế</h3><button class="x" id="closeCart" aria-label="Đóng">✕</button></div>
+  <div class="db">
+    <div class="lines" id="lines"></div>
+    <div class="opts">
+      <div class="seg" role="group" aria-label="Định dạng">
+        <button id="fmtText" aria-pressed="true">Văn bản cho AI</button>
+        <button id="fmtJson" aria-pressed="false">JSON</button>
+      </div>
+      <label><input type="checkbox" id="withLink" checked> Kèm link thư viện</label>
+    </div>
+    <pre class="spec" id="spec"></pre>
+  </div>
+  <div class="df">
+    <button class="ghost" id="clear">Xóa hết</button>
+    <button class="primary" id="copy">Copy cho AI</button>
+  </div>
+</aside>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+// Link công khai của thư viện (trang web và file dữ liệu trên GitHub). Cập nhật khi có repo.
+const SITE_URL = "https://claude.ai/artifact/GNUUQZMREDGpbmFQ9D929g";
+const DATA_URL = "https://github.com/thudonggg25/designshop/tree/main/data";
+
+const state = { lib: null, cats: [], items: new Map(), filter: "all", q: "", cart: [], fmt: "text" };
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const label = (it) => it.theme ? `${it.code} (${it.theme})` : it.code;
+
+try { state.cart = JSON.parse(localStorage.getItem("hyan-cart") || "[]"); } catch (e) { state.cart = []; }
+const saveCart = () => { try { localStorage.setItem("hyan-cart", JSON.stringify(state.cart)); } catch (e) {} };
+
+async function load() {
+  try {
+    const lib = await (await fetch("data/library.json")).json();
+    state.lib = lib;
+    const files = await Promise.all(lib.categories.map(c => fetch("data/" + c.file).then(r => r.json())));
+    state.cats = lib.categories.map((c, i) => ({ ...c, ...files[i] }));
+    state.cats.forEach(c => c.groups.forEach(g => g.items.forEach(it => {
+      it.kind = c.kind; it.cat = c.label; it.catId = c.id; it.group = g.label;
+      state.items.set(it.id, it);
+    })));
+    state.cart = state.cart.filter(id => state.items.has(id));
+    $("#meta").textContent = `v${lib.version} · ${state.items.size} token`;
+    renderChips(); render(); updateCart();
+  } catch (e) {
+    $("#main").innerHTML = `<div class="state">Không tải được dữ liệu thư viện (thư mục data/). Tải lại trang để thử lần nữa.</div>`;
+  }
+}
+
+function renderChips() {
+  const all = [{ id: "all", label: "Tất cả", prefix: "" }, ...state.cats];
+  $("#chips").innerHTML = all.map(c => `<button class="chip" data-f="${c.id}" aria-pressed="${state.filter === c.id}">${esc(c.label)}${c.prefix ? `<small>${esc(c.prefix)}</small>` : ""}</button>`).join("");
+}
+
+function preview(it) {
+  const css = esc(it.css || "");
+  switch (it.kind) {
+    case "color": {
+      const light = parseInt(it.value.slice(1), 16) > 0x888888;
+      const fg = it.code === "B03" ? "#0D1D2A" : light ? "#0D1D2A" : "rgba(255,255,255,.6)";
+      return `<div class="pv"><div class="sw" style="background:${esc(it.value)};color:${fg}"><span>${it.code === "B03" ? "Aa M0" : ""}</span><span>${esc(it.value)}</span></div></div>`;
+    }
+    case "text": return `<div class="pv pv-text"><p style="${css}">${esc(it.name)}</p></div>`;
+    case "type": return `<div class="pv pv-type"><div style="${css}">${esc(it.sample)}</div></div>`;
+    case "effect": {
+      const glow = it.id === "E03" ? " glow" : "";
+      return `<div class="pv pv-effect"><div class="fx${glow}" style="${css}">${esc(it.code)}</div></div>`;
+    }
+    case "frame": {
+      const box = /K01|K03|K06/.test(it.id);
+      const inner = it.id === "K04" ? "Nhập nội dung…" : box ? "Nội dung thẻ" : "";
+      const k05 = it.id === "K05" ? `<span style="width:20px;height:20px;border-radius:50%;background:#0D1D2A;margin-left:auto;margin-right:3px"></span>` : "";
+      const bg = it.id === "K02" ? "background:#14171C;" : "";
+      return `<div class="pv pv-frame"><div class="fr${box || it.id === "K04" ? " box" : ""}" style="${bg}${css}">${inner}${k05}</div></div>`;
+    }
+    case "icon": return `<div class="pv pv-icon"><svg viewBox="0 0 24 24">${it.svg}</svg></div>`;
+    case "layout": {
+      const c = (it.css || "").replace(/margin-top:[^;]+;?/, "").replace(/gap:\s*(\d+)px/, (m, n) => `gap:${Math.max(4, Math.round(n / 3))}px`).replace(/44px|36px/g, m => Math.round(parseInt(m) / 2) + "px");
+      return `<div class="pv"><div class="lay ${it.id.toLowerCase()}" style="${esc(c)}">${"<i></i>".repeat(it.cells || 3)}</div></div>`;
+    }
+    case "rule": return `<div class="pv pv-rule"><p><b>${esc(it.name)}:</b> ${esc(it.text)}</p></div>`;
+  }
+  return `<div class="pv"></div>`;
+}
+
+function mini(it) {
+  if (it.kind === "color") return `<span class="mini" style="background:${esc(it.value)}"></span>`;
+  if (it.kind === "icon") return `<span class="mini"><svg viewBox="0 0 24 24">${it.svg}</svg></span>`;
+  return `<span class="mini">${esc(it.code[0])}</span>`;
+}
+
+function card(it) {
+  const on = state.cart.includes(it.id);
+  return `<article class="item${on ? " picked" : ""}" data-id="${it.id}">
+    <span class="check" aria-hidden="true">✓</span>
+    ${preview(it)}
+    <div class="info">
+      <div class="row1"><span class="code">${esc(it.code)}</span>${it.theme ? `<span class="theme-tag">${esc(it.theme)}</span>` : ""}<span class="name">${esc(it.name)}</span></div>
+      <div class="val">${esc(it.value)}${it.estimated ? ` <span class="est">· ước lượng</span>` : ""}</div>
+      <button class="add" data-id="${it.id}" aria-pressed="${on}">${on ? "✓ Đã chọn" : "+ Chọn"}</button>
+    </div>
+  </article>`;
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase();
+  const match = (it) => !q || [it.code, it.name, it.value, it.theme, it.css, it.group].join(" ").toLowerCase().includes(q);
+  const html = state.cats.filter(c => state.filter === "all" || state.filter === c.id).map(c => {
+    const groups = c.groups.map(g => {
+      const items = g.items.filter(match);
+      if (!items.length) return "";
+      const showLabel = c.groups.length > 1;
+      return `${showLabel ? `<div class="group-label">${esc(g.label)}</div>` : ""}${g.note ? `<div class="section-head"><span class="note">${esc(g.note)}</span></div>` : ""}<div class="grid">${items.map(card).join("")}</div>`;
+    }).join("");
+    if (!groups) return "";
+    return `<section class="section" id="sec-${c.id}"><div class="section-head"><h2>${esc(c.label)}</h2><span class="codes">${esc(c.prefix)}</span>${c.note || c.style ? `<span class="note">${esc(c.note || c.style)}</span>` : ""}</div>${groups}</section>`;
+  }).join("");
+  $("#main").innerHTML = html || `<div class="state">Không có token nào khớp “${esc(state.q)}”.</div>`;
+}
+
+function toggle(id) {
+  const i = state.cart.indexOf(id);
+  i >= 0 ? state.cart.splice(i, 1) : state.cart.push(id);
+  saveCart();
+  document.querySelectorAll(`.item[data-id="${id}"]`).forEach(el => {
+    const on = state.cart.includes(id);
+    el.classList.toggle("picked", on);
+    const b = el.querySelector(".add"); b.textContent = on ? "✓ Đã chọn" : "+ Chọn"; b.setAttribute("aria-pressed", on);
+  });
+  updateCart();
+}
+
+function cartItems() {
+  // giữ thứ tự theo thư viện để spec gọn gàng
+  return [...state.items.values()].filter(it => state.cart.includes(it.id));
+}
+
+function specText() {
+  const its = cartItems(); const lib = state.lib;
+  if (!its.length) return "";
+  const out = [`SPEC THIẾT KẾ · ${lib.name} v${lib.version}`, `Phong cách chung: ${lib.style}`, `Font: ${lib.font}`];
+  if ($("#withLink").checked) {
+    if (SITE_URL) out.push(`Xem hình minh họa toàn bộ thư viện: ${SITE_URL}`);
+    if (DATA_URL) out.push(`Dữ liệu gốc (JSON): ${DATA_URL}`);
+  }
+  out.push("Quy ước: dùng đúng mã và giá trị bên dưới, không tự đổi màu hay kích thước.", "");
+  let cat = "";
+  its.forEach(it => {
+    if (it.cat !== cat) { cat = it.cat; out.push(`[${cat}]`); }
+    let v;
+    if (it.kind === "color") v = `${it.value}${it.estimated ? " (ước lượng)" : ""}`;
+    else if (it.kind === "icon") v = `SVG 24×24, stroke 1.5, round, fill none: <svg viewBox="0 0 24 24">${it.svg}</svg>`;
+    else if (it.kind === "rule") v = it.text;
+    else if (it.kind === "layout") v = `${it.value} | CSS: ${it.css}`;
+    else v = it.css ? `${it.css}` : it.value;
+    out.push(`${label(it)} · ${it.name}: ${v}`);
+  });
+  return out.join("\n");
+}
+
+function specJson() {
+  const lib = state.lib;
+  const its = cartItems().map(it => {
+    const o = { code: it.code, category: it.cat, name: it.name, value: it.value };
+    if (it.theme) o.theme = it.theme;
+    if (it.css) o.css = it.css;
+    if (it.svg) o.svg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${it.svg}</svg>`;
+    if (it.text) o.rule = it.text;
+    if (it.estimated) o.estimated = true;
+    return o;
+  });
+  if (!its.length) return "";
+  const head = { library: lib.name, version: lib.version, style: lib.style, font: lib.font };
+  if ($("#withLink").checked) { if (SITE_URL) head.site = SITE_URL; if (DATA_URL) head.data = DATA_URL; }
+  return JSON.stringify({ ...head, tokens: its }, null, 2);
+}
+
+function updateCart() {
+  const n = state.cart.length;
+  $("#count").textContent = n; $("#cartBtn").classList.toggle("has", n > 0);
+  const its = cartItems();
+  $("#lines").innerHTML = its.length ? its.map(it => `<div class="line">${mini(it)}<span class="code">${esc(it.code)}</span><span class="nm">${esc(it.theme ? it.theme + " · " : "")}${esc(it.name)}</span><button class="rm" data-rm="${it.id}" aria-label="Bỏ ${esc(it.code)}">✕</button></div>`).join("")
+    : `<div class="empty">Giỏ đang trống. Bấm “+ Chọn” trên các thẻ để thêm.</div>`;
+  const s = state.fmt === "json" ? specJson() : specText();
+  $("#spec").textContent = s || "Spec sẽ hiện ở đây khi bạn chọn token.";
+  $("#copy").disabled = !s; $("#clear").disabled = !n;
+}
+
+function openCart(open) { $("#drawer").hidden = !open; $("#scrim").hidden = !open; }
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast._t); toast._t = setTimeout(() => t.hidden = true, 2000); }
+
+document.addEventListener("click", (e) => {
+  const chip = e.target.closest(".chip");
+  if (chip) { state.filter = chip.dataset.f; renderChips(); render(); return; }
+  const add = e.target.closest(".add");
+  if (add) { toggle(add.dataset.id); return; }
+  const pv = e.target.closest(".pv");
+  if (pv) { toggle(pv.closest(".item").dataset.id); return; }
+  const rm = e.target.closest("[data-rm]");
+  if (rm) { toggle(rm.dataset.rm); return; }
+});
+$("#q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+$("#cartBtn").onclick = () => openCart(true);
+$("#closeCart").onclick = () => openCart(false);
+$("#scrim").onclick = () => openCart(false);
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") openCart(false); });
+$("#fmtText").onclick = () => { state.fmt = "text"; $("#fmtText").setAttribute("aria-pressed", true); $("#fmtJson").setAttribute("aria-pressed", false); updateCart(); };
+$("#fmtJson").onclick = () => { state.fmt = "json"; $("#fmtJson").setAttribute("aria-pressed", true); $("#fmtText").setAttribute("aria-pressed", false); updateCart(); };
+$("#withLink").onchange = updateCart;
+$("#clear").onclick = () => { state.cart = []; saveCart(); render(); updateCart(); };
+$("#copy").onclick = () => {
+  const s = state.fmt === "json" ? specJson() : specText();
+  const fallback = () => { const r = document.createRange(); r.selectNodeContents($("#spec")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); toast("Đã bôi đen spec, nhấn Ctrl+C để copy"); };
+  try { navigator.clipboard.writeText(s).then(() => toast(`Đã copy ${state.cart.length} token`), fallback); } catch (e) { fallback(); }
+};
+
+load();
+</script>

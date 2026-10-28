@@ -1,0 +1,22 @@
+{
+  "kind": "frame",
+  "groups": [
+    {
+      "label": "Khung",
+      "items": [
+        { "id": "K01", "code": "K01", "name": "Thẻ lớn (panel)", "value": "bo 24px, đệm 24px, N2→N1 + E01",
+          "css": "border-radius: 24px; padding: 24px; background: linear-gradient(160deg, #14171C, #0B0D10); border: 1px solid rgba(255,255,255,0.07)" },
+        { "id": "K02", "code": "K02", "name": "Ô mẫu màu", "value": "44×44, bo 10px",
+          "css": "width: 44px; height: 44px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.07)" },
+        { "id": "K03", "code": "K03", "name": "Hộp quy tắc", "value": "bo 20px, đệm 20px 28px, N1",
+          "css": "border-radius: 20px; padding: 20px 28px; background: #0B0D10; border: 1px solid rgba(255,255,255,0.07)" },
+        { "id": "K04", "code": "K04", "name": "Ô nhập", "value": "cao 44px, bo 12px, N2",
+          "css": "height: 44px; border-radius: 12px; padding: 0 14px; background: #14171C; border: 1px solid rgba(255,255,255,0.07)" },
+        { "id": "K05", "code": "K05", "name": "Công tắc bật", "value": "44×26, bo tròn, B03",
+          "css": "width: 44px; height: 26px; border-radius: 999px; background: #F2B07A" },
+        { "id": "K06", "code": "K06", "name": "Khối sáng B03", "value": "bo 24px, nền B03, chữ M0",
+          "css": "border-radius: 24px; padding: 24px; background: #F2B07A; color: #0D1D2A" }
+      ]
+    }
+  ]
+}

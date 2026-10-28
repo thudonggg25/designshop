@@ -1,0 +1,18 @@
+{
+  "kind": "layout",
+  "groups": [
+    {
+      "label": "Bố cục",
+      "items": [
+        { "id": "L01", "code": "L01", "name": "Lưới 3 thẻ ngang", "value": "3 cột, khe 24px",
+          "css": "display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px", "cells": 3 },
+        { "id": "L02", "code": "L02", "name": "Hàng token: ô · mã · tên · giá trị", "value": "44px | 36px | 1fr | auto",
+          "css": "display: grid; grid-template-columns: 44px 36px 1fr auto; align-items: center; gap: 16px", "cells": 4 },
+        { "id": "L03", "code": "L03", "name": "Hai cột: danh sách + điểm nhấn", "value": "1fr | 1fr, khe 48px",
+          "css": "display: grid; grid-template-columns: 1fr 1fr; gap: 48px", "cells": 2 },
+        { "id": "L04", "code": "L04", "name": "Mục có nhãn (nhãn T05 trên, nội dung dưới)", "value": "khe 20px, cách mục 72px",
+          "css": "display: flex; flex-direction: column; gap: 20px; margin-top: 72px", "cells": 2 }
+      ]
+    }
+  ]
+}

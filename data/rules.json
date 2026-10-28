@@ -1,0 +1,16 @@
+{
+  "kind": "rule",
+  "groups": [
+    {
+      "label": "Quy tắc",
+      "items": [
+        { "id": "R01", "code": "R01", "name": "Quy tắc sáng", "value": "B03 dùng tiết kiệm",
+          "text": "Mỗi màn tối đa một khối B03 lớn (thẻ chính). Ngoài ra B03 chỉ ở công tắc bật, vạch đã chạy, chấm trạng thái, ô icon đang bật. Chữ trên khối B03 dùng màu mực M0 #0D1D2A." },
+        { "id": "R02", "code": "R02", "name": "Một màu nhấn", "value": "không trộn màu nhấn",
+          "text": "Mỗi màn hình chỉ dùng một màu nhấn chính. Các màu B khác chỉ làm trạng thái phụ." },
+        { "id": "R03", "code": "R03", "name": "Thứ bậc nền", "value": "N0 < N1 < N2 < N3",
+          "text": "Lớp càng nổi thì nền càng sáng: N0 nền app, N1 mặt phẳng, N2 thẻ, N3 ô icon bên trong thẻ." }
+      ]
+    }
+  ]
+}

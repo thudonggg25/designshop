@@ -1,0 +1,39 @@
+{
+  "kind": "color",
+  "groups": [
+    {
+      "label": "Nền · Đêm",
+      "items": [
+        { "id": "N0-dem", "code": "N0", "theme": "Đêm", "name": "Nền app", "value": "#050608" },
+        { "id": "N1-dem", "code": "N1", "theme": "Đêm", "name": "Mặt phẳng, thanh tab", "value": "#0B0D10" },
+        { "id": "N2-dem", "code": "N2", "theme": "Đêm", "name": "Thẻ, ô nhập", "value": "#14171C" },
+        { "id": "N3-dem", "code": "N3", "theme": "Đêm", "name": "Ô icon, công tắc tắt", "value": "#1E2229" }
+      ]
+    },
+    {
+      "label": "Nền · Ngày",
+      "items": [
+        { "id": "N0-ngay", "code": "N0", "theme": "Ngày", "name": "Nền app", "value": "#12161B" },
+        { "id": "N1-ngay", "code": "N1", "theme": "Ngày", "name": "Mặt phẳng, thanh tab", "value": "#1A1F25" },
+        { "id": "N2-ngay", "code": "N2", "theme": "Ngày", "name": "Thẻ, ô nhập", "value": "#232A31" },
+        { "id": "N3-ngay", "code": "N3", "theme": "Ngày", "name": "Ô icon, công tắc tắt", "value": "#2E363F" }
+      ]
+    },
+    {
+      "label": "Màu nhấn",
+      "note": "Giá trị ước lượng từ ảnh chụp, cần chỉnh lại cho đúng mã gốc.",
+      "items": [
+        { "id": "B01", "code": "B01", "name": "Xanh dương", "value": "#3D9CF0", "estimated": true },
+        { "id": "B02", "code": "B02", "name": "Xanh sương", "value": "#8DB9E2", "estimated": true },
+        { "id": "B03", "code": "B03", "name": "Cam đào (khối sáng chính)", "value": "#F2B07A", "estimated": true },
+        { "id": "B04", "code": "B04", "name": "San hô", "value": "#F5877A", "estimated": true }
+      ]
+    },
+    {
+      "label": "Mực",
+      "items": [
+        { "id": "M0", "code": "M0", "name": "Mực: chữ trên khối B03", "value": "#0D1D2A" }
+      ]
+    }
+  ]
+}
