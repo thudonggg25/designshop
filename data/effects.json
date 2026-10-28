@@ -9,7 +9,7 @@
         { "id": "E02", "code": "E02", "name": "Bề mặt thẻ chuyển sắc", "value": "N2 → N1, 160°",
           "css": "background: linear-gradient(160deg, #14171C 0%, #0B0D10 100%)" },
         { "id": "E03", "code": "E03", "name": "Phát sáng màu nhấn", "value": "glow B01 40%",
-          "css": "box-shadow: 0 0 22px rgba(61,156,240,0.40)" },
+          "css": "box-shadow: 0 0 22px rgba(74,163,234,0.40)" },
         { "id": "E04", "code": "E04", "name": "Bóng nổi thẻ", "value": "đổ bóng mềm",
           "css": "box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 18px 40px rgba(0,0,0,0.45)" },
         { "id": "E05", "code": "E05", "name": "Kính mờ", "value": "blur 18px",

@@ -13,9 +13,9 @@
         { "id": "K04", "code": "K04", "name": "Ô nhập", "value": "cao 44px, bo 12px, N2",
           "css": "height: 44px; border-radius: 12px; padding: 0 14px; background: #14171C; border: 1px solid rgba(255,255,255,0.07)" },
         { "id": "K05", "code": "K05", "name": "Công tắc bật", "value": "44×26, bo tròn, B03",
-          "css": "width: 44px; height: 26px; border-radius: 999px; background: #F2B07A" },
+          "css": "width: 44px; height: 26px; border-radius: 999px; background: #F0B27A" },
         { "id": "K06", "code": "K06", "name": "Khối sáng B03", "value": "bo 24px, nền B03, chữ M0",
-          "css": "border-radius: 24px; padding: 24px; background: #F2B07A; color: #0D1D2A" }
+          "css": "border-radius: 24px; padding: 24px; background: #F0B27A; color: #0D1D2A" }
       ]
     }
   ]
