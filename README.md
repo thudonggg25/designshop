@@ -5,20 +5,32 @@ Thư viện token thiết kế cá nhân: mỗi màu, độ nhạt chữ, kiểu
 - `index.html`: trang web xem trước trực quan, chọn token như đi shopping, cho vào giỏ rồi copy spec dán cho AI.
 - `data/`: nguồn dữ liệu duy nhất (JSON). Sửa ở đây thì trang web tự cập nhật.
 
-## Hệ thống mã
+## Hệ thống mã (v0.2: danh mục key visual)
 
-| Tiền tố | Nhóm | File |
-|---|---|---|
-| N0–N3 | Màu nền (Đêm / Ngày) | data/colors.json |
-| B01–B04 | Màu nhấn | data/colors.json |
-| M0 | Mực (chữ trên khối sáng) | data/colors.json |
-| D1–D5 | Độ nhạt chữ | data/text.json |
-| T01… | Kiểu chữ | data/typography.json |
-| E01… | Hiệu ứng | data/effects.json |
-| K01… | Khung | data/frames.json |
-| I01… | Icon | data/icons.json |
-| L01… | Bố cục | data/layouts.json |
-| R01… | Quy tắc dùng | data/rules.json |
+| Thư mục | Nhóm | Mã | File |
+|---|---|---|---|
+| Định hướng | Tông cảm xúc | MO01… | data/moods.json |
+| | Phong cách thiết kế | S01… | data/styles.json |
+| | Kiểu hình ảnh | H01… | data/imagery.json |
+| Màu sắc | Bảng màu 5 màu | P01… | data/palettes.json |
+| | Màu Hyan (nền, nhấn, mực) | N0–N3, B01–B04, M0 | data/colors.json |
+| | Thang đậm nhạt 50–900 | V01… | data/scales.json |
+| | Độ nhạt chữ | D1–D5 | data/text.json |
+| Chữ | Font | F01… | data/fonts.json |
+| | Cặp font | FP01… | data/pairings.json |
+| | Cỡ chữ | Z01… | data/typescales.json |
+| | Kiểu chữ Hyan | T01… | data/typography.json |
+| Hình khối | Bo góc | G01… | data/radius.json |
+| | Nút | BT01… | data/buttons.json |
+| | Khung & viền | K01… | data/frames.json |
+| | Icon | I01… | data/icons.json |
+| Hiệu ứng & nền | Hiệu ứng | E01… | data/effects.json |
+| | Nền & hoạ tiết | BG01… | data/backgrounds.json |
+| Bố cục & khổ | Bố cục | L01… | data/layouts.json |
+| | Khổ ảnh | A01… | data/formats.json |
+| Quy tắc | Quy tắc | R01… | data/rules.json |
+
+Thư mục và thứ tự nằm trong `data/library.json`. Mục có trường `ai` là từ khoá tiếng Anh để dán vào công cụ tạo ảnh AI. Mục có trường `html` là hình minh hoạ dựng sẵn bằng HTML/CSS.
 
 ## Thêm token mới
 

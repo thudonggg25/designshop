@@ -2,20 +2,150 @@
   "kind": "effect",
   "groups": [
     {
-      "label": "Hiệu ứng",
+      "label": "Bóng, kính, viền",
       "items": [
-        { "id": "E01", "code": "E01", "name": "Viền mảnh", "value": "1px trắng 7%",
-          "css": "border: 1px solid rgba(255,255,255,0.07)" },
-        { "id": "E02", "code": "E02", "name": "Bề mặt thẻ chuyển sắc", "value": "N2 → N1, 160°",
-          "css": "background: linear-gradient(160deg, #14171C 0%, #0B0D10 100%)" },
-        { "id": "E03", "code": "E03", "name": "Phát sáng màu nhấn", "value": "glow B01 40%",
-          "css": "box-shadow: 0 0 22px rgba(74,163,234,0.40)" },
-        { "id": "E04", "code": "E04", "name": "Bóng nổi thẻ", "value": "đổ bóng mềm",
-          "css": "box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 18px 40px rgba(0,0,0,0.45)" },
-        { "id": "E05", "code": "E05", "name": "Kính mờ", "value": "blur 18px",
-          "css": "background: rgba(20,23,28,0.55); backdrop-filter: blur(18px)" },
-        { "id": "E06", "code": "E06", "name": "Viền sáng trên", "value": "highlight 1px",
-          "css": "box-shadow: inset 0 1px 0 rgba(255,255,255,0.08)" }
+        {
+          "id": "E01",
+          "code": "E01",
+          "name": "Viền mảnh",
+          "value": "1px trắng 7%",
+          "css": "border: 1px solid rgba(255,255,255,0.07)"
+        },
+        {
+          "id": "E02",
+          "code": "E02",
+          "name": "Bề mặt thẻ chuyển sắc",
+          "value": "N2 → N1, 160°",
+          "css": "background: linear-gradient(160deg, #14171C 0%, #0B0D10 100%)"
+        },
+        {
+          "id": "E03",
+          "code": "E03",
+          "name": "Phát sáng màu nhấn",
+          "value": "glow B01 40%",
+          "css": "box-shadow: 0 0 22px rgba(74,163,234,0.40)"
+        },
+        {
+          "id": "E04",
+          "code": "E04",
+          "name": "Bóng nổi thẻ",
+          "value": "đổ bóng mềm",
+          "css": "box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 18px 40px rgba(0,0,0,0.45)"
+        },
+        {
+          "id": "E05",
+          "code": "E05",
+          "name": "Kính mờ",
+          "value": "blur 18px",
+          "css": "background: rgba(20,23,28,0.55); backdrop-filter: blur(18px)"
+        },
+        {
+          "id": "E06",
+          "code": "E06",
+          "name": "Viền sáng trên",
+          "value": "highlight 1px",
+          "css": "box-shadow: inset 0 1px 0 rgba(255,255,255,0.08)"
+        },
+        {
+          "id": "E07",
+          "code": "E07",
+          "name": "Bóng cứng lệch (brutal)",
+          "value": "offset 6px, không nhoè",
+          "css": "background: #FFFFFF; border: 2px solid #000000; box-shadow: 6px 6px 0 #000000",
+          "bg": "#FFE14D"
+        },
+        {
+          "id": "E08",
+          "code": "E08",
+          "name": "Nổi mềm (neumorphic)",
+          "value": "bóng sáng + tối",
+          "css": "background: #E4E8EE; box-shadow: 8px 8px 16px #c3c8d1, -8px -8px 16px #ffffff",
+          "bg": "#E4E8EE"
+        },
+        {
+          "id": "E14",
+          "code": "E14",
+          "name": "Hạt nhiễu (grain)",
+          "value": "phủ noise 45%",
+          "css": "background: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.45'/></svg>\"), #2A2A30"
+        },
+        {
+          "id": "E15",
+          "code": "E15",
+          "name": "Bán sắc (halftone)",
+          "value": "chấm tròn 8px",
+          "css": "background: radial-gradient(circle, #FF5C8A 2px, transparent 2.6px) 0 0 / 8px 8px, #FFF1F4",
+          "bg": "#FFF1F4"
+        },
+        {
+          "id": "E16",
+          "code": "E16",
+          "name": "Viền chuyển sắc phát sáng",
+          "value": "viền gradient + glow",
+          "css": "border: 1.5px solid transparent; background: linear-gradient(#14171C, #14171C) padding-box, linear-gradient(135deg, #7C5CFF, #00D2C6) border-box; box-shadow: 0 0 22px rgba(124,92,255,0.45)"
+        },
+        {
+          "id": "E17",
+          "code": "E17",
+          "name": "Bóng đổ mềm sâu",
+          "value": "drop shadow lớn",
+          "css": "background: #FFFFFF; box-shadow: 0 30px 60px -12px rgba(16,24,40,0.35), 0 12px 24px -8px rgba(16,24,40,0.2)",
+          "bg": "#EEF0F4"
+        },
+        {
+          "id": "E18",
+          "code": "E18",
+          "name": "Phản chiếu bóng gương",
+          "value": "gradient sáng chéo",
+          "css": "background: linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 40%), #4AA3EA"
+        }
+      ]
+    },
+    {
+      "label": "Hiệu ứng chữ",
+      "items": [
+        {
+          "id": "E09",
+          "code": "E09",
+          "name": "Chữ chuyển sắc",
+          "value": "gradient trong chữ",
+          "el": "text",
+          "css": "background: linear-gradient(90deg, #4AA3EA, #FF6B9A); -webkit-background-clip: text; background-clip: text; color: transparent"
+        },
+        {
+          "id": "E10",
+          "code": "E10",
+          "name": "Chữ viền rỗng (outline)",
+          "value": "viền 1.5px, ruột trong",
+          "el": "text",
+          "css": "color: transparent; -webkit-text-stroke: 1.5px #FFFFFF"
+        },
+        {
+          "id": "E11",
+          "code": "E11",
+          "name": "Chữ phát sáng neon",
+          "value": "text-shadow nhiều lớp",
+          "el": "text",
+          "css": "color: #FFFFFF; text-shadow: 0 0 6px #FF2E88, 0 0 14px #FF2E88, 0 0 28px #FF2E88",
+          "bg": "#0B0B14"
+        },
+        {
+          "id": "E12",
+          "code": "E12",
+          "name": "Bóng dài (long shadow)",
+          "value": "bóng kéo chéo",
+          "el": "text",
+          "css": "color: #FFFFFF; text-shadow: 1px 1px 0 #2B6FA8, 2px 2px 0 #2B6FA8, 3px 3px 0 #2B6FA8, 4px 4px 0 #2B6FA8, 5px 5px 0 #2B6FA8, 6px 6px 0 #2B6FA8",
+          "bg": "#4AA3EA"
+        },
+        {
+          "id": "E13",
+          "code": "E13",
+          "name": "Lệch màu (chromatic)",
+          "value": "tách kênh đỏ / xanh",
+          "el": "text",
+          "css": "color: #FFFFFF; text-shadow: -2px 0 #FF2E88, 2px 0 #00F0FF"
+        }
       ]
     }
   ]

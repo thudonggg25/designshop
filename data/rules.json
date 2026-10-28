@@ -2,14 +2,90 @@
   "kind": "rule",
   "groups": [
     {
-      "label": "Quy tắc",
+      "label": "Quy tắc Hyan",
       "items": [
-        { "id": "R01", "code": "R01", "name": "Quy tắc sáng", "value": "B03 dùng tiết kiệm",
-          "text": "Mỗi màn tối đa một khối B03 lớn (thẻ chính). Ngoài ra B03 chỉ ở công tắc bật, vạch đã chạy, chấm trạng thái, ô icon đang bật. Chữ trên khối B03 dùng màu mực M0 #0D1D2A." },
-        { "id": "R02", "code": "R02", "name": "Một màu nhấn", "value": "không trộn màu nhấn",
-          "text": "Mỗi màn hình chỉ dùng một màu nhấn chính. Các màu B khác chỉ làm trạng thái phụ." },
-        { "id": "R03", "code": "R03", "name": "Thứ bậc nền", "value": "N0 < N1 < N2 < N3",
-          "text": "Lớp càng nổi thì nền càng sáng: N0 nền app, N1 mặt phẳng, N2 thẻ, N3 ô icon bên trong thẻ." }
+        {
+          "id": "R01",
+          "code": "R01",
+          "name": "Quy tắc sáng",
+          "value": "B03 dùng tiết kiệm",
+          "text": "Mỗi màn tối đa một khối B03 lớn (thẻ chính). Ngoài ra B03 chỉ ở công tắc bật, vạch đã chạy, chấm trạng thái, ô icon đang bật. Chữ trên khối B03 dùng màu mực M0 #0D1D2A."
+        },
+        {
+          "id": "R02",
+          "code": "R02",
+          "name": "Một màu nhấn",
+          "value": "không trộn màu nhấn",
+          "text": "Mỗi màn hình chỉ dùng một màu nhấn chính. Các màu B khác chỉ làm trạng thái phụ."
+        },
+        {
+          "id": "R03",
+          "code": "R03",
+          "name": "Thứ bậc nền",
+          "value": "N0 < N1 < N2 < N3",
+          "text": "Lớp càng nổi thì nền càng sáng: N0 nền app, N1 mặt phẳng, N2 thẻ, N3 ô icon bên trong thẻ."
+        }
+      ]
+    },
+    {
+      "label": "Quy tắc key visual",
+      "items": [
+        {
+          "id": "R04",
+          "code": "R04",
+          "name": "Thứ bậc 3 tầng",
+          "value": "headline > phụ đề > CTA",
+          "text": "Mỗi KV có đúng 3 tầng đọc: headline lớn nhất (đọc trong 1 giây), phụ đề nhỏ hơn ít nhất 2 bậc cỡ chữ, CTA nổi bật bằng màu nhấn."
+        },
+        {
+          "id": "R05",
+          "code": "R05",
+          "name": "Vùng an toàn",
+          "value": "chừa mép 5–8%",
+          "text": "Giữ chữ và logo cách mép tối thiểu 5–8% chiều ngắn. Story/Reels chừa 250px trên và dưới. Bìa Facebook đặt nội dung chính trong 820px giữa."
+        },
+        {
+          "id": "R06",
+          "code": "R06",
+          "name": "Tương phản chữ",
+          "value": "tối thiểu 4.5:1",
+          "text": "Chữ thường phải có độ tương phản với nền tối thiểu 4.5:1, chữ lớn trên 24px tối thiểu 3:1. Chữ đặt trên ảnh cần lớp phủ tối hoặc khối nền."
+        },
+        {
+          "id": "R07",
+          "code": "R07",
+          "name": "Tối đa 2 font",
+          "value": "1 tiêu đề + 1 nội dung",
+          "text": "Dùng tối đa 2 họ font: một cho tiêu đề, một cho nội dung. Tạo khác biệt bằng cỡ và độ đậm thay vì thêm font."
+        },
+        {
+          "id": "R08",
+          "code": "R08",
+          "name": "Tỉ lệ màu 60-30-10",
+          "value": "chủ đạo · phụ · nhấn",
+          "text": "60% màu chủ đạo (nền), 30% màu phụ (khối, ảnh), 10% màu nhấn (CTA, điểm nhấn). Màu nhấn chỉ dùng cho thứ quan trọng nhất."
+        },
+        {
+          "id": "R09",
+          "code": "R09",
+          "name": "Logo và nhận diện",
+          "value": "góc cố định, đủ khoảng thở",
+          "text": "Logo đặt cố định ở một góc (thường trên trái hoặc dưới phải), rộng khoảng 8–12% chiều ngang, khoảng trống quanh logo bằng chiều cao chữ cái đầu."
+        },
+        {
+          "id": "R10",
+          "code": "R10",
+          "name": "Một ý chính",
+          "value": "một thông điệp, một điểm nhìn",
+          "text": "Mỗi KV chỉ truyền một thông điệp chính và có một điểm nhìn đầu tiên. Thông tin phụ đưa xuống caption hoặc trang đích."
+        },
+        {
+          "id": "R11",
+          "code": "R11",
+          "name": "Chữ tiếng Việt",
+          "value": "chọn font có dấu",
+          "text": "Chỉ dùng font hỗ trợ đầy đủ dấu tiếng Việt cho nội dung có dấu. Kiểm tra các chữ ư, ơ, ặ, ỗ, ữ trước khi chốt."
+        }
       ]
     }
   ]

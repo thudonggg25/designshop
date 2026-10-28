@@ -1,0 +1,198 @@
+{
+  "kind": "font",
+  "note": "Font Google Fonts miễn phí. Đánh dấu rõ font không có dấu tiếng Việt.",
+  "groups": [
+    {
+      "label": "Font chữ",
+      "items": [
+        {
+          "id": "F01",
+          "code": "F01",
+          "name": "Be Vietnam Pro",
+          "value": "Sans hiện đại · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Be Vietnam Pro",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "UI, KV Việt, đa dụng",
+          "css": "font-family: 'Be Vietnam Pro', sans-serif"
+        },
+        {
+          "id": "F02",
+          "code": "F02",
+          "name": "Inter",
+          "value": "Sans trung tính · weight 300 400 500 600 700 800",
+          "family": "Inter",
+          "weights": "300;400;500;600;700;800",
+          "vi": true,
+          "use": "UI, công nghệ, nội dung dài",
+          "css": "font-family: 'Inter', sans-serif"
+        },
+        {
+          "id": "F03",
+          "code": "F03",
+          "name": "Montserrat",
+          "value": "Sans hình học · weight 300 400 500 600 700 800 900",
+          "family": "Montserrat",
+          "weights": "300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Thương hiệu, tiêu đề mạnh",
+          "css": "font-family: 'Montserrat', sans-serif"
+        },
+        {
+          "id": "F04",
+          "code": "F04",
+          "name": "Space Grotesk",
+          "value": "Sans cá tính · weight 300 400 500 600 700",
+          "family": "Space Grotesk",
+          "weights": "300;400;500;600;700",
+          "vi": true,
+          "use": "Công nghệ, startup, brutalism",
+          "css": "font-family: 'Space Grotesk', sans-serif"
+        },
+        {
+          "id": "F05",
+          "code": "F05",
+          "name": "Lexend",
+          "value": "Sans dễ đọc · weight 300 400 500 600 700 800",
+          "family": "Lexend",
+          "weights": "300;400;500;600;700;800",
+          "vi": true,
+          "use": "Giáo dục, nội dung dễ đọc",
+          "css": "font-family: 'Lexend', sans-serif"
+        },
+        {
+          "id": "F06",
+          "code": "F06",
+          "name": "Playfair Display",
+          "value": "Serif tiêu đề · weight 400 500 600 700 800 900",
+          "family": "Playfair Display",
+          "weights": "400;500;600;700;800;900",
+          "vi": true,
+          "use": "Sang trọng, tạp chí, thời trang",
+          "css": "font-family: 'Playfair Display', serif"
+        },
+        {
+          "id": "F07",
+          "code": "F07",
+          "name": "Lora",
+          "value": "Serif đọc · weight 400 500 600 700",
+          "family": "Lora",
+          "weights": "400;500;600;700",
+          "vi": true,
+          "use": "Đoạn văn thanh lịch, ẩm thực",
+          "css": "font-family: 'Lora', serif"
+        },
+        {
+          "id": "F08",
+          "code": "F08",
+          "name": "Fraunces",
+          "value": "Serif mềm cá tính · weight 400 600 700 900",
+          "family": "Fraunces",
+          "weights": "400;600;700;900",
+          "vi": true,
+          "use": "Ấm áp, F&B, thủ công",
+          "css": "font-family: 'Fraunces', serif"
+        },
+        {
+          "id": "F09",
+          "code": "F09",
+          "name": "Roboto Slab",
+          "value": "Slab serif · weight 300 400 500 700 900",
+          "family": "Roboto Slab",
+          "weights": "300;400;500;700;900",
+          "vi": true,
+          "use": "Báo chí, thể thao, công nghiệp",
+          "css": "font-family: 'Roboto Slab', serif"
+        },
+        {
+          "id": "F10",
+          "code": "F10",
+          "name": "Oswald",
+          "value": "Sans hẹp · weight 300 400 500 600 700",
+          "family": "Oswald",
+          "weights": "300;400;500;600;700",
+          "vi": true,
+          "use": "Poster, thể thao, giá khuyến mãi",
+          "css": "font-family: 'Oswald', sans-serif"
+        },
+        {
+          "id": "F11",
+          "code": "F11",
+          "name": "Anton",
+          "value": "Display hẹp đậm · weight 400",
+          "family": "Anton",
+          "weights": "400",
+          "vi": true,
+          "use": "Tiêu đề cực lớn, poster",
+          "css": "font-family: 'Anton', sans-serif"
+        },
+        {
+          "id": "F12",
+          "code": "F12",
+          "name": "Bebas Neue",
+          "value": "Display hẹp · weight 400 · KHÔNG có dấu tiếng Việt",
+          "family": "Bebas Neue",
+          "weights": "400",
+          "vi": false,
+          "use": "Chỉ chữ không dấu / tiếng Anh",
+          "css": "font-family: 'Bebas Neue', sans-serif"
+        },
+        {
+          "id": "F13",
+          "code": "F13",
+          "name": "Pacifico",
+          "value": "Script tròn · weight 400",
+          "family": "Pacifico",
+          "weights": "400",
+          "vi": true,
+          "use": "Retro, đồ uống, vui",
+          "css": "font-family: 'Pacifico', cursive"
+        },
+        {
+          "id": "F14",
+          "code": "F14",
+          "name": "Dancing Script",
+          "value": "Script viết tay · weight 400 500 600 700",
+          "family": "Dancing Script",
+          "weights": "400;500;600;700",
+          "vi": true,
+          "use": "Thiệp, handmade, nữ tính",
+          "css": "font-family: 'Dancing Script', cursive"
+        },
+        {
+          "id": "F15",
+          "code": "F15",
+          "name": "Josefin Sans",
+          "value": "Sans thanh mảnh · weight 300 400 600 700",
+          "family": "Josefin Sans",
+          "weights": "300;400;600;700",
+          "vi": true,
+          "use": "Tối giản, thời trang",
+          "css": "font-family: 'Josefin Sans', sans-serif"
+        },
+        {
+          "id": "F16",
+          "code": "F16",
+          "name": "Nunito",
+          "value": "Sans tròn · weight 300 400 600 700 800 900",
+          "family": "Nunito",
+          "weights": "300;400;600;700;800;900",
+          "vi": true,
+          "use": "Dễ thương, trẻ em, thân thiện",
+          "css": "font-family: 'Nunito', sans-serif"
+        },
+        {
+          "id": "F17",
+          "code": "F17",
+          "name": "JetBrains Mono",
+          "value": "Monospace · weight 400 500 700",
+          "family": "JetBrains Mono",
+          "weights": "400;500;700",
+          "vi": true,
+          "use": "Code, công nghệ, nhãn số liệu",
+          "css": "font-family: 'JetBrains Mono', monospace"
+        }
+      ]
+    }
+  ]
+}

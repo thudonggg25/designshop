@@ -2,20 +2,97 @@
   "kind": "frame",
   "groups": [
     {
-      "label": "Khung",
+      "label": "Khung Hyan",
       "items": [
-        { "id": "K01", "code": "K01", "name": "Thẻ lớn (panel)", "value": "bo 24px, đệm 24px, N2→N1 + E01",
-          "css": "border-radius: 24px; padding: 24px; background: linear-gradient(160deg, #14171C, #0B0D10); border: 1px solid rgba(255,255,255,0.07)" },
-        { "id": "K02", "code": "K02", "name": "Ô mẫu màu", "value": "44×44, bo 10px",
-          "css": "width: 44px; height: 44px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.07)" },
-        { "id": "K03", "code": "K03", "name": "Hộp quy tắc", "value": "bo 20px, đệm 20px 28px, N1",
-          "css": "border-radius: 20px; padding: 20px 28px; background: #0B0D10; border: 1px solid rgba(255,255,255,0.07)" },
-        { "id": "K04", "code": "K04", "name": "Ô nhập", "value": "cao 44px, bo 12px, N2",
-          "css": "height: 44px; border-radius: 12px; padding: 0 14px; background: #14171C; border: 1px solid rgba(255,255,255,0.07)" },
-        { "id": "K05", "code": "K05", "name": "Công tắc bật", "value": "44×26, bo tròn, B03",
-          "css": "width: 44px; height: 26px; border-radius: 999px; background: #F0B27A" },
-        { "id": "K06", "code": "K06", "name": "Khối sáng B03", "value": "bo 24px, nền B03, chữ M0",
-          "css": "border-radius: 24px; padding: 24px; background: #F0B27A; color: #0D1D2A" }
+        {
+          "id": "K01",
+          "code": "K01",
+          "name": "Thẻ lớn (panel)",
+          "value": "bo 24px, đệm 24px, N2→N1 + E01",
+          "css": "border-radius: 24px; padding: 24px; background: linear-gradient(160deg, #14171C, #0B0D10); border: 1px solid rgba(255,255,255,0.07)"
+        },
+        {
+          "id": "K02",
+          "code": "K02",
+          "name": "Ô mẫu màu",
+          "value": "44×44, bo 10px",
+          "css": "width: 44px; height: 44px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.07)"
+        },
+        {
+          "id": "K03",
+          "code": "K03",
+          "name": "Hộp quy tắc",
+          "value": "bo 20px, đệm 20px 28px, N1",
+          "css": "border-radius: 20px; padding: 20px 28px; background: #0B0D10; border: 1px solid rgba(255,255,255,0.07)"
+        },
+        {
+          "id": "K04",
+          "code": "K04",
+          "name": "Ô nhập",
+          "value": "cao 44px, bo 12px, N2",
+          "css": "height: 44px; border-radius: 12px; padding: 0 14px; background: #14171C; border: 1px solid rgba(255,255,255,0.07)"
+        },
+        {
+          "id": "K05",
+          "code": "K05",
+          "name": "Công tắc bật",
+          "value": "44×26, bo tròn, B03",
+          "css": "width: 44px; height: 26px; border-radius: 999px; background: #F0B27A"
+        },
+        {
+          "id": "K06",
+          "code": "K06",
+          "name": "Khối sáng B03",
+          "value": "bo 24px, nền B03, chữ M0",
+          "css": "border-radius: 24px; padding: 24px; background: #F0B27A; color: #0D1D2A"
+        }
+      ]
+    },
+    {
+      "label": "Viền & khung KV",
+      "items": [
+        {
+          "id": "K07",
+          "code": "K07",
+          "name": "Viền nét đứt",
+          "value": "1.5px dashed",
+          "css": "border: 1.5px dashed rgba(255,255,255,0.5); border-radius: 16px; padding: 18px"
+        },
+        {
+          "id": "K08",
+          "code": "K08",
+          "name": "Viền đôi",
+          "value": "3px double vàng",
+          "css": "border: 3px double #C9A96E; padding: 18px"
+        },
+        {
+          "id": "K09",
+          "code": "K09",
+          "name": "Viền dày brutal",
+          "value": "3px đen + nền trắng",
+          "css": "border: 3px solid #000000; background: #FFFFFF; color: #000000; padding: 16px"
+        },
+        {
+          "id": "K10",
+          "code": "K10",
+          "name": "Khung ảnh polaroid",
+          "value": "nền trắng, đáy dày",
+          "css": "background: #FFFFFF; padding: 8px 8px 26px; box-shadow: 0 10px 24px rgba(0,0,0,0.35); color: #333333"
+        },
+        {
+          "id": "K11",
+          "code": "K11",
+          "name": "Khung vát góc",
+          "value": "cắt góc 12px",
+          "css": "background: #FCEE0A; color: #0B0B0F; padding: 16px; clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)"
+        },
+        {
+          "id": "K12",
+          "code": "K12",
+          "name": "Nhãn / badge",
+          "value": "pill nhỏ",
+          "css": "background: #FF5C8A; color: #FFFFFF; border-radius: 999px; padding: 4px 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.06em"
+        }
       ]
     }
   ]

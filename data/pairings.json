@@ -1,0 +1,100 @@
+{
+  "kind": "pairing",
+  "groups": [
+    {
+      "label": "Cặp font tiêu đề + nội dung",
+      "items": [
+        {
+          "id": "FP01",
+          "code": "FP01",
+          "name": "Playfair Display + Inter",
+          "value": "sang trọng hiện đại",
+          "head": "Playfair Display",
+          "headWeight": "700",
+          "body": "Inter",
+          "css": "heading: font-family: 'Playfair Display'; font-weight: 700 | body: font-family: 'Inter'; font-weight: 400"
+        },
+        {
+          "id": "FP02",
+          "code": "FP02",
+          "name": "Montserrat + Lora",
+          "value": "thân thiện tin cậy",
+          "head": "Montserrat",
+          "headWeight": "800",
+          "body": "Lora",
+          "css": "heading: font-family: 'Montserrat'; font-weight: 800 | body: font-family: 'Lora'; font-weight: 400"
+        },
+        {
+          "id": "FP03",
+          "code": "FP03",
+          "name": "Anton + Be Vietnam Pro",
+          "value": "poster mạnh, khuyến mãi",
+          "head": "Anton",
+          "headWeight": "400",
+          "body": "Be Vietnam Pro",
+          "css": "heading: font-family: 'Anton'; font-weight: 400 | body: font-family: 'Be Vietnam Pro'; font-weight: 400"
+        },
+        {
+          "id": "FP04",
+          "code": "FP04",
+          "name": "Space Grotesk + Inter",
+          "value": "công nghệ, startup",
+          "head": "Space Grotesk",
+          "headWeight": "700",
+          "body": "Inter",
+          "css": "heading: font-family: 'Space Grotesk'; font-weight: 700 | body: font-family: 'Inter'; font-weight: 400"
+        },
+        {
+          "id": "FP05",
+          "code": "FP05",
+          "name": "Fraunces + Nunito",
+          "value": "ấm áp, mềm mại",
+          "head": "Fraunces",
+          "headWeight": "700",
+          "body": "Nunito",
+          "css": "heading: font-family: 'Fraunces'; font-weight: 700 | body: font-family: 'Nunito'; font-weight: 400"
+        },
+        {
+          "id": "FP06",
+          "code": "FP06",
+          "name": "Oswald + Roboto Slab",
+          "value": "báo chí, thể thao",
+          "head": "Oswald",
+          "headWeight": "600",
+          "body": "Roboto Slab",
+          "css": "heading: font-family: 'Oswald'; font-weight: 600 | body: font-family: 'Roboto Slab'; font-weight: 400"
+        },
+        {
+          "id": "FP07",
+          "code": "FP07",
+          "name": "Josefin Sans + Lora",
+          "value": "tối giản thanh lịch",
+          "head": "Josefin Sans",
+          "headWeight": "300",
+          "body": "Lora",
+          "css": "heading: font-family: 'Josefin Sans'; font-weight: 300 | body: font-family: 'Lora'; font-weight: 400"
+        },
+        {
+          "id": "FP08",
+          "code": "FP08",
+          "name": "Pacifico + Nunito",
+          "value": "vui vẻ, đồ uống",
+          "head": "Pacifico",
+          "headWeight": "400",
+          "body": "Nunito",
+          "css": "heading: font-family: 'Pacifico'; font-weight: 400 | body: font-family: 'Nunito'; font-weight: 400"
+        },
+        {
+          "id": "FP09",
+          "code": "FP09",
+          "name": "Lexend + JetBrains Mono",
+          "value": "sản phẩm số, dev",
+          "head": "Lexend",
+          "headWeight": "700",
+          "body": "JetBrains Mono",
+          "css": "heading: font-family: 'Lexend'; font-weight: 700 | body: font-family: 'JetBrains Mono'; font-weight: 400"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "kind": "radius",
+  "groups": [
+    {
+      "label": "Bo góc",
+      "items": [
+        {
+          "id": "G01",
+          "code": "G01",
+          "name": "Vuông sắc",
+          "value": "0px",
+          "css": "border-radius: 0px"
+        },
+        {
+          "id": "G02",
+          "code": "G02",
+          "name": "Bo rất nhẹ",
+          "value": "4px",
+          "css": "border-radius: 4px"
+        },
+        {
+          "id": "G03",
+          "code": "G03",
+          "name": "Bo nhẹ",
+          "value": "8px",
+          "css": "border-radius: 8px"
+        },
+        {
+          "id": "G04",
+          "code": "G04",
+          "name": "Bo vừa",
+          "value": "12px",
+          "css": "border-radius: 12px"
+        },
+        {
+          "id": "G05",
+          "code": "G05",
+          "name": "Bo mềm",
+          "value": "16px",
+          "css": "border-radius: 16px"
+        },
+        {
+          "id": "G06",
+          "code": "G06",
+          "name": "Bo lớn",
+          "value": "24px",
+          "css": "border-radius: 24px"
+        },
+        {
+          "id": "G07",
+          "code": "G07",
+          "name": "Bo rất lớn",
+          "value": "32px",
+          "css": "border-radius: 32px"
+        },
+        {
+          "id": "G08",
+          "code": "G08",
+          "name": "Viên thuốc (pill)",
+          "value": "999px",
+          "css": "border-radius: 999px"
+        },
+        {
+          "id": "G09",
+          "code": "G09",
+          "name": "Tròn hữu cơ",
+          "value": "62% 38% 46% 54% / 55% 45% 55% 45%",
+          "css": "border-radius: 62% 38% 46% 54% / 55% 45% 55% 45%"
+        }
+      ]
+    }
+  ]
+}

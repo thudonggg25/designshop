@@ -1,0 +1,135 @@
+{
+  "kind": "typescale",
+  "groups": [
+    {
+      "label": "Thang tỉ lệ",
+      "items": [
+        {
+          "id": "Z01",
+          "code": "Z01",
+          "name": "Minor third (1.2)",
+          "value": "gốc 16px × 1.2: 13 / 16 / 19 / 23 / 28 / 33 / 40 px",
+          "sizes": [
+            13,
+            16,
+            19,
+            23,
+            28,
+            33,
+            40
+          ],
+          "roles": "caption / body / sub / h3 / h2 / h1 / display"
+        },
+        {
+          "id": "Z02",
+          "code": "Z02",
+          "name": "Major third (1.25)",
+          "value": "gốc 16px × 1.25: 13 / 16 / 20 / 25 / 31 / 39 / 49 px",
+          "sizes": [
+            13,
+            16,
+            20,
+            25,
+            31,
+            39,
+            49
+          ],
+          "roles": "caption / body / sub / h3 / h2 / h1 / display"
+        },
+        {
+          "id": "Z03",
+          "code": "Z03",
+          "name": "Perfect fourth (1.333)",
+          "value": "gốc 16px × 1.333: 12 / 16 / 21 / 28 / 38 / 51 / 67 px",
+          "sizes": [
+            12,
+            16,
+            21,
+            28,
+            38,
+            51,
+            67
+          ],
+          "roles": "caption / body / sub / h3 / h2 / h1 / display"
+        },
+        {
+          "id": "Z04",
+          "code": "Z04",
+          "name": "Perfect fifth (1.5)",
+          "value": "gốc 16px × 1.5: 11 / 16 / 24 / 36 / 54 / 81 / 122 px",
+          "sizes": [
+            11,
+            16,
+            24,
+            36,
+            54,
+            81,
+            122
+          ],
+          "roles": "caption / body / sub / h3 / h2 / h1 / display"
+        },
+        {
+          "id": "Z05",
+          "code": "Z05",
+          "name": "Tỉ lệ vàng (1.618)",
+          "value": "gốc 16px × 1.618: 10 / 16 / 26 / 42 / 68 / 110 / 177 px",
+          "sizes": [
+            10,
+            16,
+            26,
+            42,
+            68,
+            110,
+            177
+          ],
+          "roles": "caption / body / sub / h3 / h2 / h1 / display"
+        }
+      ]
+    },
+    {
+      "label": "Cỡ chữ theo khổ KV",
+      "items": [
+        {
+          "id": "Z06",
+          "code": "Z06",
+          "name": "KV poster (khổ A4/A3)",
+          "value": "Headline 120 · Sub 48 · Body 24 · CTA 28 · Caption 16 px (ở 1080 rộng)",
+          "sizes": [
+            16,
+            24,
+            28,
+            48,
+            120
+          ],
+          "roles": "caption / body / CTA / sub / headline"
+        },
+        {
+          "id": "Z07",
+          "code": "Z07",
+          "name": "Bài đăng mạng xã hội 1080",
+          "value": "Headline 88 · Sub 44 · Body 30 · Caption 22 px",
+          "sizes": [
+            22,
+            30,
+            44,
+            88
+          ],
+          "roles": "caption / body / sub / headline"
+        },
+        {
+          "id": "Z08",
+          "code": "Z08",
+          "name": "Banner web 1440",
+          "value": "H1 64 · Sub 24 · Nút 18 · Chú thích 14 px",
+          "sizes": [
+            14,
+            18,
+            24,
+            64
+          ],
+          "roles": "caption / button / sub / H1"
+        }
+      ]
+    }
+  ]
+}

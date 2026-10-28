@@ -1,0 +1,262 @@
+{
+  "kind": "palette",
+  "groups": [
+    {
+      "label": "Bảng màu 5 màu",
+      "items": [
+        {
+          "id": "P01",
+          "code": "P01",
+          "name": "Hyan Đêm",
+          "value": "#050608 · #14171C · #1E2229 · #4AA3EA · #F0B27A",
+          "mood": "tối, một nhấn xanh",
+          "colors": [
+            "#050608",
+            "#14171C",
+            "#1E2229",
+            "#4AA3EA",
+            "#F0B27A"
+          ]
+        },
+        {
+          "id": "P02",
+          "code": "P02",
+          "name": "Bắc Âu",
+          "value": "#F4F1EC · #D9D4CB · #8A9A9B · #3E4E50 · #1E2A2B",
+          "mood": "trung tính, mát, yên",
+          "colors": [
+            "#F4F1EC",
+            "#D9D4CB",
+            "#8A9A9B",
+            "#3E4E50",
+            "#1E2A2B"
+          ]
+        },
+        {
+          "id": "P03",
+          "code": "P03",
+          "name": "Pastel kẹo",
+          "value": "#FFD6E0 · #FFEFB5 · #C1F0DC · #C6D8FF · #E5CCFF",
+          "mood": "ngọt, nhẹ, dễ thương",
+          "colors": [
+            "#FFD6E0",
+            "#FFEFB5",
+            "#C1F0DC",
+            "#C6D8FF",
+            "#E5CCFF"
+          ]
+        },
+        {
+          "id": "P04",
+          "code": "P04",
+          "name": "Neon đêm",
+          "value": "#0B0B14 · #FF2E88 · #00F0FF · #FCEE0A · #7B2CFF",
+          "mood": "gắt, phát sáng",
+          "colors": [
+            "#0B0B14",
+            "#FF2E88",
+            "#00F0FF",
+            "#FCEE0A",
+            "#7B2CFF"
+          ]
+        },
+        {
+          "id": "P05",
+          "code": "P05",
+          "name": "Đất nung",
+          "value": "#F2E3D5 · #D9A27E · #B5643C · #7A3B22 · #3B2418",
+          "mood": "ấm, mộc",
+          "colors": [
+            "#F2E3D5",
+            "#D9A27E",
+            "#B5643C",
+            "#7A3B22",
+            "#3B2418"
+          ]
+        },
+        {
+          "id": "P06",
+          "code": "P06",
+          "name": "Rừng thông",
+          "value": "#E8EFE6 · #A8C3A0 · #5E8C61 · #2F5233 · #18291A",
+          "mood": "xanh lá, tự nhiên",
+          "colors": [
+            "#E8EFE6",
+            "#A8C3A0",
+            "#5E8C61",
+            "#2F5233",
+            "#18291A"
+          ]
+        },
+        {
+          "id": "P07",
+          "code": "P07",
+          "name": "Đại dương",
+          "value": "#E6F4F8 · #8FD3E8 · #2B9BC4 · #12608A · #0A2E45",
+          "mood": "xanh biển, mát",
+          "colors": [
+            "#E6F4F8",
+            "#8FD3E8",
+            "#2B9BC4",
+            "#12608A",
+            "#0A2E45"
+          ]
+        },
+        {
+          "id": "P08",
+          "code": "P08",
+          "name": "Hoàng hôn",
+          "value": "#FFE3B3 · #FFB26B · #FF7A59 · #E0457B · #5B2A86",
+          "mood": "cam hồng tím",
+          "colors": [
+            "#FFE3B3",
+            "#FFB26B",
+            "#FF7A59",
+            "#E0457B",
+            "#5B2A86"
+          ]
+        },
+        {
+          "id": "P09",
+          "code": "P09",
+          "name": "Đen vàng kim",
+          "value": "#0A0A0A · #1C1A17 · #8C7A5B · #C9A96E · #F3E9D2",
+          "mood": "sang trọng",
+          "colors": [
+            "#0A0A0A",
+            "#1C1A17",
+            "#8C7A5B",
+            "#C9A96E",
+            "#F3E9D2"
+          ]
+        },
+        {
+          "id": "P10",
+          "code": "P10",
+          "name": "Retro 70s",
+          "value": "#F6E7C8 · #F2A541 · #E0632B · #8C3B1F · #3F5E4A",
+          "mood": "cam nâu mù tạt",
+          "colors": [
+            "#F6E7C8",
+            "#F2A541",
+            "#E0632B",
+            "#8C3B1F",
+            "#3F5E4A"
+          ]
+        },
+        {
+          "id": "P11",
+          "code": "P11",
+          "name": "Brutalism",
+          "value": "#FFFFFF · #000000 · #FFE14D · #FF5C8A · #4D7CFE",
+          "mood": "trắng đen + màu gắt",
+          "colors": [
+            "#FFFFFF",
+            "#000000",
+            "#FFE14D",
+            "#FF5C8A",
+            "#4D7CFE"
+          ]
+        },
+        {
+          "id": "P12",
+          "code": "P12",
+          "name": "Y tế sạch",
+          "value": "#FFFFFF · #EAF6F6 · #7FD1C7 · #1FA39A · #0D4D4A",
+          "mood": "trắng, xanh ngọc",
+          "colors": [
+            "#FFFFFF",
+            "#EAF6F6",
+            "#7FD1C7",
+            "#1FA39A",
+            "#0D4D4A"
+          ]
+        },
+        {
+          "id": "P13",
+          "code": "P13",
+          "name": "Công nghệ tím",
+          "value": "#0F1222 · #2A2F5B · #5B5BF0 · #8B7CFF · #E2E4FF",
+          "mood": "xanh tím, hiện đại",
+          "colors": [
+            "#0F1222",
+            "#2A2F5B",
+            "#5B5BF0",
+            "#8B7CFF",
+            "#E2E4FF"
+          ]
+        },
+        {
+          "id": "P14",
+          "code": "P14",
+          "name": "Trái cây",
+          "value": "#FF4D6D · #FF9F1C · #FFD23F · #3BCEAC · #0EAD69",
+          "mood": "tươi, nhiều màu",
+          "colors": [
+            "#FF4D6D",
+            "#FF9F1C",
+            "#FFD23F",
+            "#3BCEAC",
+            "#0EAD69"
+          ]
+        },
+        {
+          "id": "P15",
+          "code": "P15",
+          "name": "Xám đơn sắc",
+          "value": "#F7F7F8 · #D4D4D8 · #A1A1AA · #52525B · #18181B",
+          "mood": "trung tính tuyệt đối",
+          "colors": [
+            "#F7F7F8",
+            "#D4D4D8",
+            "#A1A1AA",
+            "#52525B",
+            "#18181B"
+          ]
+        },
+        {
+          "id": "P16",
+          "code": "P16",
+          "name": "Tết đỏ vàng",
+          "value": "#FFF4E0 · #FFC94A · #E8A317 · #C8102E · #7A0C1C",
+          "mood": "lễ hội, sung túc",
+          "colors": [
+            "#FFF4E0",
+            "#FFC94A",
+            "#E8A317",
+            "#C8102E",
+            "#7A0C1C"
+          ]
+        },
+        {
+          "id": "P17",
+          "code": "P17",
+          "name": "Cà phê sữa",
+          "value": "#F5EDE3 · #E0CDB5 · #B08968 · #7F5539 · #432818",
+          "mood": "nâu kem, ấm",
+          "colors": [
+            "#F5EDE3",
+            "#E0CDB5",
+            "#B08968",
+            "#7F5539",
+            "#432818"
+          ]
+        },
+        {
+          "id": "P18",
+          "code": "P18",
+          "name": "Hồng đất",
+          "value": "#FBEAE5 · #F2B5A7 · #D9817A · #A44A3F · #5C2A2A",
+          "mood": "hồng nude, nữ tính",
+          "colors": [
+            "#FBEAE5",
+            "#F2B5A7",
+            "#D9817A",
+            "#A44A3F",
+            "#5C2A2A"
+          ]
+        }
+      ]
+    }
+  ]
+}

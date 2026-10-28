@@ -128,6 +128,28 @@ main { padding-block: 10px 120px; }
 .pv-rule p { margin: 0; font-size: 12px; color: rgba(255,255,255,.62); line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
 .pv-rule b { color: #fff; font-weight: 600; }
 
+.folder { margin-top: 56px; }
+.folder-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 22px 26px; border-radius: 20px; }
+.folder-head h2 { font-family: var(--display); font-weight: 800; font-size: clamp(24px, 3.4vw, 34px); text-transform: uppercase; margin: 4px 0 0; line-height: 1; }
+.folder-head p { margin: 0; color: var(--muted); max-width: 52ch; }
+.section h3 { font-family: var(--display); font-weight: 700; font-size: 19px; margin: 0; }
+.pv.tall { height: 156px; padding: 0; }
+.pv-pal { padding: 0; display: flex; align-items: stretch; }
+.pv-pal > i { flex: 1; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-style: normal; font-family: var(--mono); font-size: 9px; }
+.pv-font { flex-direction: column; gap: 4px; text-align: center; background: #0B0D10; }
+.pv-font .big { font-size: 44px; line-height: 1; color: #fff; }
+.pv-font .small { font-size: 13px; color: rgba(255,255,255,.7); }
+.pv-pair { background: #F5F3EF; color: #18181B; text-align: left; place-items: center start; padding: 16px 18px; }
+.pv-pair .hd { font-size: 24px; line-height: 1.05; }
+.pv-pair .bd { font-size: 11.5px; line-height: 1.45; color: #52525B; margin-top: 6px; }
+.pv-ts { place-items: end start; padding: 12px 14px; background: #0B0D10; }
+.pv-ts .row { display: flex; align-items: baseline; gap: 8px; color: #fff; font-family: "Be Vietnam Pro", sans-serif; font-weight: 600; line-height: 1; }
+.pv-ts .row span { display: inline-block; }
+.pv-rad > div { width: 96px; height: 70px; background: #E9E9EC; }
+.pv-btn span.b { display: inline-block; font-family: "Be Vietnam Pro", sans-serif; font-size: 13px; border: 0; cursor: default; white-space: nowrap; }
+.pv-fmt { background: #0B0D10; }
+.pv-fmt .f { border: 1.5px solid rgba(255,255,255,.7); background: rgba(255,255,255,.06); display: grid; place-items: center; font-family: var(--mono); font-size: 10px; color: rgba(255,255,255,.8); border-radius: 3px; }
+.pv-fx-text > div { font-family: "Be Vietnam Pro", sans-serif; font-weight: 800; font-size: 46px; line-height: 1; letter-spacing: -.01em; }
 .state { padding: 60px 0; text-align: center; color: var(--muted); }
 
 /* Cart drawer */
@@ -167,6 +189,7 @@ main { padding-block: 10px 120px; }
 #sheet .sh-cat { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.5); margin: 26px 0 12px; }
 #sheet .sh-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 #sheet .sh-tag { font-size: 10.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.45); padding: 4px 8px 8px; }
+#sheet .pv.tall { height: 156px; }
 #sheet .sh-card { background: var(--sheet-card); border: 1px solid rgba(255,255,255,.1); border-radius: 16px; padding: 8px; }
 #sheet .sh-card .pv { cursor: default; }
 #sheet .sh-info { padding: 12px 8px 8px; display: flex; flex-direction: column; gap: 5px; }
@@ -193,14 +216,14 @@ main { padding-block: 10px 120px; }
 <div class="wrap">
   <header class="hero glass">
     <div>
-      <div class="kicker">Design shop · kho token cá nhân</div>
+      <div class="kicker">Design shop · danh mục key visual</div>
       <h1>Thư viện<br>Hyan</h1>
-      <p class="lede">Mỗi màu, chữ, hiệu ứng, khung, icon và bố cục đều có mã riêng và giá trị chính xác. Chọn như đi mua sắm, rồi gửi combo cho AI hoặc cho team.</p>
+      <p class="lede">Mọi thứ cần chốt cho một key visual: cảm xúc, phong cách, màu, chữ, nút, hiệu ứng, nền, bố cục và khổ ảnh. Mỗi món có mã và giá trị chính xác. Chọn như đi mua sắm, rồi gửi combo cho AI hoặc team.</p>
       <div class="meta" id="meta">Đang tải…</div>
     </div>
     <div class="right">
       <ol class="steps">
-        <li><b>1</b><div><strong>Chọn token</strong><span>Bấm vào thẻ hoặc nút “+ Chọn”.</span></div></li>
+        <li><b>1</b><div><strong>Chọn token</strong><span>Đi lần lượt từng thư mục, bấm “+ Chọn” món hợp ý.</span></div></li>
         <li><b>2</b><div><strong>Mở giỏ</strong><span>Xem lại combo, bỏ bớt món không cần.</span></div></li>
         <li><b>3</b><div><strong>Gửi đi</strong><span>Copy spec cho AI, hoặc tải PDF và ảnh PNG cho team.</span></div></li>
       </ol>
@@ -210,7 +233,7 @@ main { padding-block: 10px 120px; }
   <div class="bar">
     <div class="bar-in glass">
       <div class="chips" id="chips" role="toolbar" aria-label="Lọc theo nhóm"></div>
-      <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="q" type="search" placeholder="Tìm mã hoặc tên, vd: N2, kính" aria-label="Tìm token"></label>
+      <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="q" type="search" placeholder="Tìm: glass, P09, Playfair, story" aria-label="Tìm token"></label>
       <button class="pill" id="cartBtn" aria-label="Mở giỏ">
         <svg viewBox="0 0 24 24"><path d="M4 5h2l2.2 10.2a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.8L20 8H7"/><circle cx="10" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
         Giỏ <span class="count" id="count">0</span>
@@ -293,30 +316,51 @@ async function load() {
   try {
     const lib = await (await fetch("data/library.json")).json();
     state.lib = lib;
-    const files = await Promise.all(lib.categories.map(c => fetch("data/" + c.file).then(r => r.json())));
-    state.cats = lib.categories.map((c, i) => ({ ...c, ...files[i] }));
+    const cats = lib.folders.flatMap(f => f.categories.map(c => ({ ...c, folder: f.id })));
+    const files = await Promise.all(cats.map(c => fetch("data/" + c.file).then(r => r.json())));
+    state.cats = cats.map((c, i) => ({ ...c, ...files[i] }));
+    loadFonts();
     state.cats.forEach(c => c.groups.forEach(g => g.items.forEach(it => {
       it.kind = c.kind; it.cat = c.label; it.catId = c.id; it.group = g.label;
       state.items.set(it.id, it);
     })));
     state.cart = state.cart.filter(id => state.items.has(id));
-    $("#meta").textContent = `v${lib.version} · ${state.items.size} token · ${state.cats.length} nhóm`;
+    $("#meta").textContent = `v${lib.version} · ${state.items.size} món · ${lib.folders.length} thư mục · ${state.cats.length} nhóm`;
     renderChips(); render(); updateCart();
   } catch (e) {
     $("#main").innerHTML = `<div class="state">Không tải được dữ liệu thư viện (thư mục data/). Tải lại trang để thử lần nữa.</div>`;
   }
 }
 
+function loadFonts() {
+  const fc = state.cats.find(c => c.kind === "font"); if (!fc) return;
+  const fams = fc.groups.flatMap(g => g.items).map(f => `family=${f.family.replace(/ /g, "+")}:wght@${f.weights}`);
+  fams.push("family=Noto+Serif+JP:wght@500");
+  const l = document.createElement("link"); l.rel = "stylesheet";
+  l.href = `https://fonts.googleapis.com/css2?${fams.join("&")}&display=swap`;
+  document.head ? document.head.appendChild(l) : document.body.appendChild(l);
+}
+
 function renderChips() {
-  const all = [{ id: "all", label: "Tất cả", prefix: "" }, ...state.cats];
-  $("#chips").innerHTML = all.map(c => `<button class="chip" data-f="${c.id}" aria-pressed="${state.filter === c.id}">${esc(c.label)}${c.prefix ? `<small>${esc(c.prefix)}</small>` : ""}</button>`).join("");
+  const all = [{ id: "all", label: "Tất cả" }, ...state.lib.folders];
+  $("#chips").innerHTML = all.map(f => `<button class="chip" data-f="${f.id}" aria-pressed="${state.filter === f.id}">${esc(f.label)}${f.categories ? `<small>${f.categories.reduce((n, c) => n + (state.cats.find(x => x.id === c.id)?.groups || []).reduce((m, g) => m + g.items.length, 0), 0)}</small>` : ""}</button>`).join("");
 }
 
 const bgOf = (it) => it.css ? esc(it.css) : "background:" + esc(it.value);
 
 function preview(it) {
   const css = esc(it.css || "");
+  if (it.html) return `<div class="pv tall">${it.html}</div>`;
   switch (it.kind) {
+    case "palette": return `<div class="pv pv-pal">${it.colors.map(c => { const n = parseInt(c.slice(1), 16), lum = (n >> 16) * .3 + ((n >> 8) & 255) * .59 + (n & 255) * .11; return `<i style="background:${c}"></i>`; }).join("")}</div>`;
+    case "scale": return `<div class="pv pv-pal">${Object.entries(it.steps).map(([k, c]) => { const n = parseInt(c.slice(1), 16), lum = (n >> 16) * .3 + ((n >> 8) & 255) * .59 + (n & 255) * .11; return `<i style="background:${c};color:${lum > 140 ? "rgba(0,0,0,.6)" : "rgba(255,255,255,.75)"}">${k}</i>`; }).join("")}</div>`;
+    case "font": return `<div class="pv pv-font" style="${css}"><div class="big" style="${css}">Aa</div><div class="small" style="${css}">${it.vi ? "Thiết kế tiếng Việt" : "Design without accents"}</div></div>`;
+    case "pairing": return `<div class="pv pv-pair"><div><div class="hd" style="font-family:'${esc(it.head)}';font-weight:${esc(it.headWeight)}">Ưu đãi mùa hè</div><div class="bd" style="font-family:'${esc(it.body)}'">Giảm 30% cho đơn đầu tiên. Áp dụng toàn bộ cửa hàng đến hết tháng.</div></div></div>`;
+    case "typescale": { const s = it.sizes, mx = Math.max(...s), k = 46 / mx; return `<div class="pv pv-ts"><div class="row">${s.map(x => `<span style="font-size:${Math.max(5, x * k).toFixed(1)}px">Aa</span>`).join("")}</div></div>`; }
+    case "radius": return `<div class="pv pv-rad"><div style="${css}"></div></div>`;
+    case "button": return `<div class="pv pv-btn" style="background:${esc(it.bg)}"><span class="b" style="${css}">${esc(it.label || "Mua ngay")}</span></div>`;
+    case "background": return `<div class="pv" style="${css}"></div>`;
+    case "format": { const mw = 150, mh = 104, r = Math.min(mw / it.w, mh / it.h); return `<div class="pv pv-fmt"><div class="f" style="width:${(it.w * r).toFixed(0)}px;height:${(it.h * r).toFixed(0)}px">${it.w}×${it.h}</div></div>`; }
     case "color": {
       const hex = (it.value.match(/#[0-9A-Fa-f]{6}/) || ["#000000"])[0];
       const n = parseInt(hex.slice(1), 16), lum = ((n >> 16) * .3 + ((n >> 8) & 255) * .59 + (n & 255) * .11);
@@ -325,7 +369,10 @@ function preview(it) {
     }
     case "text": return `<div class="pv pv-text"><p style="${css}">${esc(it.name)}</p></div>`;
     case "type": return `<div class="pv pv-type"><div style="${css}">${esc(it.sample)}</div></div>`;
-    case "effect": return `<div class="pv pv-effect"><div class="fx${it.id === "E03" ? " glow" : ""}" style="${css}">${esc(it.code)}</div></div>`;
+    case "effect":
+      if (it.id === "E09") return `<div class="pv pv-fx-text" style="background:#0B0D10"><svg viewBox="0 0 120 60" width="120" height="60"><defs><linearGradient id="g-${it.id}" x1="0" x2="1"><stop offset="0" stop-color="#4AA3EA"/><stop offset="1" stop-color="#FF6B9A"/></linearGradient></defs><text x="60" y="47" text-anchor="middle" font-family="Be Vietnam Pro, sans-serif" font-weight="800" font-size="46" fill="url(#g-${it.id})">KV</text></svg></div>`;
+      if (it.el === "text") return `<div class="pv pv-fx-text" style="background:${esc(it.bg || "#0B0D10")}"><div style="${css}">KV</div></div>`;
+      return `<div class="pv pv-effect"${it.bg ? ` style="background:${esc(it.bg)}"` : ""}><div class="fx${it.id === "E03" ? " glow" : ""}" style="${css}">${esc(it.code)}</div></div>`;
     case "frame": {
       const box = /K01|K03|K06/.test(it.id);
       const inner = it.id === "K04" ? "Nhập nội dung…" : box ? "Nội dung thẻ" : "";
@@ -346,6 +393,8 @@ function preview(it) {
 function mini(it) {
   if (it.kind === "color") return `<span class="mini" style="${bgOf(it)}"></span>`;
   if (it.kind === "icon") return `<span class="mini"><svg viewBox="0 0 24 24">${it.svg}</svg></span>`;
+  if (it.colors || it.steps) { const cs = it.colors || Object.values(it.steps); return `<span class="mini" style="background:linear-gradient(90deg,${cs.map((c, i) => `${c} ${i / cs.length * 100}% ${(i + 1) / cs.length * 100}%`).join(",")})"></span>`; }
+  if (it.kind === "background") return `<span class="mini" style="${esc(it.css)}"></span>`;
   return `<span class="mini">${esc(it.code[0])}</span>`;
 }
 
@@ -364,15 +413,20 @@ function card(it) {
 
 function render() {
   const q = state.q.trim().toLowerCase();
-  const match = (it) => !q || [it.code, it.name, it.value, it.theme, it.css, it.group].join(" ").toLowerCase().includes(q);
-  const html = state.cats.filter(c => state.filter === "all" || state.filter === c.id).map(c => {
+  const match = (it) => !q || [it.code, it.name, it.value, it.theme, it.css, it.group, it.ai, it.desc, it.family, it.mood, it.use].join(" ").toLowerCase().includes(q);
+  const catHtml = (c) => {
     const groups = c.groups.map(g => {
       const items = g.items.filter(match);
       if (!items.length) return "";
       return `${c.groups.length > 1 ? `<div class="group-label">${esc(g.label)}</div>` : ""}<div class="grid">${items.map(card).join("")}</div>`;
     }).join("");
     if (!groups) return "";
-    return `<section class="section"><div class="section-head"><h2>${esc(c.label)}</h2><span class="codes">${esc(c.prefix)}</span>${c.note || c.style ? `<span class="note">${esc(c.note || c.style)}</span>` : ""}</div>${groups}</section>`;
+    return `<section class="section"><div class="section-head"><h3>${esc(c.label)}</h3><span class="codes">${esc(c.prefix)}</span>${c.note || c.style ? `<span class="note">${esc(c.note || c.style)}</span>` : ""}</div>${groups}</section>`;
+  };
+  const html = state.lib.folders.filter(f => state.filter === "all" || state.filter === f.id).map(f => {
+    const body = state.cats.filter(c => c.folder === f.id).map(catHtml).join("");
+    if (!body) return "";
+    return `<div class="folder"><div class="folder-head glass"><div><div class="kicker">Thư mục</div><h2>${esc(f.label)}</h2></div><p>${esc(f.desc)}</p></div>${body}</div>`;
   }).join("");
   $("#main").innerHTML = html || `<div class="state">Không có token nào khớp “${esc(state.q)}”.</div>`;
 }
@@ -392,17 +446,23 @@ function toggle(id) {
 const cartItems = () => [...state.items.values()].filter(it => state.cart.includes(it.id));
 
 function valueFor(it) {
-  if (it.kind === "color") return `${it.value}${it.css ? " | CSS: " + it.css : ""}`;
   if (it.kind === "icon") return `SVG 24×24, stroke 1.5, round, fill none: <svg viewBox="0 0 24 24">${it.svg}</svg>`;
   if (it.kind === "rule") return it.text;
-  if (it.kind === "layout") return `${it.value} | CSS: ${it.css}`;
-  return it.css || it.value;
+  const p = [it.value];
+  if (it.steps) p.push(Object.entries(it.steps).map(([k, c]) => `${k} ${c}`).join(", "));
+  if (it.desc) p.push(`Dùng cho: ${it.desc}`);
+  if (it.use && it.kind !== "font") p.push(it.use);
+  if (it.kind === "font") p.push(`Dùng cho: ${it.use}`);
+  if (it.suggest) p.push(`Gợi ý kèm: ${it.suggest}`);
+  if (it.css) p.push(`CSS: ${it.css}`);
+  if (it.ai) p.push(`Từ khoá AI: ${it.ai}`);
+  return p.join(" | ");
 }
 
 function specText() {
   const its = cartItems(), lib = state.lib;
   if (!its.length) return "";
-  const out = [`SPEC THIẾT KẾ · ${lib.name} v${lib.version}`, `Phong cách chung: ${lib.style}`, `Font: ${lib.font}`];
+  const out = [`BRIEF KEY VISUAL · ${lib.name} v${lib.version}`, `Gồm ${its.length} lựa chọn, xếp theo thư mục: định hướng, màu, chữ, hình khối, hiệu ứng, bố cục, quy tắc.`];
   if ($("#withLink").checked) { out.push(`Xem hình minh họa toàn bộ thư viện: ${SITE_URL}`); out.push(`Dữ liệu gốc (JSON): ${DATA_URL}`); }
   out.push("Quy ước: dùng đúng mã và giá trị bên dưới, không tự đổi màu hay kích thước.", "");
   let cat = "";
@@ -421,10 +481,11 @@ function specJson() {
     if (it.css) o.css = it.css;
     if (it.svg) o.svg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${it.svg}</svg>`;
     if (it.text) o.rule = it.text;
+    ["colors", "steps", "ai", "desc", "family", "suggest", "w", "h", "sizes"].forEach(k => { if (it[k] !== undefined) o[k] = it[k]; });
     return o;
   });
   if (!its.length) return "";
-  const head = { library: lib.name, version: lib.version, style: lib.style, font: lib.font };
+  const head = { library: lib.name, version: lib.version, type: "key visual brief" };
   if ($("#withLink").checked) { head.site = SITE_URL; head.data = DATA_URL; }
   return JSON.stringify({ ...head, tokens: its }, null, 2);
 }
@@ -450,7 +511,7 @@ function buildSheet() {
   const today = new Date().toLocaleDateString("vi-VN");
   $("#sheet").innerHTML = `
     <div class="sh-head">
-      <div><div class="kicker">${esc(lib.name)} · combo thiết kế</div><h2>Combo đã chọn</h2><p class="sh-style">${esc(lib.style)}</p></div>
+      <div><div class="kicker">${esc(lib.name)} · combo thiết kế</div><h2>Brief key visual</h2><p class="sh-style">${esc(lib.about)}</p></div>
       <div class="sh-meta">${today}<br>${its.length} token<br>v${esc(lib.version)}</div>
     </div>
     <div class="sh-grid">${its.map(it => `
@@ -459,9 +520,10 @@ function buildSheet() {
           <div class="row1"><span class="code">${esc(it.code)}</span>${it.theme ? `<span class="theme-tag">${esc(it.theme)}</span>` : ""}<span class="name">${esc(it.name)}</span></div>
           <div class="val">${esc(it.value)}</div>
           ${it.kind === "rule" ? `<div class="sh-css">${esc(it.text)}</div>` : it.css ? `<div class="sh-css">${esc(it.css)}</div>` : ""}
+          ${it.ai ? `<div class="sh-css">AI: ${esc(it.ai)}</div>` : ""}
         </div>
       </div>`).join("")}</div>
-    <div class="sh-foot"><span>Font: ${esc(lib.font)}</span><span>${esc(SITE_URL)}</span></div>`;
+    <div class="sh-foot"><span>${esc(lib.name)} v${esc(lib.version)}</span><span>${esc(SITE_URL)}</span></div>`;
 }
 
 async function renderSheet() {
@@ -494,7 +556,7 @@ async function exportPng(btn) {
   try {
     const cv = await renderSheet();
     const blob = await new Promise(r => cv.toBlob(r, "image/png"));
-    await saveFile(`combo-hyan-${stamp()}.png`, blob);
+    await saveFile(`brief-kv-${stamp()}.png`, blob);
   } catch (e) { toast("Chưa tạo được ảnh. Kiểm tra mạng rồi thử lại."); }
   busy(btn, false);
 }
@@ -507,7 +569,7 @@ async function exportPdf(btn) {
     const pw = 595.28, ph = 841.89; // A4, pt
     const pageH = Math.floor(cv.width * ph / pw);
     const pdf = new jsPDF({ unit: "pt", format: "a4", compress: true });
-    pdf.setProperties({ title: "Combo thiết kế Hyan", subject: specText(), creator: state.lib.name });
+    pdf.setProperties({ title: "Brief key visual Hyan", subject: specText(), creator: state.lib.name });
     for (let y = 0, i = 0; y < cv.height; y += pageH, i++) {
       const h = Math.min(pageH, cv.height - y);
       const part = document.createElement("canvas"); part.width = cv.width; part.height = pageH;
@@ -516,7 +578,7 @@ async function exportPdf(btn) {
       if (i) pdf.addPage();
       pdf.addImage(part.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, pw, ph);
     }
-    await saveFile(`combo-hyan-${stamp()}.pdf`, pdf.output("blob"));
+    await saveFile(`brief-kv-${stamp()}.pdf`, pdf.output("blob"));
   } catch (e) { toast("Chưa tạo được PDF. Kiểm tra mạng rồi thử lại."); }
   busy(btn, false);
 }

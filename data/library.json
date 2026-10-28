@@ -1,16 +1,176 @@
 {
   "name": "Thư viện thiết kế Hyan",
-  "version": "0.1.0",
-  "style": "Tối, tối giản, nền gần đen, một màu nhấn duy nhất, viền mảnh, góc bo lớn, chữ mảnh.",
-  "font": "\"Segoe UI\", \"Be Vietnam Pro\", system-ui, sans-serif",
-  "categories": [
-    { "id": "colors",     "file": "colors.json",     "label": "Màu",          "prefix": "N · B · M" },
-    { "id": "text",       "file": "text.json",       "label": "Độ nhạt chữ",  "prefix": "D" },
-    { "id": "typography", "file": "typography.json", "label": "Kiểu chữ",     "prefix": "T" },
-    { "id": "effects",    "file": "effects.json",    "label": "Hiệu ứng",     "prefix": "E" },
-    { "id": "frames",     "file": "frames.json",     "label": "Khung",        "prefix": "K" },
-    { "id": "icons",      "file": "icons.json",      "label": "Icon",         "prefix": "I" },
-    { "id": "layouts",    "file": "layouts.json",    "label": "Bố cục",       "prefix": "L" },
-    { "id": "rules",      "file": "rules.json",      "label": "Quy tắc",      "prefix": "R" }
+  "version": "0.2.0",
+  "about": "Danh mục mọi thứ cần chốt cho một key visual trước khi giao cho AI hoặc designer.",
+  "folders": [
+    {
+      "id": "dinh-huong",
+      "label": "Định hướng",
+      "desc": "Cảm xúc, phong cách và kiểu hình ảnh",
+      "categories": [
+        {
+          "id": "moods",
+          "file": "moods.json",
+          "label": "Tông cảm xúc",
+          "prefix": "MO"
+        },
+        {
+          "id": "styles",
+          "file": "styles.json",
+          "label": "Phong cách thiết kế",
+          "prefix": "S"
+        },
+        {
+          "id": "imagery",
+          "file": "imagery.json",
+          "label": "Kiểu hình ảnh",
+          "prefix": "H"
+        }
+      ]
+    },
+    {
+      "id": "mau-sac",
+      "label": "Màu sắc",
+      "desc": "Bảng màu, màu Hyan, thang đậm nhạt, độ nhạt chữ",
+      "categories": [
+        {
+          "id": "palettes",
+          "file": "palettes.json",
+          "label": "Bảng màu",
+          "prefix": "P"
+        },
+        {
+          "id": "colors",
+          "file": "colors.json",
+          "label": "Màu Hyan",
+          "prefix": "N · B · M"
+        },
+        {
+          "id": "scales",
+          "file": "scales.json",
+          "label": "Thang đậm nhạt",
+          "prefix": "V"
+        },
+        {
+          "id": "text",
+          "file": "text.json",
+          "label": "Độ nhạt chữ",
+          "prefix": "D"
+        }
+      ]
+    },
+    {
+      "id": "chu",
+      "label": "Chữ",
+      "desc": "Font, cặp font, cỡ chữ và kiểu chữ",
+      "categories": [
+        {
+          "id": "fonts",
+          "file": "fonts.json",
+          "label": "Font chữ",
+          "prefix": "F"
+        },
+        {
+          "id": "pairings",
+          "file": "pairings.json",
+          "label": "Cặp font",
+          "prefix": "FP"
+        },
+        {
+          "id": "typescales",
+          "file": "typescales.json",
+          "label": "Cỡ chữ",
+          "prefix": "Z"
+        },
+        {
+          "id": "typography",
+          "file": "typography.json",
+          "label": "Kiểu chữ Hyan",
+          "prefix": "T"
+        }
+      ]
+    },
+    {
+      "id": "hinh-khoi",
+      "label": "Hình khối",
+      "desc": "Bo góc, nút, viền khung và icon",
+      "categories": [
+        {
+          "id": "radius",
+          "file": "radius.json",
+          "label": "Bo góc",
+          "prefix": "G"
+        },
+        {
+          "id": "buttons",
+          "file": "buttons.json",
+          "label": "Nút",
+          "prefix": "BT"
+        },
+        {
+          "id": "frames",
+          "file": "frames.json",
+          "label": "Khung & viền",
+          "prefix": "K"
+        },
+        {
+          "id": "icons",
+          "file": "icons.json",
+          "label": "Icon",
+          "prefix": "I"
+        }
+      ]
+    },
+    {
+      "id": "hieu-ung",
+      "label": "Hiệu ứng & nền",
+      "desc": "Bóng, kính, hiệu ứng chữ, nền và hoạ tiết",
+      "categories": [
+        {
+          "id": "effects",
+          "file": "effects.json",
+          "label": "Hiệu ứng",
+          "prefix": "E"
+        },
+        {
+          "id": "backgrounds",
+          "file": "backgrounds.json",
+          "label": "Nền & hoạ tiết",
+          "prefix": "BG"
+        }
+      ]
+    },
+    {
+      "id": "bo-cuc",
+      "label": "Bố cục & khổ",
+      "desc": "Bố cục và kích thước theo kênh",
+      "categories": [
+        {
+          "id": "layouts",
+          "file": "layouts.json",
+          "label": "Bố cục",
+          "prefix": "L"
+        },
+        {
+          "id": "formats",
+          "file": "formats.json",
+          "label": "Khổ ảnh",
+          "prefix": "A"
+        }
+      ]
+    },
+    {
+      "id": "quy-tac",
+      "label": "Quy tắc",
+      "desc": "Nguyên tắc chốt KV",
+      "categories": [
+        {
+          "id": "rules",
+          "file": "rules.json",
+          "label": "Quy tắc",
+          "prefix": "R"
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,160 @@
+{
+  "kind": "mood",
+  "groups": [
+    {
+      "label": "Tông cảm xúc",
+      "items": [
+        {
+          "id": "MO01",
+          "code": "MO01",
+          "name": "Sang trọng",
+          "value": "đắt giá, tinh tế, tiết chế",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#0A0A0A 0%,#1C1A17 40%,#C9A96E 75%,#F3E9D2 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Playfair Display',serif;font-size:24px;line-height:1.05;color:#FFFFFF;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Sang trọng</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#0A0A0A;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#1C1A17;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#C9A96E;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#F3E9D2;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "luxury, premium, elegant, refined, gold accents, deep black, soft spotlight",
+          "suggest": "P09 · S16 · FP01",
+          "colors": [
+            "#0A0A0A",
+            "#1C1A17",
+            "#C9A96E",
+            "#F3E9D2"
+          ]
+        },
+        {
+          "id": "MO02",
+          "code": "MO02",
+          "name": "Trẻ trung năng động",
+          "value": "tươi, nhiều năng lượng, mạnh",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#FF4D6D 0%,#FFD23F 40%,#3BCEAC 75%,#0EAD69 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Anton',sans-serif;font-size:24px;line-height:1.05;color:#FFFFFF;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Trẻ trung năng động</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#FF4D6D;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFD23F;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#3BCEAC;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#0EAD69;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "energetic, youthful, bold, vibrant colors, dynamic composition",
+          "suggest": "P14 · S03 · FP03",
+          "colors": [
+            "#FF4D6D",
+            "#FFD23F",
+            "#3BCEAC",
+            "#0EAD69"
+          ]
+        },
+        {
+          "id": "MO03",
+          "code": "MO03",
+          "name": "Tối giản tinh tế",
+          "value": "ít mà chất, nhiều khoảng trắng",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#F7F7F8 0%,#D4D4D8 40%,#52525B 75%,#18181B 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Josefin Sans',sans-serif;font-size:24px;line-height:1.05;color:#18181B;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Tối giản tinh tế</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#F7F7F8;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#D4D4D8;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#52525B;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#18181B;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "minimal, clean, lots of negative space, calm, understated",
+          "suggest": "P15 · S05 · FP07",
+          "colors": [
+            "#F7F7F8",
+            "#D4D4D8",
+            "#52525B",
+            "#18181B"
+          ]
+        },
+        {
+          "id": "MO04",
+          "code": "MO04",
+          "name": "Công nghệ tương lai",
+          "value": "hiện đại, phát sáng, chính xác",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#0F1222 0%,#5B5BF0 40%,#8B7CFF 75%,#E2E4FF 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Space Grotesk',sans-serif;font-size:24px;line-height:1.05;color:#FFFFFF;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Công nghệ tương lai</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#0F1222;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#5B5BF0;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#8B7CFF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#E2E4FF;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "futuristic, tech, glowing gradients, sleek, digital",
+          "suggest": "P13 · S17 · FP04",
+          "colors": [
+            "#0F1222",
+            "#5B5BF0",
+            "#8B7CFF",
+            "#E2E4FF"
+          ]
+        },
+        {
+          "id": "MO05",
+          "code": "MO05",
+          "name": "Ấm áp thân thiện",
+          "value": "gần gũi, mềm, dễ chịu",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#F5EDE3 0%,#E0CDB5 40%,#B08968 75%,#7F5539 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Fraunces',serif;font-size:24px;line-height:1.05;color:#18181B;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Ấm áp thân thiện</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#F5EDE3;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#E0CDB5;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#B08968;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#7F5539;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "warm, friendly, cozy, soft natural light, inviting",
+          "suggest": "P17 · S19 · FP05",
+          "colors": [
+            "#F5EDE3",
+            "#E0CDB5",
+            "#B08968",
+            "#7F5539"
+          ]
+        },
+        {
+          "id": "MO06",
+          "code": "MO06",
+          "name": "Tự nhiên bền vững",
+          "value": "xanh, mộc, an lành",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#E8EFE6 0%,#A8C3A0 40%,#5E8C61 75%,#2F5233 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Lora',serif;font-size:24px;line-height:1.05;color:#18181B;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Tự nhiên bền vững</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#E8EFE6;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#A8C3A0;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#5E8C61;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#2F5233;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "natural, organic, sustainable, earthy greens, sunlight",
+          "suggest": "P06 · S19 · FP02",
+          "colors": [
+            "#E8EFE6",
+            "#A8C3A0",
+            "#5E8C61",
+            "#2F5233"
+          ]
+        },
+        {
+          "id": "MO07",
+          "code": "MO07",
+          "name": "Hoài cổ retro",
+          "value": "phim cũ, thập niên 70–90",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#F6E7C8 0%,#F2A541 40%,#E0632B 75%,#3F5E4A 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Pacifico',cursive;font-size:24px;line-height:1.05;color:#FFFFFF;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Hoài cổ retro</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#F6E7C8;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#F2A541;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#E0632B;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#3F5E4A;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "retro, vintage, 70s, nostalgic, film grain, warm tones",
+          "suggest": "P10 · S09 · FP08",
+          "colors": [
+            "#F6E7C8",
+            "#F2A541",
+            "#E0632B",
+            "#3F5E4A"
+          ]
+        },
+        {
+          "id": "MO08",
+          "code": "MO08",
+          "name": "Nổi loạn cá tính",
+          "value": "gắt, tương phản, đường phố",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#0B0B14 0%,#FF2E88 40%,#00F0FF 75%,#FCEE0A 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Anton',sans-serif;font-size:24px;line-height:1.05;color:#FFFFFF;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Nổi loạn cá tính</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#0B0B14;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FF2E88;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#00F0FF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FCEE0A;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "edgy, rebellious, high contrast, neon, streetwear, glitch",
+          "suggest": "P04 · S11 · FP03",
+          "colors": [
+            "#0B0B14",
+            "#FF2E88",
+            "#00F0FF",
+            "#FCEE0A"
+          ]
+        },
+        {
+          "id": "MO09",
+          "code": "MO09",
+          "name": "Lễ hội Tết",
+          "value": "đỏ vàng, sung túc, rộn ràng",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#C8102E 0%,#7A0C1C 40%,#FFC94A 75%,#FFF4E0 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Playfair Display',serif;font-size:24px;line-height:1.05;color:#FFFFFF;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Lễ hội Tết</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#C8102E;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#7A0C1C;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFC94A;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFF4E0;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "Lunar New Year, festive, red and gold, abundance, apricot blossoms",
+          "suggest": "P16 · S15 · FP01",
+          "colors": [
+            "#C8102E",
+            "#7A0C1C",
+            "#FFC94A",
+            "#FFF4E0"
+          ]
+        },
+        {
+          "id": "MO10",
+          "code": "MO10",
+          "name": "Dễ thương đáng yêu",
+          "value": "pastel, tròn trịa, vui",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#FFD6E0 0%,#FFEFB5 40%,#C1F0DC 75%,#C6D8FF 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Nunito',sans-serif;font-size:24px;line-height:1.05;color:#18181B;text-shadow:0 1px 8px rgba(0,0,0,.15)\">Dễ thương đáng yêu</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#FFD6E0;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFEFB5;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#C1F0DC;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#C6D8FF;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "cute, playful, pastel, soft rounded shapes, cheerful",
+          "suggest": "P03 · S13 · FP08",
+          "colors": [
+            "#FFD6E0",
+            "#FFEFB5",
+            "#C1F0DC",
+            "#C6D8FF"
+          ]
+        }
+      ]
+    }
+  ]
+}

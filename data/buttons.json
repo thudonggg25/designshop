@@ -1,0 +1,118 @@
+{
+  "kind": "button",
+  "groups": [
+    {
+      "label": "Kiểu nút",
+      "items": [
+        {
+          "id": "BT01",
+          "code": "BT01",
+          "name": "Pill trắng đặc",
+          "value": "nền trắng, chữ đen, bo tròn",
+          "css": "background: #FFFFFF; color: #0A0A0B; border-radius: 999px; padding: 12px 22px; font-weight: 600",
+          "bg": "#1A1A1E",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT02",
+          "code": "BT02",
+          "name": "Kính mờ viền mảnh",
+          "value": "nền trong 12%, viền trắng 30%",
+          "css": "background: rgba(255,255,255,0.12); color: #FFFFFF; border: 1px solid rgba(255,255,255,0.32); border-radius: 999px; padding: 12px 22px; font-weight: 600; backdrop-filter: blur(12px)",
+          "bg": "radial-gradient(circle at 30% 30%,#7C5CFF,transparent 50%),radial-gradient(circle at 75% 70%,#FF6B9A,transparent 50%),#141428",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT03",
+          "code": "BT03",
+          "name": "Viền rỗng (ghost)",
+          "value": "không nền, viền 1.5px",
+          "css": "background: transparent; color: #FFFFFF; border: 1.5px solid #FFFFFF; border-radius: 10px; padding: 11px 20px; font-weight: 600",
+          "bg": "#18181B",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT04",
+          "code": "BT04",
+          "name": "Brutal bóng cứng",
+          "value": "viền đen 2px, bóng lệch 4px",
+          "css": "background: #FFE14D; color: #000000; border: 2px solid #000000; border-radius: 0; box-shadow: 4px 4px 0 #000000; padding: 11px 20px; font-weight: 800",
+          "bg": "#FFFFFF",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT05",
+          "code": "BT05",
+          "name": "Chuyển sắc",
+          "value": "tím sang hồng",
+          "css": "background: linear-gradient(135deg, #7C5CFF, #FF6B9A); color: #FFFFFF; border-radius: 12px; padding: 12px 22px; font-weight: 700; box-shadow: 0 8px 20px rgba(124,92,255,0.35)",
+          "bg": "#0F1222",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT06",
+          "code": "BT06",
+          "name": "Nổi mềm (neumorphic)",
+          "value": "cùng màu nền, bóng sáng tối",
+          "css": "background: #E4E8EE; color: #4A5163; border-radius: 14px; padding: 12px 22px; font-weight: 700; box-shadow: 5px 5px 10px #c3c8d1, -5px -5px 10px #ffffff",
+          "bg": "#E4E8EE",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT07",
+          "code": "BT07",
+          "name": "Vuông đen in hoa",
+          "value": "vuông, giãn chữ",
+          "css": "background: #000000; color: #FFFFFF; border-radius: 0; padding: 13px 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px",
+          "bg": "#F3EEE3",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT08",
+          "code": "BT08",
+          "name": "Bo vừa đặc màu",
+          "value": "nền B01, bo 12px",
+          "css": "background: #4AA3EA; color: #FFFFFF; border-radius: 12px; padding: 12px 22px; font-weight: 600",
+          "bg": "#050608",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT09",
+          "code": "BT09",
+          "name": "Gạch chân (liên kết)",
+          "value": "chữ + gạch chân 1.5px",
+          "css": "background: transparent; color: #FFFFFF; border-bottom: 1.5px solid #FFFFFF; border-radius: 0; padding: 4px 0; font-weight: 600",
+          "bg": "#18181B",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT10",
+          "code": "BT10",
+          "name": "3D nhấn",
+          "value": "bóng đặc phía dưới 5px",
+          "css": "background: #FF5C8A; color: #FFFFFF; border-radius: 14px; padding: 12px 22px; font-weight: 800; box-shadow: 0 5px 0 #B8325A",
+          "bg": "#FFF1F4",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT11",
+          "code": "BT11",
+          "name": "Viền neon",
+          "value": "viền và chữ phát sáng cyan",
+          "css": "background: #0B0B14; color: #00F0FF; border: 1.5px solid #00F0FF; border-radius: 8px; padding: 11px 20px; font-weight: 700; box-shadow: 0 0 14px rgba(0,240,255,0.6), inset 0 0 8px rgba(0,240,255,0.35); text-shadow: 0 0 8px rgba(0,240,255,0.8)",
+          "bg": "#05050A",
+          "label": "Mua ngay"
+        },
+        {
+          "id": "BT12",
+          "code": "BT12",
+          "name": "Có icon mũi tên",
+          "value": "pill tối + mũi tên",
+          "css": "background: #18181B; color: #FFFFFF; border-radius: 999px; padding: 12px 18px 12px 22px; font-weight: 600; display: inline-flex; gap: 10px; align-items: center",
+          "bg": "#F5F3EF",
+          "label": "Mua ngay →"
+        }
+      ]
+    }
+  ]
+}

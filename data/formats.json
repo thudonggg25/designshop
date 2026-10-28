@@ -1,0 +1,100 @@
+{
+  "kind": "format",
+  "groups": [
+    {
+      "label": "Khổ ảnh & tỉ lệ",
+      "items": [
+        {
+          "id": "A01",
+          "code": "A01",
+          "name": "Instagram vuông",
+          "value": "1080 × 1080 px · 1:1",
+          "w": 1080,
+          "h": 1080,
+          "use": "Feed IG/FB, ảnh sản phẩm sàn TMĐT"
+        },
+        {
+          "id": "A02",
+          "code": "A02",
+          "name": "Instagram dọc",
+          "value": "1080 × 1350 px · 4:5",
+          "w": 1080,
+          "h": 1350,
+          "use": "Feed IG chiếm nhiều màn hình nhất"
+        },
+        {
+          "id": "A03",
+          "code": "A03",
+          "name": "Story / Reels / TikTok",
+          "value": "1080 × 1920 px · 9:16",
+          "w": 1080,
+          "h": 1920,
+          "use": "Chừa 250px trên và dưới cho giao diện app"
+        },
+        {
+          "id": "A04",
+          "code": "A04",
+          "name": "Ngang 16:9",
+          "value": "1920 × 1080 px · 16:9",
+          "w": 1920,
+          "h": 1080,
+          "use": "Video, slide, màn hình LED"
+        },
+        {
+          "id": "A05",
+          "code": "A05",
+          "name": "Thumbnail YouTube",
+          "value": "1280 × 720 px · 16:9",
+          "w": 1280,
+          "h": 720,
+          "use": "Chữ to, mặt người, tương phản cao"
+        },
+        {
+          "id": "A06",
+          "code": "A06",
+          "name": "Ảnh bìa Facebook",
+          "value": "1640 × 624 px · 2.63:1",
+          "w": 1640,
+          "h": 624,
+          "use": "Nội dung chính ở giữa, mobile cắt hai bên"
+        },
+        {
+          "id": "A07",
+          "code": "A07",
+          "name": "Banner web",
+          "value": "1440 × 600 px · 12:5",
+          "w": 1440,
+          "h": 600,
+          "use": "Hero website, chữ bên trái"
+        },
+        {
+          "id": "A08",
+          "code": "A08",
+          "name": "Poster A4 (in)",
+          "value": "2480 × 3508 px · 300dpi",
+          "w": 2480,
+          "h": 3508,
+          "use": "Chừa lề in 3mm, hệ màu CMYK khi in"
+        },
+        {
+          "id": "A09",
+          "code": "A09",
+          "name": "Bảng quảng cáo ngoài trời",
+          "value": "6000 × 2000 px · 3:1",
+          "w": 6000,
+          "h": 2000,
+          "use": "Tối đa 7 từ, đọc trong 3 giây"
+        },
+        {
+          "id": "A10",
+          "code": "A10",
+          "name": "LinkedIn / link preview",
+          "value": "1200 × 627 px · 1.91:1",
+          "w": 1200,
+          "h": 627,
+          "use": "Ảnh chia sẻ link, bài LinkedIn"
+        }
+      ]
+    }
+  ]
+}

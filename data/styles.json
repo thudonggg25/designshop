@@ -1,0 +1,208 @@
+{
+  "kind": "style",
+  "groups": [
+    {
+      "label": "Phong cách thiết kế",
+      "items": [
+        {
+          "id": "S01",
+          "code": "S01",
+          "name": "Glassmorphism (kính mờ)",
+          "value": "kính mờ, nền màu nhoè, viền sáng mảnh",
+          "desc": "Ứng dụng, công nghệ, KV hiện đại cao cấp",
+          "ai": "glassmorphism, frosted glass panels, background blur, soft colorful blobs, thin white borders, depth",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(circle at 25% 30%,#7C5CFF,transparent 45%),radial-gradient(circle at 80% 75%,#FF6B9A,transparent 45%),#141428;display:grid;place-items:center;\"><div style=\"padding:12px 18px;border-radius:14px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font:700 13px 'Be Vietnam Pro',sans-serif;letter-spacing:.08em\">KEY VISUAL</div></div>"
+        },
+        {
+          "id": "S02",
+          "code": "S02",
+          "name": "Neumorphism (nổi mềm)",
+          "value": "khối nổi lõm bằng bóng sáng tối, cùng màu nền",
+          "desc": "Giao diện thiết bị, sản phẩm công nghệ nhẹ nhàng",
+          "ai": "neumorphism, soft UI, extruded shapes, same-color background, subtle light and dark shadows, monochrome",
+          "html": "<div style=\"position:absolute;inset:0;background:#E4E8EE;display:grid;place-items:center;\"><div style=\"padding:14px 22px;border-radius:18px;background:#E4E8EE;box-shadow:7px 7px 14px #c3c8d1,-7px -7px 14px #ffffff;color:#6B7385;font:700 13px 'Be Vietnam Pro',sans-serif\">Mua ngay</div></div>"
+        },
+        {
+          "id": "S03",
+          "code": "S03",
+          "name": "Neo-brutalism",
+          "value": "viền đen dày, bóng cứng lệch, màu gắt",
+          "desc": "Thương hiệu trẻ, startup, sự kiện, social",
+          "ai": "neo-brutalism, thick black outlines, hard offset shadows, flat saturated colors, raw bold typography",
+          "html": "<div style=\"position:absolute;inset:0;background:#FFE14D;display:grid;place-items:center;\"><div style=\"position:absolute;right:18px;top:16px;width:34px;height:34px;border-radius:50%;background:#FF5C8A;border:2.5px solid #000\"></div><div style=\"padding:10px 16px;background:#fff;border:2.5px solid #000;box-shadow:5px 5px 0 #000;font:800 15px 'Space Grotesk',sans-serif;color:#000\">MUA NGAY</div></div>"
+        },
+        {
+          "id": "S04",
+          "code": "S04",
+          "name": "Swiss / International",
+          "value": "lưới chặt, chữ sans đậm căn trái, khối màu phẳng",
+          "desc": "Poster sự kiện, triển lãm, thương hiệu nghiêm túc",
+          "ai": "swiss design, international typographic style, strict grid, bold sans-serif, flush left, red and black, asymmetry",
+          "html": "<div style=\"position:absolute;inset:0;background:#F4F4F0;\"><div style=\"position:absolute;left:0;top:0;bottom:0;width:38%;background:#E30613\"></div><div style=\"position:absolute;left:44%;top:14px;font:800 30px/0.9 'Inter',sans-serif;letter-spacing:-.04em;color:#111\">KV<br>2026</div><div style=\"position:absolute;left:44%;bottom:16px;right:14px;height:1px;background:#111\"></div></div>"
+        },
+        {
+          "id": "S05",
+          "code": "S05",
+          "name": "Tối giản (Minimalism)",
+          "value": "rất ít chi tiết, nhiều khoảng trắng",
+          "desc": "Mỹ phẩm, kiến trúc, thời trang cao cấp",
+          "ai": "minimalism, generous negative space, single focal point, muted palette, simple geometry, calm",
+          "html": "<div style=\"position:absolute;inset:0;background:#F5F3EF;display:grid;place-items:center;\"><div style=\"text-align:center\"><div style=\"width:26px;height:26px;border-radius:50%;background:#18181B;margin:0 auto 12px\"></div><div style=\"font:400 11px 'Josefin Sans',sans-serif;letter-spacing:.3em;color:#18181B\">LESS IS MORE</div></div></div>"
+        },
+        {
+          "id": "S06",
+          "code": "S06",
+          "name": "Y2K",
+          "value": "chrome bạc, tím xanh pastel, sao lấp lánh",
+          "desc": "Thời trang Gen Z, âm nhạc, mỹ phẩm",
+          "ai": "Y2K aesthetic, chrome metallic, iridescent, holographic, sparkles, bubble shapes, early 2000s",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(160deg,#C9B8FF,#9EE7FF);display:grid;place-items:center;\"><div style=\"position:absolute;left:18px;top:14px;font-size:22px;color:#fff\">✦</div><div style=\"position:absolute;right:22px;bottom:14px;font-size:16px;color:#fff\">✧</div><div style=\"font:800 40px 'Anton',sans-serif;background:linear-gradient(180deg,#ffffff 0%,#9aa3b5 45%,#ffffff 55%,#5d6475 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:1px rgba(80,80,120,.5)\">Y2K</div></div>"
+        },
+        {
+          "id": "S07",
+          "code": "S07",
+          "name": "Bauhaus",
+          "value": "hình học cơ bản, màu cơ bản đỏ vàng xanh",
+          "desc": "Văn hóa, giáo dục, nghệ thuật",
+          "ai": "bauhaus, primary colors, basic geometric shapes, circles squares triangles, functional, modernist",
+          "html": "<div style=\"position:absolute;inset:0;background:#F2EBDD;\"><div style=\"position:absolute;left:16px;top:16px;width:58px;height:58px;border-radius:50%;background:#D7263D\"></div><div style=\"position:absolute;right:20px;top:20px;width:48px;height:48px;background:#1B4F9C\"></div><div style=\"position:absolute;left:84px;bottom:14px;width:0;height:0;border-left:30px solid transparent;border-right:30px solid transparent;border-bottom:50px solid #F2B705\"></div><div style=\"position:absolute;left:16px;right:16px;bottom:14px;height:6px;background:#111\"></div></div>"
+        },
+        {
+          "id": "S08",
+          "code": "S08",
+          "name": "Memphis",
+          "value": "hoạ tiết vui, chấm, zigzag, màu kẹo",
+          "desc": "Sự kiện vui, đồ ăn vặt, trẻ em",
+          "ai": "memphis design, playful patterns, squiggles, dots, zigzags, candy colors, 80s",
+          "html": "<div style=\"position:absolute;inset:0;background:#FFD6E0;background-image:radial-gradient(#111 1.4px,transparent 1.6px);background-size:14px 14px;\"><div style=\"position:absolute;left:20px;top:18px;width:46px;height:46px;border-radius:50%;background:#3BCEAC;border:2px solid #111\"></div><div style=\"position:absolute;right:18px;top:22px;width:0;height:0;border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:38px solid #FFD23F\"></div><div style=\"position:absolute;left:30%;bottom:18px;width:110px;height:14px;background:repeating-linear-gradient(135deg,#111 0 4px,transparent 4px 10px)\"></div></div>"
+        },
+        {
+          "id": "S09",
+          "code": "S09",
+          "name": "Retro thập niên 70",
+          "value": "vòng cung sọc cam nâu, chữ tròn mềm",
+          "desc": "Cà phê, đồ uống, âm nhạc, F&B",
+          "ai": "70s retro, groovy, warm orange brown mustard stripes, rainbow arcs, rounded retro type, film grain",
+          "html": "<div style=\"position:absolute;inset:0;background:#F6E7C8;\"><div style=\"position:absolute;left:50%;bottom:-70px;width:200px;height:140px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 50% 100%,#F6E7C8 0 22%,#3F5E4A 22% 34%,#8C3B1F 34% 46%,#E0632B 46% 58%,#F2A541 58% 70%,transparent 70%)\"></div><div style=\"position:absolute;top:14px;left:0;right:0;text-align:center;font:400 24px 'Pacifico',cursive;color:#8C3B1F\">Groovy</div></div>"
+        },
+        {
+          "id": "S10",
+          "code": "S10",
+          "name": "Synthwave / Vaporwave",
+          "value": "mặt trời sọc, lưới neon, hồng tím",
+          "desc": "Âm nhạc điện tử, game, đêm tiệc",
+          "ai": "synthwave, vaporwave, retro futuristic sunset, neon grid floor, magenta and cyan, 80s",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(180deg,#1A0B3B 0%,#5B1A7A 55%,#1A0B3B 56%);\"><div style=\"position:absolute;left:50%;top:18px;width:74px;height:74px;transform:translateX(-50%);border-radius:50%;background:linear-gradient(180deg,#FFD23F,#FF2E88);-webkit-mask:repeating-linear-gradient(180deg,#000 0 7px,transparent 7px 10px);mask:repeating-linear-gradient(180deg,#000 0 7px,transparent 7px 10px)\"></div><div style=\"position:absolute;left:0;right:0;bottom:0;height:44%;background:linear-gradient(transparent 0 92%,#00F0FF 92%) 0 0/100% 12px,linear-gradient(90deg,transparent 0 94%,#FF2E88 94%) 0 0/18px 100%;opacity:.8\"></div></div>"
+        },
+        {
+          "id": "S11",
+          "code": "S11",
+          "name": "Cyberpunk",
+          "value": "nền đen, vàng neon, góc vát, chữ glitch",
+          "desc": "Game, công nghệ, streetwear",
+          "ai": "cyberpunk, neon yellow and cyan, black, angular cut corners, glitch text, HUD elements, dystopian city",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B0F;display:grid;place-items:center;\"><div style=\"padding:10px 22px;background:#FCEE0A;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);font:400 22px 'Anton',sans-serif;color:#0B0B0F;text-shadow:-2px 0 #00F0FF,2px 0 #FF2E88\">CYBER_77</div></div>"
+        },
+        {
+          "id": "S12",
+          "code": "S12",
+          "name": "Flat design",
+          "value": "màu phẳng, không bóng, hình đơn giản",
+          "desc": "Ứng dụng, infographic, dịch vụ",
+          "ai": "flat design, solid colors, no gradients, simple shapes, clean vector illustration",
+          "html": "<div style=\"position:absolute;inset:0;background:#4D7CFE;\"><div style=\"position:absolute;right:22px;top:18px;width:36px;height:36px;border-radius:50%;background:#FFD23F\"></div><div style=\"position:absolute;left:-20px;bottom:-40px;width:140px;height:90px;border-radius:50%;background:#3BCEAC\"></div><div style=\"position:absolute;right:-30px;bottom:-50px;width:160px;height:100px;border-radius:50%;background:#2F5BD8\"></div></div>"
+        },
+        {
+          "id": "S13",
+          "code": "S13",
+          "name": "Claymorphism / 3D mềm",
+          "value": "khối 3D phồng như đất sét, pastel",
+          "desc": "Ứng dụng trẻ em, fintech thân thiện, mascot",
+          "ai": "claymorphism, soft 3D clay shapes, inflated, pastel colors, inner shadows, playful",
+          "html": "<div style=\"position:absolute;inset:0;background:#EDE7FF;display:grid;place-items:center;\"><div style=\"width:96px;height:64px;border-radius:26px;background:#B7A6FF;box-shadow:inset -8px -8px 16px rgba(80,50,180,.35),inset 8px 8px 16px rgba(255,255,255,.6),10px 14px 24px rgba(90,60,200,.25)\"></div></div>"
+        },
+        {
+          "id": "S14",
+          "code": "S14",
+          "name": "Editorial / Tạp chí",
+          "value": "chữ serif lớn, cột chữ, đường kẻ mảnh",
+          "desc": "Thời trang, bài PR, ấn phẩm",
+          "ai": "editorial magazine layout, large serif headline, columns, thin rules, high-end print feel",
+          "html": "<div style=\"position:absolute;inset:0;background:#F3EEE3;padding:14px;\"><div style=\"font:700 28px/0.95 'Playfair Display',serif;color:#111;font-style:italic\">Mùa mới</div><div style=\"height:1px;background:#111;margin:8px 0\"></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px\"><div style=\"height:30px;background:repeating-linear-gradient(180deg,#999 0 2px,transparent 2px 6px)\"></div><div style=\"height:30px;background:repeating-linear-gradient(180deg,#999 0 2px,transparent 2px 6px)\"></div><div style=\"height:30px;background:repeating-linear-gradient(180deg,#999 0 2px,transparent 2px 6px)\"></div></div></div>"
+        },
+        {
+          "id": "S15",
+          "code": "S15",
+          "name": "Art Deco",
+          "value": "đen vàng kim, hình quạt, đối xứng",
+          "desc": "Khách sạn, tiệc gala, Tết sang trọng",
+          "ai": "art deco, gold and black, symmetrical geometric patterns, fan motifs, 1920s glamour",
+          "html": "<div style=\"position:absolute;inset:0;background:#0E0E0E;display:grid;place-items:center;\"><div style=\"position:absolute;inset:10px;border:1px solid #C9A96E\"></div><div style=\"width:110px;height:56px;border-radius:110px 110px 0 0;background:repeating-conic-gradient(from -90deg at 50% 100%,#C9A96E 0 6deg,transparent 6deg 15deg)\"></div></div>"
+        },
+        {
+          "id": "S16",
+          "code": "S16",
+          "name": "Sang trọng tối (Dark luxury)",
+          "value": "nền đen sâu, chữ serif mảnh, ánh vàng",
+          "desc": "Nước hoa, trang sức, xe, BĐS cao cấp",
+          "ai": "dark luxury, deep black, thin serif typography, gold highlights, dramatic spotlight, premium",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,#2A2620,#080808 70%);display:grid;place-items:center;\"><div style=\"text-align:center\"><div style=\"font:400 22px 'Playfair Display',serif;letter-spacing:.2em;color:#E8D5A8\">AURUM</div><div style=\"width:40px;height:1px;background:#C9A96E;margin:8px auto 0\"></div></div></div>"
+        },
+        {
+          "id": "S17",
+          "code": "S17",
+          "name": "Aurora / Gradient mesh",
+          "value": "các vệt màu nhoè đan nhau",
+          "desc": "Công nghệ, AI, ứng dụng, sự kiện ra mắt",
+          "ai": "aurora gradient mesh, soft blurred color fields, glowing, fluid, modern tech",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(circle at 20% 25%,#5B5BF0 0,transparent 45%),radial-gradient(circle at 80% 30%,#00D2C6 0,transparent 45%),radial-gradient(circle at 55% 85%,#FF6B9A 0,transparent 50%),#0F1222;\"></div>"
+        },
+        {
+          "id": "S18",
+          "code": "S18",
+          "name": "Bento grid",
+          "value": "nhiều ô bo tròn kích thước khác nhau",
+          "desc": "Giới thiệu tính năng, tổng hợp sản phẩm",
+          "ai": "bento grid layout, rounded tiles of different sizes, modular, clean product showcase",
+          "html": "<div style=\"position:absolute;inset:0;background:#0F0F12;padding:10px;display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:6px\"><div style=\"grid-row:span 2;border-radius:10px;background:#5B5BF0\"></div><div style=\"border-radius:10px;background:#26262C\"></div><div style=\"border-radius:10px;background:#F0B27A\"></div><div style=\"grid-column:span 2;border-radius:10px;background:#26262C\"></div></div>"
+        },
+        {
+          "id": "S19",
+          "code": "S19",
+          "name": "Hữu cơ / Vẽ tay",
+          "value": "đường cong tự nhiên, nét tay, màu đất",
+          "desc": "Thực phẩm sạch, handmade, spa",
+          "ai": "organic shapes, hand-drawn lines, natural textures, earthy colors, soft and human",
+          "html": "<div style=\"position:absolute;inset:0;background:#F4EDE1;display:grid;place-items:center;\"><div style=\"position:absolute;left:14px;top:14px;width:70px;height:60px;border-radius:62% 38% 46% 54% / 55% 45% 55% 45%;background:#A8C3A0\"></div><div style=\"position:absolute;right:16px;bottom:12px;width:60px;height:52px;border-radius:40% 60% 55% 45% / 45% 55% 45% 55%;background:#E0B48C\"></div><div style=\"position:relative;font:700 26px 'Dancing Script',cursive;color:#2F5233\">tự nhiên</div></div>"
+        },
+        {
+          "id": "S20",
+          "code": "S20",
+          "name": "Pixel art / 8-bit",
+          "value": "ô vuông pixel, màu giới hạn, font mono",
+          "desc": "Game, công nghệ hoài cổ",
+          "ai": "pixel art, 8-bit, limited palette, blocky sprites, retro game",
+          "html": "<div style=\"position:absolute;inset:0;background:#1B1B2F;display:grid;place-items:center;\"><div style=\"width:72px;height:72px;background:conic-gradient(#FF5C8A 25%,#1B1B2F 0 50%,#FF5C8A 0 75%,#FFD23F 0) 0 0/18px 18px;image-rendering:pixelated;box-shadow:0 0 0 4px #FFD23F\"></div></div>"
+        },
+        {
+          "id": "S21",
+          "code": "S21",
+          "name": "Risograph / Hạt nhiễu",
+          "value": "màu in chồng, hạt sạn, lệch màu",
+          "desc": "Poster nghệ thuật, zine, indie",
+          "ai": "risograph print, grainy texture, overlapping spot colors, misregistration, fluorescent pink and blue",
+          "html": "<div style=\"position:absolute;inset:0;background:#F3EEE3;\"><div style=\"position:absolute;left:24%;top:18%;width:80px;height:80px;border-radius:50%;background:#FF48B0;mix-blend-mode:multiply;opacity:.9\"></div><div style=\"position:absolute;left:42%;top:30%;width:80px;height:80px;border-radius:50%;background:#0078BF;mix-blend-mode:multiply;opacity:.85\"></div><div style=\"position:absolute;inset:0;background:url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.45'/></svg>&quot;);opacity:.5\"></div></div>"
+        },
+        {
+          "id": "S22",
+          "code": "S22",
+          "name": "Tối giản Nhật (Zen)",
+          "value": "trắng ngà, chấm đỏ, chữ dọc, tĩnh lặng",
+          "desc": "Ẩm thực Nhật, trà, spa, thiền",
+          "ai": "japanese minimalism, zen, washi paper, single red circle, vertical text, quiet balance",
+          "html": "<div style=\"position:absolute;inset:0;background:#F6F1E7;\"><div style=\"position:absolute;left:50%;top:50%;width:54px;height:54px;transform:translate(-50%,-50%);border-radius:50%;background:#C8102E\"></div><div style=\"position:absolute;right:18px;top:14px;writing-mode:vertical-rl;font:500 12px 'Noto Serif JP','Lora',serif;letter-spacing:.3em;color:#222\">静けさ</div></div>"
+        }
+      ]
+    }
+  ]
+}

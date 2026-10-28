@@ -1,0 +1,90 @@
+{
+  "kind": "imagery",
+  "groups": [
+    {
+      "label": "Kiểu hình ảnh",
+      "items": [
+        {
+          "id": "H01",
+          "code": "H01",
+          "name": "Ảnh studio sản phẩm",
+          "value": "nền trơn, đèn rọi, bóng đổ mềm",
+          "ai": "studio product photography, seamless backdrop, softbox lighting, soft shadow, sharp detail",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(circle at 50% 35%,#3a3a40,#121214 70%);\"><div style=\"position:absolute;left:50%;top:26px;width:44px;height:74px;transform:translateX(-50%);border-radius:10px 10px 14px 14px;background:linear-gradient(90deg,#9aa0aa,#f2f2f5 40%,#7a7f88)\"></div><div style=\"position:absolute;left:50%;bottom:22px;width:80px;height:12px;transform:translateX(-50%);border-radius:50%;background:rgba(0,0,0,.6);filter:blur(4px)\"></div></div>"
+        },
+        {
+          "id": "H02",
+          "code": "H02",
+          "name": "Ảnh đời thường (lifestyle)",
+          "value": "ánh sáng tự nhiên, con người, bối cảnh thật",
+          "ai": "lifestyle photography, natural window light, candid moment, warm tones, shallow depth of field",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(160deg,#F7D9B5,#C98D63 60%,#6E4A35);\"><div style=\"position:absolute;right:26px;bottom:0;width:60px;height:86px;border-radius:30px 30px 0 0;background:rgba(60,35,25,.55);filter:blur(1px)\"></div><div style=\"position:absolute;left:18px;top:14px;width:50px;height:50px;border-radius:50%;background:rgba(255,240,210,.7);filter:blur(10px)\"></div></div>"
+        },
+        {
+          "id": "H03",
+          "code": "H03",
+          "name": "3D render bóng bẩy",
+          "value": "khối 3D, chất liệu bóng, ánh sáng studio",
+          "ai": "glossy 3D render, octane, smooth materials, studio lighting, floating objects",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(160deg,#1B1446,#3B2A8C);display:grid;place-items:center;\"><div style=\"width:70px;height:70px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff 0 6%,#C9B8FF 18%,#7C5CFF 50%,#2A1A7A 100%);box-shadow:0 18px 30px rgba(0,0,0,.45)\"></div></div>"
+        },
+        {
+          "id": "H04",
+          "code": "H04",
+          "name": "Minh hoạ phẳng",
+          "value": "vector phẳng, màu khối, hình đơn giản",
+          "ai": "flat vector illustration, simple shapes, solid colors, friendly characters",
+          "html": "<div style=\"position:absolute;inset:0;background:#BDE3F2;\"><div style=\"position:absolute;right:26px;top:16px;width:30px;height:30px;border-radius:50%;background:#FFC94A\"></div><div style=\"position:absolute;left:-30px;bottom:-60px;width:180px;height:120px;border-radius:50%;background:#5E8C61\"></div><div style=\"position:absolute;right:-40px;bottom:-70px;width:200px;height:120px;border-radius:50%;background:#2F5233\"></div></div>"
+        },
+        {
+          "id": "H05",
+          "code": "H05",
+          "name": "Minh hoạ nét mảnh (line art)",
+          "value": "nét đơn sắc, không tô, tối giản",
+          "ai": "minimal line art illustration, single continuous line, monochrome, elegant",
+          "html": "<div style=\"position:absolute;inset:0;background:#F5F3EF;display:grid;place-items:center;\"><svg viewBox=\"0 0 120 80\" width=\"120\" height=\"80\" fill=\"none\" stroke=\"#18181B\" stroke-width=\"1.5\" stroke-linecap=\"round\"><path d=\"M10 60c15-30 30-30 40 0s30 25 40-10 20-20 20-20\"/><circle cx=\"92\" cy=\"20\" r=\"8\"/></svg></div>"
+        },
+        {
+          "id": "H06",
+          "code": "H06",
+          "name": "Cắt dán (collage)",
+          "value": "mảnh giấy, ảnh cắt, xếp lớp lệch",
+          "ai": "mixed media collage, torn paper, cut-out photos, layered, tape, editorial",
+          "html": "<div style=\"position:absolute;inset:0;background:#EDE6D6;\"><div style=\"position:absolute;left:18px;top:16px;width:70px;height:56px;background:#2B2B2B;transform:rotate(-6deg)\"></div><div style=\"position:absolute;left:62px;top:40px;width:80px;height:50px;background:#E0632B;transform:rotate(5deg)\"></div><div style=\"position:absolute;right:22px;top:20px;width:40px;height:40px;border-radius:50%;background:#4D7CFE;transform:rotate(8deg)\"></div><div style=\"position:absolute;left:52px;top:30px;width:34px;height:10px;background:rgba(255,255,255,.7);transform:rotate(-20deg)\"></div></div>"
+        },
+        {
+          "id": "H07",
+          "code": "H07",
+          "name": "Isometric",
+          "value": "góc nhìn 30°, khối hộp, không phối cảnh",
+          "ai": "isometric illustration, 30 degree angle, clean geometric blocks, tech scene",
+          "html": "<div style=\"position:absolute;inset:0;background:#E9EEF8;display:grid;place-items:center;\"><div style=\"position:relative;width:60px;height:60px\"><div style=\"position:absolute;left:0;top:0;width:60px;height:34px;background:#8B7CFF;transform:skewY(-30deg) translateY(0)\"></div><div style=\"position:absolute;left:0;top:30px;width:30px;height:34px;background:#5B5BF0;transform:skewY(30deg)\"></div><div style=\"position:absolute;left:30px;top:30px;width:30px;height:34px;background:#3A35C8;transform:skewY(-30deg)\"></div></div></div>"
+        },
+        {
+          "id": "H08",
+          "code": "H08",
+          "name": "Màu nước / vẽ tay",
+          "value": "vệt màu loang, mềm, giấy sần",
+          "ai": "watercolor painting, soft bleeding pigments, textured paper, hand painted",
+          "html": "<div style=\"position:absolute;inset:0;background:#FBF8F2;\"><div style=\"position:absolute;left:20%;top:20%;width:90px;height:70px;border-radius:50%;background:#F2B5A7;filter:blur(8px);opacity:.85\"></div><div style=\"position:absolute;left:45%;top:35%;width:80px;height:60px;border-radius:50%;background:#A8C3E0;filter:blur(9px);opacity:.8\"></div></div>"
+        },
+        {
+          "id": "H09",
+          "code": "H09",
+          "name": "Siêu thực (surreal)",
+          "value": "vật thể phi lý, cảnh mơ, ánh sáng lạ",
+          "ai": "surreal dreamlike scene, floating objects, impossible architecture, soft pastel sky",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(180deg,#FFC9B5,#B9A6E8);\"><div style=\"position:absolute;left:50%;bottom:0;width:70px;height:80px;transform:translateX(-50%);border-radius:35px 35px 0 0;background:#F6E7C8\"></div><div style=\"position:absolute;left:50%;bottom:0;width:44px;height:60px;transform:translateX(-50%);border-radius:22px 22px 0 0;background:#7C5CFF\"></div><div style=\"position:absolute;right:30px;top:14px;width:22px;height:22px;border-radius:50%;background:#fff\"></div></div>"
+        },
+        {
+          "id": "H10",
+          "code": "H10",
+          "name": "Đen trắng tương phản cao",
+          "value": "đơn sắc, bóng gắt, kịch tính",
+          "ai": "high contrast black and white photography, dramatic shadows, grain, editorial",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(110deg,#000 0 35%,#ddd 35% 38%,#111 38% 60%,#f5f5f5 60%);filter:contrast(1.2);\"><div style=\"position:absolute;inset:0;background:url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.45'/></svg>&quot;);opacity:.35\"></div></div>"
+        }
+      ]
+    }
+  ]
+}
