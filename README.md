@@ -34,6 +34,7 @@ Gửi kèm link file thô trên GitHub (raw) của thư mục `data/`, AI đọc
 
 ## Link
 
-- Trang xem trước (riêng tư, chủ sở hữu mở được): https://claude.ai/artifact/GNUUQZMREDGpbmFQ9D929g
+- Trang xem trước (công khai): https://thudonggg25.github.io/designshop/
+- Bản riêng trên Claude: https://claude.ai/artifact/GNUUQZMREDGpbmFQ9D929g
 - Dữ liệu JSON: https://github.com/thudonggg25/designshop/tree/main/data
 - File thô cho AI: https://raw.githubusercontent.com/thudonggg25/designshop/main/data/library.json (liệt kê các file còn lại)
