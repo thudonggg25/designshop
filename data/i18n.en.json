@@ -1026,5 +1026,55 @@
       "value": "pick fonts with accents",
       "text": "Only use fonts with full Vietnamese accent support for accented text. Check ư, ơ, ặ, ỗ, ữ before locking the font."
     }
+  },
+  "brief": {
+    "mood": [
+      "Mood",
+      "Overall feeling of the KV"
+    ],
+    "style": [
+      "Design style",
+      "Overall visual language"
+    ],
+    "imagery": [
+      "Imagery",
+      "Photo, 3D or illustration"
+    ],
+    "color": [
+      "Color",
+      "A palette or specific colors"
+    ],
+    "font": [
+      "Fonts",
+      "A font pair or a heading font"
+    ],
+    "size": [
+      "Type sizes",
+      "Size scale for the format"
+    ],
+    "button": [
+      "Button & radius",
+      "CTA button style"
+    ],
+    "background": [
+      "Background",
+      "Background or pattern"
+    ],
+    "layout": [
+      "Layout",
+      "How text and imagery are arranged"
+    ],
+    "format": [
+      "Format",
+      "Channel and size"
+    ],
+    "effect": [
+      "Effects",
+      "Shadows, glass, text effects"
+    ],
+    "extra": [
+      "Rules & details",
+      "Rules, frames, icons"
+    ]
   }
 }

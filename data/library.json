@@ -172,5 +172,123 @@
         }
       ]
     }
+  ],
+  "brief": [
+    {
+      "id": "mood",
+      "label": "Tông cảm xúc",
+      "cats": [
+        "moods"
+      ],
+      "required": true,
+      "hint": "Cảm giác chung của KV"
+    },
+    {
+      "id": "style",
+      "label": "Phong cách thiết kế",
+      "cats": [
+        "styles"
+      ],
+      "required": true,
+      "hint": "Ngôn ngữ hình ảnh tổng thể"
+    },
+    {
+      "id": "imagery",
+      "label": "Kiểu hình ảnh",
+      "cats": [
+        "imagery"
+      ],
+      "required": true,
+      "hint": "Ảnh chụp, 3D hay minh hoạ"
+    },
+    {
+      "id": "color",
+      "label": "Màu sắc",
+      "cats": [
+        "palettes",
+        "colors",
+        "scales"
+      ],
+      "required": true,
+      "hint": "Một bảng màu hoặc màu cụ thể"
+    },
+    {
+      "id": "font",
+      "label": "Font chữ",
+      "cats": [
+        "pairings",
+        "fonts"
+      ],
+      "required": true,
+      "hint": "Một cặp font hoặc font tiêu đề"
+    },
+    {
+      "id": "size",
+      "label": "Cỡ chữ",
+      "cats": [
+        "typescales",
+        "typography"
+      ],
+      "required": true,
+      "hint": "Thang cỡ chữ theo khổ"
+    },
+    {
+      "id": "button",
+      "label": "Nút & bo góc",
+      "cats": [
+        "buttons",
+        "radius"
+      ],
+      "required": true,
+      "hint": "Kiểu nút CTA"
+    },
+    {
+      "id": "background",
+      "label": "Nền",
+      "cats": [
+        "backgrounds"
+      ],
+      "required": true,
+      "hint": "Nền hoặc hoạ tiết"
+    },
+    {
+      "id": "layout",
+      "label": "Bố cục",
+      "cats": [
+        "layouts"
+      ],
+      "required": true,
+      "hint": "Cách sắp xếp chữ và hình"
+    },
+    {
+      "id": "format",
+      "label": "Khổ ảnh",
+      "cats": [
+        "formats"
+      ],
+      "required": true,
+      "hint": "Kênh đăng và kích thước"
+    },
+    {
+      "id": "effect",
+      "label": "Hiệu ứng",
+      "cats": [
+        "effects"
+      ],
+      "required": false,
+      "hint": "Bóng, kính, hiệu ứng chữ"
+    },
+    {
+      "id": "extra",
+      "label": "Quy tắc & chi tiết",
+      "cats": [
+        "rules",
+        "frames",
+        "icons",
+        "text"
+      ],
+      "required": false,
+      "hint": "Quy tắc, khung, icon"
+    }
   ]
 }
