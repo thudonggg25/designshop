@@ -95,6 +95,66 @@
           "use": "Ảnh chia sẻ link, bài LinkedIn"
         }
       ]
+    },
+    {
+      "label": "Khổ cho web, app & portfolio",
+      "items": [
+        {
+          "id": "A11",
+          "code": "A11",
+          "name": "Carousel Instagram",
+          "value": "1080 × 1350 px · nhiều trang",
+          "w": 1080,
+          "h": 1350,
+          "use": "Trang 1 là bìa thu hút, trang cuối là CTA"
+        },
+        {
+          "id": "A12",
+          "code": "A12",
+          "name": "Pinterest dọc",
+          "value": "1000 × 1500 px · 2:3",
+          "w": 1000,
+          "h": 1500,
+          "use": "Chữ lớn ở nửa trên"
+        },
+        {
+          "id": "A13",
+          "code": "A13",
+          "name": "Màn hình desktop",
+          "value": "1440 × 900 px",
+          "w": 1440,
+          "h": 900,
+          "use": "Thiết kế web/app máy tính"
+        },
+        {
+          "id": "A14",
+          "code": "A14",
+          "name": "Màn hình điện thoại",
+          "value": "390 × 844 px (iPhone)",
+          "w": 390,
+          "h": 844,
+          "use": "Thiết kế app, chừa vùng tai thỏ"
+        },
+        {
+          "id": "A15",
+          "code": "A15",
+          "name": "Dribbble / Behance shot",
+          "value": "1600 × 1200 px · 4:3",
+          "w": 1600,
+          "h": 1200,
+          "use": "Trình bày portfolio"
+        },
+        {
+          "id": "A16",
+          "code": "A16",
+          "name": "Slide 4:3",
+          "value": "1440 × 1080 px",
+          "w": 1440,
+          "h": 1080,
+          "use": "Máy chiếu cũ, tài liệu in"
+        }
+      ],
+      "v3": true
     }
   ]
 }

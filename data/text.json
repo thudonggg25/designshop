@@ -5,10 +5,34 @@
     {
       "label": "Độ nhạt chữ",
       "items": [
-        { "id": "D1", "code": "D1", "name": "Tiêu đề, số liệu, nội dung chính", "value": "100%", "css": "color: rgba(255,255,255,1)" },
-        { "id": "D2", "code": "D2", "name": "Chữ trong thẻ", "value": "82%", "css": "color: rgba(255,255,255,0.82)" },
-        { "id": "D4", "code": "D4", "name": "Phụ đề, mô tả", "value": "60%", "css": "color: rgba(255,255,255,0.60)" },
-        { "id": "D5", "code": "D5", "name": "Chú thích cuối trang, chữ bấm phụ", "value": "42%", "css": "color: rgba(255,255,255,0.42)" }
+        {
+          "id": "D1",
+          "code": "D1",
+          "name": "Tiêu đề, số liệu, nội dung chính",
+          "value": "100%",
+          "css": "color: rgba(255,255,255,1)"
+        },
+        {
+          "id": "D2",
+          "code": "D2",
+          "name": "Chữ trong thẻ",
+          "value": "82%",
+          "css": "color: rgba(255,255,255,0.82)"
+        },
+        {
+          "id": "D4",
+          "code": "D4",
+          "name": "Phụ đề, mô tả",
+          "value": "60%",
+          "css": "color: rgba(255,255,255,0.60)"
+        },
+        {
+          "id": "D5",
+          "code": "D5",
+          "name": "Chú thích cuối trang, chữ bấm phụ",
+          "value": "42%",
+          "css": "color: rgba(255,255,255,0.42)"
+        }
       ]
     }
   ]

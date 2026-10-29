@@ -1,0 +1,67 @@
+{
+  "kind": "spacing",
+  "groups": [
+    {
+      "label": "Khoảng cách & mật độ",
+      "items": [
+        {
+          "id": "SP01",
+          "code": "SP01",
+          "name": "Lưới 4pt",
+          "value": "4 · 8 · 12 · 16 · 24 · 32 · 48 · 64",
+          "css": "spacing scale (px): [4,8,12,16,24,32,48,64]",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;align-items:flex-end;justify-content:center;gap:5px;padding:14px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:5px;border-radius:3px;background:#9DB8FF\"></span>4</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:10px;border-radius:3px;background:#9DB8FF\"></span>8</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:15px;border-radius:3px;background:#9DB8FF\"></span>12</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:20px;border-radius:3px;background:#9DB8FF\"></span>16</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:29px;border-radius:3px;background:#9DB8FF\"></span>24</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:39px;border-radius:3px;background:#9DB8FF\"></span>32</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:58px;border-radius:3px;background:#9DB8FF\"></span>48</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:78px;border-radius:3px;background:#9DB8FF\"></span>64</div></div>"
+        },
+        {
+          "id": "SP02",
+          "code": "SP02",
+          "name": "Lưới 8pt",
+          "value": "8 · 16 · 24 · 32 · 40 · 48 · 64 · 80 · 96",
+          "css": "spacing scale (px): [8,16,24,32,40,48,64,80,96]",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;align-items:flex-end;justify-content:center;gap:5px;padding:14px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:6px;border-radius:3px;background:#9DB8FF\"></span>8</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:13px;border-radius:3px;background:#9DB8FF\"></span>16</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:20px;border-radius:3px;background:#9DB8FF\"></span>24</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:26px;border-radius:3px;background:#9DB8FF\"></span>32</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:32px;border-radius:3px;background:#9DB8FF\"></span>40</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:39px;border-radius:3px;background:#9DB8FF\"></span>48</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:52px;border-radius:3px;background:#9DB8FF\"></span>64</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:65px;border-radius:3px;background:#9DB8FF\"></span>80</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:78px;border-radius:3px;background:#9DB8FF\"></span>96</div></div>"
+        },
+        {
+          "id": "SP03",
+          "code": "SP03",
+          "name": "Fibonacci",
+          "value": "5 · 8 · 13 · 21 · 34 · 55 · 89",
+          "css": "spacing scale (px): [5,8,13,21,34,55,89]",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;align-items:flex-end;justify-content:center;gap:5px;padding:14px\"><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:4px;border-radius:3px;background:#9DB8FF\"></span>5</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:7px;border-radius:3px;background:#9DB8FF\"></span>8</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:11px;border-radius:3px;background:#9DB8FF\"></span>13</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:18px;border-radius:3px;background:#9DB8FF\"></span>21</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:30px;border-radius:3px;background:#9DB8FF\"></span>34</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:48px;border-radius:3px;background:#9DB8FF\"></span>55</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:3px;font:500 7px 'Space Mono',monospace;color:rgba(255,255,255,.6)\"><span style=\"width:12px;height:78px;border-radius:3px;background:#9DB8FF\"></span>89</div></div>"
+        },
+        {
+          "id": "SP04",
+          "code": "SP04",
+          "name": "Mật độ gọn (dashboard)",
+          "value": "đệm thẻ 12–16 · khe 8–12 · dòng 32px",
+          "css": "card padding: 16px; gap: 12px; table row height: 32px; section gap: 24px",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;border-radius:10px;border:1px dashed rgba(157,184,255,.5);width:130px\"><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div></div></div>"
+        },
+        {
+          "id": "SP05",
+          "code": "SP05",
+          "name": "Mật độ vừa (ứng dụng)",
+          "value": "đệm 20–24 · khe 16 · dòng 44px",
+          "css": "card padding: 24px; gap: 16px; list row height: 44px; section gap: 40px",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:8px;border-radius:10px;border:1px dashed rgba(157,184,255,.5);width:130px\"><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div></div></div>"
+        },
+        {
+          "id": "SP06",
+          "code": "SP06",
+          "name": "Mật độ thoáng (landing)",
+          "value": "đệm 32–48 · khối cách 96–128px",
+          "css": "section padding: 96–128px; card padding: 40px; gap: 32px; max text width: 640px",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:14px;border-radius:10px;border:1px dashed rgba(157,184,255,.5);width:130px\"><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div></div></div>"
+        },
+        {
+          "id": "SP07",
+          "code": "SP07",
+          "name": "Lề an toàn KV",
+          "value": "5% (mạng xã hội) · 8% (in ấn)",
+          "css": "safe margin: 5% of short side for social, 8% for print; story: 250px top & bottom",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:11px;padding:18px;border-radius:10px;border:1px dashed rgba(157,184,255,.5);width:130px\"><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div><div style=\"height:24px;border-radius:5px;background:#1E1E27;border:1px solid rgba(255,255,255,.08)\"></div></div></div>"
+        }
+      ],
+      "v3": true
+    }
+  ]
+}

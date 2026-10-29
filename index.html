@@ -312,6 +312,62 @@ details.specbox[open] summary::before { content: "▾ "; }
   .pv.tall { height: 128px; }
   .search { flex: 1 1 100%; }
 }
+/* Live previews: hover a card to play its effect (buttons, motion, borders) */
+@property --a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+@property --p { syntax: "<percentage>"; inherits: false; initial-value: 0%; }
+.pv .hv { position: relative; }
+.fx-liquid { overflow: hidden; isolation: isolate; }
+.fx-liquid::before { content: ""; position: absolute; left: -10%; right: -10%; top: 100%; height: 130%; background: var(--fill, #2F6BFF); border-radius: 40% 40% 0 0; z-index: -1; transition: top .4s cubic-bezier(.2,.8,.2,1), border-radius .4s; }
+.item:hover .fx-liquid::before { top: -15%; border-radius: 0; }
+.fx-shimmer { overflow: hidden; }
+.fx-shimmer::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.55) 50%, transparent 70%); transform: translateX(-120%); pointer-events: none; }
+.item:hover .fx-shimmer::after { transform: translateX(120%); transition: transform .7s ease; }
+.fx-draw::before { content: ""; position: absolute; inset: -2px; border-radius: inherit; padding: 2px; background: conic-gradient(var(--c1, #2F6BFF) var(--p), transparent 0); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; transition: --p .55s ease-out; pointer-events: none; }
+.item:hover .fx-draw::before { --p: 100%; }
+.fx-arrow .ar { transition: transform .3s cubic-bezier(.2,.8,.2,1), background .3s, width .3s; }
+.item:hover .fx-arrow .ar { transform: translateX(4px); }
+.item:hover .fx-arrow .ar[style*="border-radius:999px"] { width: 42px; background: #3BFFA0; border-color: #3BFFA0; }
+.fx-beam { position: relative; }
+.fx-beam::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1.5px; background: conic-gradient(from var(--a), transparent 0 72%, rgba(157,184,255,.9) 88%, #fff 96%, transparent 100%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; animation: beam 3s linear infinite paused; pointer-events: none; }
+.item:hover .fx-beam::before { animation-play-state: running; }
+@keyframes beam { to { --a: 360deg; } }
+.mv-lift { transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s; }
+.item:hover .mv-lift { transform: translateY(-6px); box-shadow: 0 18px 30px rgba(0,0,0,.18); }
+.mv-press, .mv-dot, .mv-float, .mv-pulse, .mv-skel, .mv-spin, .mv-flow, .mv-marq, .mv-twinkle { animation-play-state: paused; }
+.item:hover :is(.mv-press, .mv-dot, .mv-float, .mv-pulse, .mv-skel, .mv-spin, .mv-flow, .mv-marq, .mv-twinkle) { animation-play-state: running; }
+.mv-press { animation: mvPress 1s ease-in-out infinite paused; }
+.mv-ripple { isolation: isolate; }
+.mv-ripple::after { content: ""; position: absolute; left: 50%; top: 50%; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; background: rgba(255,255,255,.45); transform: scale(0); opacity: 1; }
+.item:hover .mv-ripple::after { transform: scale(4); opacity: 0; transition: transform .6s ease-out, opacity .6s ease-out; }
+.mv-underline::after { content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: #9DB8FF; transition: width .25s ease-out; }
+.item:hover .mv-underline::after { width: 100%; }
+.item:hover .mv-blur { animation: mvBlur .5s ease-out both; }
+.mv-float { animation: mvFloat 3s ease-in-out infinite paused; }
+.mv-pulse { animation: mvPulse 1.5s ease-out infinite paused; }
+.mv-skel { background: linear-gradient(90deg, #DCDFE6 25%, #F4F5F8 50%, #DCDFE6 75%) 0 0 / 200% 100%; animation: mvSkel 1.2s linear infinite paused; }
+.mv-spin { animation: mvSpin .8s linear infinite paused; }
+.mv-dot { display: inline-block; animation: mvDot 1s ease-in-out infinite paused; }
+.item:hover .mv-tilt { transform: perspective(500px) rotateX(10deg) rotateY(-16deg); }
+.mv-flow { animation: mvFlow 4s linear infinite paused; }
+.mv-marq { animation: mvMarq 8s linear infinite paused; }
+.item:hover .mv-rise { animation: mvRise .4s cubic-bezier(.2,.8,.2,1) both; }
+.item:hover .mv-zoom { animation: mvZoom .3s cubic-bezier(.2,.8,.2,1) both; }
+.item:hover .mv-spring { animation: mvSpring .9s ease-out both; }
+.item:hover .mv-flip { transform: perspective(500px) rotateY(180deg); }
+.mv-twinkle { animation: mvTwinkle 1.6s ease-in-out infinite alternate paused; }
+@keyframes mvPress { 0%, 100% { transform: scale(1); } 50% { transform: scale(.94); } }
+@keyframes mvBlur { from { opacity: 0; filter: blur(10px); } to { opacity: 1; filter: none; } }
+@keyframes mvFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes mvPulse { from { box-shadow: 0 0 0 0 rgba(59,255,160,.6); } to { box-shadow: 0 0 0 20px rgba(59,255,160,0); } }
+@keyframes mvSkel { to { background-position: -200% 0; } }
+@keyframes mvSpin { to { transform: rotate(360deg); } }
+@keyframes mvDot { 0%, 80%, 100% { transform: translateY(0); opacity: .4; } 40% { transform: translateY(-6px); opacity: 1; } }
+@keyframes mvFlow { to { background-position: 300% 0; } }
+@keyframes mvMarq { to { transform: translateX(-50%); } }
+@keyframes mvRise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes mvZoom { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
+@keyframes mvSpring { 0% { transform: translateY(-24px); } 40% { transform: none; } 55% { transform: translateY(-9px); } 70% { transform: none; } 85% { transform: translateY(-3px); } 100% { transform: none; } }
+@keyframes mvTwinkle { from { opacity: .3; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 </style>
 
@@ -467,6 +523,9 @@ async function load() {
       state.items.set(it.id, it);
     })));
     state.cart = state.cart.filter(id => state.items.has(id));
+    const hv = [...state.items.values()].filter(it => it.hover).map(it => `.item[data-id="${it.id}"]:hover .hv{${it.hover.split(";").filter(Boolean).map(d => d.trim() + " !important").join(";")}}`);
+    let st = document.getElementById("hoverCss"); if (!st) { st = document.createElement("style"); st.id = "hoverCss"; document.head.appendChild(st); }
+    st.textContent = hv.join("\n");
     loadFonts(); applyLang();
   } catch (e) {
     $("#main").innerHTML = `<div class="state">${t("loadFail")}</div>`;
@@ -615,6 +674,8 @@ function valueFor(raw) {
   if (it.use) p.push(`${t("useFor")}: ${it.use}`);
   if (it.suggest) p.push(`${t("suggest")}: ${it.suggest}`);
   if (it.css) p.push(`CSS: ${it.css}`);
+  if (it.hover) p.push(`Hover: ${it.hover}`);
+  if (it.url) p.push(`Link: ${it.url}`);
   if (it.ai) p.push(`${t("aiKw")}: ${it.ai}`);
   return p.join(" | ");
 }
@@ -644,6 +705,8 @@ function specJson() {
     const o = { code: it.code, category: catLabel(catOf(raw)), name: it.name, value: it.value };
     if (it.theme) o.theme = it.theme;
     if (it.css) o.css = it.css;
+    if (it.hover) o.hover = it.hover;
+    if (it.url) o.url = it.url;
     if (it.svg) o.svg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${it.svg}</svg>`;
     if (it.text) o.rule = it.text;
     ["colors", "steps", "ai", "desc", "use", "mood", "family", "suggest", "w", "h", "sizes"].forEach(k => { if (it[k] !== undefined) o[k] = it[k]; });

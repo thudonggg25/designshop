@@ -1,0 +1,180 @@
+{
+  "kind": "background",
+  "groups": [
+    {
+      "label": "Dải chuyển sắc",
+      "items": [
+        {
+          "id": "GR01",
+          "code": "GR01",
+          "name": "Hoàng hôn tím cam",
+          "value": "tuyến tính · #3D3B6B → #8E6FB5 → #F2A27A",
+          "css": "background: linear-gradient(180deg, #3D3B6B 0%, #8E6FB5 50%, #F2A27A 100%)",
+          "colors": [
+            "#3D3B6B",
+            "#8E6FB5",
+            "#F2A27A"
+          ]
+        },
+        {
+          "id": "GR02",
+          "code": "GR02",
+          "name": "Pastel AI",
+          "value": "toả tròn · #FFC7E6 → #C9D4FF → #E3CCFF → #F4ECFF",
+          "css": "background: radial-gradient(circle at 20% 20%, #FFC7E6, transparent 50%), radial-gradient(circle at 85% 30%, #C9D4FF, transparent 50%), radial-gradient(circle at 50% 90%, #E3CCFF, transparent 55%), #F4ECFF",
+          "colors": [
+            "#FFC7E6",
+            "#C9D4FF",
+            "#E3CCFF",
+            "#F4ECFF"
+          ]
+        },
+        {
+          "id": "GR03",
+          "code": "GR03",
+          "name": "Điện xanh tím",
+          "value": "tuyến tính · #2F6BFF → #7C5CFF → #FF5C8A",
+          "css": "background: linear-gradient(135deg, #2F6BFF 0%, #7C5CFF 50%, #FF5C8A 100%)",
+          "colors": [
+            "#2F6BFF",
+            "#7C5CFF",
+            "#FF5C8A"
+          ]
+        },
+        {
+          "id": "GR04",
+          "code": "GR04",
+          "name": "Băng xanh",
+          "value": "tuyến tính · #36C2FF → #2F6BFF",
+          "css": "background: linear-gradient(135deg, #36C2FF 0%, #2F6BFF 100%)",
+          "colors": [
+            "#36C2FF",
+            "#2F6BFF"
+          ]
+        },
+        {
+          "id": "GR05",
+          "code": "GR05",
+          "name": "Chrome bạc",
+          "value": "tuyến tính · #F5F5F7 → #9A9AA3 → #FFFFFF → #5D5D66",
+          "css": "background: linear-gradient(180deg, #F5F5F7 0%, #9A9AA3 45%, #FFFFFF 52%, #5D5D66 100%)",
+          "colors": [
+            "#F5F5F7",
+            "#9A9AA3",
+            "#FFFFFF",
+            "#5D5D66"
+          ]
+        },
+        {
+          "id": "GR06",
+          "code": "GR06",
+          "name": "Holographic",
+          "value": "tuyến tính · #FFD6E8 → #C9F0FF → #E0D4FF → #D4FFE9",
+          "css": "background: linear-gradient(120deg, #FFD6E8, #C9F0FF, #E0D4FF, #D4FFE9, #FFD6E8)",
+          "colors": [
+            "#FFD6E8",
+            "#C9F0FF",
+            "#E0D4FF",
+            "#D4FFE9"
+          ]
+        },
+        {
+          "id": "GR07",
+          "code": "GR07",
+          "name": "Cực quang tối",
+          "value": "toả tròn · #07070B",
+          "css": "background: radial-gradient(ellipse at 20% 0%, rgba(54,194,255,.55), transparent 55%), radial-gradient(ellipse at 80% 10%, rgba(182,107,255,.5), transparent 55%), #07070B",
+          "colors": [
+            "#07070B"
+          ]
+        },
+        {
+          "id": "GR08",
+          "code": "GR08",
+          "name": "Lưới màu kẹo",
+          "value": "toả tròn · #FFD23F → #FF7AB6 → #36C2FF → #FFF3E6",
+          "css": "background: radial-gradient(circle at 15% 25%, #FFD23F, transparent 45%), radial-gradient(circle at 85% 25%, #FF7AB6, transparent 45%), radial-gradient(circle at 50% 85%, #36C2FF, transparent 50%), #FFF3E6",
+          "colors": [
+            "#FFD23F",
+            "#FF7AB6",
+            "#36C2FF",
+            "#FFF3E6"
+          ]
+        },
+        {
+          "id": "GR09",
+          "code": "GR09",
+          "name": "Chanh đêm",
+          "value": "tuyến tính · #0A0A0A → #1E1E1E → #D7FF3A",
+          "css": "background: linear-gradient(135deg, #0A0A0A 0%, #1E1E1E 55%, #D7FF3A 100%)",
+          "colors": [
+            "#0A0A0A",
+            "#1E1E1E",
+            "#D7FF3A"
+          ]
+        },
+        {
+          "id": "GR10",
+          "code": "GR10",
+          "name": "Hoa hồng vàng",
+          "value": "tuyến tính · #F7D6C8 → #E8A08C → #C9724A",
+          "css": "background: linear-gradient(135deg, #F7D6C8 0%, #E8A08C 50%, #C9724A 100%)",
+          "colors": [
+            "#F7D6C8",
+            "#E8A08C",
+            "#C9724A"
+          ]
+        },
+        {
+          "id": "GR11",
+          "code": "GR11",
+          "name": "Đại dương sâu",
+          "value": "tuyến tính · #0A2E45 → #12608A → #2B9BC4",
+          "css": "background: linear-gradient(180deg, #0A2E45 0%, #12608A 55%, #2B9BC4 100%)",
+          "colors": [
+            "#0A2E45",
+            "#12608A",
+            "#2B9BC4"
+          ]
+        },
+        {
+          "id": "GR12",
+          "code": "GR12",
+          "name": "Xô thơm kem",
+          "value": "tuyến tính · #F7F5EF → #E3E8DC → #9DB59A",
+          "css": "background: linear-gradient(160deg, #F7F5EF 0%, #E3E8DC 50%, #9DB59A 100%)",
+          "colors": [
+            "#F7F5EF",
+            "#E3E8DC",
+            "#9DB59A"
+          ]
+        },
+        {
+          "id": "GR13",
+          "code": "GR13",
+          "name": "Viền chuyển sắc xoay",
+          "value": "xoay vòng · #36C2FF → #B66BFF → #FF5C8A → #FFD23F",
+          "css": "background: conic-gradient(from 0deg, #36C2FF, #B66BFF, #FF5C8A, #FFD23F, #36C2FF)",
+          "colors": [
+            "#36C2FF",
+            "#B66BFF",
+            "#FF5C8A",
+            "#FFD23F"
+          ]
+        },
+        {
+          "id": "GR14",
+          "code": "GR14",
+          "name": "Lavender mờ",
+          "value": "tuyến tính · #F4EEFF → #D2C3F6",
+          "css": "background: linear-gradient(180deg, #F4EEFF 0%, #D2C3F6 100%)",
+          "colors": [
+            "#F4EEFF",
+            "#D2C3F6"
+          ]
+        }
+      ],
+      "v3": true
+    }
+  ]
+}

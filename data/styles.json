@@ -203,6 +203,120 @@
           "html": "<div style=\"position:absolute;inset:0;background:#F6F1E7;\"><div style=\"position:absolute;left:50%;top:50%;width:54px;height:54px;transform:translate(-50%,-50%);border-radius:50%;background:#C8102E\"></div><div style=\"position:absolute;right:18px;top:14px;writing-mode:vertical-rl;font:500 12px 'Noto Serif JP','Lora',serif;letter-spacing:.3em;color:#222\">静けさ</div></div>"
         }
       ]
+    },
+    {
+      "label": "Phong cách UI 2026",
+      "items": [
+        {
+          "id": "S23",
+          "code": "S23",
+          "name": "Vũ trụ kính khói (Cosmic)",
+          "value": "nền sao tối, thẻ kính khói, chữ trắng đậm",
+          "desc": "Poster màu, thương hiệu cao cấp, ra mắt sản phẩm",
+          "ai": "cosmic smoked glass card, deep space starfield, nebula, thin light rim, bold white helvetica headline, minimal",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(1px 1px at 12% 20%,#fff,transparent 60%),radial-gradient(1px 1px at 72% 14%,#fff,transparent 60%),radial-gradient(1.4px 1.4px at 86% 62%,#cfe8ff,transparent 60%),radial-gradient(1px 1px at 30% 78%,#fff,transparent 60%),radial-gradient(1px 1px at 52% 40%,rgba(255,255,255,.7),transparent 60%),radial-gradient(1.6px 1.6px at 18% 55%,#bff,transparent 60%),radial-gradient(1px 1px at 92% 30%,#fff,transparent 60%),radial-gradient(1px 1px at 60% 88%,#fff,transparent 60%),radial-gradient(ellipse 50% 40% at 15% 20%,rgba(110,120,190,.45),transparent 70%),radial-gradient(ellipse 40% 30% at 80% 85%,rgba(200,140,130,.25),transparent 70%),#06060A;display:grid;place-items:center;\"><div style=\"width:62%;height:78%;border-radius:16px;background:rgba(35,33,44,.6);border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 1px 0 rgba(255,255,255,.18);padding:10px;display:flex;flex-direction:column;justify-content:space-between\"><div style=\"font:800 18px 'Inter Tight',sans-serif;letter-spacing:-.04em;color:#fff\">Cosmic</div><div style=\"font:500 7px 'Inter',sans-serif;color:rgba(255,255,255,.7);line-height:1.5\">HEX #23212C<br>RGB 35, 33, 44</div></div></div>"
+        },
+        {
+          "id": "S24",
+          "code": "S24",
+          "name": "Liquid Glass (kiểu Apple)",
+          "value": "kính trong, khúc xạ, viền sáng bóng",
+          "desc": "Ứng dụng, hệ điều hành, công nghệ cao cấp",
+          "ai": "apple liquid glass, translucent glossy material, refraction, specular highlights, vivid background, rounded capsule",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(circle at 25% 35%,#FF7AB6,transparent 40%),radial-gradient(circle at 75% 60%,#36C2FF,transparent 45%),radial-gradient(circle at 50% 100%,#FFD23F,transparent 45%),#2B2B6E;display:grid;place-items:center;\"><div style=\"padding:12px 22px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.45);box-shadow:inset 0 1px 1px rgba(255,255,255,.7),inset 0 -6px 14px rgba(255,255,255,.12),0 10px 26px rgba(0,0,0,.25);backdrop-filter:blur(8px) saturate(180%);-webkit-backdrop-filter:blur(8px) saturate(180%);font:700 13px 'Inter',sans-serif;color:#fff\">Liquid Glass</div></div>"
+        },
+        {
+          "id": "S25",
+          "code": "S25",
+          "name": "Dark mode nổi khối (Elevation)",
+          "value": "nền tối, lớp càng cao càng sáng",
+          "desc": "Dashboard, app tối, công cụ chuyên nghiệp",
+          "ai": "dark mode UI, layered elevation, lighter surfaces on top, subtle glow, depth, premium",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div style=\"position:relative;width:130px;height:90px\"><div style=\"position:absolute;left:0;top:0;width:100px;height:70px;border-radius:12px;background:#15151C;border:1px solid rgba(255,255,255,.05)\"></div><div style=\"position:absolute;left:16px;top:12px;width:100px;height:70px;border-radius:12px;background:#1E1E27;border:1px solid rgba(255,255,255,.07);box-shadow:0 8px 20px rgba(0,0,0,.5)\"></div><div style=\"position:absolute;left:32px;top:24px;width:100px;height:66px;border-radius:12px;background:#2A2A36;border:1px solid rgba(255,255,255,.1);box-shadow:0 14px 30px rgba(0,0,0,.6),0 0 30px rgba(124,155,255,.18)\"></div></div></div>"
+        },
+        {
+          "id": "S26",
+          "code": "S26",
+          "name": "3D mềm chân thực (Soft realism)",
+          "value": "khối 3D mềm, ánh sáng thật, chạm được",
+          "desc": "Ứng dụng thân thiện, sản phẩm, quảng cáo",
+          "ai": "3D soft realism, tactile soft surfaces, realistic soft lighting, subtle depth, rounded forms, friendly",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(160deg,#F2EDE6,#E3DBD0);display:grid;place-items:center;\"><div style=\"display:flex;gap:10px;align-items:flex-end\"><div style=\"width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFE2C8,#F2A27A 60%,#C9724A);box-shadow:0 14px 18px -6px rgba(120,60,30,.45)\"></div><div style=\"width:52px;height:64px;border-radius:18px;background:linear-gradient(160deg,#BFD4FF,#7C9BFF);box-shadow:inset 0 2px 4px rgba(255,255,255,.7),0 16px 20px -8px rgba(50,70,160,.45)\"></div><div style=\"width:36px;height:36px;border-radius:12px;background:radial-gradient(circle at 35% 30%,#E9FFD9,#8FCF7A);box-shadow:0 12px 16px -6px rgba(60,120,40,.45)\"></div></div></div>"
+        },
+        {
+          "id": "S27",
+          "code": "S27",
+          "name": "Cảnh 3D điện ảnh + UI kính",
+          "value": "phong cảnh 3D, thẻ kính nổi giữa",
+          "desc": "Landing page, giới thiệu app, KV công nghệ",
+          "ai": "cinematic 3D render, mountain lake at sunset, floating glassmorphism login card, laptop and phone mockup, soft purple light",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(180deg,#3D3B6B 0%,#8E6FB5 45%,#F2A27A 70%,#2A2440 71%,#1B1A2E 100%);\"><div style=\"position:absolute;left:0;right:0;top:40%;height:30%;background:linear-gradient(135deg,transparent 30%,#2A2440 30% 50%,transparent 50%),linear-gradient(225deg,transparent 35%,#352E52 35% 55%,transparent 55%);\"></div><div style=\"position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:70px;height:92px;border-radius:12px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;flex-direction:column;gap:6px;padding:10px 8px;justify-content:center\"><div style=\"height:5px;border-radius:3px;background:rgba(255,255,255,.7)\"></div><div style=\"height:5px;border-radius:3px;background:rgba(255,255,255,.4)\"></div><div style=\"height:9px;border-radius:5px;background:#7C5CFF;margin-top:4px\"></div></div></div>"
+        },
+        {
+          "id": "S28",
+          "code": "S28",
+          "name": "Pastel mờ ảo (AI soft gradient)",
+          "value": "nền pastel nhoè, thẻ kính trắng",
+          "desc": "Tin tức AI, khoá học, thương hiệu cá nhân",
+          "ai": "soft pastel gradient blur, pink lilac and blue, white frosted glass card, glowing rim, dreamy, clean typography",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,#FFC7E6,transparent 50%),radial-gradient(circle at 85% 30%,#C9D4FF,transparent 50%),radial-gradient(circle at 50% 90%,#E3CCFF,transparent 55%),#F4ECFF;display:grid;place-items:center;\"><div style=\"padding:14px 18px;border-radius:18px;background:rgba(255,255,255,.55);border:2px solid rgba(255,255,255,.9);box-shadow:0 10px 30px rgba(160,120,255,.35),inset 0 0 20px rgba(255,255,255,.6);text-align:center\"><span style=\"display:inline-block;padding:2px 8px;border-radius:999px;background:linear-gradient(90deg,#B66BFF,#5B8CFF);color:#fff;font:700 8px 'Inter',sans-serif;margin-bottom:6px\">AI NEWS</span><div style=\"font:800 12px 'Montserrat',sans-serif;color:#3A3A66;line-height:1.2\">TRANG WEB<br>CẦN THIẾT</div></div></div>"
+        },
+        {
+          "id": "S29",
+          "code": "S29",
+          "name": "Chuyển động nhoè (Motion blur)",
+          "value": "vệt sáng nhoè, tốc độ, năng lượng",
+          "desc": "Thể thao, âm nhạc, ra mắt sản phẩm",
+          "ai": "long exposure motion blur, light streaks, speed lines, dark background, colorful light trails, energy",
+          "html": "<div style=\"position:absolute;inset:0;background:#07070B;overflow:hidden;\"><div style=\"position:absolute;left:-20%;top:30%;width:140%;height:26%;transform:rotate(-12deg);background:linear-gradient(90deg,transparent,#5B8CFF 25%,#fff 50%,#FF7A9A 75%,transparent);filter:blur(10px);opacity:.85\"></div><div style=\"position:absolute;left:-10%;top:60%;width:120%;height:8%;transform:rotate(-12deg);background:linear-gradient(90deg,transparent,#FFD23F,transparent);filter:blur(6px);opacity:.7\"></div></div>"
+        },
+        {
+          "id": "S30",
+          "code": "S30",
+          "name": "Dashboard SaaS sạch",
+          "value": "nền trắng, thẻ số liệu, biểu đồ mềm",
+          "desc": "Phần mềm, quản trị, báo cáo",
+          "ai": "clean SaaS dashboard UI, white cards, soft shadows, rounded charts, sidebar navigation, friendly accent color",
+          "html": "<div style=\"position:absolute;inset:0;background:#F5F6FA;padding:8px;display:grid;grid-template-columns:22px 1fr;gap:6px\"><div style=\"border-radius:6px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05)\"></div><div style=\"display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:26px 1fr;gap:6px\"><div style=\"border-radius:6px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05);border-left:3px solid #7C5CFF\"></div><div style=\"border-radius:6px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05);border-left:3px solid #36C2FF\"></div><div style=\"border-radius:6px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05);border-left:3px solid #3BCEAC\"></div><div style=\"grid-column:span 2;border-radius:6px;background:#fff linear-gradient(180deg,transparent 55%,rgba(124,92,255,.15) 55%);box-shadow:0 2px 6px rgba(0,0,0,.05)\"></div><div style=\"border-radius:6px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05);display:grid;place-items:center\"><div style=\"width:30px;height:30px;border-radius:50%;background:conic-gradient(#7C5CFF 0 62%,#E6E3FF 0)\"></div></div></div></div>"
+        },
+        {
+          "id": "S31",
+          "code": "S31",
+          "name": "Neon tối (Glow UI)",
+          "value": "nền đen, viền và chữ phát sáng màu",
+          "desc": "Game, AI, công cụ dev, sự kiện đêm",
+          "ai": "dark glowing UI, neon gradient borders, bloom, electric blue and magenta, black background, futuristic",
+          "html": "<div style=\"position:absolute;inset:0;background:#050508;display:grid;place-items:center;\"><div style=\"width:96px;height:96px;border-radius:50%;border:2px solid transparent;background:linear-gradient(#050508,#050508) padding-box,conic-gradient(#36C2FF,#B66BFF,#FF5C8A,#FFD23F,#36C2FF) border-box;box-shadow:0 0 26px rgba(182,107,255,.6),inset 0 0 20px rgba(54,194,255,.35)\"></div></div>"
+        },
+        {
+          "id": "S32",
+          "code": "S32",
+          "name": "Chấm ma trận (Dot matrix)",
+          "value": "lưới chấm, pixel, đơn sắc",
+          "desc": "Công nghệ, loader, giao diện tối giản",
+          "ai": "dot matrix display, LED dots grid, monochrome, pixel typography, minimal tech",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(rgba(255,255,255,.14) 1.6px,transparent 2px) 0 0/9px 9px,#0A0A0D;display:grid;place-items:center;\"><div style=\"width:63px;height:63px;background:radial-gradient(#fff 2.2px,transparent 2.6px) 0 0/9px 9px;-webkit-mask:radial-gradient(circle,#000 55%,transparent 72%);mask:radial-gradient(circle,#000 55%,transparent 72%)\"></div></div>"
+        },
+        {
+          "id": "S33",
+          "code": "S33",
+          "name": "Hoạt hình 3D dễ thương",
+          "value": "nhân vật 3D tròn, màu kẹo, mềm",
+          "desc": "Giáo dục, app trẻ, mascot thương hiệu",
+          "ai": "cute 3D character render, pixar style, soft lighting, candy colors, rounded, friendly mascot",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(180deg,#C9E7FF,#FFE3F1);display:grid;place-items:center;\"><div style=\"position:relative;width:76px;height:84px\"><div style=\"position:absolute;left:8px;top:0;width:60px;height:56px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#E9ECF5 60%,#B9BFD3)\"></div><div style=\"position:absolute;left:18px;top:16px;width:40px;height:22px;border-radius:12px;background:#1B1D2E\"></div><div style=\"position:absolute;left:25px;top:22px;width:7px;height:9px;border-radius:50%;background:#36C2FF;box-shadow:19px 0 0 #36C2FF\"></div><div style=\"position:absolute;left:14px;top:52px;width:48px;height:32px;border-radius:18px 18px 14px 14px;background:radial-gradient(circle at 35% 30%,#fff,#DDE2EF 70%)\"></div></div></div>"
+        },
+        {
+          "id": "S34",
+          "code": "S34",
+          "name": "Brutalism kỹ thuật số mới",
+          "value": "màu chói, khối lệch, chữ to cứng",
+          "desc": "Startup, thương hiệu trẻ, social",
+          "ai": "neo brutalism 2.0, bright color blocks, thick borders, offset hard shadows, sticker elements, chunky type",
+          "html": "<div style=\"position:absolute;inset:0;background:#C6F0FF;padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:7px\"><div style=\"border:2px solid #111;border-radius:10px;background:#FFE14D;box-shadow:3px 3px 0 #111;font:800 11px 'Space Grotesk',sans-serif;padding:6px\">Your<br>Analytics</div><div style=\"border:2px solid #111;border-radius:10px;background:#FF7AB6;box-shadow:3px 3px 0 #111\"></div><div style=\"border:2px solid #111;border-radius:10px;background:#fff;box-shadow:3px 3px 0 #111\"></div><div style=\"border:2px solid #111;border-radius:999px;background:#7CFF9B;box-shadow:3px 3px 0 #111;display:grid;place-items:center;font:800 10px 'Space Grotesk',sans-serif\">Subscribe</div></div>"
+        }
+      ],
+      "v3": true
     }
   ]
 }

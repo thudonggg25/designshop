@@ -16,19 +16,19 @@
     },
     "hinh-khoi": {
       "label": "Shapes",
-      "desc": "Corner radius, buttons, frames and icons"
+      "desc": "Radius, buttons, navigation, frames and icons"
     },
     "hieu-ung": {
-      "label": "Effects & backgrounds",
-      "desc": "Shadows, glass, text effects, backgrounds and patterns"
+      "label": "Effects & motion",
+      "desc": "Shadows, glass, motion, backgrounds and patterns"
     },
     "bo-cuc": {
       "label": "Layout & format",
-      "desc": "Layouts and sizes per channel"
+      "desc": "Layouts, spacing and sizes per channel"
     },
     "quy-tac": {
-      "label": "Rules",
-      "desc": "Principles for locking a key visual"
+      "label": "Rules & sources",
+      "desc": "KV rules and reference libraries"
     }
   },
   "categories": {
@@ -95,6 +95,27 @@
     },
     "rules": {
       "label": "Rules"
+    },
+    "sources": {
+      "label": "UI sources",
+      "note": "Libraries and reference sites to attach to the AI brief. Items without a link: search by name."
+    },
+    "swatches": {
+      "label": "Single colors",
+      "note": "Each color has HEX, RGB and CMYK (for print)."
+    },
+    "gradients": {
+      "label": "Gradients"
+    },
+    "motion": {
+      "label": "Motion",
+      "note": "Hover a card to play it. The CSS is included in the brief."
+    },
+    "navigation": {
+      "label": "Navigation"
+    },
+    "spacing": {
+      "label": "Spacing"
     }
   },
   "groups": {
@@ -125,7 +146,34 @@
     "Bố cục key visual": "Key visual layouts",
     "Khổ ảnh & tỉ lệ": "Formats & ratios",
     "Quy tắc Hyan": "Hyan rules",
-    "Quy tắc key visual": "Key visual rules"
+    "Quy tắc key visual": "Key visual rules",
+    "Tông cảm xúc mở rộng": "More moods",
+    "Phong cách UI 2026": "2026 UI styles",
+    "Kiểu hình ảnh mở rộng": "More imagery",
+    "Bảng màu xu hướng 2026": "2026 trend palettes",
+    "Màu đơn nổi bật": "Featured single colors",
+    "Dải chuyển sắc": "Gradients",
+    "Thang màu mở rộng": "More scales",
+    "Font mở rộng (có dấu)": "More fonts (Vietnamese-ready)",
+    "Font tiếng Anh (không dấu)": "English-only fonts",
+    "Cặp font mở rộng": "More pairs",
+    "Cỡ chữ theo sản phẩm": "Sizes per product",
+    "Kiểu chữ mở rộng": "More text styles",
+    "Bo góc mở rộng": "More radius",
+    "Nút có hiệu ứng hover (rê chuột để xem)": "Buttons with hover effects (hover to preview)",
+    "Thẻ, viền & khung UI": "UI cards, borders & frames",
+    "Icon giao diện": "UI icons",
+    "Kính, ánh sáng & viền 2026": "2026 glass, light & rims",
+    "Hiệu ứng chữ mở rộng": "More text effects",
+    "Thang độ nổi (đổ bóng)": "Elevation scale (shadows)",
+    "Chuyển động & phản hồi": "Motion & feedback",
+    "Thanh điều hướng": "Navigation bars",
+    "Khoảng cách & mật độ": "Spacing & density",
+    "Bố cục web & app": "Web & app layouts",
+    "Khổ cho web, app & portfolio": "Web, app & portfolio formats",
+    "Quy tắc giao diện UI": "UI rules",
+    "Thư viện UI & nguồn tham khảo": "UI libraries & references",
+    "Nền 2026": "2026 backgrounds"
   },
   "items": {
     "MO01": {
@@ -1025,6 +1073,1403 @@
       "name": "Vietnamese text",
       "value": "pick fonts with accents",
       "text": "Only use fonts with full Vietnamese accent support for accented text. Check ư, ơ, ặ, ỗ, ữ before locking the font."
+    },
+    "MO11": {
+      "name": "Cosmic mystery",
+      "value": "deep, quiet, sparkling"
+    },
+    "MO12": {
+      "name": "Dreamy pastel",
+      "value": "soft, airy, dreamy"
+    },
+    "MO13": {
+      "name": "Cinematic epic",
+      "value": "vast, golden-hour light"
+    },
+    "MO14": {
+      "name": "Premium dark tech",
+      "value": "dark, sharp, subtle glow"
+    },
+    "MO15": {
+      "name": "Playful 3D",
+      "value": "round, colorful, cute"
+    },
+    "MO16": {
+      "name": "Natural calm",
+      "value": "cream, leaves, sunlight"
+    },
+    "MO17": {
+      "name": "Bold sporty",
+      "value": "speed, contrast, heavy"
+    },
+    "MO18": {
+      "name": "Clean premium",
+      "value": "white, silver, light"
+    },
+    "S23": {
+      "name": "Cosmic smoked glass",
+      "value": "dark starfield, smoked-glass card, bold white type",
+      "desc": "Color posters, premium brands, launches"
+    },
+    "S24": {
+      "name": "Liquid glass (Apple style)",
+      "value": "clear glass, refraction, glossy rim",
+      "desc": "Apps, OS-style UI, premium tech"
+    },
+    "S25": {
+      "name": "Dark mode elevation",
+      "value": "dark base, higher layers get lighter",
+      "desc": "Dashboards, dark apps, pro tools"
+    },
+    "S26": {
+      "name": "3D soft realism",
+      "value": "soft 3D forms, real light, tactile",
+      "desc": "Friendly apps, products, ads"
+    },
+    "S27": {
+      "name": "Cinematic 3D scene + glass UI",
+      "value": "3D landscape with a floating glass card",
+      "desc": "Landing pages, app promos, tech KVs"
+    },
+    "S28": {
+      "name": "AI soft gradient",
+      "value": "blurred pastel backdrop, white glass card",
+      "desc": "AI news, courses, personal brands"
+    },
+    "S29": {
+      "name": "Motion blur energy",
+      "value": "light streaks, speed, energy",
+      "desc": "Sport, music, launches"
+    },
+    "S30": {
+      "name": "Clean SaaS dashboard",
+      "value": "white base, stat cards, soft charts",
+      "desc": "Software, admin, reports"
+    },
+    "S31": {
+      "name": "Dark neon glow UI",
+      "value": "black base, glowing borders and accents",
+      "desc": "Games, AI, dev tools, night events"
+    },
+    "S32": {
+      "name": "Dot matrix",
+      "value": "dot grid, pixels, monochrome",
+      "desc": "Tech, loaders, minimal interfaces"
+    },
+    "S33": {
+      "name": "Cute 3D character",
+      "value": "round 3D character, candy colors",
+      "desc": "Education, youth apps, brand mascots"
+    },
+    "S34": {
+      "name": "Digital neo-brutal 2.0",
+      "value": "loud colors, offset blocks, hard type",
+      "desc": "Startups, young brands, social"
+    },
+    "H11": {
+      "name": "3D sunset landscape",
+      "value": "mountains, lake, cinematic purple-orange light"
+    },
+    "H12": {
+      "name": "Space nebula",
+      "value": "stars, nebula, deep space"
+    },
+    "H13": {
+      "name": "Floral macro",
+      "value": "petals fill the frame, violet tones"
+    },
+    "H14": {
+      "name": "Glowing jellyfish",
+      "value": "bioluminescent, dark water"
+    },
+    "H15": {
+      "name": "Motion-blur photo",
+      "value": "long exposure, light trails, emotive"
+    },
+    "H16": {
+      "name": "Hand-drawn illustration",
+      "value": "hand lines, flat color, playful"
+    },
+    "H17": {
+      "name": "3D icons",
+      "value": "glossy 3D icon objects, candy colors"
+    },
+    "H18": {
+      "name": "Texture close-up",
+      "value": "real surfaces: cream, stone, fabric, paper"
+    },
+    "H19": {
+      "name": "Portrait with color gels",
+      "value": "portrait lit by two colored lights"
+    },
+    "H20": {
+      "name": "Device mockup",
+      "value": "laptop + phone, angled"
+    },
+    "P19": {
+      "name": "Cosmic",
+      "value": "#06060A · #23212C · #5A5470 · #9DB8FF · #E8E6F0",
+      "mood": "space, smoked glass"
+    },
+    "P20": {
+      "name": "Vanilla",
+      "value": "#F1FEC8 · #E6EFB4 · #C9D19A · #5A4A3C · #2A2320",
+      "mood": "vanilla cream, brown specks"
+    },
+    "P21": {
+      "name": "Lavender",
+      "value": "#F4EEFF · #D2C3F6 · #A98EE0 · #6E5A9C · #3A2E4A",
+      "mood": "soft lavender"
+    },
+    "P22": {
+      "name": "Violet",
+      "value": "#120A24 · #36255C · #6B4FB3 · #B68CFF · #E6D7FF",
+      "mood": "deep violet, jellyfish glow"
+    },
+    "P23": {
+      "name": "Pastel AI",
+      "value": "#FFC7E6 · #E3CCFF · #C9D4FF · #B66BFF · #5B8CFF",
+      "mood": "dreamy pink lilac blue"
+    },
+    "P24": {
+      "name": "Fintech blue",
+      "value": "#F5F7FF · #C7D2FE · #6366F1 · #4338CA · #1E1B4B",
+      "mood": "trustworthy, modern"
+    },
+    "P25": {
+      "name": "Sage dashboard",
+      "value": "#F7F5EF · #E3E8DC · #9DB59A · #3F5E4A · #1F2A22",
+      "mood": "calm, clean, natural"
+    },
+    "P26": {
+      "name": "Neon button",
+      "value": "#0B0B14 · #2F6BFF · #36C2FF · #B66BFF · #FF5C8A",
+      "mood": "electric blue, violet, pink"
+    },
+    "P27": {
+      "name": "Soft gray UI",
+      "value": "#ECEDF0 · #FFFFFF · #C9CBD2 · #2A2B30 · #3B5BFF",
+      "mood": "soft gray + one accent"
+    },
+    "P28": {
+      "name": "Mountain dusk",
+      "value": "#1B1A2E · #3D3B6B · #8E6FB5 · #F2A27A · #FFE3C4",
+      "mood": "indigo, peach"
+    },
+    "P29": {
+      "name": "Premium night",
+      "value": "#08080C · #14141B · #2A2A38 · #7C9BFF · #FFFFFF",
+      "mood": "charcoal, ice blue"
+    },
+    "P30": {
+      "name": "Bright dashboard",
+      "value": "#F5F6FA · #FFFFFF · #7C5CFF · #36C2FF · #3BCEAC",
+      "mood": "white, violet, teal"
+    },
+    "P31": {
+      "name": "3D candy",
+      "value": "#FFE3F1 · #FFD23F · #7C5CFF · #36C2FF · #3BCEAC",
+      "mood": "fun, colorful"
+    },
+    "P32": {
+      "name": "Clay pastel",
+      "value": "#EDE7FF · #B7A6FF · #FFC9B5 · #BDEBD3 · #FFF1B8",
+      "mood": "clay, soft"
+    },
+    "P33": {
+      "name": "Sport lime",
+      "value": "#0A0A0A · #1E1E1E · #FFFFFF · #D7FF3A · #FF3B30",
+      "mood": "black white + lime"
+    },
+    "P34": {
+      "name": "Clean silver",
+      "value": "#FFFFFF · #F4F5F7 · #D9DCE3 · #8A8F9C · #1C1D22",
+      "mood": "white, silver, charcoal"
+    },
+    "C01": {
+      "name": "Cosmic",
+      "value": "#23212C · RGB 35, 33, 44 · CMYK 20, 25, 0, 83"
+    },
+    "C02": {
+      "name": "Vanilla",
+      "value": "#F1FEC8 · RGB 241, 254, 200 · CMYK 5, 0, 21, 0"
+    },
+    "C03": {
+      "name": "Lavender",
+      "value": "#D2C3F6 · RGB 210, 195, 246 · CMYK 15, 21, 0, 4"
+    },
+    "C04": {
+      "name": "Violet",
+      "value": "#36255C · RGB 54, 37, 92 · CMYK 41, 60, 0, 64"
+    },
+    "C05": {
+      "name": "Electric blue",
+      "value": "#2F6BFF · RGB 47, 107, 255 · CMYK 82, 58, 0, 0"
+    },
+    "C06": {
+      "name": "Sky cyan",
+      "value": "#36C2FF · RGB 54, 194, 255 · CMYK 79, 24, 0, 0"
+    },
+    "C07": {
+      "name": "Electric violet",
+      "value": "#7C5CFF · RGB 124, 92, 255 · CMYK 51, 64, 0, 0"
+    },
+    "C08": {
+      "name": "Neon pink",
+      "value": "#FF5C8A · RGB 255, 92, 138 · CMYK 0, 64, 46, 0"
+    },
+    "C09": {
+      "name": "Lime",
+      "value": "#D7FF3A · RGB 215, 255, 58 · CMYK 16, 0, 77, 0"
+    },
+    "C10": {
+      "name": "Peach",
+      "value": "#F2A27A · RGB 242, 162, 122 · CMYK 0, 33, 50, 5"
+    },
+    "C11": {
+      "name": "Sage",
+      "value": "#9DB59A · RGB 157, 181, 154 · CMYK 13, 0, 15, 29"
+    },
+    "C12": {
+      "name": "Graphite",
+      "value": "#1C1D22 · RGB 28, 29, 34 · CMYK 18, 15, 0, 87"
+    },
+    "C13": {
+      "name": "Silver",
+      "value": "#D9DCE3 · RGB 217, 220, 227 · CMYK 4, 3, 0, 11"
+    },
+    "C14": {
+      "name": "Cream",
+      "value": "#F7F5EF · RGB 247, 245, 239 · CMYK 0, 1, 3, 3"
+    },
+    "C15": {
+      "name": "Signal red",
+      "value": "#FF3B30 · RGB 255, 59, 48 · CMYK 0, 77, 81, 0"
+    },
+    "C16": {
+      "name": "Mint",
+      "value": "#3BCEAC · RGB 59, 206, 172 · CMYK 71, 0, 17, 19"
+    },
+    "GR01": {
+      "name": "Purple-peach dusk",
+      "value": "linear · #3D3B6B → #8E6FB5 → #F2A27A"
+    },
+    "GR02": {
+      "name": "AI pastel",
+      "value": "radial · #FFC7E6 → #C9D4FF → #E3CCFF → #F4ECFF"
+    },
+    "GR03": {
+      "name": "Electric blue-violet",
+      "value": "linear · #2F6BFF → #7C5CFF → #FF5C8A"
+    },
+    "GR04": {
+      "name": "Ice blue",
+      "value": "linear · #36C2FF → #2F6BFF"
+    },
+    "GR05": {
+      "name": "Chrome silver",
+      "value": "linear · #F5F5F7 → #9A9AA3 → #FFFFFF → #5D5D66"
+    },
+    "GR06": {
+      "name": "Holographic",
+      "value": "linear · #FFD6E8 → #C9F0FF → #E0D4FF → #D4FFE9"
+    },
+    "GR07": {
+      "name": "Dark aurora",
+      "value": "radial · #07070B"
+    },
+    "GR08": {
+      "name": "Candy mesh",
+      "value": "radial · #FFD23F → #FF7AB6 → #36C2FF → #FFF3E6"
+    },
+    "GR09": {
+      "name": "Night lime",
+      "value": "linear · #0A0A0A → #1E1E1E → #D7FF3A"
+    },
+    "GR10": {
+      "name": "Rose gold",
+      "value": "linear · #F7D6C8 → #E8A08C → #C9724A"
+    },
+    "GR11": {
+      "name": "Deep ocean",
+      "value": "linear · #0A2E45 → #12608A → #2B9BC4"
+    },
+    "GR12": {
+      "name": "Sage cream",
+      "value": "linear · #F7F5EF → #E3E8DC → #9DB59A"
+    },
+    "GR13": {
+      "name": "Conic rainbow rim",
+      "value": "conic · #36C2FF → #B66BFF → #FF5C8A → #FFD23F"
+    },
+    "GR14": {
+      "name": "Soft lavender",
+      "value": "linear · #F4EEFF → #D2C3F6"
+    },
+    "V09": {
+      "name": "Indigo",
+      "value": "500 = #6366F1"
+    },
+    "V10": {
+      "name": "Teal",
+      "value": "500 = #14B8A6"
+    },
+    "V11": {
+      "name": "Lavender",
+      "value": "500 = #9B87F5"
+    },
+    "V12": {
+      "name": "Electric blue",
+      "value": "500 = #2F6BFF"
+    },
+    "V13": {
+      "name": "Lime",
+      "value": "500 = #84CC16"
+    },
+    "V14": {
+      "name": "Orange",
+      "value": "500 = #F97316"
+    },
+    "F18": {
+      "name": "Manrope",
+      "value": "Soft modern sans · weight 200 300 400 500 600 700 800",
+      "use": "SaaS, apps, clean brands"
+    },
+    "F19": {
+      "name": "Inter Tight",
+      "value": "Tight sans (headlines) · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Bold tight headlines, Cosmic style"
+    },
+    "F20": {
+      "name": "Plus Jakarta Sans",
+      "value": "Friendly geometric sans · weight 200 300 400 500 600 700 800",
+      "use": "Landing pages, startups, AI"
+    },
+    "F21": {
+      "name": "Geist",
+      "value": "Technical sans · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Dev tools, dark dashboards"
+    },
+    "F22": {
+      "name": "Onest",
+      "value": "Compact sans · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Apps, UI text"
+    },
+    "F23": {
+      "name": "Archivo",
+      "value": "Grotesque sans · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Posters, sport, news"
+    },
+    "F24": {
+      "name": "Bricolage Grotesque",
+      "value": "Quirky grotesque · weight 200 300 400 500 600 700 800",
+      "use": "Young creative brands"
+    },
+    "F25": {
+      "name": "Unbounded",
+      "value": "Wide rounded display · weight 200 300 400 500 600 700 800 900",
+      "use": "Tech headlines, Web3, events"
+    },
+    "F26": {
+      "name": "Raleway",
+      "value": "Elegant sans · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Fashion, beauty"
+    },
+    "F27": {
+      "name": "Work Sans",
+      "value": "Neutral sans · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Content, reports"
+    },
+    "F28": {
+      "name": "Epilogue",
+      "value": "Editorial sans · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Magazines, portfolios"
+    },
+    "F29": {
+      "name": "IBM Plex Sans",
+      "value": "Corporate sans · weight 100 200 300 400 500 600 700",
+      "use": "Enterprise, finance"
+    },
+    "F30": {
+      "name": "Big Shoulders Display",
+      "value": "Tall condensed display · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Sport, big posters"
+    },
+    "F31": {
+      "name": "Barlow Condensed",
+      "value": "Condensed sans · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Prices, banners, sport"
+    },
+    "F32": {
+      "name": "Chakra Petch",
+      "value": "Angular tech sans · weight 300 400 500 600 700",
+      "use": "Games, cyberpunk, tech"
+    },
+    "F33": {
+      "name": "Dela Gothic One",
+      "value": "Ultra-heavy display · weight 400",
+      "use": "Loud headlines, streetwear"
+    },
+    "F34": {
+      "name": "Phudu",
+      "value": "Condensed display (VN-made) · weight 300 400 500 600 700 800 900",
+      "use": "Vietnamese posters, events"
+    },
+    "F35": {
+      "name": "Bungee",
+      "value": "Blocky display · weight 400",
+      "use": "Signage, games, fun"
+    },
+    "F36": {
+      "name": "Baloo 2",
+      "value": "Round bold sans · weight 400 500 600 700 800",
+      "use": "Kids, snacks, playful 3D"
+    },
+    "F37": {
+      "name": "Quicksand",
+      "value": "Round light sans · weight 300 400 500 600 700",
+      "use": "Cute, baby & mom"
+    },
+    "F38": {
+      "name": "Comfortaa",
+      "value": "Round geometric · weight 300 400 500 600 700",
+      "use": "Soft logos, friendly apps"
+    },
+    "F39": {
+      "name": "Lobster",
+      "value": "Bold script · weight 400",
+      "use": "Retro, food, signage"
+    },
+    "F40": {
+      "name": "Merriweather",
+      "value": "Readable serif · weight 300 400 500 600 700 800 900",
+      "use": "Long reads, education"
+    },
+    "F41": {
+      "name": "Cormorant Garamond",
+      "value": "Fine display serif · weight 300 400 500 600 700",
+      "use": "Weddings, luxury, perfume"
+    },
+    "F42": {
+      "name": "EB Garamond",
+      "value": "Classic serif · weight 400 500 600 700 800",
+      "use": "Books, culture, heritage"
+    },
+    "F43": {
+      "name": "Noto Serif",
+      "value": "Multilingual serif · weight 100 200 300 400 500 600 700 800 900",
+      "use": "Formal text"
+    },
+    "F44": {
+      "name": "Source Serif 4",
+      "value": "Modern serif · weight 200 300 400 500 600 700 800 900",
+      "use": "News, blogs, docs"
+    },
+    "F45": {
+      "name": "Space Mono",
+      "value": "Quirky monospace · weight 400 700",
+      "use": "Tech, labels, retro"
+    },
+    "F46": {
+      "name": "Sora",
+      "value": "Tech sans · weight 100 200 300 400 500 600 700 800 · NO Vietnamese accents",
+      "use": "Crypto, AI, English only"
+    },
+    "F47": {
+      "name": "Outfit",
+      "value": "Geometric sans · weight 100 200 300 400 500 600 700 800 900 · NO Vietnamese accents",
+      "use": "Brands, English only"
+    },
+    "F48": {
+      "name": "Syne",
+      "value": "Art display · weight 400 500 600 700 800 · NO Vietnamese accents",
+      "use": "Exhibitions, portfolios"
+    },
+    "F49": {
+      "name": "Instrument Serif",
+      "value": "Trendy condensed serif · weight 400 · NO Vietnamese accents",
+      "use": "English editorial"
+    },
+    "F50": {
+      "name": "DM Serif Display",
+      "value": "High-contrast serif · weight 400 · NO Vietnamese accents",
+      "use": "Elegant English headlines"
+    },
+    "F51": {
+      "name": "Orbitron",
+      "value": "Futuristic display · weight 400 500 600 700 800 900 · NO Vietnamese accents",
+      "use": "Sci-fi, games"
+    },
+    "F52": {
+      "name": "Press Start 2P",
+      "value": "Pixel 8-bit · weight 400 · NO Vietnamese accents",
+      "use": "Retro games"
+    },
+    "FP10": {
+      "name": "Unbounded + Manrope",
+      "value": "young tech"
+    },
+    "FP11": {
+      "name": "Manrope + Manrope",
+      "value": "clean, single family"
+    },
+    "FP12": {
+      "name": "Inter Tight + Inter",
+      "value": "Cosmic, bold minimal"
+    },
+    "FP13": {
+      "name": "Plus Jakarta Sans + Inter",
+      "value": "AI landing page"
+    },
+    "FP14": {
+      "name": "Geist + Geist",
+      "value": "dev dashboard"
+    },
+    "FP15": {
+      "name": "Cormorant Garamond + Manrope",
+      "value": "light luxury"
+    },
+    "FP16": {
+      "name": "Bricolage Grotesque + Work Sans",
+      "value": "creative, fun"
+    },
+    "FP17": {
+      "name": "Big Shoulders Display + Barlow Condensed",
+      "value": "strong sport"
+    },
+    "FP18": {
+      "name": "Baloo 2 + Quicksand",
+      "value": "cute 3D"
+    },
+    "FP19": {
+      "name": "EB Garamond + IBM Plex Sans",
+      "value": "cultural, trusted"
+    },
+    "FP20": {
+      "name": "Dela Gothic One + Space Mono",
+      "value": "streetwear, brutal"
+    },
+    "Z09": {
+      "name": "Major second (1.125)",
+      "value": "base 16px × 1.125: 14 / 16 / 18 / 20 / 23 / 26 / 29 px"
+    },
+    "Z10": {
+      "name": "Augmented fourth (1.414)",
+      "value": "base 16px × 1.414: 11 / 16 / 23 / 32 / 45 / 64 / 90 px"
+    },
+    "Z11": {
+      "name": "iOS / mobile app",
+      "value": "Large title 34 · Title 28 · Headline 17 · Body 17 · Footnote 13 · Caption 11 px"
+    },
+    "Z12": {
+      "name": "Dashboard / SaaS",
+      "value": "Big number 32 · H1 24 · H2 18 · Body 14 · Label 12 px"
+    },
+    "Z13": {
+      "name": "Landing page hero",
+      "value": "Hero 72 · H2 48 · H3 28 · Lead 20 · Body 16 px"
+    },
+    "Z14": {
+      "name": "Presentation slide 1920",
+      "value": "Title 64 · Subtitle 40 · Bullet 28 · Note 20 px"
+    },
+    "Z15": {
+      "name": "Giant-type poster (Cosmic)",
+      "value": "Headline 160 · Sub 28 · Specs 22 · Label 18 px (1080 wide)"
+    },
+    "Z16": {
+      "name": "Instagram carousel",
+      "value": "Title 96 · Sub 40 · Body 32 · Page no. 24 px"
+    },
+    "T08": {
+      "name": "Tight bold headline",
+      "value": "48px / 800 / -0.045em"
+    },
+    "T09": {
+      "name": "Spaced caps eyebrow",
+      "value": "12px / 600 / 0.2em / CAPS"
+    },
+    "T10": {
+      "name": "Big stat number",
+      "value": "40px / 700 / tabular"
+    },
+    "T11": {
+      "name": "Editorial italic serif",
+      "value": "40px / 500 / italic"
+    },
+    "T12": {
+      "name": "Ultra-thin elegant",
+      "value": "36px / 200 / 0.02em"
+    },
+    "T13": {
+      "name": "Technical mono label",
+      "value": "13px / 500 / mono"
+    },
+    "T14": {
+      "name": "Airy body text",
+      "value": "16px / 400 / line 1.7"
+    },
+    "T15": {
+      "name": "Tall condensed headline",
+      "value": "44px / 800 / condensed, caps"
+    },
+    "G10": {
+      "name": "Squircle",
+      "value": "30% / 30%"
+    },
+    "G11": {
+      "name": "Leaf (asymmetric)",
+      "value": "24px 4px 24px 4px"
+    },
+    "G12": {
+      "name": "Top tab",
+      "value": "16px 16px 0 0"
+    },
+    "G13": {
+      "name": "Chat bubble",
+      "value": "18px 18px 18px 4px"
+    },
+    "G14": {
+      "name": "Extra-large card",
+      "value": "40px"
+    },
+    "BT13": {
+      "name": "Liquid fill",
+      "value": "hover: color rises from the bottom + glow"
+    },
+    "BT14": {
+      "name": "3D press (blue)",
+      "value": "solid bottom shadow, sinks on hover"
+    },
+    "BT15": {
+      "name": "3D press (white)",
+      "value": "raised white, gray bottom edge"
+    },
+    "BT16": {
+      "name": "Neon glow border",
+      "value": "dark, hover gradient rim + pink-blue bloom"
+    },
+    "BT17": {
+      "name": "Gradient shift",
+      "value": "blue → hover flows to violet-pink"
+    },
+    "BT18": {
+      "name": "Magnetic button",
+      "value": "hover: drifts toward cursor, fills blue"
+    },
+    "BT19": {
+      "name": "Border draw",
+      "value": "hover: blue outline draws around"
+    },
+    "BT20": {
+      "name": "Shimmer sweep",
+      "value": "hover: light sweep + gradient"
+    },
+    "BT21": {
+      "name": "Morphing arrow",
+      "value": "hover: arrow circle stretches, green glow"
+    },
+    "BT22": {
+      "name": "Dark pill, light rim",
+      "value": "dark fill, thin gradient rim, chat icon"
+    },
+    "BT23": {
+      "name": "Liquid glass pill",
+      "value": "clear, glossy bright rim"
+    },
+    "BT24": {
+      "name": "Soft gray with icon",
+      "value": "gray base, softly raised white"
+    },
+    "BT25": {
+      "name": "Like toggle",
+      "value": "white → hover pink-red, filled heart"
+    },
+    "BT26": {
+      "name": "Light gradient border",
+      "value": "white fill, gradient rim, blue text"
+    },
+    "BT27": {
+      "name": "Clay button",
+      "value": "puffy, inner shadows"
+    },
+    "BT28": {
+      "name": "Pixel 8-bit",
+      "value": "square border, hard shadow, pixel font"
+    },
+    "BT29": {
+      "name": "Arrow text link",
+      "value": "text + arrow, arrow slides on hover"
+    },
+    "BT30": {
+      "name": "Floating action button",
+      "value": "round, plus, glow"
+    },
+    "BT31": {
+      "name": "Glass icon button",
+      "value": "clear round icon button"
+    },
+    "BT32": {
+      "name": "Primary + secondary pair",
+      "value": "solid + outline side by side"
+    },
+    "K13": {
+      "name": "Smoked glass spec card",
+      "value": "22px radius, thin light rim, color specs"
+    },
+    "K14": {
+      "name": "Thin gradient rim",
+      "value": "1px white-to-clear gradient rim"
+    },
+    "K15": {
+      "name": "Border beam",
+      "value": "light beam travels around the border"
+    },
+    "K16": {
+      "name": "Browser window",
+      "value": "top bar with 3 dots, 10px radius"
+    },
+    "K17": {
+      "name": "Phone frame",
+      "value": "36px radius, notch, 6px bezel"
+    },
+    "K18": {
+      "name": "Glass input",
+      "value": "clear pill, left icon"
+    },
+    "K19": {
+      "name": "Glass chip",
+      "value": "small pill, thin border, color dot"
+    },
+    "K20": {
+      "name": "Toast card",
+      "value": "white pill, icon, soft shadow"
+    },
+    "K21": {
+      "name": "Bottom glow edge",
+      "value": "glowing bottom line + bloom"
+    },
+    "K22": {
+      "name": "Bento tile",
+      "value": "20px tile, soft fill, top label"
+    },
+    "I07": {
+      "name": "Search",
+      "value": "24px, 1.5 stroke"
+    },
+    "I08": {
+      "name": "Favorite",
+      "value": "24px, 1.5 stroke"
+    },
+    "I09": {
+      "name": "Add",
+      "value": "24px, 1.5 stroke"
+    },
+    "I10": {
+      "name": "Calendar",
+      "value": "24px, 1.5 stroke"
+    },
+    "I11": {
+      "name": "Account",
+      "value": "24px, 1.5 stroke"
+    },
+    "I12": {
+      "name": "Notifications",
+      "value": "24px, 1.5 stroke"
+    },
+    "I13": {
+      "name": "Chat",
+      "value": "24px, 1.5 stroke"
+    },
+    "I14": {
+      "name": "Cart",
+      "value": "24px, 1.5 stroke"
+    },
+    "I15": {
+      "name": "Arrow",
+      "value": "24px, 1.5 stroke"
+    },
+    "I16": {
+      "name": "Play",
+      "value": "24px, 1.5 stroke"
+    },
+    "I17": {
+      "name": "Download",
+      "value": "24px, 1.5 stroke"
+    },
+    "I18": {
+      "name": "Star",
+      "value": "24px, 1.5 stroke"
+    },
+    "I19": {
+      "name": "Sparkle (AI)",
+      "value": "24px, 1.5 stroke"
+    },
+    "I20": {
+      "name": "Settings",
+      "value": "24px, 1.5 stroke"
+    },
+    "I21": {
+      "name": "Grid",
+      "value": "24px, 1.5 stroke"
+    },
+    "I22": {
+      "name": "Wallet",
+      "value": "24px, 1.5 stroke"
+    },
+    "I23": {
+      "name": "Chart",
+      "value": "24px, 1.5 stroke"
+    },
+    "I24": {
+      "name": "Music",
+      "value": "24px, 1.5 stroke"
+    },
+    "I25": {
+      "name": "Bookmark",
+      "value": "24px, 1.5 stroke"
+    },
+    "I26": {
+      "name": "Lock",
+      "value": "24px, 1.5 stroke"
+    },
+    "I27": {
+      "name": "Mail",
+      "value": "24px, 1.5 stroke"
+    },
+    "I28": {
+      "name": "Microphone",
+      "value": "24px, 1.5 stroke"
+    },
+    "I29": {
+      "name": "View",
+      "value": "24px, 1.5 stroke"
+    },
+    "I30": {
+      "name": "Share",
+      "value": "24px, 1.5 stroke"
+    },
+    "I31": {
+      "name": "Upload",
+      "value": "24px, 1.5 stroke"
+    },
+    "I32": {
+      "name": "Filter",
+      "value": "24px, 1.5 stroke"
+    },
+    "E19": {
+      "name": "Smoked glass, light rim",
+      "value": "60% smoke, 14% rim, top highlight"
+    },
+    "E20": {
+      "name": "Liquid glass",
+      "value": "clear, glossy rim, saturated refraction"
+    },
+    "E21": {
+      "name": "Top edge highlight",
+      "value": "1px light line on top"
+    },
+    "E22": {
+      "name": "Inner glow",
+      "value": "ice-blue glow inside"
+    },
+    "E23": {
+      "name": "Gradient hairline rim",
+      "value": "1px white-to-clear rim"
+    },
+    "E24": {
+      "name": "Top spotlight",
+      "value": "cone of light from above"
+    },
+    "E25": {
+      "name": "Colored aura",
+      "value": "violet glow spreading out"
+    },
+    "E26": {
+      "name": "Chrome metal",
+      "value": "reflective silver"
+    },
+    "E27": {
+      "name": "Holographic",
+      "value": "pastel rainbow sheen"
+    },
+    "E28": {
+      "name": "Colored shadow",
+      "value": "blue shadow under blue block"
+    },
+    "E29": {
+      "name": "Puffy clay",
+      "value": "light/dark inner shadows, pastel"
+    },
+    "E30": {
+      "name": "Glowing bottom edge",
+      "value": "bright bottom line + bloom"
+    },
+    "E31": {
+      "name": "Fade-out mask",
+      "value": "content fades toward the bottom"
+    },
+    "E32": {
+      "name": "Rainbow conic rim",
+      "value": "multicolor conic border"
+    },
+    "E33": {
+      "name": "Soft white glow text",
+      "value": "gentle ice-blue glow"
+    },
+    "E34": {
+      "name": "Stacked 3D text",
+      "value": "offset pink + yellow layers"
+    },
+    "E35": {
+      "name": "Sticker text",
+      "value": "black stroke + hard shadow"
+    },
+    "E36": {
+      "name": "Speed-blur text",
+      "value": "horizontal smear"
+    },
+    "E37": {
+      "name": "Deep drop-shadow text",
+      "value": "soft shadow below"
+    },
+    "E38": {
+      "name": "Elevation level 1",
+      "value": "viền mờ + bóng 1px"
+    },
+    "E39": {
+      "name": "Elevation level 2",
+      "value": "thẻ nằm yên"
+    },
+    "E40": {
+      "name": "Elevation level 3",
+      "value": "thẻ hover"
+    },
+    "E41": {
+      "name": "Elevation level 4",
+      "value": "menu, popover"
+    },
+    "E42": {
+      "name": "Elevation level 5",
+      "value": "modal, hộp thoại"
+    },
+    "MT01": {
+      "name": "Hover lift",
+      "value": "-4px lift + deeper shadow, 200ms"
+    },
+    "MT02": {
+      "name": "Press scale",
+      "value": "scale .96 on press, 100ms"
+    },
+    "MT03": {
+      "name": "Shimmer sweep",
+      "value": "light band sweeps across, 700ms"
+    },
+    "MT04": {
+      "name": "Border beam",
+      "value": "light runs around the border, 3s loop"
+    },
+    "MT05": {
+      "name": "Ripple",
+      "value": "circle spreads from tap point"
+    },
+    "MT06": {
+      "name": "Underline grow",
+      "value": "underline grows left to right"
+    },
+    "MT07": {
+      "name": "Blur reveal",
+      "value": "blur 10px → 0 + fade, 500ms"
+    },
+    "MT08": {
+      "name": "Float",
+      "value": "bobbing ±8px, 3s loop"
+    },
+    "MT09": {
+      "name": "Pulse ring",
+      "value": "glow ring expands, 1.5s loop"
+    },
+    "MT10": {
+      "name": "Skeleton loading",
+      "value": "gray blocks with moving sheen"
+    },
+    "MT11": {
+      "name": "Spinner",
+      "value": "spinner 0.8s loop"
+    },
+    "MT12": {
+      "name": "Typing dots",
+      "value": "3 dots bounce in turn"
+    },
+    "MT13": {
+      "name": "3D tilt",
+      "value": "card tilts toward cursor"
+    },
+    "MT14": {
+      "name": "Flowing gradient",
+      "value": "gradient moves continuously"
+    },
+    "MT15": {
+      "name": "Marquee",
+      "value": "endless scrolling text"
+    },
+    "MT16": {
+      "name": "Stagger reveal",
+      "value": "items appear 60ms apart"
+    },
+    "MT17": {
+      "name": "Zoom in",
+      "value": "scale .85 → 1 + fade, 300ms"
+    },
+    "MT18": {
+      "name": "Spring bounce",
+      "value": "drops and bounces twice"
+    },
+    "MT19": {
+      "name": "Card flip",
+      "value": "rotates 180° to show the back"
+    },
+    "MT20": {
+      "name": "Twinkling stars",
+      "value": "stars fade in and out slowly"
+    },
+    "NV01": {
+      "name": "Pill bar + raised center button",
+      "value": "colored round plus in the middle"
+    },
+    "NV02": {
+      "name": "Active tab with label",
+      "value": "active tab becomes a dark pill with label"
+    },
+    "NV03": {
+      "name": "Dark glass bar",
+      "value": "smoked glass, glowing dot under active icon"
+    },
+    "NV04": {
+      "name": "Detached action button",
+      "value": "tab bar + separate round button on the right"
+    },
+    "NV05": {
+      "name": "Glowing active icon",
+      "value": "active icon in a glowing orange circle"
+    },
+    "NV06": {
+      "name": "Icon + label below",
+      "value": "tiny labels under icons, active is bold"
+    },
+    "NV07": {
+      "name": "Mini player + tabs (music)",
+      "value": "now-playing strip above the tab bar"
+    },
+    "NV08": {
+      "name": "Floating vertical icon rail",
+      "value": "rounded vertical rail, active is white (like this site)"
+    },
+    "NV09": {
+      "name": "Full sidebar (SaaS)",
+      "value": "logo, grouped items, filled active item, upgrade CTA"
+    },
+    "NV10": {
+      "name": "Glass top bar + pill links",
+      "value": "logo left, links center, button right"
+    },
+    "NV11": {
+      "name": "Floating dock",
+      "value": "rounded square icons, magnify on hover"
+    },
+    "NV12": {
+      "name": "Segmented control",
+      "value": "2–4 options in a pill, sliding highlight"
+    },
+    "NV13": {
+      "name": "Stepper",
+      "value": "connected steps, done steps get a ✓"
+    },
+    "NV14": {
+      "name": "Underline tabs",
+      "value": "text tabs, active one has a colored underline"
+    },
+    "SP01": {
+      "name": "4pt grid",
+      "value": "4 · 8 · 12 · 16 · 24 · 32 · 48 · 64"
+    },
+    "SP02": {
+      "name": "8pt grid",
+      "value": "8 · 16 · 24 · 32 · 40 · 48 · 64 · 80 · 96"
+    },
+    "SP03": {
+      "name": "Fibonacci",
+      "value": "5 · 8 · 13 · 21 · 34 · 55 · 89"
+    },
+    "SP04": {
+      "name": "Compact density (dashboard)",
+      "value": "card padding 12–16 · gap 8–12 · row 32px"
+    },
+    "SP05": {
+      "name": "Comfortable density (app)",
+      "value": "padding 20–24 · gap 16 · row 44px"
+    },
+    "SP06": {
+      "name": "Airy density (landing)",
+      "value": "padding 32–48 · sections 96–128px apart"
+    },
+    "SP07": {
+      "name": "KV safe margins",
+      "value": "5% (social) · 8% (print)"
+    },
+    "L15": {
+      "name": "Dashboard: sidebar + stat cards",
+      "value": "left menu, 4 stat cards, chart, table"
+    },
+    "L16": {
+      "name": "Centered hero + 2 buttons",
+      "value": "eyebrow, big title, text, 2 buttons, product shot below"
+    },
+    "L17": {
+      "name": "Login over a scenic backdrop",
+      "value": "glass login card centered on a 3D landscape"
+    },
+    "L18": {
+      "name": "Laptop + phone mockup",
+      "value": "same UI shown on two devices"
+    },
+    "L19": {
+      "name": "Glass card poster",
+      "value": "vertical card centered, full-bleed photo behind"
+    },
+    "L20": {
+      "name": "Multi-slide carousel",
+      "value": "slide 1 cover, next slides content, page dots"
+    },
+    "L21": {
+      "name": "List + detail",
+      "value": "list column left, details right"
+    },
+    "L22": {
+      "name": "Masonry gallery",
+      "value": "staggered image heights, 3 columns"
+    },
+    "L23": {
+      "name": "3-column pricing",
+      "value": "middle plan highlighted with a badge"
+    },
+    "L24": {
+      "name": "Text left + image right",
+      "value": "55/45 split hero, CTA under the title"
+    },
+    "A11": {
+      "name": "Instagram carousel",
+      "value": "1080 × 1350 px · multi-slide",
+      "use": "Slide 1 is the hook, last slide is the CTA"
+    },
+    "A12": {
+      "name": "Pinterest pin",
+      "value": "1000 × 1500 px · 2:3",
+      "use": "Big text in the top half"
+    },
+    "A13": {
+      "name": "Desktop screen",
+      "value": "1440 × 900 px",
+      "use": "Web or desktop app design"
+    },
+    "A14": {
+      "name": "Phone screen",
+      "value": "390 × 844 px (iPhone)",
+      "use": "App design, keep the notch area clear"
+    },
+    "A15": {
+      "name": "Dribbble / Behance shot",
+      "value": "1600 × 1200 px · 4:3",
+      "use": "Portfolio presentation"
+    },
+    "A16": {
+      "name": "4:3 slide",
+      "value": "1440 × 1080 px",
+      "use": "Old projectors, printed decks"
+    },
+    "R12": {
+      "name": "Snappy feedback",
+      "value": "hover/press ≤ 200ms",
+      "text": "Hover and press feedback runs in 100–200ms with ease-out. Entrance animations max 400ms. Avoid slow, sluggish motion."
+    },
+    "R13": {
+      "name": "8pt spacing grid",
+      "value": "all spacing is a multiple of 4/8",
+      "text": "All spacing, padding and sizes use multiples of 8 (4 allowed for small details). No odd values like 13px or 27px."
+    },
+    "R14": {
+      "name": "44px touch targets",
+      "value": "mobile buttons ≥ 44px tall",
+      "text": "Tappable buttons and icons on mobile have at least a 44 × 44px target and 8px between them."
+    },
+    "R15": {
+      "name": "One primary button per screen",
+      "value": "primary stands out, the rest are secondary",
+      "text": "Each screen or KV has one primary button (solid, accent color). Other actions use outline buttons or links."
+    },
+    "R16": {
+      "name": "One radius family",
+      "value": "inner radius = outer radius − padding",
+      "text": "Pick one radius set (e.g. 8/16/24) and use it everywhere. Nested blocks: inner radius equals outer radius minus padding."
+    },
+    "R17": {
+      "name": "Dark mode: higher is lighter",
+      "value": "upper layers are lighter",
+      "text": "In dark UI, show elevation with progressively lighter surfaces (#0B0B10 → #15151C → #1E1E27 → #2A2A36), not only shadows."
+    },
+    "R18": {
+      "name": "Glass needs contrast",
+      "value": "text on glass stays readable",
+      "text": "Use frosted glass only over color or imagery. Text on glass needs ≥ 4.5:1 contrast; add a dark tint if needed."
+    },
+    "R19": {
+      "name": "Respect reduced motion",
+      "value": "turn off motion when users ask",
+      "text": "When the OS has reduced motion on (prefers-reduced-motion), disable looping and large animations; keep only color changes."
+    },
+    "RS01": {
+      "name": "21st.dev",
+      "value": "12,000+ React components for AI agents, one-command install"
+    },
+    "RS02": {
+      "name": "shadcn/ui",
+      "value": "Clean components you copy into your project"
+    },
+    "RS03": {
+      "name": "Aceternity UI",
+      "value": "200+ free animated components"
+    },
+    "RS04": {
+      "name": "Magic UI",
+      "value": "150+ free animated building blocks"
+    },
+    "RS05": {
+      "name": "Motion Primitives",
+      "value": "Ready-made motion pieces, copy and paste"
+    },
+    "RS06": {
+      "name": "Anime.js",
+      "value": "Lightweight animation library"
+    },
+    "RS07": {
+      "name": "Kinetics",
+      "value": "153 spring effects to copy (search by name)"
+    },
+    "RS08": {
+      "name": "MicroKit UI",
+      "value": "49 small hover and click effects (search by name)"
+    },
+    "RS09": {
+      "name": "Uiverse",
+      "value": "Largest open-source community UI library"
+    },
+    "RS10": {
+      "name": "Liquid Glass",
+      "value": "Apple-style liquid glass for the web (search by name)"
+    },
+    "RS11": {
+      "name": "Kitbitz",
+      "value": "2,000+ free hand-drawn illustrations (search by name)"
+    },
+    "RS12": {
+      "name": "3dicons",
+      "value": "1,440+ free 3D icons"
+    },
+    "RS13": {
+      "name": "Solar Icons",
+      "value": "Modern icons: line, duotone, filled"
+    },
+    "RS14": {
+      "name": "Iconly",
+      "value": "Icons and nav bar ideas"
+    },
+    "RS15": {
+      "name": "Component Gallery",
+      "value": "2,671 examples, 60 component types, 95 design systems"
+    },
+    "RS16": {
+      "name": "Minimal Gallery",
+      "value": "Curated minimal websites"
+    },
+    "RS17": {
+      "name": "Refero",
+      "value": "Library of real UI screens and styles"
+    },
+    "RS18": {
+      "name": "Mobbin",
+      "value": "Real mobile app screens and flows"
+    },
+    "RS19": {
+      "name": "Libraries.dev",
+      "value": "React components for AI agents: border beams, thinking orbs"
+    },
+    "RS20": {
+      "name": "Originkit",
+      "value": "500 interactive web components"
+    },
+    "RS21": {
+      "name": "beUI",
+      "value": "100+ animated React/Next.js components, dot-matrix loaders"
+    },
+    "RS22": {
+      "name": "Tailark",
+      "value": "Pre-built marketing blocks, full pages and illustrations"
+    },
+    "RS23": {
+      "name": "DESIGN.md",
+      "value": "Design system files that AI can read and follow (search by name)"
+    },
+    "RS24": {
+      "name": "Dyslove Design",
+      "value": "Glass-card color combos (Cosmic, Vanilla, Lavender, Violet) on Instagram"
+    },
+    "BG13": {
+      "name": "Starfield",
+      "value": "stars on deep black"
+    },
+    "BG14": {
+      "name": "Space nebula",
+      "value": "stars + blue-violet-rose nebula"
+    },
+    "BG15": {
+      "name": "Blurred pastel",
+      "value": "pink, lilac and blue melting together"
+    },
+    "BG16": {
+      "name": "Fading dot matrix",
+      "value": "dot grid, bright center, fading edges"
+    },
+    "BG17": {
+      "name": "Neon grid",
+      "value": "glowing violet grid fading upward"
+    },
+    "BG18": {
+      "name": "Soft UI gray",
+      "value": "light gray for floating white cards"
+    },
+    "BG19": {
+      "name": "Speckled vanilla",
+      "value": "pale cream with brown specks"
+    },
+    "BG20": {
+      "name": "Dark spotlight",
+      "value": "cone of light from above"
+    },
+    "BG21": {
+      "name": "Light streak",
+      "value": "white-blue streak across"
+    },
+    "BG22": {
+      "name": "Notebook paper",
+      "value": "cream, blue lines, red margin"
+    },
+    "BG23": {
+      "name": "Grainy gradient",
+      "value": "violet-pink + grain"
+    },
+    "BG24": {
+      "name": "Pinstripes",
+      "value": "1px lines every 8px"
     }
   },
   "brief": {
@@ -1074,7 +2519,11 @@
     ],
     "extra": [
       "Rules & details",
-      "Rules, frames, icons"
+      "Rules, frames, icons, nav, spacing, sources"
+    ],
+    "motion": [
+      "Motion",
+      "Hover, transitions, loaders"
     ]
   }
 }

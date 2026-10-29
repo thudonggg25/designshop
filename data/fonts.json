@@ -193,6 +193,403 @@
           "css": "font-family: 'JetBrains Mono', monospace"
         }
       ]
+    },
+    {
+      "label": "Font mở rộng (có dấu)",
+      "items": [
+        {
+          "id": "F18",
+          "code": "F18",
+          "name": "Manrope",
+          "value": "Sans hiện đại mềm · weight 200 300 400 500 600 700 800",
+          "family": "Manrope",
+          "weights": "200;300;400;500;600;700;800",
+          "vi": true,
+          "use": "SaaS, ứng dụng, thương hiệu sạch",
+          "css": "font-family: 'Manrope', sans-serif"
+        },
+        {
+          "id": "F19",
+          "code": "F19",
+          "name": "Inter Tight",
+          "value": "Sans khít (tiêu đề) · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Inter Tight",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Tiêu đề đậm khít kiểu Cosmic",
+          "css": "font-family: 'Inter Tight', sans-serif"
+        },
+        {
+          "id": "F20",
+          "code": "F20",
+          "name": "Plus Jakarta Sans",
+          "value": "Sans hình học thân thiện · weight 200 300 400 500 600 700 800",
+          "family": "Plus Jakarta Sans",
+          "weights": "200;300;400;500;600;700;800",
+          "vi": true,
+          "use": "Landing page, startup, AI",
+          "css": "font-family: 'Plus Jakarta Sans', sans-serif"
+        },
+        {
+          "id": "F21",
+          "code": "F21",
+          "name": "Geist",
+          "value": "Sans kỹ thuật · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Geist",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Công cụ dev, dashboard tối",
+          "css": "font-family: 'Geist', sans-serif"
+        },
+        {
+          "id": "F22",
+          "code": "F22",
+          "name": "Onest",
+          "value": "Sans gọn · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Onest",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Ứng dụng, nội dung UI",
+          "css": "font-family: 'Onest', sans-serif"
+        },
+        {
+          "id": "F23",
+          "code": "F23",
+          "name": "Archivo",
+          "value": "Sans đa độ rộng · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Archivo",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Poster, thể thao, tin tức",
+          "css": "font-family: 'Archivo', sans-serif"
+        },
+        {
+          "id": "F24",
+          "code": "F24",
+          "name": "Bricolage Grotesque",
+          "value": "Grotesque cá tính · weight 200 300 400 500 600 700 800",
+          "family": "Bricolage Grotesque",
+          "weights": "200;300;400;500;600;700;800",
+          "vi": true,
+          "use": "Thương hiệu trẻ, sáng tạo",
+          "css": "font-family: 'Bricolage Grotesque', sans-serif"
+        },
+        {
+          "id": "F25",
+          "code": "F25",
+          "name": "Unbounded",
+          "value": "Display tròn rộng · weight 200 300 400 500 600 700 800 900",
+          "family": "Unbounded",
+          "weights": "200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Tiêu đề công nghệ, Web3, sự kiện",
+          "css": "font-family: 'Unbounded', sans-serif"
+        },
+        {
+          "id": "F26",
+          "code": "F26",
+          "name": "Raleway",
+          "value": "Sans thanh lịch · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Raleway",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Thời trang, làm đẹp",
+          "css": "font-family: 'Raleway', sans-serif"
+        },
+        {
+          "id": "F27",
+          "code": "F27",
+          "name": "Work Sans",
+          "value": "Sans trung tính · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Work Sans",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Nội dung, báo cáo",
+          "css": "font-family: 'Work Sans', sans-serif"
+        },
+        {
+          "id": "F28",
+          "code": "F28",
+          "name": "Epilogue",
+          "value": "Sans biên tập · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Epilogue",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Tạp chí, portfolio",
+          "css": "font-family: 'Epilogue', sans-serif"
+        },
+        {
+          "id": "F29",
+          "code": "F29",
+          "name": "IBM Plex Sans",
+          "value": "Sans doanh nghiệp · weight 100 200 300 400 500 600 700",
+          "family": "IBM Plex Sans",
+          "weights": "100;200;300;400;500;600;700",
+          "vi": true,
+          "use": "Doanh nghiệp, tài chính",
+          "css": "font-family: 'IBM Plex Sans', sans-serif"
+        },
+        {
+          "id": "F30",
+          "code": "F30",
+          "name": "Big Shoulders Display",
+          "value": "Display hẹp cao · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Big Shoulders Display",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Thể thao, poster lớn",
+          "css": "font-family: 'Big Shoulders Display', sans-serif"
+        },
+        {
+          "id": "F31",
+          "code": "F31",
+          "name": "Barlow Condensed",
+          "value": "Sans hẹp · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Barlow Condensed",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Giá, banner, thể thao",
+          "css": "font-family: 'Barlow Condensed', sans-serif"
+        },
+        {
+          "id": "F32",
+          "code": "F32",
+          "name": "Chakra Petch",
+          "value": "Sans vát góc kỹ thuật · weight 300 400 500 600 700",
+          "family": "Chakra Petch",
+          "weights": "300;400;500;600;700",
+          "vi": true,
+          "use": "Game, cyberpunk, công nghệ",
+          "css": "font-family: 'Chakra Petch', sans-serif"
+        },
+        {
+          "id": "F33",
+          "code": "F33",
+          "name": "Dela Gothic One",
+          "value": "Display siêu đậm · weight 400",
+          "family": "Dela Gothic One",
+          "weights": "400",
+          "vi": true,
+          "use": "Tiêu đề cực mạnh, streetwear",
+          "css": "font-family: 'Dela Gothic One', sans-serif"
+        },
+        {
+          "id": "F34",
+          "code": "F34",
+          "name": "Phudu",
+          "value": "Display hẹp (Việt) · weight 300 400 500 600 700 800 900",
+          "family": "Phudu",
+          "weights": "300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Poster Việt, sự kiện",
+          "css": "font-family: 'Phudu', sans-serif"
+        },
+        {
+          "id": "F35",
+          "code": "F35",
+          "name": "Bungee",
+          "value": "Display khối · weight 400",
+          "family": "Bungee",
+          "weights": "400",
+          "vi": true,
+          "use": "Biển hiệu, game, vui",
+          "css": "font-family: 'Bungee', sans-serif"
+        },
+        {
+          "id": "F36",
+          "code": "F36",
+          "name": "Baloo 2",
+          "value": "Sans tròn đậm · weight 400 500 600 700 800",
+          "family": "Baloo 2",
+          "weights": "400;500;600;700;800",
+          "vi": true,
+          "use": "Trẻ em, ăn vặt, 3D vui",
+          "css": "font-family: 'Baloo 2', sans-serif"
+        },
+        {
+          "id": "F37",
+          "code": "F37",
+          "name": "Quicksand",
+          "value": "Sans tròn mảnh · weight 300 400 500 600 700",
+          "family": "Quicksand",
+          "weights": "300;400;500;600;700",
+          "vi": true,
+          "use": "Dễ thương, mẹ và bé",
+          "css": "font-family: 'Quicksand', sans-serif"
+        },
+        {
+          "id": "F38",
+          "code": "F38",
+          "name": "Comfortaa",
+          "value": "Sans tròn hình học · weight 300 400 500 600 700",
+          "family": "Comfortaa",
+          "weights": "300;400;500;600;700",
+          "vi": true,
+          "use": "Logo mềm, app thân thiện",
+          "css": "font-family: 'Comfortaa', sans-serif"
+        },
+        {
+          "id": "F39",
+          "code": "F39",
+          "name": "Lobster",
+          "value": "Script đậm · weight 400",
+          "family": "Lobster",
+          "weights": "400",
+          "vi": true,
+          "use": "Retro, đồ ăn, biển hiệu",
+          "css": "font-family: 'Lobster', cursive"
+        },
+        {
+          "id": "F40",
+          "code": "F40",
+          "name": "Merriweather",
+          "value": "Serif đọc tốt · weight 300 400 500 600 700 800 900",
+          "family": "Merriweather",
+          "weights": "300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Bài dài, giáo dục",
+          "css": "font-family: 'Merriweather', serif"
+        },
+        {
+          "id": "F41",
+          "code": "F41",
+          "name": "Cormorant Garamond",
+          "value": "Serif thanh mảnh · weight 300 400 500 600 700",
+          "family": "Cormorant Garamond",
+          "weights": "300;400;500;600;700",
+          "vi": true,
+          "use": "Cưới, cao cấp, nước hoa",
+          "css": "font-family: 'Cormorant Garamond', serif"
+        },
+        {
+          "id": "F42",
+          "code": "F42",
+          "name": "EB Garamond",
+          "value": "Serif cổ điển · weight 400 500 600 700 800",
+          "family": "EB Garamond",
+          "weights": "400;500;600;700;800",
+          "vi": true,
+          "use": "Sách, văn hoá, di sản",
+          "css": "font-family: 'EB Garamond', serif"
+        },
+        {
+          "id": "F43",
+          "code": "F43",
+          "name": "Noto Serif",
+          "value": "Serif đa ngôn ngữ · weight 100 200 300 400 500 600 700 800 900",
+          "family": "Noto Serif",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Văn bản trang trọng",
+          "css": "font-family: 'Noto Serif', serif"
+        },
+        {
+          "id": "F44",
+          "code": "F44",
+          "name": "Source Serif 4",
+          "value": "Serif hiện đại · weight 200 300 400 500 600 700 800 900",
+          "family": "Source Serif 4",
+          "weights": "200;300;400;500;600;700;800;900",
+          "vi": true,
+          "use": "Báo, blog, tài liệu",
+          "css": "font-family: 'Source Serif 4', serif"
+        },
+        {
+          "id": "F45",
+          "code": "F45",
+          "name": "Space Mono",
+          "value": "Monospace cá tính · weight 400 700",
+          "family": "Space Mono",
+          "weights": "400;700",
+          "vi": true,
+          "use": "Công nghệ, nhãn, retro",
+          "css": "font-family: 'Space Mono', monospace"
+        }
+      ],
+      "v3": true
+    },
+    {
+      "label": "Font tiếng Anh (không dấu)",
+      "items": [
+        {
+          "id": "F46",
+          "code": "F46",
+          "name": "Sora",
+          "value": "Sans công nghệ · weight 100 200 300 400 500 600 700 800 · KHÔNG có dấu tiếng Việt",
+          "family": "Sora",
+          "weights": "100;200;300;400;500;600;700;800",
+          "vi": false,
+          "use": "Crypto, AI, tiếng Anh",
+          "css": "font-family: 'Sora', sans-serif"
+        },
+        {
+          "id": "F47",
+          "code": "F47",
+          "name": "Outfit",
+          "value": "Sans hình học · weight 100 200 300 400 500 600 700 800 900 · KHÔNG có dấu tiếng Việt",
+          "family": "Outfit",
+          "weights": "100;200;300;400;500;600;700;800;900",
+          "vi": false,
+          "use": "Thương hiệu, tiếng Anh",
+          "css": "font-family: 'Outfit', sans-serif"
+        },
+        {
+          "id": "F48",
+          "code": "F48",
+          "name": "Syne",
+          "value": "Display nghệ thuật · weight 400 500 600 700 800 · KHÔNG có dấu tiếng Việt",
+          "family": "Syne",
+          "weights": "400;500;600;700;800",
+          "vi": false,
+          "use": "Triển lãm, portfolio",
+          "css": "font-family: 'Syne', sans-serif"
+        },
+        {
+          "id": "F49",
+          "code": "F49",
+          "name": "Instrument Serif",
+          "value": "Serif hẹp thời thượng · weight 400 · KHÔNG có dấu tiếng Việt",
+          "family": "Instrument Serif",
+          "weights": "400",
+          "vi": false,
+          "use": "Editorial tiếng Anh",
+          "css": "font-family: 'Instrument Serif', serif"
+        },
+        {
+          "id": "F50",
+          "code": "F50",
+          "name": "DM Serif Display",
+          "value": "Serif tiêu đề tương phản · weight 400 · KHÔNG có dấu tiếng Việt",
+          "family": "DM Serif Display",
+          "weights": "400",
+          "vi": false,
+          "use": "Tiêu đề tiếng Anh sang",
+          "css": "font-family: 'DM Serif Display', serif"
+        },
+        {
+          "id": "F51",
+          "code": "F51",
+          "name": "Orbitron",
+          "value": "Display tương lai · weight 400 500 600 700 800 900 · KHÔNG có dấu tiếng Việt",
+          "family": "Orbitron",
+          "weights": "400;500;600;700;800;900",
+          "vi": false,
+          "use": "Sci-fi, game",
+          "css": "font-family: 'Orbitron', sans-serif"
+        },
+        {
+          "id": "F52",
+          "code": "F52",
+          "name": "Press Start 2P",
+          "value": "Pixel 8-bit · weight 400 · KHÔNG có dấu tiếng Việt",
+          "family": "Press Start 2P",
+          "weights": "400",
+          "vi": false,
+          "use": "Game retro",
+          "css": "font-family: 'Press Start 2P', sans-serif"
+        }
+      ],
+      "v3": true
     }
   ]
 }

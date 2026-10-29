@@ -257,6 +257,236 @@
           ]
         }
       ]
+    },
+    {
+      "label": "Bảng màu xu hướng 2026",
+      "items": [
+        {
+          "id": "P19",
+          "code": "P19",
+          "name": "Cosmic",
+          "value": "#06060A · #23212C · #5A5470 · #9DB8FF · #E8E6F0",
+          "mood": "vũ trụ, kính khói",
+          "colors": [
+            "#06060A",
+            "#23212C",
+            "#5A5470",
+            "#9DB8FF",
+            "#E8E6F0"
+          ]
+        },
+        {
+          "id": "P20",
+          "code": "P20",
+          "name": "Vanilla",
+          "value": "#F1FEC8 · #E6EFB4 · #C9D19A · #5A4A3C · #2A2320",
+          "mood": "kem vani, đốm nâu",
+          "colors": [
+            "#F1FEC8",
+            "#E6EFB4",
+            "#C9D19A",
+            "#5A4A3C",
+            "#2A2320"
+          ]
+        },
+        {
+          "id": "P21",
+          "code": "P21",
+          "name": "Lavender",
+          "value": "#F4EEFF · #D2C3F6 · #A98EE0 · #6E5A9C · #3A2E4A",
+          "mood": "tím oải hương dịu",
+          "colors": [
+            "#F4EEFF",
+            "#D2C3F6",
+            "#A98EE0",
+            "#6E5A9C",
+            "#3A2E4A"
+          ]
+        },
+        {
+          "id": "P22",
+          "code": "P22",
+          "name": "Violet",
+          "value": "#120A24 · #36255C · #6B4FB3 · #B68CFF · #E6D7FF",
+          "mood": "tím sâu, sứa phát sáng",
+          "colors": [
+            "#120A24",
+            "#36255C",
+            "#6B4FB3",
+            "#B68CFF",
+            "#E6D7FF"
+          ]
+        },
+        {
+          "id": "P23",
+          "code": "P23",
+          "name": "Pastel AI",
+          "value": "#FFC7E6 · #E3CCFF · #C9D4FF · #B66BFF · #5B8CFF",
+          "mood": "hồng tím xanh mơ màng",
+          "colors": [
+            "#FFC7E6",
+            "#E3CCFF",
+            "#C9D4FF",
+            "#B66BFF",
+            "#5B8CFF"
+          ]
+        },
+        {
+          "id": "P24",
+          "code": "P24",
+          "name": "Xanh fintech",
+          "value": "#F5F7FF · #C7D2FE · #6366F1 · #4338CA · #1E1B4B",
+          "mood": "tin cậy, hiện đại",
+          "colors": [
+            "#F5F7FF",
+            "#C7D2FE",
+            "#6366F1",
+            "#4338CA",
+            "#1E1B4B"
+          ]
+        },
+        {
+          "id": "P25",
+          "code": "P25",
+          "name": "Xanh xô thơm",
+          "value": "#F7F5EF · #E3E8DC · #9DB59A · #3F5E4A · #1F2A22",
+          "mood": "dịu, sạch, tự nhiên",
+          "colors": [
+            "#F7F5EF",
+            "#E3E8DC",
+            "#9DB59A",
+            "#3F5E4A",
+            "#1F2A22"
+          ]
+        },
+        {
+          "id": "P26",
+          "code": "P26",
+          "name": "Nút neon",
+          "value": "#0B0B14 · #2F6BFF · #36C2FF · #B66BFF · #FF5C8A",
+          "mood": "xanh điện, tím, hồng",
+          "colors": [
+            "#0B0B14",
+            "#2F6BFF",
+            "#36C2FF",
+            "#B66BFF",
+            "#FF5C8A"
+          ]
+        },
+        {
+          "id": "P27",
+          "code": "P27",
+          "name": "Xám iconly",
+          "value": "#ECEDF0 · #FFFFFF · #C9CBD2 · #2A2B30 · #3B5BFF",
+          "mood": "xám mềm + một màu nhấn",
+          "colors": [
+            "#ECEDF0",
+            "#FFFFFF",
+            "#C9CBD2",
+            "#2A2B30",
+            "#3B5BFF"
+          ]
+        },
+        {
+          "id": "P28",
+          "code": "P28",
+          "name": "Hoàng hôn núi",
+          "value": "#1B1A2E · #3D3B6B · #8E6FB5 · #F2A27A · #FFE3C4",
+          "mood": "tím than, cam đào",
+          "colors": [
+            "#1B1A2E",
+            "#3D3B6B",
+            "#8E6FB5",
+            "#F2A27A",
+            "#FFE3C4"
+          ]
+        },
+        {
+          "id": "P29",
+          "code": "P29",
+          "name": "Đêm cao cấp",
+          "value": "#08080C · #14141B · #2A2A38 · #7C9BFF · #FFFFFF",
+          "mood": "đen than, xanh băng",
+          "colors": [
+            "#08080C",
+            "#14141B",
+            "#2A2A38",
+            "#7C9BFF",
+            "#FFFFFF"
+          ]
+        },
+        {
+          "id": "P30",
+          "code": "P30",
+          "name": "Dashboard sáng",
+          "value": "#F5F6FA · #FFFFFF · #7C5CFF · #36C2FF · #3BCEAC",
+          "mood": "trắng, tím, xanh ngọc",
+          "colors": [
+            "#F5F6FA",
+            "#FFFFFF",
+            "#7C5CFF",
+            "#36C2FF",
+            "#3BCEAC"
+          ]
+        },
+        {
+          "id": "P31",
+          "code": "P31",
+          "name": "Kẹo 3D",
+          "value": "#FFE3F1 · #FFD23F · #7C5CFF · #36C2FF · #3BCEAC",
+          "mood": "vui, sặc sỡ",
+          "colors": [
+            "#FFE3F1",
+            "#FFD23F",
+            "#7C5CFF",
+            "#36C2FF",
+            "#3BCEAC"
+          ]
+        },
+        {
+          "id": "P32",
+          "code": "P32",
+          "name": "Đất sét pastel",
+          "value": "#EDE7FF · #B7A6FF · #FFC9B5 · #BDEBD3 · #FFF1B8",
+          "mood": "đất sét, mềm",
+          "colors": [
+            "#EDE7FF",
+            "#B7A6FF",
+            "#FFC9B5",
+            "#BDEBD3",
+            "#FFF1B8"
+          ]
+        },
+        {
+          "id": "P33",
+          "code": "P33",
+          "name": "Thể thao chanh",
+          "value": "#0A0A0A · #1E1E1E · #FFFFFF · #D7FF3A · #FF3B30",
+          "mood": "đen trắng + chanh",
+          "colors": [
+            "#0A0A0A",
+            "#1E1E1E",
+            "#FFFFFF",
+            "#D7FF3A",
+            "#FF3B30"
+          ]
+        },
+        {
+          "id": "P34",
+          "code": "P34",
+          "name": "Bạc tinh khôi",
+          "value": "#FFFFFF · #F4F5F7 · #D9DCE3 · #8A8F9C · #1C1D22",
+          "mood": "trắng, bạc, than",
+          "colors": [
+            "#FFFFFF",
+            "#F4F5F7",
+            "#D9DCE3",
+            "#8A8F9C",
+            "#1C1D22"
+          ]
+        }
+      ],
+      "v3": true
     }
   ]
 }

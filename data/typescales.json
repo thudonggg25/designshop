@@ -130,6 +130,126 @@
           "roles": "caption / button / sub / H1"
         }
       ]
+    },
+    {
+      "label": "Cỡ chữ theo sản phẩm",
+      "items": [
+        {
+          "id": "Z09",
+          "code": "Z09",
+          "name": "Major second (1.125)",
+          "value": "gốc 16px × 1.125: 14 / 16 / 18 / 20 / 23 / 26 / 29 px",
+          "sizes": [
+            14,
+            16,
+            18,
+            20,
+            23,
+            26,
+            29
+          ],
+          "roles": "caption / body / sub / h3 / h2 / h1 / display"
+        },
+        {
+          "id": "Z10",
+          "code": "Z10",
+          "name": "Augmented fourth (1.414)",
+          "value": "gốc 16px × 1.414: 11 / 16 / 23 / 32 / 45 / 64 / 90 px",
+          "sizes": [
+            11,
+            16,
+            23,
+            32,
+            45,
+            64,
+            90
+          ],
+          "roles": "caption / body / sub / h3 / h2 / h1 / display"
+        },
+        {
+          "id": "Z11",
+          "code": "Z11",
+          "name": "App iOS / mobile",
+          "value": "Large title 34 · Title 28 · Headline 17 · Body 17 · Footnote 13 · Caption 11 px",
+          "sizes": [
+            11,
+            13,
+            17,
+            22,
+            28,
+            34
+          ],
+          "roles": "caption / footnote / body / title3 / title / large title"
+        },
+        {
+          "id": "Z12",
+          "code": "Z12",
+          "name": "Dashboard / SaaS",
+          "value": "Số lớn 32 · H1 24 · H2 18 · Body 14 · Nhãn 12 px",
+          "sizes": [
+            12,
+            14,
+            18,
+            24,
+            32
+          ],
+          "roles": "label / body / h2 / h1 / stat"
+        },
+        {
+          "id": "Z13",
+          "code": "Z13",
+          "name": "Landing page hero",
+          "value": "Hero 72 · H2 48 · H3 28 · Lead 20 · Body 16 px",
+          "sizes": [
+            16,
+            20,
+            28,
+            48,
+            72
+          ],
+          "roles": "body / lead / h3 / h2 / hero"
+        },
+        {
+          "id": "Z14",
+          "code": "Z14",
+          "name": "Slide thuyết trình 1920",
+          "value": "Tiêu đề 64 · Phụ đề 40 · Ý chính 28 · Ghi chú 20 px",
+          "sizes": [
+            20,
+            28,
+            40,
+            64
+          ],
+          "roles": "note / bullet / subtitle / title"
+        },
+        {
+          "id": "Z15",
+          "code": "Z15",
+          "name": "Poster chữ khổng lồ (Cosmic)",
+          "value": "Tiêu đề 160 · Phụ 28 · Thông số 22 · Nhãn 18 px (1080 rộng)",
+          "sizes": [
+            18,
+            22,
+            28,
+            160
+          ],
+          "roles": "label / specs / sub / headline"
+        },
+        {
+          "id": "Z16",
+          "code": "Z16",
+          "name": "Carousel Instagram",
+          "value": "Tiêu đề 96 · Phụ 40 · Body 32 · Số trang 24 px",
+          "sizes": [
+            24,
+            32,
+            40,
+            96
+          ],
+          "roles": "page / body / sub / title"
+        }
+      ],
+      "v3": true
     }
   ]
 }

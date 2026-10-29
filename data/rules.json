@@ -87,6 +87,68 @@
           "text": "Chỉ dùng font hỗ trợ đầy đủ dấu tiếng Việt cho nội dung có dấu. Kiểm tra các chữ ư, ơ, ặ, ỗ, ữ trước khi chốt."
         }
       ]
+    },
+    {
+      "label": "Quy tắc giao diện UI",
+      "items": [
+        {
+          "id": "R12",
+          "code": "R12",
+          "name": "Phản hồi nhanh",
+          "value": "hover/nhấn ≤ 200ms",
+          "text": "Mọi phản hồi hover và nhấn chạy trong 100–200ms với ease-out. Hiệu ứng vào màn hình tối đa 400ms. Không dùng chuyển động chậm, lề mề."
+        },
+        {
+          "id": "R13",
+          "code": "R13",
+          "name": "Lưới khoảng cách 8pt",
+          "value": "mọi khoảng cách chia hết cho 4/8",
+          "text": "Mọi khoảng cách, đệm và kích thước dùng bội số của 8 (cho phép 4 cho chi tiết nhỏ). Không dùng số lẻ như 13px, 27px."
+        },
+        {
+          "id": "R14",
+          "code": "R14",
+          "name": "Vùng chạm 44px",
+          "value": "nút trên điện thoại cao ≥ 44px",
+          "text": "Nút và icon bấm được trên điện thoại có vùng chạm tối thiểu 44 × 44px, cách nhau ít nhất 8px."
+        },
+        {
+          "id": "R15",
+          "code": "R15",
+          "name": "Một nút chính mỗi màn hình",
+          "value": "nút chính nổi bật nhất, còn lại là phụ",
+          "text": "Mỗi màn hình hoặc KV chỉ có một nút chính (đặc, màu nhấn). Các hành động khác dùng nút viền hoặc liên kết."
+        },
+        {
+          "id": "R16",
+          "code": "R16",
+          "name": "Cùng một họ bo góc",
+          "value": "bo trong = bo ngoài − đệm",
+          "text": "Chọn một bộ bo góc (ví dụ 8/16/24) và dùng nhất quán. Khối lồng nhau: bo trong bằng bo ngoài trừ khoảng đệm."
+        },
+        {
+          "id": "R17",
+          "code": "R17",
+          "name": "Dark mode: cao hơn thì sáng hơn",
+          "value": "lớp trên sáng hơn lớp dưới",
+          "text": "Trong giao diện tối, thể hiện độ nổi bằng nền sáng dần (#0B0B10 → #15151C → #1E1E27 → #2A2A36) thay vì chỉ dùng bóng đổ."
+        },
+        {
+          "id": "R18",
+          "code": "R18",
+          "name": "Kính cần nền đủ tương phản",
+          "value": "chữ trên kính luôn đọc được",
+          "text": "Hiệu ứng kính mờ chỉ dùng khi nền phía sau có màu hoặc ảnh. Chữ trên kính cần độ tương phản ≥ 4.5:1, thêm lớp tối nếu cần."
+        },
+        {
+          "id": "R19",
+          "code": "R19",
+          "name": "Tôn trọng giảm chuyển động",
+          "value": "tắt hiệu ứng khi người dùng yêu cầu",
+          "text": "Khi hệ điều hành bật 'giảm chuyển động' (prefers-reduced-motion), tắt hiệu ứng lặp và hiệu ứng lớn, chỉ giữ đổi màu."
+        }
+      ],
+      "v3": true
     }
   ]
 }

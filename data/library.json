@@ -1,6 +1,6 @@
 {
   "name": "Thư viện thiết kế Hyan",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "about": "Danh mục mọi thứ cần chốt cho một key visual trước khi giao cho AI hoặc designer.",
   "folders": [
     {
@@ -40,6 +40,12 @@
           "prefix": "P"
         },
         {
+          "id": "swatches",
+          "file": "swatches.json",
+          "label": "Màu đơn",
+          "prefix": "C"
+        },
+        {
           "id": "colors",
           "file": "colors.json",
           "label": "Màu Hyan",
@@ -50,6 +56,12 @@
           "file": "scales.json",
           "label": "Thang đậm nhạt",
           "prefix": "V"
+        },
+        {
+          "id": "gradients",
+          "file": "gradients.json",
+          "label": "Dải chuyển sắc",
+          "prefix": "GR"
         },
         {
           "id": "text",
@@ -93,7 +105,7 @@
     {
       "id": "hinh-khoi",
       "label": "Hình khối",
-      "desc": "Bo góc, nút, viền khung và icon",
+      "desc": "Bo góc, nút, điều hướng, viền khung và icon",
       "categories": [
         {
           "id": "radius",
@@ -106,6 +118,12 @@
           "file": "buttons.json",
           "label": "Nút",
           "prefix": "BT"
+        },
+        {
+          "id": "navigation",
+          "file": "navigation.json",
+          "label": "Điều hướng",
+          "prefix": "NV"
         },
         {
           "id": "frames",
@@ -123,14 +141,20 @@
     },
     {
       "id": "hieu-ung",
-      "label": "Hiệu ứng & nền",
-      "desc": "Bóng, kính, hiệu ứng chữ, nền và hoạ tiết",
+      "label": "Hiệu ứng & chuyển động",
+      "desc": "Bóng, kính, chuyển động, nền và hoạ tiết",
       "categories": [
         {
           "id": "effects",
           "file": "effects.json",
           "label": "Hiệu ứng",
           "prefix": "E"
+        },
+        {
+          "id": "motion",
+          "file": "motion.json",
+          "label": "Chuyển động",
+          "prefix": "MT"
         },
         {
           "id": "backgrounds",
@@ -143,13 +167,19 @@
     {
       "id": "bo-cuc",
       "label": "Bố cục & khổ",
-      "desc": "Bố cục và kích thước theo kênh",
+      "desc": "Bố cục, khoảng cách và kích thước theo kênh",
       "categories": [
         {
           "id": "layouts",
           "file": "layouts.json",
           "label": "Bố cục",
           "prefix": "L"
+        },
+        {
+          "id": "spacing",
+          "file": "spacing.json",
+          "label": "Khoảng cách",
+          "prefix": "SP"
         },
         {
           "id": "formats",
@@ -161,14 +191,20 @@
     },
     {
       "id": "quy-tac",
-      "label": "Quy tắc",
-      "desc": "Nguyên tắc chốt KV",
+      "label": "Quy tắc & nguồn",
+      "desc": "Nguyên tắc chốt KV và thư viện tham khảo",
       "categories": [
         {
           "id": "rules",
           "file": "rules.json",
           "label": "Quy tắc",
           "prefix": "R"
+        },
+        {
+          "id": "sources",
+          "file": "sources.json",
+          "label": "Nguồn UI tham khảo",
+          "prefix": "RS"
         }
       ]
     }
@@ -206,6 +242,7 @@
       "label": "Màu sắc",
       "cats": [
         "palettes",
+        "swatches",
         "colors",
         "scales"
       ],
@@ -246,7 +283,8 @@
       "id": "background",
       "label": "Nền",
       "cats": [
-        "backgrounds"
+        "backgrounds",
+        "gradients"
       ],
       "required": true,
       "hint": "Nền hoặc hoạ tiết"
@@ -279,16 +317,28 @@
       "hint": "Bóng, kính, hiệu ứng chữ"
     },
     {
+      "id": "motion",
+      "label": "Chuyển động",
+      "hint": "Hover, chuyển cảnh, hiệu ứng tải",
+      "cats": [
+        "motion"
+      ],
+      "required": false
+    },
+    {
       "id": "extra",
       "label": "Quy tắc & chi tiết",
       "cats": [
         "rules",
         "frames",
         "icons",
-        "text"
+        "text",
+        "navigation",
+        "spacing",
+        "sources"
       ],
       "required": false,
-      "hint": "Quy tắc, khung, icon"
+      "hint": "Quy tắc, khung, icon, điều hướng, khoảng cách, nguồn"
     }
   ]
 }

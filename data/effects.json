@@ -147,6 +147,221 @@
           "css": "color: #FFFFFF; text-shadow: -2px 0 #FF2E88, 2px 0 #00F0FF"
         }
       ]
+    },
+    {
+      "label": "Kính, ánh sáng & viền 2026",
+      "items": [
+        {
+          "id": "E19",
+          "code": "E19",
+          "name": "Kính khói viền sáng",
+          "value": "nền khói 60%, viền 14%, highlight trên",
+          "css": "background: rgba(35,33,44,0.6); border: 1px solid rgba(255,255,255,0.14); box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 20px 40px rgba(0,0,0,0.5); backdrop-filter: blur(24px)",
+          "bg": "radial-gradient(1px 1px at 12% 20%,#fff,transparent 60%),radial-gradient(1px 1px at 72% 14%,#fff,transparent 60%),radial-gradient(1.4px 1.4px at 86% 62%,#cfe8ff,transparent 60%),radial-gradient(1px 1px at 30% 78%,#fff,transparent 60%),radial-gradient(1px 1px at 52% 40%,rgba(255,255,255,.7),transparent 60%),radial-gradient(1.6px 1.6px at 18% 55%,#bff,transparent 60%),radial-gradient(1px 1px at 92% 30%,#fff,transparent 60%),radial-gradient(1px 1px at 60% 88%,#fff,transparent 60%),radial-gradient(ellipse at 30% 30%,rgba(110,120,190,.45),transparent 60%),#06060A"
+        },
+        {
+          "id": "E20",
+          "code": "E20",
+          "name": "Kính lỏng (liquid glass)",
+          "value": "trong, viền bóng, khúc xạ màu",
+          "css": "background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.45); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7), inset 0 -8px 16px rgba(255,255,255,0.1), 0 10px 30px rgba(0,0,0,0.25); backdrop-filter: blur(14px) saturate(180%)",
+          "bg": "radial-gradient(circle at 25% 35%,#FF7AB6,transparent 45%),radial-gradient(circle at 75% 65%,#36C2FF,transparent 45%),#2B2B6E"
+        },
+        {
+          "id": "E21",
+          "code": "E21",
+          "name": "Highlight cạnh trên",
+          "value": "viền sáng 1px phía trên",
+          "css": "background: #17161E; box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 10px 24px rgba(0,0,0,0.4)",
+          "bg": "#07070B"
+        },
+        {
+          "id": "E22",
+          "code": "E22",
+          "name": "Quầng sáng bên trong",
+          "value": "glow xanh băng trong khung",
+          "css": "background: #0F0F16; border: 1px solid rgba(150,175,255,0.4); box-shadow: inset 0 0 24px rgba(150,175,255,0.45)",
+          "bg": "#07070B"
+        },
+        {
+          "id": "E23",
+          "code": "E23",
+          "name": "Viền gradient mảnh",
+          "value": "viền 1px trắng → trong suốt",
+          "css": "border: 1px solid transparent; background: linear-gradient(#141419,#141419) padding-box, linear-gradient(140deg, rgba(255,255,255,0.5), rgba(255,255,255,0.05) 45%, rgba(255,255,255,0.25)) border-box",
+          "bg": "#07070B"
+        },
+        {
+          "id": "E24",
+          "code": "E24",
+          "name": "Đèn rọi từ trên",
+          "value": "vùng sáng hình nón phía trên",
+          "css": "background: radial-gradient(ellipse 80% 70% at 50% 0%, rgba(255,255,255,0.28), transparent 70%), #0B0B10",
+          "bg": "#050508"
+        },
+        {
+          "id": "E25",
+          "code": "E25",
+          "name": "Quầng màu phía sau",
+          "value": "glow tím lan ra ngoài",
+          "css": "background: #1A1730; box-shadow: 0 0 40px 6px rgba(124,92,255,0.55)",
+          "bg": "#07070B"
+        },
+        {
+          "id": "E26",
+          "code": "E26",
+          "name": "Kim loại chrome",
+          "value": "bạc phản chiếu",
+          "css": "background: linear-gradient(180deg, #F5F5F7 0%, #9A9AA3 45%, #FFFFFF 52%, #5D5D66 100%); color: #1B1D2E",
+          "bg": "#1B1D2E"
+        },
+        {
+          "id": "E27",
+          "code": "E27",
+          "name": "Holographic",
+          "value": "ánh cầu vồng pastel",
+          "css": "background: linear-gradient(120deg, #FFD6E8, #C9F0FF, #E0D4FF, #D4FFE9, #FFD6E8); color: #3A3A66",
+          "bg": "#F4ECFF"
+        },
+        {
+          "id": "E28",
+          "code": "E28",
+          "name": "Bóng đổ cùng màu",
+          "value": "bóng xanh dưới khối xanh",
+          "css": "background: #2F6BFF; box-shadow: 0 18px 34px -8px rgba(47,107,255,0.75); color: #FFFFFF",
+          "bg": "#EEF2FF"
+        },
+        {
+          "id": "E29",
+          "code": "E29",
+          "name": "Đất sét phồng",
+          "value": "bóng trong sáng tối, pastel",
+          "css": "background: #B7A6FF; border-radius: 22px; box-shadow: inset -6px -6px 12px rgba(80,50,180,0.35), inset 6px 6px 12px rgba(255,255,255,0.6), 8px 12px 20px rgba(90,60,200,0.25); color: #FFFFFF",
+          "bg": "#EDE7FF"
+        },
+        {
+          "id": "E30",
+          "code": "E30",
+          "name": "Viền đáy phát sáng",
+          "value": "đường sáng đáy + quầng",
+          "css": "background: #111118; box-shadow: inset 0 -2px 0 #7C9BFF, 0 14px 26px -12px rgba(124,155,255,0.9)",
+          "bg": "#07070B"
+        },
+        {
+          "id": "E31",
+          "code": "E31",
+          "name": "Mờ dần mép dưới (fade mask)",
+          "value": "nội dung tan dần xuống dưới",
+          "css": "background: linear-gradient(135deg, #7C5CFF, #36C2FF); -webkit-mask-image: linear-gradient(180deg, #000 45%, transparent); mask-image: linear-gradient(180deg, #000 45%, transparent)",
+          "bg": "#0B0B10"
+        },
+        {
+          "id": "E32",
+          "code": "E32",
+          "name": "Viền cầu vồng xoay",
+          "value": "viền conic nhiều màu",
+          "css": "border: 2px solid transparent; background: linear-gradient(#0B0B10,#0B0B10) padding-box, conic-gradient(#36C2FF, #B66BFF, #FF5C8A, #FFD23F, #36C2FF) border-box; box-shadow: 0 0 22px rgba(182,107,255,0.45)",
+          "bg": "#050508"
+        }
+      ],
+      "v3": true
+    },
+    {
+      "label": "Hiệu ứng chữ mở rộng",
+      "items": [
+        {
+          "id": "E33",
+          "code": "E33",
+          "name": "Chữ trắng phát sáng mềm",
+          "value": "glow xanh băng nhẹ",
+          "css": "color: #FFFFFF; text-shadow: 0 0 18px rgba(170,190,255,0.85)",
+          "bg": "#07070B",
+          "el": "text"
+        },
+        {
+          "id": "E34",
+          "code": "E34",
+          "name": "Chữ 3D xếp lớp",
+          "value": "lớp hồng + vàng lệch",
+          "css": "color: #FFFFFF; text-shadow: 2px 2px 0 #FF5C8A, 4px 4px 0 #FF5C8A, 6px 6px 0 #FFD23F",
+          "bg": "#2F2A6B",
+          "el": "text"
+        },
+        {
+          "id": "E35",
+          "code": "E35",
+          "name": "Chữ sticker",
+          "value": "viền đen + bóng cứng",
+          "css": "color: #FFE14D; -webkit-text-stroke: 1.5px #000000; text-shadow: 3px 3px 0 #000000",
+          "bg": "#7CD3FF",
+          "el": "text"
+        },
+        {
+          "id": "E36",
+          "code": "E36",
+          "name": "Chữ nhoè tốc độ",
+          "value": "vệt mờ ngang",
+          "css": "color: #FFFFFF; text-shadow: 8px 0 10px rgba(255,255,255,0.5), -8px 0 10px rgba(255,255,255,0.3)",
+          "bg": "#0B0B12",
+          "el": "text"
+        },
+        {
+          "id": "E37",
+          "code": "E37",
+          "name": "Chữ bóng đổ sâu",
+          "value": "bóng mềm phía dưới",
+          "css": "color: #FFFFFF; text-shadow: 0 10px 24px rgba(0,0,0,0.7)",
+          "bg": "linear-gradient(135deg,#8E6FB5,#F2A27A)",
+          "el": "text"
+        }
+      ],
+      "v3": true
+    },
+    {
+      "label": "Thang độ nổi (đổ bóng)",
+      "items": [
+        {
+          "id": "E38",
+          "code": "E38",
+          "name": "Độ nổi cấp 1",
+          "value": "viền mờ + bóng 1px",
+          "css": "background: #FFFFFF; border-radius: 14px; box-shadow: 0 1px 2px rgba(16,24,40,0.06), 0 0 0 1px rgba(16,24,40,0.04)",
+          "bg": "#EEF0F4"
+        },
+        {
+          "id": "E39",
+          "code": "E39",
+          "name": "Độ nổi cấp 2",
+          "value": "thẻ nằm yên",
+          "css": "background: #FFFFFF; border-radius: 14px; box-shadow: 0 4px 10px rgba(16,24,40,0.08)",
+          "bg": "#EEF0F4"
+        },
+        {
+          "id": "E40",
+          "code": "E40",
+          "name": "Độ nổi cấp 3",
+          "value": "thẻ hover",
+          "css": "background: #FFFFFF; border-radius: 14px; box-shadow: 0 10px 24px rgba(16,24,40,0.12)",
+          "bg": "#EEF0F4"
+        },
+        {
+          "id": "E41",
+          "code": "E41",
+          "name": "Độ nổi cấp 4",
+          "value": "menu, popover",
+          "css": "background: #FFFFFF; border-radius: 14px; box-shadow: 0 18px 40px rgba(16,24,40,0.16)",
+          "bg": "#EEF0F4"
+        },
+        {
+          "id": "E42",
+          "code": "E42",
+          "name": "Độ nổi cấp 5",
+          "value": "modal, hộp thoại",
+          "css": "background: #FFFFFF; border-radius: 14px; box-shadow: 0 30px 70px rgba(16,24,40,0.24)",
+          "bg": "#EEF0F4"
+        }
+      ],
+      "v3": true
     }
   ]
 }

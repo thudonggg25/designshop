@@ -4,21 +4,133 @@
     {
       "label": "Kiểu chữ",
       "items": [
-        { "id": "T01", "code": "T01", "name": "Đồng hồ lớn", "sample": "7:12", "value": "120px / 200 / -0.04em",
-          "css": "font-size: 120px; font-weight: 200; line-height: 1; letter-spacing: -0.04em" },
-        { "id": "T02", "code": "T02", "name": "Tiêu đề trang", "sample": "Nền, chữ và một màu nhấn", "value": "30px / 300",
-          "css": "font-size: 30px; font-weight: 300; line-height: 1.25; letter-spacing: -0.01em" },
-        { "id": "T03", "code": "T03", "name": "Tiêu đề thẻ", "sample": "Nền · Đêm", "value": "15px / 500",
-          "css": "font-size: 15px; font-weight: 500; line-height: 1.4" },
-        { "id": "T04", "code": "T04", "name": "Nội dung", "sample": "Tiêu đề, số liệu, nội dung chính", "value": "15px / 400",
-          "css": "font-size: 15px; font-weight: 400; line-height: 1.5" },
-        { "id": "T05", "code": "T05", "name": "Nhãn mục (chữ hoa)", "sample": "03 · ĐỘ NHẠT CHỮ", "value": "11px / 500 / +0.14em",
-          "css": "font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.42)" },
-        { "id": "T06", "code": "T06", "name": "Mã token", "sample": "N0  N1  D4", "value": "12px / 500 / màu B01",
-          "css": "font-size: 12px; font-weight: 500; color: #4AA3EA; font-variant-numeric: tabular-nums" },
-        { "id": "T07", "code": "T07", "name": "Giá trị hex", "sample": "#050608", "value": "12px / 400 / D4",
-          "css": "font-size: 12px; font-weight: 400; color: rgba(255,255,255,0.60); font-variant-numeric: tabular-nums" }
+        {
+          "id": "T01",
+          "code": "T01",
+          "name": "Đồng hồ lớn",
+          "sample": "7:12",
+          "value": "120px / 200 / -0.04em",
+          "css": "font-size: 120px; font-weight: 200; line-height: 1; letter-spacing: -0.04em"
+        },
+        {
+          "id": "T02",
+          "code": "T02",
+          "name": "Tiêu đề trang",
+          "sample": "Nền, chữ và một màu nhấn",
+          "value": "30px / 300",
+          "css": "font-size: 30px; font-weight: 300; line-height: 1.25; letter-spacing: -0.01em"
+        },
+        {
+          "id": "T03",
+          "code": "T03",
+          "name": "Tiêu đề thẻ",
+          "sample": "Nền · Đêm",
+          "value": "15px / 500",
+          "css": "font-size: 15px; font-weight: 500; line-height: 1.4"
+        },
+        {
+          "id": "T04",
+          "code": "T04",
+          "name": "Nội dung",
+          "sample": "Tiêu đề, số liệu, nội dung chính",
+          "value": "15px / 400",
+          "css": "font-size: 15px; font-weight: 400; line-height: 1.5"
+        },
+        {
+          "id": "T05",
+          "code": "T05",
+          "name": "Nhãn mục (chữ hoa)",
+          "sample": "03 · ĐỘ NHẠT CHỮ",
+          "value": "11px / 500 / +0.14em",
+          "css": "font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.42)"
+        },
+        {
+          "id": "T06",
+          "code": "T06",
+          "name": "Mã token",
+          "sample": "N0  N1  D4",
+          "value": "12px / 500 / màu B01",
+          "css": "font-size: 12px; font-weight: 500; color: #4AA3EA; font-variant-numeric: tabular-nums"
+        },
+        {
+          "id": "T07",
+          "code": "T07",
+          "name": "Giá trị hex",
+          "sample": "#050608",
+          "value": "12px / 400 / D4",
+          "css": "font-size: 12px; font-weight: 400; color: rgba(255,255,255,0.60); font-variant-numeric: tabular-nums"
+        }
       ]
+    },
+    {
+      "label": "Kiểu chữ mở rộng",
+      "items": [
+        {
+          "id": "T08",
+          "code": "T08",
+          "name": "Tiêu đề khít đậm",
+          "value": "48px / 800 / -0.045em",
+          "sample": "Cosmic",
+          "css": "font-size: 48px; font-weight: 800; line-height: 0.95; letter-spacing: -0.045em; font-family: 'Inter Tight', sans-serif"
+        },
+        {
+          "id": "T09",
+          "code": "T09",
+          "name": "Nhãn in hoa giãn (eyebrow)",
+          "value": "12px / 600 / 0.2em / IN HOA",
+          "sample": "DESIGN 2026",
+          "css": "font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; font-family: 'Inter', sans-serif"
+        },
+        {
+          "id": "T10",
+          "code": "T10",
+          "name": "Số liệu lớn",
+          "value": "40px / 700 / số đều",
+          "sample": "$48,750",
+          "css": "font-size: 40px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-family: 'Geist', sans-serif"
+        },
+        {
+          "id": "T11",
+          "code": "T11",
+          "name": "Serif nghiêng biên tập",
+          "value": "40px / 500 / nghiêng",
+          "sample": "Mùa mới",
+          "css": "font-size: 40px; font-weight: 500; font-style: italic; letter-spacing: -0.01em; font-family: 'Cormorant Garamond', serif"
+        },
+        {
+          "id": "T12",
+          "code": "T12",
+          "name": "Siêu mảnh thanh lịch",
+          "value": "36px / 200 / 0.02em",
+          "sample": "Thanh lịch",
+          "css": "font-size: 36px; font-weight: 200; letter-spacing: 0.02em; font-family: 'Manrope', sans-serif"
+        },
+        {
+          "id": "T13",
+          "code": "T13",
+          "name": "Nhãn mono kỹ thuật",
+          "value": "13px / 500 / mono",
+          "sample": "HEX #23212C",
+          "css": "font-size: 13px; font-weight: 500; letter-spacing: 0.02em; font-family: 'Space Mono', monospace"
+        },
+        {
+          "id": "T14",
+          "code": "T14",
+          "name": "Đoạn văn thoáng",
+          "value": "16px / 400 / dòng 1.7",
+          "sample": "Đọc dễ chịu, dòng thoáng 1.7",
+          "css": "font-size: 16px; font-weight: 400; line-height: 1.7; font-family: 'Be Vietnam Pro', sans-serif"
+        },
+        {
+          "id": "T15",
+          "code": "T15",
+          "name": "Tiêu đề hẹp cao",
+          "value": "44px / 800 / hẹp, in hoa",
+          "sample": "SALE 50%",
+          "css": "font-size: 44px; font-weight: 800; line-height: 0.9; text-transform: uppercase; font-family: 'Big Shoulders Display', sans-serif"
+        }
+      ],
+      "v3": true
     }
   ]
 }

@@ -94,6 +94,92 @@
           "css": "background: #FF5C8A; color: #FFFFFF; border-radius: 999px; padding: 4px 12px; font-size: 11px; font-weight: 700; letter-spacing: 0.06em"
         }
       ]
+    },
+    {
+      "label": "Thẻ, viền & khung UI",
+      "items": [
+        {
+          "id": "K13",
+          "code": "K13",
+          "name": "Thẻ kính khói + thông số",
+          "value": "bo 22px, viền sáng mảnh, thông số màu",
+          "css": "border-radius: 22px; background: rgba(35,33,44,0.6); border: 1px solid rgba(255,255,255,0.14); box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 30px 60px rgba(0,0,0,0.5); backdrop-filter: blur(24px)",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(1px 1px at 12% 20%,#fff,transparent 60%),radial-gradient(1px 1px at 72% 14%,#fff,transparent 60%),radial-gradient(1.4px 1.4px at 86% 62%,#cfe8ff,transparent 60%),radial-gradient(1px 1px at 30% 78%,#fff,transparent 60%),radial-gradient(1px 1px at 52% 40%,rgba(255,255,255,.7),transparent 60%),radial-gradient(1.6px 1.6px at 18% 55%,#bff,transparent 60%),radial-gradient(1px 1px at 92% 30%,#fff,transparent 60%),radial-gradient(1px 1px at 60% 88%,#fff,transparent 60%),radial-gradient(ellipse 50% 40% at 15% 20%,rgba(110,120,190,.45),transparent 70%),radial-gradient(ellipse 40% 30% at 80% 85%,rgba(200,140,130,.25),transparent 70%),#06060A;display:grid;place-items:center;\"><div style=\"width:66%;height:80%;border-radius:14px;background:rgba(35,33,44,.6);border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 1px 0 rgba(255,255,255,.18);padding:10px;display:flex;flex-direction:column;justify-content:space-between\"><div style=\"font:800 15px 'Inter Tight',sans-serif;color:#fff;letter-spacing:-.03em\">Lavender</div><div style=\"display:flex;justify-content:space-between;align-items:flex-end\"><div style=\"font:500 7px 'Inter',sans-serif;color:rgba(255,255,255,.7);line-height:1.5\">CMYK 15,21,0,4<br>HEX #D2C3F6</div><span style=\"padding:3px 7px;border-radius:999px;border:1px solid rgba(255,255,255,.3);font:700 7px 'Inter',sans-serif;color:#fff\">dyslove</span></div></div></div>"
+        },
+        {
+          "id": "K14",
+          "code": "K14",
+          "name": "Viền gradient mảnh",
+          "value": "viền 1px chuyển sắc trắng → trong",
+          "css": "border: 1px solid transparent; background: linear-gradient(#141419,#141419) padding-box, linear-gradient(140deg, rgba(255,255,255,0.5), rgba(255,255,255,0.05) 45%, rgba(255,255,255,0.25)) border-box; border-radius: 20px",
+          "html": "<div style=\"position:absolute;inset:0;background:#07070B;display:grid;place-items:center;\"><div style=\"width:120px;height:80px;border-radius:16px;border:1px solid transparent;background:linear-gradient(#141419,#141419) padding-box,linear-gradient(140deg,rgba(255,255,255,.55),rgba(255,255,255,.05) 45%,rgba(255,255,255,.28)) border-box\"></div></div>"
+        },
+        {
+          "id": "K15",
+          "code": "K15",
+          "name": "Viền tia chạy (border beam)",
+          "value": "tia sáng chạy quanh viền",
+          "css": "position: relative; border-radius: 16px; /* ::before conic-gradient(from var(--a), transparent 75%, #fff) rotating 3s linear infinite, masked to 1px border */",
+          "html": "<div style=\"position:absolute;inset:0;background:#07070B;display:grid;place-items:center;\"><div class=\"fx-beam\" style=\"width:120px;height:80px;border-radius:16px;background:#111118;border:1px solid rgba(255,255,255,.08)\"></div></div>"
+        },
+        {
+          "id": "K16",
+          "code": "K16",
+          "name": "Khung trình duyệt",
+          "value": "thanh trên 3 chấm, bo 10px",
+          "css": "border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: #14171C; /* top bar 24px with 3 dots #FF5F57 #FEBC2E #28C840 */",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(160deg,#E8E4FF,#C9D4FF);display:grid;place-items:center;\"><div style=\"width:150px;height:96px;border-radius:8px;background:#fff;box-shadow:0 12px 26px rgba(60,60,120,.25);overflow:hidden\"><div style=\"height:16px;background:#F1F2F6;display:flex;gap:4px;align-items:center;padding-left:6px\"><span style=\"width:6px;height:6px;border-radius:50%;background:#FF5F57\"></span><span style=\"width:6px;height:6px;border-radius:50%;background:#FEBC2E\"></span><span style=\"width:6px;height:6px;border-radius:50%;background:#28C840\"></span></div><div style=\"margin:8px;height:8px;width:60%;border-radius:3px;background:#E3E6EF\"></div><div style=\"margin:0 8px;height:34px;border-radius:5px;background:linear-gradient(135deg,#7C5CFF,#36C2FF)\"></div></div></div>"
+        },
+        {
+          "id": "K17",
+          "code": "K17",
+          "name": "Khung điện thoại",
+          "value": "bo 36px, tai thỏ, viền 6px",
+          "css": "border-radius: 36px; border: 6px solid #1B1D2E; background: #000; /* dynamic island 90×24 centered top */",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div style=\"position:relative;width:62px;height:118px;border-radius:16px;border:3px solid #1B1D2E;background:linear-gradient(160deg,#7C5CFF,#FF7AB6)\"><div style=\"position:absolute;left:50%;top:4px;width:22px;height:6px;margin-left:-11px;border-radius:999px;background:#1B1D2E\"></div></div></div>"
+        },
+        {
+          "id": "K18",
+          "code": "K18",
+          "name": "Ô nhập kính",
+          "value": "pill trong suốt, icon trái",
+          "css": "height: 44px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); padding: 0 16px; color: #FFFFFF",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(1px 1px at 12% 20%,#fff,transparent 60%),radial-gradient(1px 1px at 72% 14%,#fff,transparent 60%),radial-gradient(1.4px 1.4px at 86% 62%,#cfe8ff,transparent 60%),radial-gradient(1px 1px at 30% 78%,#fff,transparent 60%),radial-gradient(1px 1px at 52% 40%,rgba(255,255,255,.7),transparent 60%),radial-gradient(1.6px 1.6px at 18% 55%,#bff,transparent 60%),radial-gradient(1px 1px at 92% 30%,#fff,transparent 60%),radial-gradient(1px 1px at 60% 88%,#fff,transparent 60%),radial-gradient(ellipse 50% 40% at 15% 20%,rgba(110,120,190,.45),transparent 70%),radial-gradient(ellipse 40% 30% at 80% 85%,rgba(200,140,130,.25),transparent 70%),#06060A;display:grid;place-items:center;\"><div style=\"width:150px;height:34px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;gap:8px;padding:0 12px;font:500 11px 'Inter',sans-serif;color:rgba(255,255,255,.6)\"><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"rgba(255,255,255,.7)\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex:none\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/><path d=\"m3 7 9 6 9-6\"/></svg>Email</div></div>"
+        },
+        {
+          "id": "K19",
+          "code": "K19",
+          "name": "Chip / tag kính",
+          "value": "pill nhỏ, viền mảnh, chấm màu",
+          "css": "border-radius: 999px; padding: 4px 10px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); font-size: 12px",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div style=\"display:flex;gap:6px;flex-wrap:wrap;justify-content:center;width:150px\"><span style=\"display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);font:600 10px 'Inter',sans-serif;color:#fff\"><span style=\"width:6px;height:6px;border-radius:50%;background:#3BFFA0\"></span>Live</span><span style=\"display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);font:600 10px 'Inter',sans-serif;color:#fff\"><span style=\"width:6px;height:6px;border-radius:50%;background:#36C2FF\"></span>AI</span><span style=\"display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);font:600 10px 'Inter',sans-serif;color:#fff\"><span style=\"width:6px;height:6px;border-radius:50%;background:#FF5C8A\"></span>New</span><span style=\"display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);font:600 10px 'Inter',sans-serif;color:#fff\"><span style=\"width:6px;height:6px;border-radius:50%;background:#FFD23F\"></span>Beta</span></div></div>"
+        },
+        {
+          "id": "K20",
+          "code": "K20",
+          "name": "Thẻ thông báo (toast)",
+          "value": "pill trắng, icon, bóng mềm",
+          "css": "border-radius: 16px; background: #FFFFFF; padding: 12px 16px; box-shadow: 0 12px 30px rgba(0,0,0,0.18); color: #1B1D2E",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div style=\"display:flex;align-items:center;gap:8px;padding:9px 12px;border-radius:14px;background:#fff;box-shadow:0 10px 24px rgba(0,0,0,.14);font:600 11px 'Inter',sans-serif;color:#1B1D2E\"><span style=\"display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#3BCEAC\"><svg viewBox=\"0 0 24 24\" width=\"13\" height=\"13\" fill=\"none\" stroke=\"#fff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex:none\"><path d=\"m5 12 4.5 4.5L19 7\"/></svg></span>Đã lưu thay đổi</div></div>"
+        },
+        {
+          "id": "K21",
+          "code": "K21",
+          "name": "Viền phát sáng đáy",
+          "value": "đường sáng dưới đáy + quầng",
+          "css": "border-radius: 16px; background: #111118; box-shadow: inset 0 -2px 0 #7C9BFF, 0 14px 26px -12px rgba(124,155,255,0.9)",
+          "html": "<div style=\"position:absolute;inset:0;background:#07070B;display:grid;place-items:center;\"><div style=\"width:120px;height:72px;border-radius:14px;background:#111118;box-shadow:inset 0 -2px 0 #7C9BFF,0 14px 26px -12px rgba(124,155,255,.95)\"></div></div>"
+        },
+        {
+          "id": "K22",
+          "code": "K22",
+          "name": "Thẻ bento",
+          "value": "ô bo 20px, nền nhạt, nhãn trên",
+          "css": "border-radius: 20px; background: #1A1A22; padding: 16px; border: 1px solid rgba(255,255,255,0.06)",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;padding:8px;display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:6px\"><div style=\"grid-row:span 2;border-radius:12px;background:#1A1A22;padding:8px;font:700 10px 'Inter',sans-serif;color:#fff\">Doanh thu<div style=\"font:800 18px 'Geist',sans-serif;margin-top:4px\">$24k</div></div><div style=\"border-radius:12px;background:#7C5CFF\"></div><div style=\"border-radius:12px;background:#1A1A22\"></div></div>"
+        }
+      ],
+      "v3": true
     }
   ]
 }

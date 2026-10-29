@@ -68,6 +68,47 @@
           "css": "border-radius: 62% 38% 46% 54% / 55% 45% 55% 45%"
         }
       ]
+    },
+    {
+      "label": "Bo góc mở rộng",
+      "items": [
+        {
+          "id": "G10",
+          "code": "G10",
+          "name": "Squircle (siêu elip)",
+          "value": "30% / 30%",
+          "css": "border-radius: 30% / 30%"
+        },
+        {
+          "id": "G11",
+          "code": "G11",
+          "name": "Bo lệch (lá)",
+          "value": "24px 4px 24px 4px",
+          "css": "border-radius: 24px 4px 24px 4px"
+        },
+        {
+          "id": "G12",
+          "code": "G12",
+          "name": "Tab trên",
+          "value": "16px 16px 0 0",
+          "css": "border-radius: 16px 16px 0 0"
+        },
+        {
+          "id": "G13",
+          "code": "G13",
+          "name": "Bong bóng chat",
+          "value": "18px 18px 18px 4px",
+          "css": "border-radius: 18px 18px 18px 4px"
+        },
+        {
+          "id": "G14",
+          "code": "G14",
+          "name": "Thẻ cực lớn",
+          "value": "40px",
+          "css": "border-radius: 40px"
+        }
+      ],
+      "v3": true
     }
   ]
 }

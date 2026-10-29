@@ -89,6 +89,96 @@
           "css": "background: linear-gradient(0deg, #FFB26B 0%, #FF7A59 35%, #E0457B 65%, #5B2A86 100%)"
         }
       ]
+    },
+    {
+      "label": "Nền 2026",
+      "items": [
+        {
+          "id": "BG13",
+          "code": "BG13",
+          "name": "Bầu trời sao",
+          "value": "chấm sao trên nền đen sâu",
+          "css": "background: radial-gradient(1px 1px at 12% 20%,#fff,transparent 60%), radial-gradient(1px 1px at 72% 14%,#fff,transparent 60%), radial-gradient(1.4px 1.4px at 86% 62%,#cfe8ff,transparent 60%), radial-gradient(1px 1px at 30% 78%,#fff,transparent 60%), radial-gradient(1px 1px at 52% 40%,rgba(255,255,255,.7),transparent 60%), radial-gradient(1.6px 1.6px at 18% 55%,#bff,transparent 60%), radial-gradient(1px 1px at 92% 30%,#fff,transparent 60%), radial-gradient(1px 1px at 60% 88%,#fff,transparent 60%), #06060A"
+        },
+        {
+          "id": "BG14",
+          "code": "BG14",
+          "name": "Tinh vân vũ trụ",
+          "value": "sao + mây tinh vân xanh tím hồng",
+          "css": "background: radial-gradient(1px 1px at 12% 20%,#fff,transparent 60%),radial-gradient(1px 1px at 72% 14%,#fff,transparent 60%),radial-gradient(1.4px 1.4px at 86% 62%,#cfe8ff,transparent 60%),radial-gradient(1px 1px at 30% 78%,#fff,transparent 60%),radial-gradient(1px 1px at 52% 40%,rgba(255,255,255,.7),transparent 60%),radial-gradient(1.6px 1.6px at 18% 55%,#bff,transparent 60%),radial-gradient(1px 1px at 92% 30%,#fff,transparent 60%),radial-gradient(1px 1px at 60% 88%,#fff,transparent 60%), radial-gradient(ellipse 50% 40% at 15% 20%, rgba(110,120,190,.45), transparent 70%), radial-gradient(ellipse 40% 30% at 80% 85%, rgba(200,140,130,.25), transparent 70%), #06060A"
+        },
+        {
+          "id": "BG15",
+          "code": "BG15",
+          "name": "Pastel nhoè",
+          "value": "hồng, tím, xanh nhạt hoà vào nhau",
+          "css": "background: radial-gradient(circle at 20% 20%, #FFC7E6, transparent 50%), radial-gradient(circle at 85% 30%, #C9D4FF, transparent 50%), radial-gradient(circle at 50% 90%, #E3CCFF, transparent 55%), #F4ECFF"
+        },
+        {
+          "id": "BG16",
+          "code": "BG16",
+          "name": "Chấm ma trận mờ dần",
+          "value": "lưới chấm sáng giữa, tối dần ra mép",
+          "css": "background: radial-gradient(ellipse at 50% 50%, transparent 25%, #0A0A0D 75%), radial-gradient(rgba(255,255,255,.22) 1.5px, transparent 2px) 0 0 / 12px 12px, #0A0A0D"
+        },
+        {
+          "id": "BG17",
+          "code": "BG17",
+          "name": "Lưới neon",
+          "value": "ô kẻ tím phát sáng, mờ lên trên",
+          "css": "background: linear-gradient(180deg, #07070B 20%, transparent 80%), linear-gradient(rgba(124,92,255,.4) 1px, transparent 1px) 0 0 / 100% 18px, linear-gradient(90deg, rgba(124,92,255,.4) 1px, transparent 1px) 0 0 / 18px 100%, #07070B"
+        },
+        {
+          "id": "BG18",
+          "code": "BG18",
+          "name": "Xám mềm UI",
+          "value": "nền xám nhạt cho thẻ trắng nổi",
+          "css": "background: #ECEDF0"
+        },
+        {
+          "id": "BG19",
+          "code": "BG19",
+          "name": "Kem vani lốm đốm",
+          "value": "kem vàng nhạt, đốm nâu",
+          "css": "background: radial-gradient(circle at 30% 40%, #2A2320 0 2px, transparent 3px) 0 0 / 23px 19px, radial-gradient(circle at 70% 60%, #3A2E28 0 3px, transparent 4px) 0 0 / 37px 29px, radial-gradient(ellipse at 40% 30%, #FAFFE0, #E6EFB4 70%)"
+        },
+        {
+          "id": "BG20",
+          "code": "BG20",
+          "name": "Đèn rọi trên nền tối",
+          "value": "vùng sáng hình nón từ trên",
+          "css": "background: radial-gradient(ellipse 60% 70% at 50% 0%, rgba(255,255,255,.22), transparent 70%), #08080C"
+        },
+        {
+          "id": "BG21",
+          "code": "BG21",
+          "name": "Vệt sáng ngang",
+          "value": "dải sáng trắng xanh vắt ngang",
+          "css": "background: radial-gradient(ellipse 75% 12% at 60% 28%, rgba(255,255,255,.75), rgba(150,180,255,.35) 40%, transparent 70%), #07070B"
+        },
+        {
+          "id": "BG22",
+          "code": "BG22",
+          "name": "Giấy kẻ ô vở",
+          "value": "kem, dòng kẻ xanh, lề đỏ",
+          "css": "background: linear-gradient(90deg, transparent 28px, rgba(255,92,92,.6) 28px 29px, transparent 29px), linear-gradient(rgba(80,140,220,.35) 1px, transparent 1px) 0 0 / 100% 16px, #FFFDF5"
+        },
+        {
+          "id": "BG23",
+          "code": "BG23",
+          "name": "Chuyển sắc có hạt",
+          "value": "tím hồng + hạt nhiễu",
+          "css": "background: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.45'/></svg>\"), linear-gradient(135deg, #5B3FE0, #FF7AB6)"
+        },
+        {
+          "id": "BG24",
+          "code": "BG24",
+          "name": "Sọc mảnh dọc",
+          "value": "sọc 1px cách 8px",
+          "css": "background: repeating-linear-gradient(90deg, rgba(255,255,255,.08) 0 1px, transparent 1px 8px), #14141B"
+        }
+      ],
+      "v3": true
     }
   ]
 }

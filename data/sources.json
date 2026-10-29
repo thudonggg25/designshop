@@ -1,0 +1,223 @@
+{
+  "kind": "source",
+  "note": "Thư viện và trang tham khảo để gửi kèm brief cho AI. Mục không có link: tìm theo tên.",
+  "groups": [
+    {
+      "label": "Thư viện UI & nguồn tham khảo",
+      "items": [
+        {
+          "id": "RS01",
+          "code": "RS01",
+          "name": "21st.dev",
+          "value": "Hơn 12.000 component React cho AI/agent, cài bằng một lệnh",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#fff;color:#0B0B10;font:800 16px 'Inter',sans-serif\">2</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #fff;opacity:.7;font:600 9px 'Inter',sans-serif;color:#fff\">Component</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#fff\">21st.dev</div><div style=\"font:500 9px 'Space Mono',monospace;color:#fff;opacity:.6\">21st.dev</div></div>",
+          "ai": "use 21st.dev as a reference / component source",
+          "url": "https://21st.dev"
+        },
+        {
+          "id": "RS02",
+          "code": "RS02",
+          "name": "shadcn/ui",
+          "value": "Bộ component sạch, sao chép vào dự án như của riêng bạn",
+          "html": "<div style=\"position:absolute;inset:0;background:#FFFFFF;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#0B0B10;color:#FFFFFF;font:800 16px 'Inter',sans-serif\">S</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #0B0B10;opacity:.7;font:600 9px 'Inter',sans-serif;color:#0B0B10\">Component</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#0B0B10\">shadcn/ui</div><div style=\"font:500 9px 'Space Mono',monospace;color:#0B0B10;opacity:.6\">ui.shadcn.com</div></div>",
+          "ai": "use shadcn/ui as a reference / component source",
+          "url": "https://ui.shadcn.com"
+        },
+        {
+          "id": "RS03",
+          "code": "RS03",
+          "name": "Aceternity UI",
+          "value": "Hơn 200 component hiệu ứng động miễn phí",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#fff;color:#0B0B10;font:800 16px 'Inter',sans-serif\">A</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #fff;opacity:.7;font:600 9px 'Inter',sans-serif;color:#fff\">Hiệu ứng</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#fff\">Aceternity UI</div><div style=\"font:500 9px 'Space Mono',monospace;color:#fff;opacity:.6\">ui.aceternity.com</div></div>",
+          "ai": "use Aceternity UI as a reference / component source",
+          "url": "https://ui.aceternity.com"
+        },
+        {
+          "id": "RS04",
+          "code": "RS04",
+          "name": "Magic UI",
+          "value": "Hơn 150 linh kiện hiệu ứng động miễn phí",
+          "html": "<div style=\"position:absolute;inset:0;background:#F4ECFF;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#5B3FE0;color:#F4ECFF;font:800 16px 'Inter',sans-serif\">M</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #5B3FE0;opacity:.7;font:600 9px 'Inter',sans-serif;color:#5B3FE0\">Hiệu ứng</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#5B3FE0\">Magic UI</div><div style=\"font:500 9px 'Space Mono',monospace;color:#5B3FE0;opacity:.6\">magicui.design</div></div>",
+          "ai": "use Magic UI as a reference / component source",
+          "url": "https://magicui.design"
+        },
+        {
+          "id": "RS05",
+          "code": "RS05",
+          "name": "Motion Primitives",
+          "value": "Phần tử có sẵn chuyển động, copy dán là xong",
+          "html": "<div style=\"position:absolute;inset:0;background:#FFFFFF;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#0B0B10;color:#FFFFFF;font:800 16px 'Inter',sans-serif\">M</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #0B0B10;opacity:.7;font:600 9px 'Inter',sans-serif;color:#0B0B10\">Chuyển động</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#0B0B10\">Motion Primitives</div><div style=\"font:500 9px 'Space Mono',monospace;color:#0B0B10;opacity:.6\">motion-primitives.com</div></div>",
+          "ai": "use Motion Primitives as a reference / component source",
+          "url": "https://motion-primitives.com"
+        },
+        {
+          "id": "RS06",
+          "code": "RS06",
+          "name": "Anime.js",
+          "value": "Thư viện chuyển động nhẹ cho mọi hiệu ứng",
+          "html": "<div style=\"position:absolute;inset:0;background:#FF4B4B;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#fff;color:#FF4B4B;font:800 16px 'Inter',sans-serif\">A</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #fff;opacity:.7;font:600 9px 'Inter',sans-serif;color:#fff\">Chuyển động</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#fff\">Anime.js</div><div style=\"font:500 9px 'Space Mono',monospace;color:#fff;opacity:.6\">animejs.com</div></div>",
+          "ai": "use Anime.js as a reference / component source",
+          "url": "https://animejs.com"
+        },
+        {
+          "id": "RS07",
+          "code": "RS07",
+          "name": "Kinetics",
+          "value": "153 hiệu ứng lò xo để copy (tìm theo tên)",
+          "html": "<div style=\"position:absolute;inset:0;background:#1B1A2E;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#FF7AB6;color:#1B1A2E;font:800 16px 'Inter',sans-serif\">K</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #FF7AB6;opacity:.7;font:600 9px 'Inter',sans-serif;color:#FF7AB6\">Chuyển động</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#FF7AB6\">Kinetics</div><div style=\"font:500 9px 'Space Mono',monospace;color:#FF7AB6;opacity:.6\">tìm theo tên</div></div>",
+          "ai": "use Kinetics as a reference / component source"
+        },
+        {
+          "id": "RS08",
+          "code": "RS08",
+          "name": "MicroKit UI",
+          "value": "49 hiệu ứng hover và click nhỏ xinh (tìm theo tên)",
+          "html": "<div style=\"position:absolute;inset:0;background:#FFF4EC;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#FF7A00;color:#FFF4EC;font:800 16px 'Inter',sans-serif\">M</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #FF7A00;opacity:.7;font:600 9px 'Inter',sans-serif;color:#FF7A00\">Hiệu ứng</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#FF7A00\">MicroKit UI</div><div style=\"font:500 9px 'Space Mono',monospace;color:#FF7A00;opacity:.6\">tìm theo tên</div></div>",
+          "ai": "use MicroKit UI as a reference / component source"
+        },
+        {
+          "id": "RS09",
+          "code": "RS09",
+          "name": "Uiverse",
+          "value": "Thư viện UI mã nguồn mở lớn nhất do cộng đồng tạo",
+          "html": "<div style=\"position:absolute;inset:0;background:#111111;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#fff;color:#111111;font:800 16px 'Inter',sans-serif\">U</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #fff;opacity:.7;font:600 9px 'Inter',sans-serif;color:#fff\">Component</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#fff\">Uiverse</div><div style=\"font:500 9px 'Space Mono',monospace;color:#fff;opacity:.6\">uiverse.io</div></div>",
+          "ai": "use Uiverse as a reference / component source",
+          "url": "https://uiverse.io"
+        },
+        {
+          "id": "RS10",
+          "code": "RS10",
+          "name": "Liquid Glass",
+          "value": "Giao diện kính lỏng kiểu Apple cho web (tìm theo tên)",
+          "html": "<div style=\"position:absolute;inset:0;background:#2B2B6E;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#fff;color:#2B2B6E;font:800 16px 'Inter',sans-serif\">L</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #fff;opacity:.7;font:600 9px 'Inter',sans-serif;color:#fff\">Hiệu ứng</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#fff\">Liquid Glass</div><div style=\"font:500 9px 'Space Mono',monospace;color:#fff;opacity:.6\">tìm theo tên</div></div>",
+          "ai": "use Liquid Glass as a reference / component source"
+        },
+        {
+          "id": "RS11",
+          "code": "RS11",
+          "name": "Kitbitz",
+          "value": "2.000+ hình minh hoạ vẽ tay miễn phí (tìm theo tên)",
+          "html": "<div style=\"position:absolute;inset:0;background:#5B3FE0;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#FFD23F;color:#5B3FE0;font:800 16px 'Inter',sans-serif\">K</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #FFD23F;opacity:.7;font:600 9px 'Inter',sans-serif;color:#FFD23F\">Minh hoạ</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#FFD23F\">Kitbitz</div><div style=\"font:500 9px 'Space Mono',monospace;color:#FFD23F;opacity:.6\">tìm theo tên</div></div>",
+          "ai": "use Kitbitz as a reference / component source"
+        },
+        {
+          "id": "RS12",
+          "code": "RS12",
+          "name": "3dicons",
+          "value": "1.440+ biểu tượng 3D miễn phí",
+          "html": "<div style=\"position:absolute;inset:0;background:#F3F0FF;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#5B3FE0;color:#F3F0FF;font:800 16px 'Inter',sans-serif\">3</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #5B3FE0;opacity:.7;font:600 9px 'Inter',sans-serif;color:#5B3FE0\">Icon</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#5B3FE0\">3dicons</div><div style=\"font:500 9px 'Space Mono',monospace;color:#5B3FE0;opacity:.6\">3dicons.co</div></div>",
+          "ai": "use 3dicons as a reference / component source",
+          "url": "https://3dicons.co"
+        },
+        {
+          "id": "RS13",
+          "code": "RS13",
+          "name": "Solar Icons",
+          "value": "Bộ icon hiện đại: nét, hai tông, đặc",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#9DB8FF;color:#0B0B10;font:800 16px 'Inter',sans-serif\">S</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #9DB8FF;opacity:.7;font:600 9px 'Inter',sans-serif;color:#9DB8FF\">Icon</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#9DB8FF\">Solar Icons</div><div style=\"font:500 9px 'Space Mono',monospace;color:#9DB8FF;opacity:.6\">solar-icons.vercel.app</div></div>",
+          "ai": "use Solar Icons as a reference / component source",
+          "url": "https://solar-icons.vercel.app"
+        },
+        {
+          "id": "RS14",
+          "code": "RS14",
+          "name": "Iconly",
+          "value": "Icon và ý tưởng thanh điều hướng",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#1B1D2E;color:#ECEDF0;font:800 16px 'Inter',sans-serif\">I</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #1B1D2E;opacity:.7;font:600 9px 'Inter',sans-serif;color:#1B1D2E\">Icon</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#1B1D2E\">Iconly</div><div style=\"font:500 9px 'Space Mono',monospace;color:#1B1D2E;opacity:.6\">iconly.pro</div></div>",
+          "ai": "use Iconly as a reference / component source",
+          "url": "https://iconly.pro"
+        },
+        {
+          "id": "RS15",
+          "code": "RS15",
+          "name": "Component Gallery",
+          "value": "2.671 ví dụ, 60 loại component, 95 design system",
+          "html": "<div style=\"position:absolute;inset:0;background:#F3EEE3;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#1B1D2E;color:#F3EEE3;font:800 16px 'Inter',sans-serif\">C</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #1B1D2E;opacity:.7;font:600 9px 'Inter',sans-serif;color:#1B1D2E\">Tham khảo</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#1B1D2E\">Component Gallery</div><div style=\"font:500 9px 'Space Mono',monospace;color:#1B1D2E;opacity:.6\">component.gallery</div></div>",
+          "ai": "use Component Gallery as a reference / component source",
+          "url": "https://component.gallery"
+        },
+        {
+          "id": "RS16",
+          "code": "RS16",
+          "name": "Minimal Gallery",
+          "value": "Tuyển chọn trang web tối giản tinh tế",
+          "html": "<div style=\"position:absolute;inset:0;background:#FFFFFF;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#0B0B10;color:#FFFFFF;font:800 16px 'Inter',sans-serif\">M</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #0B0B10;opacity:.7;font:600 9px 'Inter',sans-serif;color:#0B0B10\">Tham khảo</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#0B0B10\">Minimal Gallery</div><div style=\"font:500 9px 'Space Mono',monospace;color:#0B0B10;opacity:.6\">minimal.gallery</div></div>",
+          "ai": "use Minimal Gallery as a reference / component source",
+          "url": "https://minimal.gallery"
+        },
+        {
+          "id": "RS17",
+          "code": "RS17",
+          "name": "Refero",
+          "value": "Thư viện màn hình và phong cách thiết kế thực tế",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#fff;color:#0B0B10;font:800 16px 'Inter',sans-serif\">R</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #fff;opacity:.7;font:600 9px 'Inter',sans-serif;color:#fff\">Tham khảo</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#fff\">Refero</div><div style=\"font:500 9px 'Space Mono',monospace;color:#fff;opacity:.6\">refero.design</div></div>",
+          "ai": "use Refero as a reference / component source",
+          "url": "https://refero.design"
+        },
+        {
+          "id": "RS18",
+          "code": "RS18",
+          "name": "Mobbin",
+          "value": "Màn hình app di động thật để tham khảo luồng",
+          "html": "<div style=\"position:absolute;inset:0;background:#FFFFFF;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#0B0B10;color:#FFFFFF;font:800 16px 'Inter',sans-serif\">M</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #0B0B10;opacity:.7;font:600 9px 'Inter',sans-serif;color:#0B0B10\">Tham khảo</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#0B0B10\">Mobbin</div><div style=\"font:500 9px 'Space Mono',monospace;color:#0B0B10;opacity:.6\">mobbin.com</div></div>",
+          "ai": "use Mobbin as a reference / component source",
+          "url": "https://mobbin.com"
+        },
+        {
+          "id": "RS19",
+          "code": "RS19",
+          "name": "Libraries.dev",
+          "value": "Component React cho AI agent: border beam, thinking orb",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#9DB8FF;color:#0B0B10;font:800 16px 'Inter',sans-serif\">L</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #9DB8FF;opacity:.7;font:600 9px 'Inter',sans-serif;color:#9DB8FF\">Component</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#9DB8FF\">Libraries.dev</div><div style=\"font:500 9px 'Space Mono',monospace;color:#9DB8FF;opacity:.6\">libraries.dev</div></div>",
+          "ai": "use Libraries.dev as a reference / component source",
+          "url": "https://libraries.dev"
+        },
+        {
+          "id": "RS20",
+          "code": "RS20",
+          "name": "Originkit",
+          "value": "500 web component tương tác cho dev và designer",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#FF7AB6;color:#0B0B10;font:800 16px 'Inter',sans-serif\">O</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #FF7AB6;opacity:.7;font:600 9px 'Inter',sans-serif;color:#FF7AB6\">Component</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#FF7AB6\">Originkit</div><div style=\"font:500 9px 'Space Mono',monospace;color:#FF7AB6;opacity:.6\">originkit.dev</div></div>",
+          "ai": "use Originkit as a reference / component source",
+          "url": "https://originkit.dev"
+        },
+        {
+          "id": "RS21",
+          "code": "RS21",
+          "name": "beUI",
+          "value": "100+ component động cho React/Next.js, loader dot matrix",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#3BFFA0;color:#0B0B10;font:800 16px 'Inter',sans-serif\">B</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #3BFFA0;opacity:.7;font:600 9px 'Inter',sans-serif;color:#3BFFA0\">Component</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#3BFFA0\">beUI</div><div style=\"font:500 9px 'Space Mono',monospace;color:#3BFFA0;opacity:.6\">beui.dev</div></div>",
+          "ai": "use beUI as a reference / component source",
+          "url": "https://beui.dev"
+        },
+        {
+          "id": "RS22",
+          "code": "RS22",
+          "name": "Tailark",
+          "value": "Khối marketing, trang đầy đủ và minh hoạ dựng sẵn",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#36C2FF;color:#0B0B10;font:800 16px 'Inter',sans-serif\">T</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #36C2FF;opacity:.7;font:600 9px 'Inter',sans-serif;color:#36C2FF\">Component</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#36C2FF\">Tailark</div><div style=\"font:500 9px 'Space Mono',monospace;color:#36C2FF;opacity:.6\">tailark.com</div></div>",
+          "ai": "use Tailark as a reference / component source",
+          "url": "https://tailark.com"
+        },
+        {
+          "id": "RS23",
+          "code": "RS23",
+          "name": "DESIGN.md",
+          "value": "Tệp mô tả hệ thống thiết kế để AI đọc và làm theo (tìm theo tên)",
+          "html": "<div style=\"position:absolute;inset:0;background:#0E2A22;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#7CFF9B;color:#0E2A22;font:800 16px 'Inter',sans-serif\">D</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #7CFF9B;opacity:.7;font:600 9px 'Inter',sans-serif;color:#7CFF9B\">Cho AI</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#7CFF9B\">DESIGN.md</div><div style=\"font:500 9px 'Space Mono',monospace;color:#7CFF9B;opacity:.6\">tìm theo tên</div></div>",
+          "ai": "use DESIGN.md as a reference / component source"
+        },
+        {
+          "id": "RS24",
+          "code": "RS24",
+          "name": "Dyslove Design",
+          "value": "Bộ combo màu thẻ kính (Cosmic, Vanilla, Lavender, Violet) trên Instagram",
+          "html": "<div style=\"position:absolute;inset:0;background:#23212C;display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#E8E6F0;color:#23212C;font:800 16px 'Inter',sans-serif\">D</span><span style=\"padding:3px 8px;border-radius:999px;border:1px solid #E8E6F0;opacity:.7;font:600 9px 'Inter',sans-serif;color:#E8E6F0\">Màu</span></div><div style=\"font:800 17px 'Inter Tight','Inter',sans-serif;letter-spacing:-.02em;color:#E8E6F0\">Dyslove Design</div><div style=\"font:500 9px 'Space Mono',monospace;color:#E8E6F0;opacity:.6\">instagram.com/dyslove.design</div></div>",
+          "ai": "use Dyslove Design as a reference / component source",
+          "url": "https://www.instagram.com/dyslove.design"
+        }
+      ],
+      "v3": true
+    }
+  ]
+}

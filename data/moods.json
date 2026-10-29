@@ -155,6 +155,140 @@
           ]
         }
       ]
+    },
+    {
+      "label": "Tông cảm xúc mở rộng",
+      "items": [
+        {
+          "id": "MO11",
+          "code": "MO11",
+          "name": "Vũ trụ huyền bí",
+          "value": "sâu thẳm, tĩnh, lấp lánh",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#06060A 0%,#23212C 35%,#5A5470 65%,#9DB8FF 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Inter Tight',sans-serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.02em;color:#FFFFFF\">Vũ trụ huyền bí</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#06060A;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#23212C;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#5A5470;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#9DB8FF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#E8E6F0;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "cosmic, deep space, nebula, starfield, smoked glass, quiet luxury, cinematic",
+          "suggest": "P19 · S23 · FP12",
+          "colors": [
+            "#06060A",
+            "#23212C",
+            "#5A5470",
+            "#9DB8FF",
+            "#E8E6F0"
+          ]
+        },
+        {
+          "id": "MO12",
+          "code": "MO12",
+          "name": "Mơ màng pastel",
+          "value": "nhẹ, mộng, trong trẻo",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#FFC7E6 0%,#E3CCFF 35%,#C9D4FF 65%,#F4ECFF 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.02em;color:#18181B\">Mơ màng pastel</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#FFC7E6;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#E3CCFF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#C9D4FF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#F4ECFF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFFFFF;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "dreamy pastel gradient, soft glow, airy, frosted glass, gentle light",
+          "suggest": "P23 · S24 · FP13",
+          "colors": [
+            "#FFC7E6",
+            "#E3CCFF",
+            "#C9D4FF",
+            "#F4ECFF",
+            "#FFFFFF"
+          ]
+        },
+        {
+          "id": "MO13",
+          "code": "MO13",
+          "name": "Điện ảnh hùng vĩ",
+          "value": "rộng lớn, ánh hoàng hôn",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#1B1A2E 0%,#3D3B6B 35%,#8E6FB5 65%,#F2A27A 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Unbounded',sans-serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.02em;color:#FFFFFF\">Điện ảnh hùng vĩ</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#1B1A2E;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#3D3B6B;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#8E6FB5;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#F2A27A;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFE3C4;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "cinematic, epic landscape, golden hour, mountains, lake reflection, volumetric light",
+          "suggest": "P28 · S27 · FP16",
+          "colors": [
+            "#1B1A2E",
+            "#3D3B6B",
+            "#8E6FB5",
+            "#F2A27A",
+            "#FFE3C4"
+          ]
+        },
+        {
+          "id": "MO14",
+          "code": "MO14",
+          "name": "Công nghệ cao cấp tối",
+          "value": "tối, sắc, phát sáng tinh tế",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#08080C 0%,#14141B 35%,#2A2A38 65%,#7C9BFF 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Geist',sans-serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.02em;color:#FFFFFF\">Công nghệ cao cấp tối</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#08080C;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#14141B;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#2A2A38;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#7C9BFF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFFFFF;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "premium dark UI, subtle glow, precise, sleek, high-end tech product",
+          "suggest": "P29 · S25 · FP14",
+          "colors": [
+            "#08080C",
+            "#14141B",
+            "#2A2A38",
+            "#7C9BFF",
+            "#FFFFFF"
+          ]
+        },
+        {
+          "id": "MO15",
+          "code": "MO15",
+          "name": "Vui tươi 3D",
+          "value": "tròn mềm, sặc sỡ, đáng yêu",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#FFE3F1 0%,#FFD23F 35%,#7C5CFF 65%,#36C2FF 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Baloo 2',sans-serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.02em;color:#FFFFFF\">Vui tươi 3D</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#FFE3F1;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFD23F;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#7C5CFF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#36C2FF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#3BCEAC;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "playful 3D, soft clay render, bubbly shapes, cute characters, bright colors",
+          "suggest": "P31 · S13 · FP18",
+          "colors": [
+            "#FFE3F1",
+            "#FFD23F",
+            "#7C5CFF",
+            "#36C2FF",
+            "#3BCEAC"
+          ]
+        },
+        {
+          "id": "MO16",
+          "code": "MO16",
+          "name": "Tự nhiên mộc mạc",
+          "value": "kem, lá, ánh nắng",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#F1FEC8 0%,#DCE8C0 35%,#8FAF7A 65%,#4E6B45 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Fraunces',serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.02em;color:#18181B\">Tự nhiên mộc mạc</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#F1FEC8;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#DCE8C0;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#8FAF7A;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#4E6B45;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#2A3326;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "natural calm, cream and sage, organic textures, sunlight, wellness",
+          "suggest": "P20 · S19 · FP05",
+          "colors": [
+            "#F1FEC8",
+            "#DCE8C0",
+            "#8FAF7A",
+            "#4E6B45",
+            "#2A3326"
+          ]
+        },
+        {
+          "id": "MO17",
+          "code": "MO17",
+          "name": "Mạnh mẽ thể thao",
+          "value": "tốc độ, tương phản, đậm",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#0A0A0A 0%,#FFFFFF 35%,#D7FF3A 65%,#FF3B30 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.02em;color:#FFFFFF\">Mạnh mẽ thể thao</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#0A0A0A;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FFFFFF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#D7FF3A;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#FF3B30;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#1E1E1E;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "bold sporty, motion blur, heavy condensed type, high contrast, energy",
+          "suggest": "P33 · S29 · FP17",
+          "colors": [
+            "#0A0A0A",
+            "#FFFFFF",
+            "#D7FF3A",
+            "#FF3B30",
+            "#1E1E1E"
+          ]
+        },
+        {
+          "id": "MO18",
+          "code": "MO18",
+          "name": "Tinh khôi cao cấp",
+          "value": "trắng, bạc, nhẹ nhàng",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(135deg,#FFFFFF 0%,#F4F5F7 35%,#D9DCE3 65%,#8A8F9C 100%);display:flex;flex-direction:column;justify-content:space-between;padding:14px\"><div style=\"font-family:'Manrope',sans-serif;font-weight:700;font-size:22px;line-height:1.05;letter-spacing:-.02em;color:#18181B\">Tinh khôi cao cấp</div><div style=\"display:flex;gap:5px\"><i style=\"width:14px;height:14px;border-radius:50%;background:#FFFFFF;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#F4F5F7;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#D9DCE3;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#8A8F9C;border:1px solid rgba(255,255,255,.35)\"></i><i style=\"width:14px;height:14px;border-radius:50%;background:#1C1D22;border:1px solid rgba(255,255,255,.35)\"></i></div></div>",
+          "ai": "clean premium, white space, soft silver, airy product shots, calm confidence",
+          "suggest": "P34 · S05 · FP11",
+          "colors": [
+            "#FFFFFF",
+            "#F4F5F7",
+            "#D9DCE3",
+            "#8A8F9C",
+            "#1C1D22"
+          ]
+        }
+      ],
+      "v3": true
     }
   ]
 }

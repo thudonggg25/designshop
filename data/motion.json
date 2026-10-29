@@ -1,0 +1,192 @@
+{
+  "kind": "motion",
+  "note": "Rê chuột vào thẻ để xem chuyển động. Mã CSS đi kèm trong brief.",
+  "groups": [
+    {
+      "label": "Chuyển động & phản hồi",
+      "items": [
+        {
+          "id": "MT01",
+          "code": "MT01",
+          "name": "Nhấc lên khi rê chuột",
+          "value": "lift -4px + bóng sâu, 200ms",
+          "css": "transition: transform 200ms cubic-bezier(.2,.8,.2,1), box-shadow 200ms; :hover { transform: translateY(-4px); box-shadow: 0 16px 30px rgba(0,0,0,.18) }",
+          "ai": "hover lift, card rises with deeper shadow, snappy 200ms ease-out",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div class=\"mv-lift\" style=\"width:96px;height:64px;border-radius:14px;background:#fff;box-shadow:0 6px 14px rgba(0,0,0,.08);transition:all .2s cubic-bezier(.2,.8,.2,1)\"></div></div>"
+        },
+        {
+          "id": "MT02",
+          "code": "MT02",
+          "name": "Nhấn thu nhỏ",
+          "value": "scale .96 khi bấm, 100ms",
+          "css": "transition: transform 100ms; :active { transform: scale(.96) }",
+          "ai": "press feedback, button scales down slightly on tap",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div class=\"mv-press\" style=\"padding:12px 22px;border-radius:999px;background:#1B1D2E;color:#fff;font:700 13px 'Inter',sans-serif\">Tap me</div></div>"
+        },
+        {
+          "id": "MT03",
+          "code": "MT03",
+          "name": "Vệt sáng quét",
+          "value": "dải sáng lướt qua 700ms",
+          "css": "::after { background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.55) 50%, transparent 70%); transform: translateX(-120%); } :hover::after { transform: translateX(120%); transition: transform 700ms }",
+          "ai": "shimmer sweep, glossy light passes across the surface",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div class=\"fx-shimmer\" style=\"width:120px;height:56px;border-radius:14px;background:linear-gradient(135deg,#2F6BFF,#B66BFF)\"></div></div>"
+        },
+        {
+          "id": "MT04",
+          "code": "MT04",
+          "name": "Tia viền chạy (beam)",
+          "value": "tia sáng chạy quanh viền, 3s lặp",
+          "css": "@property --a { syntax: '<angle>'; } ::before { background: conic-gradient(from var(--a), transparent 75%, #fff); mask: border only; animation: beam 3s linear infinite }",
+          "ai": "border beam animation, light traveling around card edge, subtle premium",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div class=\"fx-beam\" style=\"width:120px;height:72px;border-radius:16px;background:#111118;border:1px solid rgba(255,255,255,.08)\"></div></div>"
+        },
+        {
+          "id": "MT05",
+          "code": "MT05",
+          "name": "Gợn sóng (ripple)",
+          "value": "vòng tròn loang từ điểm bấm",
+          "css": "::after { border-radius: 50%; background: rgba(255,255,255,.35); transform: scale(0); } :active::after { transform: scale(2.5); opacity: 0; transition: 500ms }",
+          "ai": "material ripple effect on tap",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div class=\"mv-ripple\" style=\"position:relative;overflow:hidden;padding:12px 24px;border-radius:12px;background:#2F6BFF;color:#fff;font:700 13px 'Inter',sans-serif\">Ripple</div></div>"
+        },
+        {
+          "id": "MT06",
+          "code": "MT06",
+          "name": "Gạch chân mọc ra",
+          "value": "gạch chân chạy từ trái sang",
+          "css": "::after { height: 2px; width: 0; transition: width 250ms } :hover::after { width: 100% }",
+          "ai": "animated underline grows on hover",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><span class=\"mv-underline\" style=\"position:relative;font:700 18px 'Inter',sans-serif;color:#fff;padding-bottom:4px\">Đọc thêm</span></div>"
+        },
+        {
+          "id": "MT07",
+          "code": "MT07",
+          "name": "Hiện dần từ mờ nhoè",
+          "value": "blur 10px → 0 + hiện, 500ms",
+          "css": "@keyframes blurIn { from { opacity: 0; filter: blur(10px) } to { opacity: 1; filter: none } } animation: blurIn 500ms ease-out",
+          "ai": "blur in reveal, text appears from soft blur",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div class=\"mv-blur\" style=\"font:800 26px 'Inter Tight',sans-serif;color:#fff;letter-spacing:-.04em\">Cosmic</div></div>"
+        },
+        {
+          "id": "MT08",
+          "code": "MT08",
+          "name": "Trôi lơ lửng",
+          "value": "nhấp nhô ±8px, 3s lặp",
+          "css": "@keyframes float { 50% { transform: translateY(-8px) } } animation: float 3s ease-in-out infinite",
+          "ai": "floating idle animation, gentle up and down",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(180deg,#C9E7FF,#FFE3F1);display:grid;place-items:center;\"><div class=\"mv-float\" style=\"width:50px;height:50px;border-radius:16px;background:linear-gradient(160deg,#9C8CFF,#5B3FE0);box-shadow:0 14px 20px -6px rgba(91,63,224,.5)\"></div></div>"
+        },
+        {
+          "id": "MT09",
+          "code": "MT09",
+          "name": "Vòng xung nhịp",
+          "value": "vòng sáng lan ra, 1.5s lặp",
+          "css": "@keyframes pulse { from { box-shadow: 0 0 0 0 rgba(255,255,255,.5) } to { box-shadow: 0 0 0 18px rgba(255,255,255,0) } } animation: pulse 1.5s infinite",
+          "ai": "pulse ring, live indicator, attention",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div class=\"mv-pulse\" style=\"width:22px;height:22px;border-radius:50%;background:#3BFFA0\"></div></div>"
+        },
+        {
+          "id": "MT10",
+          "code": "MT10",
+          "name": "Khung xương tải (skeleton)",
+          "value": "khối xám có ánh chạy",
+          "css": "background: linear-gradient(90deg, #E6E8EE 25%, #F4F5F8 50%, #E6E8EE 75%) 0 0 / 200% 100%; animation: skel 1.2s linear infinite",
+          "ai": "skeleton loading placeholder with shimmer",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div style=\"width:130px;display:flex;flex-direction:column;gap:7px\"><div class=\"mv-skel\" style=\"height:40px;border-radius:8px\"></div><div class=\"mv-skel\" style=\"height:8px;width:80%;border-radius:4px\"></div><div class=\"mv-skel\" style=\"height:8px;width:55%;border-radius:4px\"></div></div></div>"
+        },
+        {
+          "id": "MT11",
+          "code": "MT11",
+          "name": "Vòng quay tải",
+          "value": "spinner 0.8s lặp",
+          "css": "border: 3px solid rgba(255,255,255,.2); border-top-color: #fff; border-radius: 50%; animation: spin .8s linear infinite",
+          "ai": "loading spinner",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div class=\"mv-spin\" style=\"width:34px;height:34px;border-radius:50%;border:3px solid rgba(255,255,255,.18);border-top-color:#fff\"></div></div>"
+        },
+        {
+          "id": "MT12",
+          "code": "MT12",
+          "name": "Ba chấm đang gõ",
+          "value": "3 chấm nhún lần lượt",
+          "css": "@keyframes dot { 40% { transform: translateY(-6px); opacity: 1 } } animation: dot 1s infinite; delays 0 / .15s / .3s",
+          "ai": "typing indicator, three bouncing dots",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div style=\"display:flex;gap:6px;padding:12px 16px;border-radius:18px 18px 18px 4px;background:#fff;box-shadow:0 6px 14px rgba(0,0,0,.08)\"><span class=\"mv-dot\" style=\"width:8px;height:8px;border-radius:50%;background:#8A8F9C;animation-delay:0s\"></span><span class=\"mv-dot\" style=\"width:8px;height:8px;border-radius:50%;background:#8A8F9C;animation-delay:0.15s\"></span><span class=\"mv-dot\" style=\"width:8px;height:8px;border-radius:50%;background:#8A8F9C;animation-delay:0.3s\"></span></div></div>"
+        },
+        {
+          "id": "MT13",
+          "code": "MT13",
+          "name": "Nghiêng 3D",
+          "value": "thẻ nghiêng theo chuột",
+          "css": "transform: perspective(600px) rotateX(var(--rx)) rotateY(var(--ry)); transition: transform 150ms",
+          "ai": "3D tilt card follows cursor, parallax depth",
+          "html": "<div style=\"position:absolute;inset:0;background:linear-gradient(160deg,#1B1A2E,#3D3B6B);display:grid;place-items:center;\"><div class=\"mv-tilt\" style=\"width:96px;height:64px;border-radius:14px;background:linear-gradient(135deg,#7C5CFF,#36C2FF);box-shadow:0 14px 26px rgba(0,0,0,.4);transition:transform .25s cubic-bezier(.2,.8,.2,1)\"></div></div>"
+        },
+        {
+          "id": "MT14",
+          "code": "MT14",
+          "name": "Chuyển sắc chảy",
+          "value": "gradient chạy liên tục",
+          "css": "background-size: 300% 100%; animation: flow 4s linear infinite",
+          "ai": "animated flowing gradient background",
+          "html": "<div style=\"position:absolute;inset:0;display:grid;place-items:center;\"><div class=\"mv-flow\" style=\"position:absolute;inset:0;background:linear-gradient(90deg,#2F6BFF,#B66BFF,#FF5CCB,#2F6BFF) 0 0/300% 100%\"></div></div>"
+        },
+        {
+          "id": "MT15",
+          "code": "MT15",
+          "name": "Chữ chạy ngang (marquee)",
+          "value": "dải chữ trôi vô tận",
+          "css": "display: flex; width: max-content; animation: marquee 8s linear infinite",
+          "ai": "marquee text ticker, endless horizontal scroll",
+          "html": "<div style=\"position:absolute;inset:0;background:#D7FF3A;display:flex;align-items:center;overflow:hidden\"><div class=\"mv-marq\" style=\"display:flex;gap:16px;white-space:nowrap;font:800 22px 'Big Shoulders Display',sans-serif;color:#0A0A0A;text-transform:uppercase\">NEW DROP ★ SALE 50% ★ NEW DROP ★ SALE 50% ★ NEW DROP ★ SALE 50% ★</div></div>"
+        },
+        {
+          "id": "MT16",
+          "code": "MT16",
+          "name": "Xuất hiện lần lượt (stagger)",
+          "value": "từng mục hiện cách nhau 60ms",
+          "css": "@keyframes rise { from { opacity: 0; transform: translateY(10px) } } animation: rise 400ms both; animation-delay: calc(var(--i) * 60ms)",
+          "ai": "staggered entrance animation, list items rise one by one",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div style=\"display:flex;gap:6px\"><div class=\"mv-rise\" style=\"width:26px;height:44px;border-radius:8px;background:#7C5CFF;animation-delay:0.00s\"></div><div class=\"mv-rise\" style=\"width:26px;height:44px;border-radius:8px;background:#36C2FF;animation-delay:0.07s\"></div><div class=\"mv-rise\" style=\"width:26px;height:44px;border-radius:8px;background:#3BCEAC;animation-delay:0.14s\"></div><div class=\"mv-rise\" style=\"width:26px;height:44px;border-radius:8px;background:#FFD23F;animation-delay:0.21s\"></div></div></div>"
+        },
+        {
+          "id": "MT17",
+          "code": "MT17",
+          "name": "Phóng to hiện ra",
+          "value": "scale .85 → 1 + hiện, 300ms",
+          "css": "@keyframes zoomIn { from { opacity: 0; transform: scale(.85) } } animation: zoomIn 300ms cubic-bezier(.2,.8,.2,1)",
+          "ai": "zoom in entrance, modal pops in",
+          "html": "<div style=\"position:absolute;inset:0;background:#0B0B10;display:grid;place-items:center;\"><div class=\"mv-zoom\" style=\"padding:14px 20px;border-radius:16px;background:#fff;font:700 12px 'Inter',sans-serif;color:#1B1D2E\">Hộp thoại</div></div>"
+        },
+        {
+          "id": "MT18",
+          "code": "MT18",
+          "name": "Lò xo nảy",
+          "value": "rơi xuống, nảy 2 lần",
+          "css": "@keyframes spring { 0% { transform: translateY(-22px) } 40% { transform: none } 55% { transform: translateY(-8px) } 70% { transform: none } 85% { transform: translateY(-3px) } }",
+          "ai": "spring bounce animation, playful physics",
+          "html": "<div style=\"position:absolute;inset:0;background:#ECEDF0;display:grid;place-items:center;\"><div class=\"mv-spring\" style=\"width:40px;height:40px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFE58A,#FFB020 70%)\"></div></div>"
+        },
+        {
+          "id": "MT19",
+          "code": "MT19",
+          "name": "Lật thẻ",
+          "value": "xoay 180° hiện mặt sau",
+          "css": "transform-style: preserve-3d; transition: transform 500ms; :hover { transform: rotateY(180deg) }",
+          "ai": "card flip animation, 3D rotate to reveal back",
+          "html": "<div style=\"position:absolute;inset:0;background:#1B1A2E;display:grid;place-items:center;\"><div class=\"mv-flip\" style=\"width:70px;height:96px;border-radius:12px;background:linear-gradient(160deg,#FF7AB6,#7C5CFF);transition:transform .5s cubic-bezier(.2,.8,.2,1)\"></div></div>"
+        },
+        {
+          "id": "MT20",
+          "code": "MT20",
+          "name": "Sao lấp lánh",
+          "value": "nền sao nhấp nháy chậm",
+          "css": "animation: twinkle 6s ease-in-out infinite alternate; opacity .55 → .9",
+          "ai": "twinkling starfield background, subtle ambient motion",
+          "html": "<div style=\"position:absolute;inset:0;background:radial-gradient(1px 1px at 12% 20%,#fff,transparent 60%),radial-gradient(1px 1px at 72% 14%,#fff,transparent 60%),radial-gradient(1.4px 1.4px at 86% 62%,#cfe8ff,transparent 60%),radial-gradient(1px 1px at 30% 78%,#fff,transparent 60%),radial-gradient(1px 1px at 52% 40%,rgba(255,255,255,.7),transparent 60%),radial-gradient(1.6px 1.6px at 18% 55%,#bff,transparent 60%),radial-gradient(1px 1px at 92% 30%,#fff,transparent 60%),radial-gradient(1px 1px at 60% 88%,#fff,transparent 60%),radial-gradient(ellipse 50% 40% at 15% 20%,rgba(110,120,190,.45),transparent 70%),radial-gradient(ellipse 40% 30% at 80% 85%,rgba(200,140,130,.25),transparent 70%),#06060A;\"><div class=\"mv-twinkle\" style=\"position:absolute;inset:0;background:radial-gradient(1px 1px at 12% 20%,#fff,transparent 60%),radial-gradient(1px 1px at 72% 14%,#fff,transparent 60%),radial-gradient(1.4px 1.4px at 86% 62%,#cfe8ff,transparent 60%),radial-gradient(1px 1px at 30% 78%,#fff,transparent 60%),radial-gradient(1px 1px at 52% 40%,rgba(255,255,255,.7),transparent 60%),radial-gradient(1.6px 1.6px at 18% 55%,#bff,transparent 60%),radial-gradient(1px 1px at 92% 30%,#fff,transparent 60%),radial-gradient(1px 1px at 60% 88%,#fff,transparent 60%)\"></div></div>"
+        }
+      ],
+      "v3": true
+    }
+  ]
+}

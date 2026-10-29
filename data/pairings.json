@@ -95,6 +95,122 @@
           "css": "heading: font-family: 'Lexend'; font-weight: 700 | body: font-family: 'JetBrains Mono'; font-weight: 400"
         }
       ]
+    },
+    {
+      "label": "Cặp font mở rộng",
+      "items": [
+        {
+          "id": "FP10",
+          "code": "FP10",
+          "name": "Unbounded + Manrope",
+          "value": "công nghệ trẻ",
+          "head": "Unbounded",
+          "headWeight": "700",
+          "body": "Manrope",
+          "css": "heading: font-family: 'Unbounded'; font-weight: 700 | body: font-family: 'Manrope'; font-weight: 400"
+        },
+        {
+          "id": "FP11",
+          "code": "FP11",
+          "name": "Manrope + Manrope",
+          "value": "sạch, một họ",
+          "head": "Manrope",
+          "headWeight": "800",
+          "body": "Manrope",
+          "css": "heading: font-family: 'Manrope'; font-weight: 800 | body: font-family: 'Manrope'; font-weight: 400"
+        },
+        {
+          "id": "FP12",
+          "code": "FP12",
+          "name": "Inter Tight + Inter",
+          "value": "Cosmic, tối giản đậm",
+          "head": "Inter Tight",
+          "headWeight": "800",
+          "body": "Inter",
+          "css": "heading: font-family: 'Inter Tight'; font-weight: 800 | body: font-family: 'Inter'; font-weight: 400"
+        },
+        {
+          "id": "FP13",
+          "code": "FP13",
+          "name": "Plus Jakarta Sans + Inter",
+          "value": "landing page AI",
+          "head": "Plus Jakarta Sans",
+          "headWeight": "800",
+          "body": "Inter",
+          "css": "heading: font-family: 'Plus Jakarta Sans'; font-weight: 800 | body: font-family: 'Inter'; font-weight: 400"
+        },
+        {
+          "id": "FP14",
+          "code": "FP14",
+          "name": "Geist + Geist",
+          "value": "dashboard dev",
+          "head": "Geist",
+          "headWeight": "700",
+          "body": "Geist",
+          "css": "heading: font-family: 'Geist'; font-weight: 700 | body: font-family: 'Geist'; font-weight: 400"
+        },
+        {
+          "id": "FP15",
+          "code": "FP15",
+          "name": "Cormorant Garamond + Manrope",
+          "value": "sang trọng nhẹ",
+          "head": "Cormorant Garamond",
+          "headWeight": "600",
+          "body": "Manrope",
+          "css": "heading: font-family: 'Cormorant Garamond'; font-weight: 600 | body: font-family: 'Manrope'; font-weight: 400"
+        },
+        {
+          "id": "FP16",
+          "code": "FP16",
+          "name": "Bricolage Grotesque + Work Sans",
+          "value": "sáng tạo, vui",
+          "head": "Bricolage Grotesque",
+          "headWeight": "800",
+          "body": "Work Sans",
+          "css": "heading: font-family: 'Bricolage Grotesque'; font-weight: 800 | body: font-family: 'Work Sans'; font-weight: 400"
+        },
+        {
+          "id": "FP17",
+          "code": "FP17",
+          "name": "Big Shoulders Display + Barlow Condensed",
+          "value": "thể thao mạnh",
+          "head": "Big Shoulders Display",
+          "headWeight": "800",
+          "body": "Barlow Condensed",
+          "css": "heading: font-family: 'Big Shoulders Display'; font-weight: 800 | body: font-family: 'Barlow Condensed'; font-weight: 400"
+        },
+        {
+          "id": "FP18",
+          "code": "FP18",
+          "name": "Baloo 2 + Quicksand",
+          "value": "dễ thương 3D",
+          "head": "Baloo 2",
+          "headWeight": "800",
+          "body": "Quicksand",
+          "css": "heading: font-family: 'Baloo 2'; font-weight: 800 | body: font-family: 'Quicksand'; font-weight: 400"
+        },
+        {
+          "id": "FP19",
+          "code": "FP19",
+          "name": "EB Garamond + IBM Plex Sans",
+          "value": "văn hoá, tin cậy",
+          "head": "EB Garamond",
+          "headWeight": "600",
+          "body": "IBM Plex Sans",
+          "css": "heading: font-family: 'EB Garamond'; font-weight: 600 | body: font-family: 'IBM Plex Sans'; font-weight: 400"
+        },
+        {
+          "id": "FP20",
+          "code": "FP20",
+          "name": "Dela Gothic One + Space Mono",
+          "value": "streetwear, brutal",
+          "head": "Dela Gothic One",
+          "headWeight": "400",
+          "body": "Space Mono",
+          "css": "heading: font-family: 'Dela Gothic One'; font-weight: 400 | body: font-family: 'Space Mono'; font-weight: 400"
+        }
+      ],
+      "v3": true
     }
   ]
 }
